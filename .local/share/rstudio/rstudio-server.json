@@ -1,10 +1,9 @@
 {
-    "context_id": "DCD657B2",
+    "context_id": "3E06612F",
     "theme": {
         "name": "SQL Server",
         "url": "theme/default/sqlserver.rstheme",
         "isDark": false
     },
-    "visual_mode_confirmed": true,
     "error_handler_type": "traceback"
 }

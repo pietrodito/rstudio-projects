@@ -1,4 +1,211 @@
 {
+    "blogdown::insert_image_addin": {
+        "name": "Insert Image",
+        "package": "blogdown",
+        "title": "",
+        "description": "Insert an external image into a blog post.",
+        "interactive": true,
+        "binding": "insert_image_addin",
+        "ordinal": 30
+    },
+    "blogdown::new_post_addin": {
+        "name": "New Post",
+        "package": "blogdown",
+        "title": "",
+        "description": "Create a new post with blogdown::new_post().",
+        "interactive": true,
+        "binding": "new_post_addin",
+        "ordinal": 28
+    },
+    "blogdown::quote_poem_addin": {
+        "name": "Quote Poem",
+        "package": "blogdown",
+        "title": "",
+        "description": "Add > to the beginning of selected paragraphs and two trailing spaces to selected lines.",
+        "interactive": false,
+        "binding": "quote_poem_addin",
+        "ordinal": 32
+    },
+    "blogdown::serve_site": {
+        "name": "Serve Site",
+        "package": "blogdown",
+        "title": "",
+        "description": "Run blogdown::serve_site() to live preview a website locally.",
+        "interactive": true,
+        "binding": "serve_site",
+        "ordinal": 27
+    },
+    "blogdown::touch_file_rstudio": {
+        "name": "Touch File",
+        "package": "blogdown",
+        "title": "",
+        "description": "Change the timestamp of the current file in the editor.",
+        "interactive": false,
+        "binding": "touch_file_rstudio",
+        "ordinal": 31
+    },
+    "blogdown::update_meta_addin": {
+        "name": "Update Metadata",
+        "package": "blogdown",
+        "title": "",
+        "description": "Update the title, author, date, categories, and tags of the current blog post.",
+        "interactive": true,
+        "binding": "update_meta_addin",
+        "ordinal": 29
+    },
+    "bookdown::mathquill": {
+        "name": "Input LaTeX Math",
+        "package": "bookdown",
+        "title": "",
+        "description": "Input math expressions via the MathQuill library.",
+        "interactive": true,
+        "binding": "mathquill",
+        "ordinal": 34
+    },
+    "bookdown::serve_book": {
+        "name": "Preview Book",
+        "package": "bookdown",
+        "title": "",
+        "description": "Run bookdown::serve_book() to live preview a book.",
+        "interactive": true,
+        "binding": "serve_book",
+        "ordinal": 33
+    },
+    "clipr::clipr_output": {
+        "name": "Output to clipboard",
+        "package": "clipr",
+        "title": "",
+        "description": "Copies the console output of a selected expression to the system clipboard",
+        "interactive": false,
+        "binding": "clipr_output",
+        "ordinal": 36
+    },
+    "clipr::clipr_result": {
+        "name": "Value to clipboard",
+        "package": "clipr",
+        "title": "",
+        "description": "Copies the results of a selected expression to the system clipboard",
+        "interactive": false,
+        "binding": "clipr_result",
+        "ordinal": 35
+    },
+    "covr::addin_report": {
+        "name": "Calculate package test coverage",
+        "package": "covr",
+        "title": "",
+        "description": "Calculates the package test coverage and opens a report, using `covr::report()`",
+        "interactive": false,
+        "binding": "addin_report",
+        "ordinal": 10
+    },
+    "devtools::document": {
+        "name": "Document a package",
+        "package": "devtools",
+        "title": "",
+        "description": "A wrapper for `roxygen`'s `roxygen2::roxygenize()`",
+        "interactive": true,
+        "binding": "document",
+        "ordinal": 42
+    },
+    "devtools::run_examples": {
+        "name": "Run examples",
+        "package": "devtools",
+        "title": "",
+        "description": "Runs R code in examples using `devtools::run_examples()`",
+        "interactive": true,
+        "binding": "run_examples",
+        "ordinal": 43
+    },
+    "devtools::test_active_file": {
+        "name": "Run a test file",
+        "package": "devtools",
+        "title": "",
+        "description": "Run the current test file, using `devtools::test_active_file()`.",
+        "interactive": true,
+        "binding": "test_active_file",
+        "ordinal": 39
+    },
+    "devtools::test_coverage": {
+        "name": "Report test coverage for a package",
+        "package": "devtools",
+        "title": "",
+        "description": "Calculate and report the test coverage for the current package, using `devtools::test_coverage()`.",
+        "interactive": true,
+        "binding": "test_coverage",
+        "ordinal": 41
+    },
+    "devtools::test_coverage_active_file": {
+        "name": "Report test coverage for a file",
+        "package": "devtools",
+        "title": "",
+        "description": "Calculate and report test coverage for the current test file, using `devtools::test_coverage_active_file()`.",
+        "interactive": true,
+        "binding": "test_coverage_active_file",
+        "ordinal": 40
+    },
+    "keyboardShortcutAddin::build_a_project": {
+        "name": "Build a project",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "Build of one managed projects",
+        "interactive": true,
+        "binding": "build_a_project",
+        "ordinal": 3
+    },
+    "keyboardShortcutAddin::cd_to_parent_dir": {
+        "name": "Go to parent directory",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "",
+        "interactive": true,
+        "binding": "cd_to_parent_dir",
+        "ordinal": 6
+    },
+    "keyboardShortcutAddin::cd_to_sub": {
+        "name": "Go to sub directory",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "",
+        "interactive": true,
+        "binding": "cd_to_sub",
+        "ordinal": 7
+    },
+    "keyboardShortcutAddin::list_files_pwd": {
+        "name": "List files",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "List files of working directory",
+        "interactive": true,
+        "binding": "list_files_pwd",
+        "ordinal": 1
+    },
+    "keyboardShortcutAddin::list_files_pwd_hidden": {
+        "name": "List all files",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "List all files of working directory",
+        "interactive": true,
+        "binding": "list_files_pwd_hidden",
+        "ordinal": 2
+    },
+    "keyboardShortcutAddin::list_sub_dir": {
+        "name": "List sub dir",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "Insert `ls_(\"./\")` and put cursor ready for autocompletion",
+        "interactive": true,
+        "binding": "list_sub_dir",
+        "ordinal": 4
+    },
+    "keyboardShortcutAddin::switch_between_projects": {
+        "name": "Switch between projects",
+        "package": "keyboardShortcutAddin",
+        "title": "",
+        "description": "",
+        "interactive": true,
+        "binding": "switch_between_projects",
+        "ordinal": 5
+    },
     "lintr::addin_lint": {
         "name": "Lint current file",
         "package": "lintr",
@@ -6,7 +213,7 @@
         "description": "Runs lintr::lint on the current file",
         "interactive": true,
         "binding": "addin_lint",
-        "ordinal": 1
+        "ordinal": 8
     },
     "lintr::addin_lint_package": {
         "name": "Lint current package",
@@ -15,7 +222,16 @@
         "description": "Runs lintr::lint_package",
         "interactive": true,
         "binding": "addin_lint_package",
-        "ordinal": 2
+        "ordinal": 9
+    },
+    "pkgdown::build_site_external": {
+        "name": "Build pkgdown",
+        "package": "pkgdown",
+        "title": "",
+        "description": "Runs pkgdown on the current package",
+        "interactive": true,
+        "binding": "build_site_external",
+        "ordinal": 44
     },
     "renv::renv_addins_embed": {
         "name": "Embed a Lockfile",
@@ -24,7 +240,25 @@
         "description": "Embeds a lockfile in the document, via renv::use().",
         "interactive": false,
         "binding": "renv_addins_embed",
-        "ordinal": 3
+        "ordinal": 24
+    },
+    "reprex::reprex_addin": {
+        "name": "Render reprex...",
+        "package": "reprex",
+        "title": "",
+        "description": "Run `reprex::reprex()` to prepare a reproducible example for sharing.",
+        "interactive": true,
+        "binding": "reprex_addin",
+        "ordinal": 37
+    },
+    "reprex::reprex_selection": {
+        "name": "Reprex selection",
+        "package": "reprex",
+        "title": "",
+        "description": "Prepare reprex from current selection",
+        "interactive": false,
+        "binding": "reprex_selection",
+        "ordinal": 38
     },
     "rhino::addin_build_js": {
         "name": "Build JavaScript",
@@ -33,7 +267,7 @@
         "description": "Builds the app/js/index.js file into app/static/js/app.min.js",
         "interactive": false,
         "binding": "addin_build_js",
-        "ordinal": 11
+        "ordinal": 18
     },
     "rhino::addin_build_sass": {
         "name": "Build Sass",
@@ -42,7 +276,7 @@
         "description": "Builds the app/styles/main.scss file into app/static/css/app.min.css",
         "interactive": false,
         "binding": "addin_build_sass",
-        "ordinal": 12
+        "ordinal": 19
     },
     "rhino::addin_format_r": {
         "name": "Format R code",
@@ -51,7 +285,7 @@
         "description": "Uses the {styler} package to automatically format R script.",
         "interactive": false,
         "binding": "addin_format_r",
-        "ordinal": 5
+        "ordinal": 12
     },
     "rhino::addin_lint_js": {
         "name": "Lint JavaScript",
@@ -60,7 +294,7 @@
         "description": "Runs ESLint on the JavaScript sources in the app/js directory",
         "interactive": false,
         "binding": "addin_lint_js",
-        "ordinal": 7
+        "ordinal": 14
     },
     "rhino::addin_lint_r": {
         "name": "Lint R Code",
@@ -69,7 +303,7 @@
         "description": "Uses the {lintr} package to check all R sources for style errors.",
         "interactive": false,
         "binding": "addin_lint_r",
-        "ordinal": 6
+        "ordinal": 13
     },
     "rhino::addin_lint_sass": {
         "name": "Lint Sass",
@@ -78,7 +312,7 @@
         "description": "Runs Stylelint on the Sass sources in the app/styles directory.",
         "interactive": false,
         "binding": "addin_lint_sass",
-        "ordinal": 8
+        "ordinal": 15
     },
     "rhino::addin_module": {
         "name": "Rhino module",
@@ -87,7 +321,7 @@
         "description": "Inserts Rhino module at your cursor position.",
         "interactive": false,
         "binding": "addin_module",
-        "ordinal": 4
+        "ordinal": 11
     },
     "rhino::addin_test_e2e": {
         "name": "Run Cypress end-to-end tests",
@@ -96,7 +330,7 @@
         "description": "Uses Cypress to run end-to-end tests defined in the tests/cypress directory.",
         "interactive": false,
         "binding": "addin_test_e2e",
-        "ordinal": 10
+        "ordinal": 17
     },
     "rhino::addin_test_r": {
         "name": "Run R unit tests",
@@ -105,7 +339,7 @@
         "description": "Uses the {testhat} package to run all unit tests in tests/testthat directory.",
         "interactive": false,
         "binding": "addin_test_r",
-        "ordinal": 9
+        "ordinal": 16
     },
     "styler::set_style_transformers": {
         "name": "Set style",
@@ -114,7 +348,7 @@
         "description": "Prompt for and set the style transformers used by all styler addins",
         "interactive": true,
         "binding": "set_style_transformers",
-        "ordinal": 13
+        "ordinal": 20
     },
     "styler::style_active_file": {
         "name": "Style active file",
@@ -123,7 +357,7 @@
         "description": "Pretty-print active file",
         "interactive": true,
         "binding": "style_active_file",
-        "ordinal": 15
+        "ordinal": 22
     },
     "styler::style_active_pkg": {
         "name": "Style active package",
@@ -132,7 +366,7 @@
         "description": "Pretty-print active package",
         "interactive": true,
         "binding": "style_active_pkg",
-        "ordinal": 16
+        "ordinal": 23
     },
     "styler::style_selection": {
         "name": "Style selection",
@@ -141,6 +375,24 @@
         "description": "Pretty-print selection",
         "interactive": true,
         "binding": "style_selection",
-        "ordinal": 14
+        "ordinal": 21
+    },
+    "testit::insert_identical": {
+        "name": "Insert %==%",
+        "package": "testit",
+        "title": "",
+        "description": "Insert the infix operator %==% from testit.",
+        "interactive": false,
+        "binding": "insert_identical",
+        "ordinal": 25
+    },
+    "xaringan::inf_mr": {
+        "name": "Infinite Moon Reader",
+        "package": "xaringan",
+        "title": "",
+        "description": "Run xaringan::infinite_moon_reader() to live preview slides or any\n   single-HTML-file R Markdown output.",
+        "interactive": true,
+        "binding": "inf_mr",
+        "ordinal": 26
     }
 }

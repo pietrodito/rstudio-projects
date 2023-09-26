@@ -3,6 +3,7 @@
 export(build_package)
 export(cd)
 export(create_package)
+export(install_my_packages_inside_rhino)
 export(launch_app)
 export(ls_)
 export(proj_add)

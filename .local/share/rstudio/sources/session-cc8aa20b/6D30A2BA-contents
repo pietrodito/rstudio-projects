@@ -1,0 +1,10 @@
+This package is a set of tools to use RStudio it prevents the IDE to restart each time you change active project.
+
+## Issues with rhino
+
++ Hard to set up with renv()
++ Workaround I think I've found and that I'm gonna test again:
+  - Install `consoleR` and `keyboardShortcutAddin`
+  - Create rhino app with rhino::init()
+  - Install my packages with renv::install()
+  - Each time you switch project => hard restart a session CTRL+F10
