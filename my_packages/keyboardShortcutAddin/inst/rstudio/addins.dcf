@@ -1,0 +1,34 @@
+Name: List files
+Description: List files of working directory
+Binding: list_files_pwd
+Interactive: true
+
+Name: List all files
+Description: List all files of working directory
+Binding: list_files_pwd_hidden
+Interactive: true
+
+Name: Build a project
+Description: Build of one managed projects
+Binding: build_a_project
+Interactive: true
+
+Name: List sub dir
+Description: Insert `ls_("./")` and put cursor ready for autocompletion
+Binding: list_sub_dir
+Interactive: true
+
+Name: Switch between projects
+Description:
+Binding: switch_between_projects
+Interactive: true
+
+Name: Go to parent directory
+Description:
+Binding: cd_to_parent_dir
+Interactive: true
+
+Name: Go to sub directory
+Description:
+Binding: cd_to_sub
+Interactive: true

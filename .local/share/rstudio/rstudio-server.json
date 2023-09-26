@@ -1,0 +1,10 @@
+{
+    "context_id": "DCD657B2",
+    "theme": {
+        "name": "Vibrant Ink",
+        "url": "theme/default/vibrant_ink.rstheme",
+        "isDark": true
+    },
+    "visual_mode_confirmed": true,
+    "error_handler_type": "traceback"
+}

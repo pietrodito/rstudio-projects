@@ -1,0 +1,60 @@
+{
+    "save_workspace": "never",
+    "load_workspace": false,
+    "initial_working_directory": "~/Comp/R/",
+    "insert_native_pipe_operator": true,
+    "posix_terminal_shell": "bash",
+    "auto_save_on_blur": true,
+    "check_arguments_to_r_function_calls": true,
+    "check_unexpected_assignment_in_function_call": true,
+    "warn_variable_defined_but_not_used": true,
+    "editor_keybindings": "vim",
+    "syntax_color_console": true,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "TabSet1",
+            "Console",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Environment",
+            "History",
+            "Files",
+            "Plots",
+            "Connections",
+            "Packages",
+            "Help",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Viewer",
+            "Presentations"
+        ],
+        "hiddenTabSet": [],
+        "console_left_on_top": false,
+        "console_right_on_top": true,
+        "additional_source_columns": 0
+    },
+    "save_files_before_build": true,
+    "busy_detection": "never",
+    "editor_theme": "Vibrant Ink",
+    "show_hidden_files": true,
+    "tab_multiline_completion": true,
+    "code_completion": "triggered",
+    "source_with_echo": true,
+    "highlight_r_function_calls": true,
+    "rainbow_parentheses": true,
+    "jobs_tab_visibility": "shown",
+    "default_project_location": "~/tmp",
+    "pdf_previewer": "none",
+    "show_line_numbers": false,
+    "show_diagnostics_other": true,
+    "graphics_backend": "cairo",
+    "graphics_antialiasing": "gray",
+    "background_diagnostics_delay_ms": 5000,
+    "indent_guides": "rainbowlines"
+}

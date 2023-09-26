@@ -1,0 +1,34 @@
+#' @export
+cd <- function(path = "~", verbose = TRUE, restart = FALSE) {
+
+  stopifnot(fs::dir_exists(path))
+
+  switch_to_project <- FALSE
+  if (is_project_path(path)) {
+    switch_to_project <- TRUE
+  }
+
+  setwd(path)
+
+  if (verbose) print(ls_(hidden = FALSE))
+
+  if (switch_to_project) {
+    usethis::proj_set(".")
+    if ( ! fs::dir_exists("dev") ) { fs::dir_create("dev") }
+    
+    if ( ! fs::file_exists("dev/notes.md") ) {
+      system("touch dev/notes.md")
+    }
+    
+    rstudioapi::navigateToFile("dev/notes.md")
+  }
+  
+  if (restart) rstudioapi::restartSession() 
+  invisible()
+}
+
+is_project_path <- function(path) {
+
+  length(fs::dir_ls(path, regexp = "\\.Rproj$")) == 1
+
+}

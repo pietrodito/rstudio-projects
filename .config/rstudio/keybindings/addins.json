@@ -1,0 +1,9 @@
+{
+    "keyboardShortcutAddin::list_files_pwd": "Alt+Enter",
+    "keyboardShortcutAddin::list_files_pwd_hidden": "Ctrl+Alt+Shift+Enter",
+    "keyboardShortcutAddin::build_a_project": "Ctrl+B",
+    "keyboardShortcutAddin::list_sub_dir": "Alt+Shift+Enter",
+    "keyboardShortcutAddin::switch_between_projects": "Ctrl+Shift+P",
+    "keyboardShortcutAddin::cd_to_parent_dir": "Ctrl+H",
+    "keyboardShortcutAddin::cd_to_sub": "Ctrl+L"
+}
