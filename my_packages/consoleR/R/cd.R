@@ -17,7 +17,7 @@ cd <- function(path = "~", verbose = TRUE, explore = TRUE) {
     system("touch README.md")
     
     rstudioapi::navigateToFile("README.md")
-    rstudioapi::restartSession() 
+    cli::cat_boxx("Don't forget to restart session...")
   }
   
   invisible()

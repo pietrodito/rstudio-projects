@@ -1,0 +1,27 @@
+{
+    "id": "A4ED1EAA",
+    "path": "~/.config/rstudio/snippets/r.snippets",
+    "project_path": null,
+    "type": "snippets",
+    "hash": "3968806081",
+    "contents": "",
+    "dirty": false,
+    "created": 1695732758462.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,0",
+        "scrollLine": "0",
+        "marks": "<:0,0\n>:0,0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1695736281,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1695736281198,
+    "read_only": false,
+    "read_only_alternatives": []
+}

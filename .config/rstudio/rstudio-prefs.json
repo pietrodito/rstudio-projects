@@ -41,7 +41,7 @@
     },
     "save_files_before_build": true,
     "busy_detection": "never",
-    "editor_theme": "Vibrant Ink",
+    "editor_theme": "SQL Server",
     "show_hidden_files": true,
     "tab_multiline_completion": true,
     "code_completion": "triggered",
