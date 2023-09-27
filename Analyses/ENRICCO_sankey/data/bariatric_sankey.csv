@@ -1,0 +1,43 @@
+link_from,link_to,N
+1 A_Bypass,1 A_Bypass No more surg.,50235
+1 A_Bypass,2 A_Bypass,790
+1 A_Bypass,2 B_Sleeve,179
+1 A_Bypass,2 C_Banding,125
+1 B_Sleeve,1 B_Sleeve No more surg.,81335
+1 B_Sleeve,2 A_Bypass,4956
+1 B_Sleeve,2 B_Sleeve,947
+1 B_Sleeve,2 C_Banding,27
+1 C_Banding,1 C_Banding No more surg.,12895
+1 C_Banding,2 A_Bypass,4944
+1 C_Banding,2 B_Sleeve,7182
+1 C_Banding,2 C_Banding,398
+2 A_Bypass,2 A_Bypass No more surg.,10457
+2 A_Bypass,3 A_Bypass,170
+2 A_Bypass,3 B_Sleeve,17
+2 A_Bypass,3 C_Banding,46
+2 B_Sleeve,2 B_Sleeve No more surg.,7496
+2 B_Sleeve,3 A_Bypass,656
+2 B_Sleeve,3 B_Sleeve,148
+2 B_Sleeve,3 C_Banding,8
+2 C_Banding,2 C_Banding No more surg.,354
+2 C_Banding,3 A_Bypass,75
+2 C_Banding,3 B_Sleeve,114
+2 C_Banding,3 C_Banding,7
+3 A_Bypass,3 A_Bypass No more surg.,875
+3 A_Bypass,4 A_Bypass,18
+3 A_Bypass,4 B_Sleeve,3
+3 A_Bypass,4 C_Banding,5
+3 B_Sleeve,3 B_Sleeve No more surg.,245
+3 B_Sleeve,4 A_Bypass,28
+3 B_Sleeve,4 B_Sleeve,5
+3 B_Sleeve,4 C_Banding,1
+3 C_Banding,3 C_Banding No more surg.,52
+3 C_Banding,4 A_Bypass,4
+3 C_Banding,4 B_Sleeve,4
+3 C_Banding,4 C_Banding,1
+4 A_Bypass,4 A_Bypass No more surg.,49
+4 A_Bypass,5 A_Bypass,1
+4 B_Sleeve,4 B_Sleeve No more surg.,11
+4 B_Sleeve,5 A_Bypass,1
+4 C_Banding,4 C_Banding No more surg.,7
+5 A_Bypass,5 A_Bypass No more surg.,2

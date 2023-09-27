@@ -1,27 +1,27 @@
 {
-    "id": "BC8E3FFB",
-    "path": "~/my_packages/consoleR/README.md",
+    "id": "AC0723DB",
+    "path": "~/Analyses/ENRICCO_sankey/R/sankey.R",
     "project_path": null,
-    "type": "markdown",
-    "hash": "0",
+    "type": "r_source",
+    "hash": "147124193",
     "contents": "",
     "dirty": false,
-    "created": 1695744286613.0,
+    "created": 1695798079071.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 1,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "12,20",
+        "cursorPosition": "9,0",
         "scrollLine": "0",
-        "marks": "<:10,27\n>:10,58"
+        "marks": "<:106,11\n>:106,11"
     },
     "folds": "",
-    "lastKnownWriteTime": 1695744393,
+    "lastKnownWriteTime": 1695800754,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1695744393973,
+    "last_content_update": 1695800754830,
     "read_only": false,
     "read_only_alternatives": []
 }
