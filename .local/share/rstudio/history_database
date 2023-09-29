@@ -711,3 +711,305 @@
 1695822685080:source("~/Analyses/ENRICCO_sankey/R/sankey.R", echo=TRUE)
 1695822692210:source("~/Analyses/ENRICCO_sankey/R/sankey.R", echo=TRUE)
 1695822885055:q()
+1695883902436:keyboardShortcutAddin:::switch_between_projects()
+1695883916826:proj_remove()
+1695883919594:proj_remove()
+1695883924236:keyboardShortcutAddin:::switch_between_projects()
+1695883928281:proj_add()
+1695883931871:proj_remove()
+1695883953119:proj_add("Apps/dilavo/")
+1695883958952:keyboardShortcutAddin:::switch_between_projects()
+1695883961035:keyboardShortcutAddin:::switch_between_projects()
+1695883962668:keyboardShortcutAddin:::list_files_pwd()
+1695884057632:edit_file("app/logic/db_utils.R")
+1695884287704:renv::install("RPostgreSQL")
+1695884598187:q()
+1695884618966:q()
+1695885091102:keyboardShortcutAddin:::cd_to_sub()
+1695885093922:cd("./Apps/")
+1695885108965:dir_create('draft')
+1695885130559:keyboardShortcutAddin:::cd_to_sub()
+1695885132555:cd("./draft/")
+1695885151360:rhino::init("dbConnect")
+1695885162537:proj_add("dbConnect/")
+1695885170243:getwd()
+1695885174578:proj_add("dbConnect/")
+1695885176185:keyboardShortcutAddin:::switch_between_projects()
+1695885206713:setwd("..")
+1695885227272:consoleR::install_my_packages_inside_rhino("dbConnect/")
+1695885239615:purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))
+1695885252971:keyboardShortcutAddin:::list_files_pwd()
+1695885286311:edit_file("app/logic/db_utils.R")
+1695885379296:keyboardShortcutAddin:::list_files_pwd()
+1695885389890:edit_file("README.md")
+1695885555880:renv::install("RPostgreSQL")
+1695886105647:shiny::runApp()
+1695886126248:shiny::runApp()
+1695886420673:shiny::runApp()
+1695886545842:shiny::runApp()
+1695886562405:edit_file("README.Rmd")
+1695886576890:renv::install("RPostgres")
+1695886604162:shiny::runApp()
+1695886654483:shiny::runApp()
+1695886670574:shiny::runApp()
+1695886692566:shiny::runApp()
+1695886737188:shiny::runApp()
+1695886770138:shiny::runApp()
+1695886813727:shiny::runApp()
+1695886927511:trycatch(
+1695886927519:stop(),
+1695886927519:error = function(cond) {
+1695886927519:message(cond)
+1695886927519:}
+1695886927520:)
+1695886937863:tryCatch(
+1695886937871:stop(),
+1695886937872:error = function(cond) {
+1695886937872:message(cond)
+1695886937872:}
+1695886937873:)
+1695886949305:tryCatch(
+1695886949313:stop(),
+1695886949313:error = function(cond) {
+1695886949314:message(cond)
+1695886949314:return(1)
+1695886949314:}
+1695886949314:)
+1695887001485:tryCatch(
+1695887001493:DBIdbConnect(RPostgres::Postgres(),
+1695887001494:host = "asdf",
+1695887001494:port = "1234",
+1695887001494:user = "qwer",
+1695887001495:password = "asdf"),
+1695887001495:error = function(cond) {
+1695887001495:message(cond)
+1695887001495:return(1)
+1695887001496:}
+1695887001496:)
+1695887008736:tryCatch(
+1695887008744:DBI::dbConnect(RPostgres::Postgres(),
+1695887008744:host = "asdf",
+1695887008744:port = "1234",
+1695887008745:user = "qwer",
+1695887008745:password = "asdf"),
+1695887008745:error = function(cond) {
+1695887008745:message(cond)
+1695887008746:return(1)
+1695887008746:}
+1695887008746:)
+1695887018890:tryCatch(
+1695887018897:DBI::dbConnect(RPostgres::Postgres(),
+1695887018898:host = "asdf",
+1695887018898:port = "1234",
+1695887018898:user = "qwer",
+1695887018899:password = "asdf"),
+1695887018899:error = function(cond) {
+1695887018899:message(cond)
+1695887018899:return(1)
+1695887018900:}
+1695887018900:)
+1695887066674:library(shiny)
+1695887066943:ui <- fluidPage(
+1695887066951:)
+1695887067218:server <- function(input, output, session) {
+1695887067226:tryCatch(
+1695887067226:DBI::dbConnect(RPostgres::Postgres(),
+1695887067227:host = "asdf",
+1695887067227:port = "1234",
+1695887067227:user = "qwer",
+1695887067227:password = "asdf"),
+1695887067228:error = function(cond) {
+1695887067228:message(cond)
+1695887067228:return(1)
+1695887067228:}
+1695887067229:)
+1695887067229:}
+1695887067727:shinyApp(ui, server, options = list(
+1695887067735:launch.browser = TRUE
+1695887067735:))
+1695887134323:source("~/.active-rstudio-document", echo=TRUE)
+1695887168129:source("~/.active-rstudio-document", echo=TRUE)
+1695887265266:source("~/.active-rstudio-document", echo=TRUE)
+1695887352046:source("~/.active-rstudio-document", echo=TRUE)
+1695887405542:shiny::runApp()
+1695887953339:source("~/.active-rstudio-document", echo=TRUE)
+1695887966639:source("~/.active-rstudio-document", echo=TRUE)
+1695888113362:source("~/.active-rstudio-document", echo=TRUE)
+1695888124672:source("~/.active-rstudio-document", echo=TRUE)
+1695888186485:source("~/.active-rstudio-document", echo=TRUE)
+1695888298842:source("~/.active-rstudio-document", echo=TRUE)
+1695888375897:source("~/.active-rstudio-document", echo=TRUE)
+1695888383696:source("~/.active-rstudio-document", echo=TRUE)
+1695888400349:observeEvent(input$m, {
+1695888400357:tryCatch( stop(), error = function(e) { message(e) } )
+1695888400358:})
+1695888427548:source("~/.active-rstudio-document", echo=TRUE)
+1695888514125:tryCatch( stop(), error = function(e) { message(e) } )
+1695888663351:source("~/.active-rstudio-document", echo=TRUE)
+1695889072009:shiny::runApp()
+1695889089464:shiny::runApp()
+1695889324056:shiny::runApp()
+1695889610704:source("~/Apps/draft/dbConnect/app/logic/db_utils.R", echo=TRUE)
+1695889624725:shiny::runApp()
+1695889908664:source("~/Apps/draft/dbConnect/app/logic/db_utils.R", echo=TRUE)
+1695889926207:shiny::runApp()
+1695890801391:?conditionMessage
+1695891003591:shiny::runApp()
+1695891034226:shiny::runApp()
+1695892609471:renv::status()
+1695893968419:renv::purge(package = "RPostgreSQL")
+1695893995373:?uninstall
+1695894028163:remove.packages("RPostgreSQL")
+1695895003190:renv::clean()
+1695895540373:edit_file('.Rprofile')
+1695895562363:source("~/asdf")
+1695895961674:renv::dependencies()
+1695895976388:renv::diagnostics()
+1695896035104:renv::update()
+1695896048978:renv::clean()
+1695896063764:renv::install()
+1695896068830:renv::dependencies()
+1695896087806:renv::repair()
+1695901942341:renv::install("Rpostgres")
+1695901954718:renv::install("RPostgres")
+1695902172099:renv::snapshot()
+1695902946592:renv::status()
+1695902961912:renv::install("RPostgres")
+1695902966740:renv::install("RPostgres")
+1695902982323:renv::install("RPostgres")
+1695902986145:renv::status()
+1695902988759:renv::snapshot()
+1695902994089:renv::repair()
+1695903051202:renv::dependencies()
+1695903240378:renv::repair()
+1695903293721:renv::clean()
+1695903331093:edit_file("app/logic/db_utils.R")
+1695903819774:keyboardShortcutAddin:::cd_to_parent_dir()
+1695903827817:keyboardShortcutAddin:::cd_to_parent_dir()
+1695903833877:setwd("..")
+1695903835227:ls
+1695903859454:rhino::init("dependTest")
+1695903870970:proj_add("dependTest/")
+1695903879014:proj_add("dependTest/")
+1695903880581:keyboardShortcutAddin:::switch_between_projects()
+1695904459015:edit_file("dependencies.R")
+1695904469955:getwd()
+1695904477602:setwd("..")
+1695904493592:q()
+1695904501207:keyboardShortcutAddin:::switch_between_projects()
+1695904504605:keyboardShortcutAddin:::switch_between_projects()
+1695904512179:proj_remove()
+1695904517834:keyboardShortcutAddin:::switch_between_projects()
+1695904534504:edit_file("dependencies.R")
+1695904600279:rhino::pkg_install("RPostgres")
+1695904627720:renv::status()
+1695904640646:renv::repair()
+1695904643494:renv::status()
+1695904657797:renv::diagnostics()
+1695904664573:renv::dependencies()
+1695904784073:renv::dependencies()
+1695904793940:edit_file("app/logic/db_utils.R")
+1695905583945:rhino::pkg_install("jsonlite")
+1695918971841:setwd("~/Apps/draft/")
+1695919093613:setwd("~/Apps/draft/")
+1695919133855:rhino::init("deployTest")
+1695919143104:setwd("deployTest/")
+1695919158258:shiny::runApp()
+1695921596405:shiny::runApp()
+1695928675722:getwd()
+1695928682278:q()
+1695928687351:keyboardShortcutAddin:::switch_between_projects()
+1695928696647:keyboardShortcutAddin:::list_files_pwd()
+1695928697979:keyboardShortcutAddin:::list_files_pwd()
+1695928704080:keyboardShortcutAddin:::list_files_pwd()
+1695928704819:keyboardShortcutAddin:::list_files_pwd()
+1695928710153:keyboardShortcutAddin:::cd_to_parent_dir()
+1695928731289:setwd(".")
+1695928736127:setwd("..")
+1695928749516:install_my_packages_inside_rhino("dbConnect/")
+1695928755851:purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))
+1695928861694:q()
+1695928867763:keyboardShortcutAddin:::cd_to_sub()
+1695928873905:cd("./Apps/draft/")
+1695928881035:install_my_packages_inside_rhino("dbConnect/")
+1695928906317:renv::deactivate()
+1695928913498:purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))
+1695928932589:renv::activate()
+1695928937506:keyboardShortcutAddin:::list_files_pwd()
+1695928964617:..
+1695928968481:q()
+1695928976259:keyboardShortcutAddin:::cd_to_sub()
+1695928983529:cd("./Apps/draft/")
+1695929057592:rhino::init("deployTest")
+1695929146312:install_my_packages_inside_rhino("deployTest/")
+1695929174627:getwd()
+1695929180338:setwd("..")
+1695929207398:rhino::init("deployTest")
+1695929212263:getwd()
+1695929231280:install_my_packages_inside_rhino("deployTest/")
+1695929242597:getwd()
+1695929254702:install_my_packages_inside_rhino
+1695929276561:q()
+1695929292128:keyboardShortcutAddin:::cd_to_sub()
+1695929296769:cd("./Apps/draft/")
+1695929302704:dir_delete("deployTest/")
+1695929316312:clipr::dr_clipr()
+1695929342188:rhino::init("testDeploy")
+1695929351108:getwd()
+1695929356387:clipr::dr_clipr()
+1695929363302:install_my_packages_inside_rhino
+1695929381401:setwd("testDeploy/")
+1695929392680:clipr::dr_clipr()
+1695929413172:keyboardShortcutAddin:::cd_to_parent_dir()
+1695929427230:setwd("..")
+1695929429050:keyboardShortcutAddin:::cd_to_parent_dir()
+1695929440257:keyboardShortcutAddin:::cd_to_parent_dir()
+1695929441464:keyboardShortcutAddin:::cd_to_sub()
+1695929446593:cd("./draft/")
+1695929453754:install_my_packages_inside_rhino("testDeploy/")
+1695929463130:purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))
+1695929504215:q()
+1695929523127:keyboardShortcutAddin:::cd_to_sub()
+1695929529359:cd("./Apps/draft/")
+1695929536791:dir_delete("testDeploy/")
+1695929547554:rhino::init("someDeploy")
+1695929565478:keyboardShortcutAddin:::cd_to_parent_dir()
+1695929566623:keyboardShortcutAddin:::cd_to_sub()
+1695929576554:cd("./draft")
+1695929617301:keyboardShortcutAddin:::cd_to_sub()
+1695929621185:cd("./someDeploy/")
+1695929632471:install_my_packages_inside_rhino
+1695929655254:purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))
+1695929794919:q()
+1695929804749:keyboardShortcutAddin:::cd_to_sub()
+1695929807706:keyboardShortcutAddin:::build_a_project()
+1695929811781:keyboardShortcutAddin:::switch_between_projects()
+1695929813941:keyboardShortcutAddin:::cd_to_sub()
+1695929820129:cd("./Apps/draft/")
+1695929830129:dir_delete("someDeploy")
+1695929843683:rhino::init("someD")
+1695929869264:getwd()
+1695929878920:keyboardShortcutAddin:::list_files_pwd()
+1695929890306:install_my_packages_inside_rhino("someD/")
+1695929977777:clipr::dr_clipr()
+1695930237964:q()
+1695930265413:clipr::dr_clipr()
+1695930444538:clipr::dr_clipr()
+1695931176569:clipr::dr_clipr()
+1695931184724:clipr::dr_clipr()
+1695931242829:system("echo $DISPLAY")
+1695931247331:clipr::dr_clipr()
+1695931263887:dr_clip
+1695931271180:clipr::dr_clip
+1695931276785:clipr::dr_clipr
+1695931316076:clipr::dr_clipr
+1695931350450:clipr::dr_clipr
+1695931355466:clipr::dr_clipr()
+1695931411374:install.packages(c("arrow", "askpass", "classInt", "credentials", "dplyr", "duckdb", "knitr", "labeling", "leafem", "leaflet", "lidR", "mvtnorm", "openssl", "packrat", "pkgload", "prettyunits", "RcppArmadillo", "rematch", "renv", "rmarkdown", "rsconnect", "spatstat.explore", "spatstat.geom", "spatstat.model", "spatstat.random", "stars", "terra", "tmap", "units", "wk"))
+1695931579995:source("INSTALL_MY_PACKAGES.R")
+1695931611836:keyboardShortcutAddin:::list_files_pwd()
+1695931620247:clipr::dr_clipr()
+1695931634785:q()
+1695931744984:clipr::dr_clipr()
+1695931796026:system("echo $DISPLAY")
+1695931821536:clipr::dr_clipr()
