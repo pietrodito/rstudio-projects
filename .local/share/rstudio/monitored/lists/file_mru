@@ -1,3 +1,6 @@
+~/my_packages/consoleR/R/use_rhino_dockerfile.R
+~/Apps/dilavo/.Rprofile
+~/Apps/dilavo/README.md
 ~/Apps/draft/dbConnect/README.md
 ~/Apps/draft/dbConnect/app/main.R
 ~/Apps/draft/dbConnect/.Rprofile
@@ -7,9 +10,6 @@
 ~/Apps/draft/dbConnect/README.Rmd
 ~/Apps/draft/dbConnect/app.R
 ~/Apps/dilavo/app/logic/db_utils.R
-~/Apps/dilavo/README.md
 ~/Analyses/ENRICCO_sankey/R/less_detailled_sankey.R
 ~/Analyses/ENRICCO_sankey/R/sankey.R
 ~/Analyses/ENRICCO_sankey/script.R
-~/Analyses/ENRICCO_sankey/README.md
-~/Apps/newRhinoTest/README.md
