@@ -1,0 +1,6 @@
+renv/
+tests/
+README.md
+README.Rmd
+*.Rproj
+.Rprofile
