@@ -1,0 +1,7 @@
+renv/
+tests/*
+!tests/interactive
+README.md
+README.Rmd
+*.Rproj
+.Rprofile

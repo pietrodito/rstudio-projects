@@ -14,4 +14,6 @@ if (interactive()) {
   )
   
   rm(packages_at_startup)
+  
+  Sys.setenv(R_CONTEXT="dev")
 }

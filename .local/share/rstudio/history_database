@@ -1171,3 +1171,387 @@
 1696050142971:keyboardShortcutAddin:::build_a_project()
 1696050156286:renv::install('~/my_packages/consoleR/')
 1696050162502:use_rhino_dockerfile()
+1696054134384:keyboardShortcutAddin:::cd_to_parent_dir()
+1696054142559:keyboardShortcutAddin:::cd_to_parent_dir()
+1696054145263:keyboardShortcutAddin:::cd_to_parent_dir()
+1696054164662:keyboardShortcutAddin:::cd_to_sub()
+1696054167278:keyboardShortcutAddin:::switch_between_projects()
+1696054173212:proj_remove()
+1696054177241:keyboardShortcutAddin:::switch_between_projects()
+1696054186379:keyboardShortcutAddin:::list_files_pwd()
+1696054214216:keyboardShortcutAddin:::list_files_pwd()
+1696054227825:keyboardShortcutAddin:::list_files_pwd()
+1696054232092:keyboardShortcutAddin:::list_files_pwd()
+1696054232435:keyboardShortcutAddin:::list_files_pwd()
+1696054234056:keyboardShortcutAddin:::list_files_pwd()
+1696054495176:edit_file("app.R")
+1696054953622:keyboardShortcutAddin:::cd_to_sub()
+1696055079374:edit_file("app/logic/db_utils.R")
+1696055082445:ls
+1696055157839:keyboardShortcutAddin:::switch_between_projects()
+1696055162678:keyboardShortcutAddin:::cd_to_parent_dir()
+1696055166528:keyboardShortcutAddin:::cd_to_sub()
+1696055174291:cd("./draft/dbConnect/")
+1696055189784:shiny::runApp()
+1696055255622:keyboardShortcutAddin:::cd_to_parent_dir()
+1696055257175:keyboardShortcutAddin:::cd_to_parent_dir()
+1696055257863:keyboardShortcutAddin:::cd_to_sub()
+1696055261340:cd("./dilavo/")
+1696055689668:keyboardShortcutAddin:::switch_between_projects()
+1696055857800:keyboardShortcutAddin:::switch_between_projects()
+1696056445219:keyboardShortcutAddin:::cd_to_parent_dir()
+1696056452377:keyboardShortcutAddin:::cd_to_sub()
+1696056454926:keyboardShortcutAddin:::switch_between_projects()
+1696057037362:edit_file("app/main.R")
+1696057116666:rhino::pkg_install('shiny.router')
+1696057126358:keyboardShortcutAddin:::cd_to_parent_dir()
+1696057130410:keyboardShortcutAddin:::cd_to_sub()
+1696057133030:cd("./dilavo/")
+1696057152016:edit_file("app/main.R")
+1696057458202:keyboardShortcutAddin:::switch_between_projects()
+1696057469027:shiny::runApp()
+1696057508507:shiny::runApp()
+1696057519582:shiny::runApp()
+1696057537625:shiny::runApp()
+1696057585050:shiny::runApp()
+1696057606603:shiny::runApp()
+1696057661981:shiny::runApp()
+1696057764320:shiny::runApp()
+1696057791131:shiny::runApp()
+1696057807453:shiny::runApp()
+1696057917070:shiny::runApp(launch.browser = T)
+1696059858856:keyboardShortcutAddin:::cd_to_parent_dir()
+1696132713067:keyboardShortcutAddin:::switch_between_projects()
+1696132727041:edit_file("app.R")
+1696132736397:rhino::app
+1696132943586:shiny::runApp()
+1696132958732:shiny::runApp()
+1696133477223:shiny::runApp(launch.browser = T)
+1696133488568:shiny::runApp(launch.browser = T)
+1696133547162:shiny::runApp(launch.browser = T)
+1696133570854:shiny::runApp(launch.browser = T)
+1696133663979:edit_file("~/.Rprofile")
+1696134651476:dir_ls("tests/interactive/", regexp = "*.R")
+1696134750814:(
+1696134750816:"tests/interactive/"
+1696134750817:|> dir_ls(regexp = "*.R")
+1696134750818:|> stringr::str_remove("tests/interactive")
+1696134750819:|> stringr::str_remove("\\.R")
+1696134750820:)
+1696135271708:q()
+1696135294038:keyboardShortcutAddin:::cd_to_sub()
+1696135304388:cd("./Apps/draft/")
+1696135331641:create_package('test_modules_as_test')
+1696135344927:create_package('moduleAsTest')
+1696135548395:shiny::runApp()
+1696135558745:edit_file("app.R")
+1696135625584:runApp()
+1696135653108:keyboardShortcutAddin:::switch_between_projects()
+1696135656090:runApp()
+1696135703473:runApp()
+1696137937693:keyboardShortcutAddin:::switch_between_projects()
+1696137961807:edit_file("app/main.R")
+1696138315829:runApp()
+1696138325094:shiny::runApp()
+1696138343881:shiny::runApp()
+1696138389434:shiny::runApp()
+1696138397764:shiny::runApp(launch.browser = T)
+1696138548079:shiny::runApp(launch.browser = T)
+1696138596240:shiny::runApp(launch.browser = T)
+1696138607359:shiny::runApp(launch.browser = T)
+1696138614974:shiny::runApp(launch.browser = T)
+1696139622558:shiny::runApp(launch.browser = T)
+1696139649111:shiny::runApp(launch.browser = T)
+1696139675086:shiny::runApp(launch.browser = T)
+1696139688199:shiny::runApp(launch.browser = T)
+1696139700735:shiny::runApp(launch.browser = T)
+1696139727689:shiny::runApp(launch.browser = T)
+1696139868528:shiny::runApp(launch.browser = T)
+1696139896349:shiny::runApp(launch.browser = T)
+1696139980677:shiny::runApp(launch.browser = T)
+1696140107755:shiny::runApp(launch.browser = T)
+1696140243929:keyboardShortcutAddin:::list_files_pwd()
+1696140256065:consoleR::use_rhino_dockerfile()
+1696140256937:keyboardShortcutAddin:::list_files_pwd()
+1696140801371:edit_file("app/view/test_module.R")
+1696140841588:file.rename("app/view/test_module.R", "app/view/test.R")
+1696140847884:edit_file("app/view/test.R")
+1696141206919:shiny::runApp(launch.browser = T)
+1696141340713:shiny::runApp(launch.browser = T)
+1696141357074:h3("tes")
+1696141520317:shiny::runApp(launch.browser = T)
+1696141554130:shiny::runApp(launch.browser = T)
+1696141565235:shiny::runApp(launch.browser = T)
+1696141607947:shiny::runApp(launch.browser = T)
+1696141643603:Sys.getenv("R_CONTEXT")
+1696141706041:shiny::runApp(launch.browser = T)
+1696141760069:shiny::runApp(launch.browser = T)
+1696141782244:shiny::runApp(launch.browser = T)
+1696142058583:shiny::runApp(launch.browser = T)
+1696142079555:?parent.frame
+1696142141384:?parent.frame
+1696142143258:shiny::runApp(launch.browser = T)
+1696142161558:edit_file("app/view/test.R")
+1696142169969:edit_file("app/main.R")
+1696142312537:shiny::runApp(launch.browser = T)
+1696142406593:shiny::runApp(launch.browser = T)
+1696142514948:shiny::runApp(launch.browser = T)
+1696142887459:keyboardShortcutAddin:::cd_to_parent_dir()
+1696142891707:keyboardShortcutAddin:::cd_to_sub()
+1696142899189:cd("./draft/")
+1696142918965:create_package("SOshinyRouter")
+1696142927159:edit_file("app.R")
+1696143027505:shiny::runApp()
+1696143041015:install.packages("shiny.router")
+1696143052082:runApp()
+1696143080891:runApp()
+1696143115458:runApp()
+1696143283177:runApp()
+1696143293686:runApp()
+1696143325156:runApp()
+1696143346621:runApp()
+1696143700162:runApp()
+1696144014377:runApp()
+1696144030459:runApp()
+1696186897272:runApp()
+1696186908661:edit_file("app.R")
+1696186949625:runApp()
+1696186972749:runApp()
+1696186989208:router_server
+1696187055429:runApp()
+1696187076231:runApp()
+1696187095160:runApp()
+1696187108813:runApp()
+1696187230074:foo <- function(env = parent.frame()) {
+1696187230082:print(env)
+1696187230082:}
+1696187230811:foo()
+1696187261040:bar <- function(x = 3) {
+1696187261048:foo()
+1696187261048:}
+1696187263585:bar()
+1696187273320:router_server
+1696187320383:foo <- function(env = parent.frame()) {
+1696187320391:print(env)
+1696187320392:}
+1696187320905:bar <- function(x = 3) {
+1696187320914:foo()
+1696187320915:}
+1696187321669:bar()
+1696187330598:foo <- function(env = parent.frame()) {
+1696187330607:print(env)
+1696187330608:}
+1696187331097:bar <- function(x = 3) {
+1696187331105:print(parent.frame())
+1696187331106:foo()
+1696187331106:}
+1696187331924:bar()
+1696187348142:?parent.frame()
+1696187467309:runApp()
+1696187506518:runApp()
+1696187523634:runApp()
+1696187543002:runApp()
+1696187572480:runApp()
+1696187594799:runApp()
+1696187605723:runApp()
+1696187848974:runApp()
+1696187862554:runApp()
+1696187910359:runApp()
+1696187925115:runApp()
+1696187932953:runApp()
+1696188017855:runApp()
+1696221202537:runApp()
+1696221369598:keyboardShortcutAddin:::switch_between_projects()
+1696221399627:edit_file("app/main.R")
+1696221489057:shiny::runApp()
+1696221507452:shiny::runApp()
+1696221572324:shiny::runApp()
+1696221586717:edit_file("app/view/test.R")
+1696221654960:shiny::runApp()
+1696221845779:box::use(
+1696221845787:shiny[
+1696221845788:a,
+1696221845788:fluidPage,
+1696221845789:div,
+1696221845789:h2,
+1696221845789:h3,
+1696221845789:moduleServer,
+1696221845790:NS,
+1696221845790:renderUI,
+1696221845791:tags,
+1696221845791:uiOutput,
+1696221845791:wellPanel
+1696221845792:],
+1696221845792:shiny.router[
+1696221845793:route,
+1696221845793:route_link,
+1696221845793:router_ui,
+1696221845794:router_server
+1696221845794:],
+1696221845795:)
+1696221938973:shiny::runApp()
+1696221971349:shiny::runApp()
+1696222026951:shiny::runApp()
+1696222376844:source("~/Apps/dilavo/app/main.R", echo=TRUE)
+1696222390782:shiny::runApp()
+1696222548722:shiny::runApp()
+1696222602586:Sys.setenv(R_CONTEXT=NULL)
+1696222612916:edit_r_profile()
+1696222626013:Sys.setenv(R_CONTEXT="")
+1696222661082:Sys.setenv(R_CONTEXT=NULL)
+1696222665405:Sys.setenv(R_CONTEXT="dev")
+1696222674129:shiny::runApp()
+1696222686564:Sys.setenv(R_CONTEXT="dev")
+1696222693341:Sys.getenv("R_CONTEXT")
+1696222704995:Sys.setenv(R_CONTEXT="xx")
+1696222708689:shiny::runApp()
+1696223166653:shiny::runApp()
+1696223197403:shiny::runApp()
+1696223395984:shiny::runApp()
+1696223497850:shiny::runApp()
+1696223594056:shiny::runApp()
+1696223661617:?symbol
+1696223722135:sym("asdf")
+1696223728032:rlang
+1696223730265:rlang::sym
+1696223734607:rlang::sym("asdf")
+1696223935096:shiny::runApp()
+1696224314284:dir <- "tests/interactive"
+1696224314815:(
+1696224314823:dir
+1696224314824:fs::dir_ls()
+1696224328168:(
+1696224328170:dir
+1696224328171:|> fs::dir_ls()
+1696224328172:)
+1696224355319:(
+1696224355327:dir
+1696224355327:|> fs::dir_ls()
+1696224355328:|> strigr::str_remove("\\.R$")
+1696224355328:)
+1696224359823:(
+1696224359831:dir
+1696224359832:|> fs::dir_ls()
+1696224359832:|> stringr::str_remove("\\.R$")
+1696224359833:)
+1696224687786:shiny::runApp()
+1696224716572:shiny::runApp()
+1696224740905:shiny::runApp()
+1696224771380:dir |> dir_ls()
+1696224785710:dir |> dir_ls() |> str_remove("\\.R$")
+1696224830386:dir |> dir_ls() |> str_remove("\\.R$")
+1696224837555:dir |> dir_ls() |> str_remove("\\.R$") |> box_use_dir()
+1696224876860:q()
+1696224878294:q
+1696224902399:shiny::runApp()
+1696224953535:edit_file("tests/interactive/test.R")
+1696224978411:shiny::runApp()
+1696226811746:shiny::runApp()
+1696226934430:shiny::runApp()
+1696226945248:shiny::runApp()
+1696226955690:shiny::runApp()
+1696226961091:shiny::runApp()
+1696227009930:shiny::runApp()
+1696227019404:shiny::runApp()
+1696227034644:shiny::runApp()
+1696227061665:?eval
+1696227134839:shiny::runApp()
+1696228121820:shiny::runApp()
+1696228324151:shiny::runApp()
+1696228355105:shiny::runApp()
+1696228823329:shiny::runApp()
+1696228911675:shiny::runApp()
+1696228917581:shiny::runApp()
+1696228938660:dir_ls("tests/interactive/")
+1696228964210:shiny::runApp()
+1696228981625:ns
+1696228996075:interactive_test_module_names
+1696229005403:module_name_item
+1696229018647:menu <- tags$ul(
+1696229018655:tags$li(a(class = "item",
+1696229018657:href = route_link("/"),
+1696229018658:"Application")),
+1696229018659:module_name_item
+1696229018660:)
+1696229024480:menu
+1696229041380:module_name_item
+1696229050552:manu
+1696229053575:menu
+1696229183802:shiny::runApp()
+1696229206647:?c
+1696229364700:c_ <- function(x, y) { c(x, y)}
+1696229384322:shiny::runApp()
+1696229397096:shiny::runApp()
+1696229416940:browser
+1696229430148:shiny::runApp()
+1696229434041:shiny::runApp()
+1696229439690:shiny::runApp()
+1696229450343:shiny::runApp()
+1696229461103:shiny::runApp()
+1696229482136:(
+1696229482144:interactive_test_module_names
+1696229482145:|> map(function(name) {
+1696229482146:route(name, get(name)[["ui"]](ns(name)))
+1696229482147:}))
+1696229605807:(
+1696229605808:interactive_test_module_names
+1696229605808:|> map(function(name) {
+1696229605809:route(name, get(name)[["ui"]](ns(name)))
+1696229605809:})
+1696229605809:|> c_(x = route("/", root_ui(ns)), y = _)
+1696229605810:)
+1696229640367:do.call(router_ui, router_ui_args)
+1696229765818:shiny::runApp()
+1696229770735:shiny::runApp()
+1696229784627:edit_file("app/main.R")
+1696229795125:shiny::runApp()
+1696229818604:shiny::runApp()
+1696229838533:router_ui_args
+1696229867471:shiny::runApp()
+1696229873600:shiny::runApp()
+1696229883584:shiny::runApp()
+1696229930559:shiny::runApp()
+1696230039228:shiny::runApp()
+1696230070321:router_ui_args_diff
+1696230076357:router_ui_args
+1696230157840:?list
+1696230208521:shiny::runApp()
+1696230234003:shiny::runApp()
+1696230243048:shiny::runApp()
+1696230436515:shiny::runApp()
+1696230459042:edit_file("tests/interactive/onther_test.R")
+1696230487455:shiny::runApp()
+1696230511344:edit_file("app/main.R")
+1696230526236:shiny::runApp()
+1696230543993:shiny::runApp()
+1696230560016:edit_file("tests/interactive/onther_test.R")
+1696230575721:edit_file("tests/interactive/test.R")
+1696230588401:edit_file("app/main.R")
+1696230623797:shiny::runApp()
+1696230774536:shiny::runApp()
+1696230811215:shiny::runApp()
+1696231273815:shiny::runApp()
+1696231293421:shiny::runApp()
+1696231303529:shiny::runApp()
+1696231389799:shiny::runApp()
+1696231461841:shiny::runApp()
+1696232257607:shiny::runApp()
+1696232295787:shiny::runApp()
+1696232402380:shiny::runApp()
+1696232431364:shiny::runApp()
+1696232476292:shiny::runApp()
+1696232521840:shiny::runApp()
+1696232618177:shiny::runApp()
+1696232782569:shiny::runApp()
+1696232805976:shiny::runApp()
+1696232820573:router_ui_args
+1696232832790:router_ui_args_diff
+1696233074824:shiny::runApp()
+1696233085977:shiny::runApp()
+1696233128492:shiny::runApp()
+1696233137212:View(router_ui_args)
+1696233174858:router_ui_args
+1696233180575:router_ui_args_diff
+1696233257755:shiny::runApp()
+1696233264372:shiny::runApp()
+1696233284247:shiny::runApp()
