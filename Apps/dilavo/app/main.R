@@ -43,6 +43,7 @@ app_server <- function(input, output, session) {
 
 ## DO NOT MODIFY lines below
 ## Add modules in the tests/interactive directory
+## with just ui and server functions
 
 #' @export
 ui <- function(id) {
