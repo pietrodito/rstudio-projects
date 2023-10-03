@@ -1,9 +1,9 @@
+~/.Rprofile
+~/Apps/dilavo/README.md
 ~/Apps/dilavo/app/main.R
 ~/Apps/dilavo/tests/interactive/test.R
 ~/Apps/dilavo/tests/interactive/onther_test.R
-~/.Rprofile
 ~/Apps/dilavo/app/view/test.R
-~/Apps/dilavo/README.md
 ~/Apps/draft/SOshinyRouter/app.R
 ~/Apps/dilavo/app/view/test_module.R
 ~/Apps/draft/moduleAsTest/app.R

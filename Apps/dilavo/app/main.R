@@ -1,4 +1,4 @@
-dev_mode <- Sys.getenv("R_CONTEXT") == "dev"
+interactive_tests <-  Sys.getenv("RHINO_PROD") != "true"
 
 box::use(
   shiny[
@@ -23,47 +23,11 @@ box::use(
   ],
 )
 
-#' @export
-ui <- function(id) {
-  
-  ns <- NS(id)
-  
-  title <- "DILAVO"
-  
-  adapt_ui_if_dev <- function() {
-    
-    if (dev_mode) {
-      fluidPage(
-        title = title,
-        dev_ui(ns)
-      )
-    } else {
-      fluidPage(
-        title = title,
-        root_ui(ns)
-      )
-    }
-  }
-  adapt_ui_if_dev()
-}
-
-#' @export
-server <- function(id) {
-  moduleServer(id, function(input, output, session) {
-    
-    root_server(input, output, session)
-    
-    if (dev_mode) {
-      dev_server(input, output, session)
-    }
-  })
-}
-
-root_ui <-  function(ns) { 
+app_ui <-  function(ns) { 
   uiOutput(ns("message"))
 }
 
-root_server <- function(input, output, session) {
+app_server <- function(input, output, session) {
   
   output$message <- renderUI({
     div(
@@ -77,7 +41,53 @@ root_server <- function(input, output, session) {
   })
 }
 
-dev_ui <-  function(ns) {
+## DO NOT MODIFY lines below
+## Add modules in the tests/interactive directory
+
+#' @export
+ui <- function(id) {
+  
+  ## DO NOT MODIFY
+  
+  ns <- NS(id)
+  
+  title <- "DILAVO"
+  
+  adapt_ui_if_tests <- function() {
+    
+    if (interactive_tests) {
+      fluidPage(
+        title = title,
+        test_ui(ns)
+      )
+    } else {
+      fluidPage(
+        title = title,
+        app_ui(ns)
+      )
+    }
+  }
+  adapt_ui_if_tests()
+}
+
+#' @export
+server <- function(id) {
+  
+  ## DO NOT MODIFY
+  
+  moduleServer(id, function(input, output, session) {
+    
+    app_server(input, output, session)
+    
+    if (interactive_tests) {
+      test_server(input, output, session)
+    }
+  })
+}
+
+test_ui <-  function(ns) {
+  
+  ## DO NOT MODIFY
   
   box::use(purrr[map])
   
@@ -99,12 +109,14 @@ dev_ui <-  function(ns) {
   
   c_x_y <- function(x, y) { c(list(x), y) }
   
+  create_route_page <- function(name) {
+      route(name, get(name)[["ui"]](ns(name)))
+  }
+  
   (
     interactive_test_module_names
-    |>map(function(name) {
-      route(name, get(name)[["ui"]](ns(name)))
-    })
-    |> c_x_y(x = route("/", root_ui(ns)), y = _)
+    |> map(create_route_page)
+    |> c_x_y(x = route("/", app_ui(ns)), y = _)
   ) -> router_ui_args
   
   
@@ -114,7 +126,10 @@ dev_ui <-  function(ns) {
   )
 }
 
-dev_server <- function(input, output, session) {
+test_server <- function(input, output, session) {
+  
+  ## DO NOT MODIFY
+  
   router_server()
   
   serve <- function(name) {
@@ -126,8 +141,7 @@ dev_server <- function(input, output, session) {
   )
 }
 
-
-dev_hack <- function(env) {
+setup_env_for_tests <- function(env) {
   
   box::use(
     fs[
@@ -139,7 +153,7 @@ dev_hack <- function(env) {
     ]
   )
   
-  box_use_chr <- function(string, env) {
+  box_use_with_character <- function(string, env) {
     
     box::use(purrr[map])
     
@@ -155,10 +169,12 @@ dev_hack <- function(env) {
   
   dir <- "tests/interactive/"
   
+  R_extension_pattern <- "\\.R$"
+  
   (
     dir
-    |> dir_ls()
-    |> str_remove("\\.R$")
+    |> dir_ls(regexp = R_extension_pattern)
+    |> str_remove(R_extension_pattern)
   ) ->  interactive_test_modules
   
   assign("interactive_test_modules",
@@ -175,12 +191,12 @@ dev_hack <- function(env) {
          envir = env)
   (
     interactive_test_modules
-    |> box_use_chr(env = env)
+    |> box_use_with_character(env = env)
   )
   
   
 }
 
-if (dev_mode) {
-  dev_hack(environment())
+if (interactive_tests) {
+  setup_env_for_tests(environment())
 }  

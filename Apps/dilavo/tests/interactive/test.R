@@ -5,7 +5,7 @@ box::use(
 #' @export
 ui <- function(id) {
   ns <- NS(id)
-  h3("Test")
+  h3("This is the latest test")
 }
 
 #' @export

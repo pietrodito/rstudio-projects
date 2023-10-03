@@ -1555,3 +1555,174 @@
 1696233257755:shiny::runApp()
 1696233264372:shiny::runApp()
 1696233284247:shiny::runApp()
+1696273250277:shiny::runApp()
+1696273259858:shiny::runApp()
+1696273276363:shiny::runApp()
+1696273288783:q()
+1696273363879:keyboardShortcutAddin:::switch_between_projects()
+1696273375490:shiny::runApp()
+1696273566822:shiny::runApp()
+1696273680164:shiny::runApp()
+1696273731916:shiny::runApp()
+1696273906717:shiny::runApp()
+1696273917722:shiny::runApp()
+1696273941218:shiny::runApp()
+1696273983206:shiny::runApp()
+1696274002648:box::use(
+1696274002656:shiny[
+1696274002657:a,
+1696274002657:fluidPage,
+1696274002657:div,
+1696274002658:h2,
+1696274002658:h3,
+1696274002658:moduleServer,
+1696274002659:NS,
+1696274002659:renderUI,
+1696274002659:tags,
+1696274002659:uiOutput,
+1696274002660:wellPanel
+1696274002660:],
+1696274002660:shiny.router[
+1696274002661:route,
+1696274002661:route_link,
+1696274002661:router_ui,
+1696274002661:router_server
+1696274002662:],
+1696274002662:)
+1696274003181:dev_mode <- Sys.getenv("R_CONTEXT") == "dev"
+1696274004649:#' @export
+1696274004657:ui <- function(id) {
+1696274004657:ns <- NS(id)
+1696274004658:title <- "DILAVO"
+1696274004659:adapt_ui_if_dev <- function() {
+1696274004660:if (dev_mode) {
+1696274004660:fluidPage(
+1696274004661:title = title,
+1696274004661:dev_ui(ns)
+1696274004661:)
+1696274004662:} else {
+1696274004662:fluidPage(
+1696274004663:title = title,
+1696274004663:root_ui(ns)
+1696274004664:)
+1696274004664:}
+1696274004664:}
+1696274004665:adapt_ui_if_dev()
+1696274004665:}
+1696274005357:#' @export
+1696274005365:server <- function(id) {
+1696274005367:moduleServer(id, function(input, output, session) {
+1696274005369:root_server(input, output, session)
+1696274005370:if (dev_mode) {
+1696274005371:dev_server(input, output, session)
+1696274005371:}
+1696274005372:})
+1696274005373:}
+1696274006057:root_ui <-  function(ns) {
+1696274006065:uiOutput(ns("message"))
+1696274006066:}
+1696274007209:root_server <- function(input, output, session) {
+1696274007217:output$message <- renderUI({
+1696274007217:div(
+1696274007218:style =
+1696274007218:"display: flex; justify-content: center; align-items: center; height: 100vh;",
+1696274007218:tags$h1(
+1696274007219:tags$a("Check out Rhino docs!",
+1696274007219:href = "https://appsilon.github.io/rhino/")
+1696274007219:)
+1696274007220:)
+1696274007220:})
+1696274007220:}
+1696274008309:dev_ui <-  function(ns) {
+1696274008310:box::use(purrr[map])
+1696274008311:(
+1696274008311:interactive_test_module_names
+1696274008312:|> map(function(name) {
+1696274008312:tags$li(a(class = "item",
+1696274008312:href = route_link(name),
+1696274008313:name))
+1696274008313:})
+1696274008314:) -> module_name_item
+1696274008315:menu <- tags$ul(
+1696274008315:tags$li(a(class = "item",
+1696274008316:href = route_link("/"),
+1696274008316:"Application")),
+1696274008316:module_name_item
+1696274008317:)
+1696274008317:c_x_y <- function(x, y) { c(list(x), y) }
+1696274008318:(
+1696274008318:interactive_test_module_names
+1696274008319:|>map(function(name) {
+1696274008319:route(name, get(name)[["ui"]](ns(name)))
+1696274008319:})
+1696274008320:|> c_x_y(x = route("/", root_ui(ns)), y = _)
+1696274008320:) -> router_ui_args
+1696274008321:list(
+1696274008322:do.call(router_ui, router_ui_args),
+1696274008322:wellPanel(menu)
+1696274008323:)
+1696274008323:}
+1696274009073:dev_server <- function(input, output, session) {
+1696274009075:router_server()
+1696274009077:serve <- function(name) {
+1696274009077:get(name)[["server"]](name)
+1696274009078:}
+1696274009079:(
+1696274009080:interactive_test_module_names
+1696274009080:|> purrr::map(serve)
+1696274009081:)
+1696274009082:}
+1696274013140:dev_hack <- function() {
+1696274013148:box::use(
+1696274013148:fs[
+1696274013149:dir_ls,
+1696274013149:],
+1696274013150:stringr[
+1696274013150:str_remove,
+1696274013150:]
+1696274013151:)
+1696274013151:box_use_chr <- function(string, env) {
+1696274013152:box::use(purrr[map])
+1696274013152:string_to_eval =  paste0("box::use(", string, ")")
+1696274013153:map(string, function(s) {
+1696274013153:eval(
+1696274013154:parse(text = string_to_eval),
+1696274013154:envir = env
+1696274013154:)
+1696274013155:})
+1696274013155:}
+1696274013155:dir <- "tests/interactive/"
+1696274013156:(
+1696274013156:dir
+1696274013157:|> dir_ls()
+1696274013157:|> str_remove("\\.R$")
+1696274013157:) ->  interactive_test_modules
+1696274013158:(
+1696274013158:interactive_test_modules
+1696274013158:|> str_remove(dir)
+1696274013159:) -> interactive_test_module_names
+1696274013159:(
+1696274013160:interactive_test_modules
+1696274013160:|> box_use_chr(env = environment())
+1696274013160:)
+1696274013160:}
+1696274015745:If (dev_mode) {
+1696274036689:shiny::runApp()
+1696274175665:shiny::runApp()
+1696274222589:shiny::runApp()
+1696274287667:shiny::runApp()
+1696274387138:q()
+1696305792352:keyboardShortcutAddin:::switch_between_projects()
+1696306277582:shiny::runApp()
+1696306396632:shiny::runApp()
+1696306407927:shiny::runApp()
+1696306453094:shiny::runApp()
+1696306523072:shiny::runApp()
+1696306538128:shiny::runApp()
+1696306555905:shiny::runApp()
+1696306628196:shiny::runApp()
+1696306643517:shiny::runApp()
+1696306781445:edit_r_profile()
+1696306807070:shiny::runApp()
+1696307605691:shiny::runApp()
+1696307805972:shiny::runApp()
