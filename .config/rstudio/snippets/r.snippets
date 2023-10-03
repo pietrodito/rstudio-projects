@@ -133,6 +133,23 @@ snippet shinyapp
 	  launch.browser = TRUE
 	))
 
+snippet shinytestmod
+	ui <- function(id) {
+	  ns <- NS(id)
+	  tagList(
+		${0}
+	  )
+	}
+
+	server <- function(id) {
+	  moduleServer(
+	    id,
+	    function(input, output, session) {
+
+	    }
+	  )
+	}
+
 snippet shinymod
 	${1:name}UI <- function(id) {
 	  ns <- NS(id)
