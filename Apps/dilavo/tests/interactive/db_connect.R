@@ -1,4 +1,3 @@
-
 box::use(
   shiny[
     actionButton,
@@ -30,22 +29,24 @@ ui <- function(id) {
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
     
-    write("echo $USER:", "~/log.txt")
-    write(system("echo $USER", intern = TRUE), "~/log.txt", append = T)
-    
     observeEvent(input$button, {
       
       output$log <- renderText({
         "Trying to connect..."
       })
       
-      if (is.null(db_connect())) {
+      db <- db_connect()
+      
+      if (is.null(db)) {
         output$log <- renderText({
           "Failed to connect."
         })
       } else {
         output$log <- renderText({
-          "Connection established!"
+          paste(
+            format(db),
+            ": Connection established!"
+          )
         })
       }
     })

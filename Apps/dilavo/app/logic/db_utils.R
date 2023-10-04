@@ -23,3 +23,4 @@ db_connect <- function() {
     }
   )
 }
+

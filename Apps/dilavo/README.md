@@ -7,6 +7,9 @@ See the [compose.yml][4] file.
 
 ## TODO
 
+Multi-user ?
+ + One container for each user ?
+cd("./")
 ## Interactive test design
 
 At launch, the app will search if a shell  environment variable `RHINO_PROD` has been set to `true`.

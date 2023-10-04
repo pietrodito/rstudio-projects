@@ -8,7 +8,7 @@ box::use(
   app/logic/db_utils[connect_db],
 )
 
-#' @export
+
 ui <- function(id) {
   ns <- NS(id)
   bootstrapPage(

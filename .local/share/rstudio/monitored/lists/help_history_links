@@ -6,3 +6,5 @@ help/library/base/html/eval.html,R: Evaluate an (Unevaluated) Expression
 help/library/base/html/c.html,R: Combine Values into a Vector or List
 help/library/base/html/list.html,R: Lists - Generic and Dotted Pairs
 help/library/base/html/sys.parent.html,R: Functions to Access the Function Call Stack
+help/library/base/html/sample.html,R: Random Samples and Permutations
+help/library/stats/html/Uniform.html,R: The Uniform Distribution

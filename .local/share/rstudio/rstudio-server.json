@@ -4,6 +4,5 @@
         "name": "SQL Server",
         "url": "theme/default/sqlserver.rstheme",
         "isDark": false
-    },
-    "error_handler_type": "traceback"
+    }
 }
