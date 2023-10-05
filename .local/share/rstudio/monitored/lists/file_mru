@@ -1,7 +1,8 @@
+~/Apps/dilavo/app/logic/db_utils.R
+~/Apps/dilavo/db_updater/db_updater_script.R
 ~/Apps/dilavo/tests/interactive/db_updater_create_file.R
 ~/Apps/dilavo/tests/interactive/db_create_tables.R
 ~/Apps/dilavo/Dockerfile
-~/Apps/dilavo/app/logic/db_utils.R
 ~/Apps/dilavo/db_updater/script.R
 ~/Apps/dilavo/README.md
 ~/Apps/dilavo/tests/interactive/db_connect.R
@@ -12,4 +13,3 @@
 ~/my_packages/consoleR/README.md
 ~/Apps/dilavo/tests/interactive/db_connect
 ~/Apps/dilavo/app/main.R
-~/.Rprofile

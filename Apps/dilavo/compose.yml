@@ -4,12 +4,13 @@ services:
 
   dilavo:
     build: .
+    restart: always
     environment:
       - DB_HOST=db
       - DB_PORT=5432
+      - DB_NAME=postgres
       - DB_USER=postgres
       - DB_PASSWORD=postgres
-      - DB_NAME=postgres
     volumes:
       - ovalide_data:/ovalide_data
     ports:
@@ -21,6 +22,7 @@ services:
     build:
       context: .
       dockerfile: db_updater/Dockerfile
+    restart: always
     environment:
       - DB_HOST=db
       - DB_PORT=5432
@@ -36,19 +38,18 @@ services:
     image: postgres:alpine
     restart: always
     environment:
+      - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     volumes:
       - db_data:/var/lib/postgresql/data
 
   pgadmin:
-    image: dpage/pgadmin4
+    build: ./pgadmin
     restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: root@root.org
-      PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"
+    user: 'root'
     depends_on:
       - dilavo
 

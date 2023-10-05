@@ -22,6 +22,10 @@ pick_file_in_ovalide_data <- function() {
   }
 }
 
+treat_ovalide_zip_file <- function() {
+  
+}
+
 
 while(TRUE) {
   Sys.sleep(.1)

@@ -10,6 +10,11 @@ See the [compose.yml][4] file.
 Multi-user ?
  + One container for each user ?
 cd("./")
+
+## pgAdmin with no password at all
+
+Reference in this [SO answer][5]
+
 ## Interactive test design
 
 At launch, the app will search if a shell  environment variable `RHINO_PROD` has been set to `true`.
@@ -18,11 +23,12 @@ If not, the directory `./tests/interactive` will be scanned for `.R` files. Each
 
 Each module will create a test page, and a panel with links to each page will be added at the bottom of the app.
 
-The structure of the [app/main.R][5] file documents this behavior.
+The structure of the [app/main.R][6] file documents this behavior.
 
 
 [1]: https://www.atih.sante.fr/ovalide-outil-de-validation-des-donnees-des-etablissements-de-sante
 [2]: https://www.postgresql.org/
 [3]: https://www.pgadmin.org/
 [4]: ./compose.yml
-[5]: app/main.R
+[5]: https://stackoverflow.com/a/77016748/6537892
+[6]: app/main.R

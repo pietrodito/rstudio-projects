@@ -7,5 +7,5 @@ README.Rmd
 .Rprofile
 .github
 .lintr
-dbUpdater/
+pgadmin_config/
 

@@ -1811,3 +1811,6 @@
 1696450507486:edit_file("tests/interactive/db_updater_create_file.R")
 1696450600564:write(letters,"/tmp/x")
 1696450990625:edit_file("tests/interactive/db_updater_create_file.R")
+1696484714967:file_move("db_updater/script.R", "db_updater/db_updater_script.R")
+1696484727187:edit_file("db_updater/db_updater_script.R")
+1696484753356:edit_file("app/logic/db_utils.R")

@@ -1,4 +1,4 @@
-# app/logc/db_utils.R
+# app/logic/db_utils.R
 
 box::use(
   RPostgres[Postgres],
@@ -23,4 +23,3 @@ db_connect <- function() {
     }
   )
 }
-
