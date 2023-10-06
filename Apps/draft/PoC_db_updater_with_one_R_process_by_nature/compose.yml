@@ -1,0 +1,21 @@
+version: '3.8'
+
+volumes:
+  ovalide_data:
+
+services:
+
+  app:
+    build: ./app 
+    volumes:
+      - ovalide_data:/ovalide_data
+
+  db_updater_mco_dgf:
+    build:
+      context: .
+      dockerfile: db_updater/Dockerfile
+    restart: always
+    depends_on:
+      - app
+    volumes:
+    - ovalide_data:/ovalide_data

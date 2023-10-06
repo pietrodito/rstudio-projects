@@ -23,12 +23,6 @@ services:
       context: .
       dockerfile: db_updater/Dockerfile
     restart: always
-    environment:
-      - DB_HOST=db
-      - DB_PORT=5432
-      - DB_USER=postgres
-      - DB_PASSWORD=postgres
-      - DB_NAME=postgres
     volumes:
       - ovalide_data:/ovalide_data
     depends_on:
@@ -54,5 +48,5 @@ services:
       - dilavo
 
 volumes:
-  db_data:
   ovalide_data:
+  db_data:
