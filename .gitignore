@@ -1,3 +1,4 @@
+.local/
 .cache/
 .sh_history
 .vim

@@ -14,11 +14,13 @@ cd("./")
 
 ## Update database with ovalide files
 
-PoC 
+PoC can be found in this [project][5].
+
+- 
 
 ## pgAdmin with no password at all
 
-Reference in this [SO answer][5]
+Reference in this [SO answer][6]
 
 ## Interactive test design
 
@@ -28,12 +30,13 @@ If not, the directory `./tests/interactive` will be scanned for `.R` files. Each
 
 Each module will create a test page, and a panel with links to each page will be added at the bottom of the app.
 
-The structure of the [app/main.R][6] file documents this behavior.
+The structure of the [app/main.R][7] file documents this behavior.
 
 
 [1]: https://www.atih.sante.fr/ovalide-outil-de-validation-des-donnees-des-etablissements-de-sante
 [2]: https://www.postgresql.org/
 [3]: https://www.pgadmin.org/
 [4]: ./compose.yml
-[5]: https://stackoverflow.com/a/77016748/6537892
-[6]: app/main.R
+[5]: ../draft/PoC_db_updater_with_one_R_process_by_nature
+[6]: https://stackoverflow.com/a/77016748/6537892
+[7]: app/main.R
