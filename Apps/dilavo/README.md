@@ -1,28 +1,43 @@
 # DIVALO
 The purpose of this application is to exploit the french [OVALIDE][1] data.
 
-It contains a shiny app build with the Rhino framework, a [PostgreSQL][2] database and the [pgAdmin][3] tool.
+It contains:
+  - a shiny app built with the [Rhino][2] framework
+  - a [PostgreSQL][3] database
+  - and the [pgAdmin][4] tool.
 
-See the [compose.yml][4] file.
+It also uses parallel processes scanning for OVALIDE files to update the database. More details [below](#update-database-with-ovalide-files)
+
+See also the [compose.yml][5] file.
 
 ## TODO
 
-Multi-user ? 
- + One container for each user ?
-cd("./")
+- Use the db_updater PoC to fill database with data
 
+## Focus on important design decisions
 
-## Update database with ovalide files
+### Deploy Rhino app in container
 
-PoC can be found in this [project][5].
+See [Dockerfile](./Dockerfile):
++ install R package `renv`
++ copy `renv.lock` to container
++ call `renv::restore()`
 
-- 
+### Update database with ovalide files
 
-## pgAdmin with no password at all
+PoC can be found in this [project][6].
 
-Reference in this [SO answer][6]
+- The db_updater got one script `probe_dir.R`
+- The script accepts one arg eg. `mco_oqn`
+- The `entrypoint.sh` launches 8 script in background
+  - [mco, had, smr, psy]  x  [dgf, oqn]
 
-## Interactive test design
+### pgAdmin with no password at all
+
++ See [Dockerfile](./pgadmin/Dockerfile).
++ Reference in this [SO answer][7]
+
+### Interactive test design
 
 At launch, the app will search if a shell  environment variable `RHINO_PROD` has been set to `true`.
 
@@ -30,13 +45,14 @@ If not, the directory `./tests/interactive` will be scanned for `.R` files. Each
 
 Each module will create a test page, and a panel with links to each page will be added at the bottom of the app.
 
-The structure of the [app/main.R][7] file documents this behavior.
+The structure of the [app/main.R][8] file documents this behavior.
 
 
-[1]: https://www.atih.sante.fr/ovalide-outil-de-validation-des-donnees-des-etablissements-de-sante
-[2]: https://www.postgresql.org/
-[3]: https://www.pgadmin.org/
-[4]: ./compose.yml
-[5]: ../draft/PoC_db_updater_with_one_R_process_by_nature
-[6]: https://stackoverflow.com/a/77016748/6537892
-[7]: app/main.R
+[1]: https://appsilon.github.io/rhino/index.html
+[2]: https://www.atih.sante.fr/ovalide-outil-de-validation-des-donnees-des-etablissements-de-sante
+[3]: https://www.postgresql.org/
+[4]: https://www.pgadmin.org/
+[5]: ./compose.yml
+[6]: ../draft/PoC_db_updater_with_one_R_process_by_nature
+[7]: https://stackoverflow.com/a/77016748/6537892
+[8]: app/main.R

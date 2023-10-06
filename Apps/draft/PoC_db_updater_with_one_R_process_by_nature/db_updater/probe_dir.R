@@ -1,5 +1,8 @@
-first_argument_position <- 5
-dir_2_probe <- commandArgs()[first_argument_position]
+#!/usr/bin/Rscript --vanilla
+
+args <- commandArgs(trailingOnly=TRUE) 
+dir_2_probe <- args[1]
+
 dir_path <- paste0("ovalide_data/", dir_2_probe, "/")
 lock_file <- "dilavo.lock"
 lock_path <- paste0(dir_path, lock_file)

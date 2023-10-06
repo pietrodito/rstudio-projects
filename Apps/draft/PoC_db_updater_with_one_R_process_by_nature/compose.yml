@@ -1,4 +1,5 @@
 version: '3.8'
+name: poc_multiple_db_updater
 
 volumes:
   ovalide_data:
@@ -10,7 +11,7 @@ services:
     volumes:
       - ovalide_data:/ovalide_data
 
-  db_updater_mco_dgf:
+  db_updater:
     build:
       context: .
       dockerfile: db_updater/Dockerfile
