@@ -1,5 +1,8 @@
-first_argument_position <- 6
-dir_2_probe <- commandArgs()[first_argument_position]
+#!/usr/bin/Rscript --vanilla
+
+args <- commandArgs(trailingOnly=TRUE) 
+dir_2_probe <- args[1]
+
 dir_path <- paste0("ovalide_data/", dir_2_probe, "/")
 lock_file <- "dilavo.lock"
 lock_path <- paste0(dir_path, lock_file)
@@ -31,7 +34,8 @@ while(TRUE) {
   Sys.sleep(.1)
   file <- pick_file_in_ovalide_data()
   if( ! is.null(file)) {
-    write(file, "log.txt", append = TRUE)
+    write(dir_2_probe, "/logs/log.txt", append = TRUE)
+    write(file, "/logs/log.txt", append = TRUE)
     file.remove(file)
   }
 }

@@ -1,8 +1,14 @@
-version: '2'
+version: '3.8'
+name: dilavo
+
+volumes:
+  ovalide_data:
+  db_data:
 
 services:
 
   dilavo:
+    container_name: shiny_app
     build: .
     restart: always
     environment:
@@ -19,6 +25,7 @@ services:
       - db
         
   db_updater:
+    container_name: db_updater
     build:
       context: .
       dockerfile: db_updater/Dockerfile
@@ -29,6 +36,7 @@ services:
       - db
 
   db:
+    container_name: db
     image: postgres:alpine
     restart: always
     environment:
@@ -39,6 +47,7 @@ services:
       - db_data:/var/lib/postgresql/data
 
   pgadmin:
+    container_name: pgadmin
     build: ./pgadmin
     restart: always
     ports:
@@ -46,7 +55,3 @@ services:
     user: 'root'
     depends_on:
       - dilavo
-
-volumes:
-  ovalide_data:
-  db_data:

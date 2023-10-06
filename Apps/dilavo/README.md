@@ -13,6 +13,11 @@ See also the [compose.yml][5] file.
 ## TODO
 
 - Use the db_updater PoC to fill database with data
+  - PoC added to app
+  - Now I have to deal with real files
+  - Two major cases 1) scores 2) ovalide .csv
+  - Add everything to database in raw format
+
 
 ## Focus on important design decisions
 

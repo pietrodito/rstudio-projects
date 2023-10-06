@@ -6,6 +6,7 @@ box::use(
     moduleServer,
     NS,
     observeEvent,
+    radioButtons,
     textInput,
   ],
   
@@ -22,6 +23,8 @@ ui <- function(id) {
   ns <- NS(id)
   bootstrapPage(
     textInput(ns("file_name"), "File name"),
+    radioButtons(ns("field"), "Field", c("mco", "smr", "had", "psy")),
+    radioButtons(ns("status"), "Status", c("dgf", "oqn")),
     actionButton(ns("button"),
                  "Write file in ovalide_data ")
   )
@@ -34,12 +37,14 @@ server <- function(id) {
       db <- db_connect()
       
       observeEvent(input$button, {
-        file <- paste0("/ovalide_data/", input$file_name)
-        system(paste0("touch /ovalide_data/dilavo.lock"))
-        system(paste0("touch ", file))
+        dir <-  paste0("/ovalide_data/", input$field, "_", input$status, "/")
+        filepath <- paste0(dir, input$file_name)
+        lockpath <- paste0(dir, "dilavo.lock")
+        system(paste0("touch ", lockpath))
+        system(paste0("touch ", filepath))
         Sys.sleep(3)
-        write(letters, file)
-        file.remove("/ovalide_data/dilavo.lock")
+        write(letters, filepath)
+        file.remove(lockpath)
       })
       
   })
