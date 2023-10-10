@@ -1,7 +1,15 @@
 FROM alpine:latest
 
-RUN apk update && apk add postgresql14-client
+RUN apk update && apk add postgresql15-client 
 
-COPY . /
+WORKDIR /home/postgres
 
-CMD ["/setup-db.sh"]
+COPY . .
+
+RUN chown -R postgres /home/postgres/ 
+
+USER postgres
+
+ENV PGPASSFILE=/home/postgres/.pgpass
+
+CMD /home/postgres/setup-db.sh

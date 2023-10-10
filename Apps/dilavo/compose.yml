@@ -34,6 +34,7 @@ services:
       - ovalide_data:/ovalide_data
     depends_on:
       - db
+      - db_setup
 
   db:
     container_name: db
