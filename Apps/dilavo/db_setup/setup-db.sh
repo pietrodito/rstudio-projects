@@ -1,7 +1,14 @@
 #!/bin/sh
 #
 
-sleep 3
+DB_READY=2
+
+while [ $DB_READY != 0 ]
+do
+  pg_isready -h db
+  DB_READY=$?
+  sleep 1
+done
 
 createdb -h db MCO_DGF
 createdb -h db MCO_OQN
