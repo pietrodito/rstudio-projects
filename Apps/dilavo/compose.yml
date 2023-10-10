@@ -46,6 +46,12 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
 
+  db_setup:
+    build: db_setup
+    container_name: db_setup
+    depends_on:
+      - db
+
   pgadmin:
     container_name: pgadmin
     build: ./pgadmin
@@ -55,3 +61,4 @@ services:
     user: 'root'
     depends_on:
       - dilavo
+      - db_setup

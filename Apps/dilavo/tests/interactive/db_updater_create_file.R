@@ -42,7 +42,7 @@ server <- function(id) {
         lockpath <- paste0(dir, "dilavo.lock")
         system(paste0("touch ", lockpath))
         system(paste0("touch ", filepath))
-        Sys.sleep(3)
+        Sys.sleep(1)
         write(letters, filepath)
         file.remove(lockpath)
       })

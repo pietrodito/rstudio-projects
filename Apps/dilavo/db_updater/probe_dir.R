@@ -9,33 +9,18 @@ lock_path <- paste0(dir_path, lock_file)
   
 
 box::use(
-  ./db_utils[
-    db_connect,
-  ],
+  
+  ./db_updater_utils[
+    pick_file_in_ovalide_data,
+    treat_file,
+  ]
 )
-
-db <- db_connect()
-
-pick_file_in_ovalide_data <- function() {
-  if (file.exists(lock_path)) {
-    NULL
-  } else {
-    files <- list.files(dir_path)
-    if(length(files) > 0) {
-      paste0(dir_path, files[1])
-    } else {
-      NULL
-    }
-  }
-}
 
 
 while(TRUE) {
   Sys.sleep(.1)
-  file <- pick_file_in_ovalide_data()
+  file <- pick_file_in_ovalide_data(dir_path, lock_path)
   if( ! is.null(file)) {
-    write(dir_2_probe, "/logs/log.txt", append = TRUE)
-    write(file, "/logs/log.txt", append = TRUE)
-    file.remove(file)
+    treat_file(dir_2_probe, file)
   }
 }
