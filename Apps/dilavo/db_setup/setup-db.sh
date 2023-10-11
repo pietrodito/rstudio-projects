@@ -16,6 +16,7 @@ if [ "$( psql -h db -XtAc \
 then
     echo "Databases already exist"
 else
+    echo "Creating dbs... "
     createdb -h db MCO_DGF
     createdb -h db MCO_OQN
     createdb -h db HAD_DGF
@@ -24,8 +25,5 @@ else
     createdb -h db SMR_OQN
     createdb -h db PSY_DGF
     createdb -h db PSY_OQN
+    echo "8 dbs created!"
 fi
-
-
-
-top

@@ -12,6 +12,8 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
+- Régler les pbs de dépendances dans db_updater
+
 - Use the db_updater PoC to fill database with data
   - PoC added to app
   - Now I have to deal with real files

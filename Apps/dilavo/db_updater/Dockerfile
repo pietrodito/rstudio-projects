@@ -11,8 +11,11 @@ RUN apt-get update && apt-get install -y libpq-dev && \
         rm -rf /var/lib/apt/lists/*
 RUN R -q -e 'install.packages(c("box", "RPostgres"))'
 
-COPY ./db_updater/* /
-COPY ./app/logic/db_utils.R /
+RUN mkdir -p /app/logic/ && chown 999:999 /app/logic/
+
+COPY ./db_updater/*          /
+COPY ./app/logic/db_utils.R  /app/logic/
+COPY ./app/logic/log_utils.R /app/logic/
 
 RUN mkdir -p /ovalide_data && chown 999:999 /ovalide_data
 RUN mkdir -p /logs && chown 999:999 /logs
