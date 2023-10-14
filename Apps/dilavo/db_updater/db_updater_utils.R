@@ -93,28 +93,6 @@ treat_file <- function(dir_2_probe, filepath, db) {
   file.remove(filepath)
 }
 
-#' @export
-is_midnight <- function() {
-  extract_hours_and_minutes <- function(time) {
-    (
-      time
-      |> format()
-      |> strsplit("[:| ]")
-      |> unlist()
-    ) -> v
-    v[2:3]
-  }
-  
-  all_equal_to_zero_zero <- function(v) {
-    all(v == "00")
-  }
-  
-  (
-    Sys.time()
-    |> extract_hours_and_minutes()
-    |> all_equal_to_zero_zero() 
-  )
-}
 
 treat_csv_file <- function(filepath, db) {
   log("> Reading data from file...")

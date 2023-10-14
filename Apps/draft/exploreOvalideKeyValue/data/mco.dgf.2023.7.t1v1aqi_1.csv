@@ -1,0 +1,805 @@
+"champ";"statut";"annee";"periode";"date du resultat";"ipe";lib;nb;nb1;per_comp;finess_comp;date_comp;temp_comp
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours valorisés;405;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours non controlés dans ce tableau (*);0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours FJ n'est pas applicable et montant FJ différent de 0;122;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours où FJ et DS non compatibles;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:47";="800000036";Séjours sans anomalies;282;;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours valorisés;4810;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours non controlés dans ce tableau (*);0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours FJ n'est pas applicable et montant FJ différent de 0;640;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours où FJ et DS non compatibles;0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours où mnt BR différent de mnt AM+mnt TM;2075;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:33";="600100168";Séjours sans anomalies;2733;;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours valorisés;590;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours non controlés dans ce tableau (*);1;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours taux de remb différent de 100 et montant TM égal à 0;7;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours FJ n'est pas applicable et montant FJ différent de 0;6;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours où FJ et DS non compatibles;0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:34";="020000022";Séjours sans anomalies;576;;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours valorisés;974;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours non controlés dans ce tableau (*);0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours taux de remb différent de 100 et montant TM égal à 0;4;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours où FJ et DS non compatibles;0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:23";="590782439";Séjours sans anomalies;968;;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours valorisés;158;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours non controlés dans ce tableau (*);0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours où FJ et DS non compatibles;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:19";="590049565";Séjours sans anomalies;158;;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours valorisés;15537;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours non controlés dans ce tableau (*);481;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours taux de remb différent de 100 et montant TM égal à 0;847;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;2;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours FJ n'est pas applicable et montant FJ différent de 0;2;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours où FJ et DS non compatibles;7;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:13";="020000253";Séjours sans anomalies;14198;;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours valorisés;12947;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours non controlés dans ce tableau (*);4;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours taux de remb différent de 100 et montant TM égal à 0;1;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours FJ n'est pas applicable et montant FJ différent de 0;55;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours où FJ et DS non compatibles;0;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours où mnt BR différent de mnt AM+mnt TM;23;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:23";="620003376";Séjours sans anomalies;12863;;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours valorisés;16663;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours non controlés dans ce tableau (*);1225;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours avec pb de codage des variables non bloquantes;1514;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours taux de remb différent de 100 et montant TM égal à 0;851;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;439;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours FJ n'est pas applicable et montant FJ différent de 0;207;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours où FJ et DS non compatibles;127;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);3;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:52";="620101337";Séjours sans anomalies;13575;;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours valorisés;677;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours non controlés dans ce tableau (*);1;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;2;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours où FJ et DS non compatibles;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:26";="800000077";Séjours sans anomalies;673;;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours valorisés;343;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours non controlés dans ce tableau (*);4;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours où FJ et DS non compatibles;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:33";="590782645";Séjours sans anomalies;339;;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours valorisés;256;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours non controlés dans ce tableau (*);0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours où FJ et DS non compatibles;3;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:51";="600100572";Séjours sans anomalies;253;;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours valorisés;2034;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours non controlés dans ce tableau (*);6;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours taux de remb différent de 100 et montant TM égal à 0;34;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;13;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours FJ n'est pas applicable et montant FJ différent de 0;2;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours où FJ et DS non compatibles;0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:45:02";="020004495";Séjours sans anomalies;1979;;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours valorisés;259;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours non controlés dans ce tableau (*);0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours taux de remb différent de 100 et montant TM égal à 0;6;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours où FJ et DS non compatibles;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:59";="020000055";Séjours sans anomalies;252;;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours valorisés;8474;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours non controlés dans ce tableau (*);520;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours taux de remb différent de 100 et montant TM égal à 0;165;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;17;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours où FJ et DS non compatibles;2;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:32";="590782652";Séjours sans anomalies;7770;;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours valorisés;1299;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours non controlés dans ce tableau (*);0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;9;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours où FJ et DS non compatibles;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:11";="590780052";Séjours sans anomalies;1290;;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours valorisés;3378;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours non controlés dans ce tableau (*);11;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours taux de remb différent de 100 et montant TM égal à 0;105;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;37;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours où FJ et DS non compatibles;1;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:12";="600100648";Séjours sans anomalies;3223;;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours valorisés;7051;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours non controlés dans ce tableau (*);326;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours taux de remb différent de 100 et montant TM égal à 0;1274;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;46;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours FJ n'est pas applicable et montant FJ différent de 0;126;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours où FJ et DS non compatibles;0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:55";="620000026";Séjours sans anomalies;5279;;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours valorisés;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours non controlés dans ce tableau (*);0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours où FJ et DS non compatibles;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:40";="590065223";Séjours sans anomalies;0;;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours valorisés;3441;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours non controlés dans ce tableau (*);0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours FJ n'est pas applicable et montant FJ différent de 0;3;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours où FJ et DS non compatibles;0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours où mnt BR différent de mnt AM+mnt TM;3;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Autres séjours avec exo Tm=2 et Tx remb=100% (***);12;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:53";="620003350";Séjours sans anomalies;3423;;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours valorisés;959;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours non controlés dans ce tableau (*);9;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours où FJ et DS non compatibles;0;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours où mnt BR différent de mnt AM+mnt TM;125;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:45";="590000600";Séjours sans anomalies;821;;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours valorisés;9170;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours non controlés dans ce tableau (*);812;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours avec pb de codage des variables non bloquantes;2;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours taux de remb différent de 100 et montant TM égal à 0;398;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;156;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours FJ n'est pas applicable et montant FJ différent de 0;451;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours où FJ et DS non compatibles;0;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours où mnt BR différent de mnt AM+mnt TM;533;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Autres séjours avec exo Tm=2 et Tx remb=100% (***);4;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:26";="620025346";Séjours sans anomalies;6923;;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours valorisés;3119;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours non controlés dans ce tableau (*);0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours FJ n'est pas applicable et montant FJ différent de 0;382;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours où FJ et DS non compatibles;0;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours où mnt BR différent de mnt AM+mnt TM;1;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);2;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:58";="590001749";Séjours sans anomalies;2733;;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours valorisés;1099;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours non controlés dans ce tableau (*);0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours taux de remb différent de 100 et montant TM égal à 0;4;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours où FJ et DS non compatibles;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:47:06";="590781670";Séjours sans anomalies;1095;;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours valorisés;23440;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours non controlés dans ce tableau (*);4021;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours taux de remb différent de 100 et montant TM égal à 0;657;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;18;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours où FJ et DS non compatibles;0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:58";="020000261";Séjours sans anomalies;18743;;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours valorisés;28177;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours non controlés dans ce tableau (*);695;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours taux de remb différent de 100 et montant TM égal à 0;256;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;20;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours FJ n'est pas applicable et montant FJ différent de 0;162;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours où FJ et DS non compatibles;0;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Autres séjours avec exo Tm=2 et Tx remb=100% (***);5;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:37";="620100651";Séjours sans anomalies;27038;;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours valorisés;22137;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours non controlés dans ce tableau (*);22137;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours où FJ et DS non compatibles;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:58";="620027839";Séjours sans anomalies;0;;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours valorisés;16320;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours non controlés dans ce tableau (*);159;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours avec pb de codage des variables non bloquantes;2;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours taux de remb différent de 100 et montant TM égal à 0;708;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours taux de remb égal à 100 et montant TM différent de 0;6;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1365;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours FJ n'est pas applicable et montant FJ différent de 0;44;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours où FJ et DS non compatibles;0;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours où mnt BR différent de mnt AM+mnt TM;47;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Autres séjours avec exo Tm=2 et Tx remb=100% (***);3;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:24";="590780284";Séjours sans anomalies;14336;;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours valorisés;5472;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours non controlés dans ce tableau (*);291;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours taux de remb différent de 100 et montant TM égal à 0;534;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours où FJ et DS non compatibles;4;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:25";="020000287";Séjours sans anomalies;4642;;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours valorisés;29730;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours non controlés dans ce tableau (*);1373;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours avec pb de codage des variables non bloquantes;26;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours taux de remb différent de 100 et montant TM égal à 0;776;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours taux de remb égal à 100 et montant TM différent de 0;51;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;559;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours FJ n'est pas applicable et montant FJ différent de 0;110;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours où FJ et DS non compatibles;0;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours où mnt BR différent de mnt AM+mnt TM;1011;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Autres séjours avec exo Tm=2 et Tx remb=100% (***);8;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:46";="590797353";Séjours sans anomalies;26106;;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours valorisés;41686;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours non controlés dans ce tableau (*);2429;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours taux de remb différent de 100 et montant TM égal à 0;345;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;109;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours FJ n'est pas applicable et montant FJ différent de 0;48;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours où FJ et DS non compatibles;14;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:28";="590782421";Séjours sans anomalies;38741;;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours valorisés;535;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours non controlés dans ce tableau (*);0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;6;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours où FJ et DS non compatibles;0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:27";="800000051";Séjours sans anomalies;528;;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours valorisés;189;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours non controlés dans ce tableau (*);0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours où FJ et DS non compatibles;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:40";="800000135";Séjours sans anomalies;187;;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours valorisés;11341;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours non controlés dans ce tableau (*);499;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours taux de remb différent de 100 et montant TM égal à 0;9;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;4;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours FJ n'est pas applicable et montant FJ différent de 0;190;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours où FJ et DS non compatibles;3;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:12:04";="590782165";Séjours sans anomalies;10636;;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours valorisés;15406;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours non controlés dans ce tableau (*);674;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours taux de remb différent de 100 et montant TM égal à 0;534;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;17;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours FJ n'est pas applicable et montant FJ différent de 0;69;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours où FJ et DS non compatibles;2;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:40:06";="620101360";Séjours sans anomalies;14110;;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours valorisés;5485;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours non controlés dans ce tableau (*);380;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours taux de remb différent de 100 et montant TM égal à 0;1;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;2;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours FJ n'est pas applicable et montant FJ différent de 0;25;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours où FJ et DS non compatibles;0;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours où mnt BR différent de mnt AM+mnt TM;235;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:33";="590781662";Séjours sans anomalies;4843;;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours valorisés;4244;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours non controlés dans ce tableau (*);228;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours taux de remb différent de 100 et montant TM égal à 0;3;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;117;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours FJ n'est pas applicable et montant FJ différent de 0;4;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours où FJ et DS non compatibles;0;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours où mnt BR différent de mnt AM+mnt TM;3;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:24";="590781621";Séjours sans anomalies;3887;;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours valorisés;9815;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours non controlés dans ce tableau (*);348;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours avec pb de codage des variables non bloquantes;2;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours taux de remb différent de 100 et montant TM égal à 0;204;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;55;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours FJ n'est pas applicable et montant FJ différent de 0;427;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours où FJ et DS non compatibles;0;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours où mnt BR différent de mnt AM+mnt TM;362;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:20:04";="590052056";Séjours sans anomalies;8450;;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours valorisés;863;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours non controlés dans ce tableau (*);0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours taux de remb différent de 100 et montant TM égal à 0;10;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours où FJ et DS non compatibles;1;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:26";="590781795";Séjours sans anomalies;851;;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours valorisés;3231;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours non controlés dans ce tableau (*);2;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours taux de remb différent de 100 et montant TM égal à 0;18;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours FJ n'est pas applicable et montant FJ différent de 0;1;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours où FJ et DS non compatibles;0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:30";="620100677";Séjours sans anomalies;3210;;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours valorisés;32754;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours non controlés dans ce tableau (*);1155;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours avec pb de codage des variables non bloquantes;5;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours FJ n'est pas applicable et montant FJ différent de 0;459;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours où FJ et DS non compatibles;0;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours où mnt BR différent de mnt AM+mnt TM;3628;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);2;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:30";="590781415";Séjours sans anomalies;27769;;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours valorisés;46095;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours non controlés dans ce tableau (*);635;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours avec pb de codage des variables non bloquantes;5;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours FJ n'est pas applicable et montant FJ différent de 0;190;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours où FJ et DS non compatibles;3;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours où mnt BR différent de mnt AM+mnt TM;3732;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);1;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:36";="620103440";Séjours sans anomalies;41612;;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours valorisés;1490;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours non controlés dans ce tableau (*);52;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours taux de remb différent de 100 et montant TM égal à 0;10;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;7;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours FJ n'est pas applicable et montant FJ différent de 0;125;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours où FJ et DS non compatibles;60;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:14:28";="800000085";Séjours sans anomalies;1236;;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours valorisés;127305;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours non controlés dans ce tableau (*);3980;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours avec pb de codage des variables non bloquantes;1605;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours taux de remb différent de 100 et montant TM égal à 0;1124;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours taux de remb égal à 100 et montant TM différent de 0;28;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1011;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours FJ n'est pas applicable et montant FJ différent de 0;2844;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours où FJ et DS non compatibles;7726;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);41;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Autres séjours avec exo Tm=2 et Tx remb=100% (***);18;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:51:01";="590780193";Séjours sans anomalies;110921;;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours valorisés;8904;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours non controlés dans ce tableau (*);314;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours taux de remb différent de 100 et montant TM égal à 0;493;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours où FJ et DS non compatibles;1;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:26:10";="020004404";Séjours sans anomalies;8093;;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours valorisés;18135;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours non controlés dans ce tableau (*);331;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours taux de remb différent de 100 et montant TM égal à 0;852;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;11;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours FJ n'est pas applicable et montant FJ différent de 0;130;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours où FJ et DS non compatibles;0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:26";="590781605";Séjours sans anomalies;16811;;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours valorisés;135;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours non controlés dans ce tableau (*);1;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours FJ n'est pas applicable et montant FJ différent de 0;48;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours où FJ et DS non compatibles;0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:41";="590781811";Séjours sans anomalies;85;;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours valorisés;2979;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours non controlés dans ce tableau (*);135;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours taux de remb différent de 100 et montant TM égal à 0;73;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;2;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours FJ n'est pas applicable et montant FJ différent de 0;195;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours où FJ et DS non compatibles;9;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:25";="800000093";Séjours sans anomalies;2564;;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours valorisés;34386;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours non controlés dans ce tableau (*);8206;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours taux de remb différent de 100 et montant TM égal à 0;614;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;15;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours FJ n'est pas applicable et montant FJ différent de 0;188;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours où FJ et DS non compatibles;2;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:49";="600100713";Séjours sans anomalies;25360;;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours valorisés;396;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours non controlés dans ce tableau (*);0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours taux de remb différent de 100 et montant TM égal à 0;2;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours où FJ et DS non compatibles;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:00:06";="020000048";Séjours sans anomalies;393;;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours valorisés;67276;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours non controlés dans ce tableau (*);2094;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours avec pb de codage des variables non bloquantes;1760;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours taux de remb différent de 100 et montant TM égal à 0;1167;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours taux de remb égal à 100 et montant TM différent de 0;26;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;979;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours FJ n'est pas applicable et montant FJ différent de 0;165;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours où FJ et DS non compatibles;23;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);2;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Autres séjours avec exo Tm=2 et Tx remb=100% (***);45;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:44:14";="590782215";Séjours sans anomalies;63122;;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours valorisés;38766;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours non controlés dans ce tableau (*);3321;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours taux de remb différent de 100 et montant TM égal à 0;420;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;16;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours FJ n'est pas applicable et montant FJ différent de 0;12;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours où FJ et DS non compatibles;8;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Autres séjours avec exo Tm=2 et Tx remb=100% (***);8;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:47";="620100685";Séjours sans anomalies;34981;;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours valorisés;3330;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours non controlés dans ce tableau (*);436;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours taux de remb différent de 100 et montant TM égal à 0;1;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;3;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours FJ n'est pas applicable et montant FJ différent de 0;200;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours où FJ et DS non compatibles;0;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours où mnt BR différent de mnt AM+mnt TM;11;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:20";="800000069";Séjours sans anomalies;2678;;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours valorisés;223;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours non controlés dans ce tableau (*);0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours taux de remb différent de 100 et montant TM égal à 0;1;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours FJ n'est pas applicable et montant FJ différent de 0;7;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours où FJ et DS non compatibles;3;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:13";="020000071";Séjours sans anomalies;212;;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours valorisés;20445;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours non controlés dans ce tableau (*);1023;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours taux de remb différent de 100 et montant TM égal à 0;10;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours taux de remb égal à 100 et montant TM différent de 0;2;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;11;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours FJ n'est pas applicable et montant FJ différent de 0;25;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours où FJ et DS non compatibles;241;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours où mnt BR différent de mnt AM+mnt TM;430;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Autres séjours avec exo Tm=2 et Tx remb=100% (***);6;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:30";="600100721";Séjours sans anomalies;18716;;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours valorisés;27643;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours non controlés dans ce tableau (*);1306;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours taux de remb différent de 100 et montant TM égal à 0;6007;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;92;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours FJ n'est pas applicable et montant FJ différent de 0;38;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours où FJ et DS non compatibles;5;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:27";="620100057";Séjours sans anomalies;20194;;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours valorisés;31410;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours non controlés dans ce tableau (*);1614;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours taux de remb différent de 100 et montant TM égal à 0;202;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;29;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours FJ n'est pas applicable et montant FJ différent de 0;491;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours où FJ et DS non compatibles;6;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:23:05";="600101984";Séjours sans anomalies;29067;;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours valorisés;15535;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours non controlés dans ce tableau (*);567;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours taux de remb différent de 100 et montant TM égal à 0;1014;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;6;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours FJ n'est pas applicable et montant FJ différent de 0;93;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours où FJ et DS non compatibles;4;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Autres séjours avec exo Tm=2 et Tx remb=100% (***);3;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:36";="800000028";Séjours sans anomalies;13848;;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours valorisés;26854;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours non controlés dans ce tableau (*);1132;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours taux de remb différent de 100 et montant TM égal à 0;2660;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;177;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours FJ n'est pas applicable et montant FJ différent de 0;19;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours où FJ et DS non compatibles;33;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:32";="590783239";Séjours sans anomalies;22833;;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours valorisés;4602;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours non controlés dans ce tableau (*);3;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours taux de remb différent de 100 et montant TM égal à 0;37;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;37;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours FJ n'est pas applicable et montant FJ différent de 0;614;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours où FJ et DS non compatibles;0;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours où mnt BR différent de mnt AM+mnt TM;3;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:34";="590785374";Séjours sans anomalies;3916;;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours valorisés;44465;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours non controlés dans ce tableau (*);5413;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours avec pb de codage des variables non bloquantes;2;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours taux de remb égal à 100 et montant TM différent de 0;3;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours FJ n'est pas applicable et montant FJ différent de 0;3;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours où FJ et DS non compatibles;4;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours où mnt BR différent de mnt AM+mnt TM;6333;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);2;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:41";="020000063";Séjours sans anomalies;32706;;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours valorisés;48640;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours non controlés dans ce tableau (*);27798;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours taux de remb égal à 100 et montant TM différent de 0;155;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;9;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours FJ n'est pas applicable et montant FJ différent de 0;0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours où FJ et DS non compatibles;0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours où mnt BR différent de mnt AM+mnt TM;3556;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:54";="590000188";Séjours sans anomalies;17232;;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours valorisés;11642;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours non controlés dans ce tableau (*);443;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours avec pb de codage des variables non bloquantes;41;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours taux de remb égal à 100 et montant TM différent de 0;2;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;0;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours FJ n'est pas applicable et montant FJ différent de 0;6;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours où FJ et DS non compatibles;1;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours où mnt BR différent de mnt AM+mnt TM;2039;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Autres séjours avec exo Tm=2 et Tx remb=100% (***);2;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:55:04";="620103432";Séjours sans anomalies;9113;;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours valorisés;12157;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours non controlés dans ce tableau (*);746;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours taux de remb différent de 100 et montant TM égal à 0;39;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;8;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours FJ n'est pas applicable et montant FJ différent de 0;314;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours où FJ et DS non compatibles;252;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours où mnt BR différent de mnt AM+mnt TM;7;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:28";="590782637";Séjours sans anomalies;10791;;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours valorisés;12357;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours non controlés dans ce tableau (*);766;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours taux de remb différent de 100 et montant TM égal à 0;0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;1;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours FJ n'est pas applicable et montant FJ différent de 0;71;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours où FJ et DS non compatibles;0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:29";="590781803";Séjours sans anomalies;11518;;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours valorisés;14122;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours non controlés dans ce tableau (*);1170;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours taux de remb différent de 100 et montant TM égal à 0;160;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours taux de remb égal à 100 et montant TM différent de 0;0;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;3;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours FJ n'est pas applicable et montant FJ différent de 0;149;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours où FJ et DS non compatibles;8;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Autres séjours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:39";="590780227";Séjours sans anomalies;12632;;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours valorisés;78183;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours non controlés dans ce tableau (*);12316;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours avec pb de codage des variables non bloquantes;0;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours taux de remb différent de 100 et montant TM égal à 0;6167;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours taux de remb égal à 100 et montant TM différent de 0;1;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours FJ à la charge de l'assuré et montant FJ égal à 0;67;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours FJ n'est pas applicable et montant FJ différent de 0;275;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours où FJ et DS non compatibles;340;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours où mnt BR différent de mnt AM+mnt TM;0;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb différent de 100% (**);0;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Autres séjours avec exo Tm=2 et Tx remb=100% (***);1;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:46:00";="800000044";Séjours sans anomalies;59016;;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours valorisÃ©s;17946;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours non controlÃ©s dans ce tableau (*);929;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours avec pb de codage des variables non bloquantes;0;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours taux de remb diffÃ©rent de 100 et montant TM Ã©gal Ã  0;626;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours taux de remb Ã©gal Ã  100 et montant TM diffÃ©rent de 0;1;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours FJ Ã  la charge de l'assurÃ© et montant FJ Ã©gal Ã  0;7;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours FJ n'est pas applicable et montant FJ diffÃ©rent de 0;137;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours oÃ¹ FJ et DS non compatibles;18;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours oÃ¹ mnt BR diffÃ©rent de mnt AM+mnt TM;0;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours de + 30 jours avec exo Tm=2, transfert depuis MCO et Tx remb diffÃ©rent de 100% (**);0;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";Autres sÃ©jours avec exo Tm=2 et Tx remb=100% (***);0;;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:51";="590781902";SÃ©jours sans anomalies;16228;;2023.7;X590781902;07SEP23;20:00:41

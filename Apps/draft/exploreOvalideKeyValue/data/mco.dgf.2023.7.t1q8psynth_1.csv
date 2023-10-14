@@ -1,0 +1,1006 @@
+"champ";"statut";"annee";"periode";"date du resultat";"ipe";nb;var;tri;lib;by;per_comp;finess_comp;date_comp;temp_comp
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/08 14:41:36";="800000036";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000036;08AUG23;14:40:54
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/11 08:31:27";="600100168";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600100168;11AUG23;8:30:51
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/18 15:15:24";="020000022";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000022;18AUG23;15:14:25
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/22 19:10:16";="590782439";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782439;22AUG23;19:09:40
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/23 11:55:12";="590049565";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590049565;23AUG23;11:54:38
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";435;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";1;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";6;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";3;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";203;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";435;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";434;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";440;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/24 14:39:03";="020000253";6;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000253;24AUG23;14:38:01
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 10:38:15";="620003376";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620003376;25AUG23;10:37:19
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";1104;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";12;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";6;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";1;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";23;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";15;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";267;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";1112;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";1098;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";12;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";6;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";2;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";1118;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 12:06:30";="620101337";18;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620101337;25AUG23;12:05:23
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/25 14:47:17";="800000077";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000077;25AUG23;14:46:27
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:10:25";="590782645";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782645;28AUG23;12:09:41
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 12:51:45";="600100572";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600100572;28AUG23;12:51:09
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/28 15:44:54";="020004495";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020004495;28AUG23;15:44:15
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:24:53";="020000055";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000055;29AUG23;9:24:09
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";484;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";1;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";3;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";487;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";486;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";487;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:29:21";="590782652";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782652;29AUG23;9:28:13
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 09:49:04";="590780052";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590780052;29AUG23;9:48:30
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";44;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 10:20:03";="600100648";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600100648;29AUG23;10:19:13
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:05:47";="620000026";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620000026;29AUG23;13:05:03
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 13:23:34";="590065223";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590065223;29AUG23;13:23:00
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:21:40";="620003350";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620003350;29AUG23;14:20:57
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:23:38";="590000600";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590000600;29AUG23;14:23:02
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";506;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";2;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";4;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";3;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";3;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";1;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";509;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";504;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";4;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";507;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:25:17";="620025346";-1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620025346;29AUG23;14:24:34
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:40:49";="590001749";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590001749;29AUG23;14:40:05
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:46:59";="590781670";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781670;29AUG23;14:46:17
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";537;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";5;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";11;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";3;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";203;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";546;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";536;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";6;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";4;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";543;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 14:51:20";="020000261";3;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000261;29AUG23;14:50:19
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";566;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";5;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";3;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";5;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";3;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";262;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";576;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";566;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";5;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";3;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";5;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";564;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:14:22";="620100651";-7;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620100651;29AUG23;16:13:10
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/29 16:40:41";="620027839";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620027839;29AUG23;16:39:44
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:36:13";="590780284";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590780284;30AUG23;8:35:11
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";276;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";3;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";7;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";4;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";113;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";280;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";271;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";3;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";6;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";277;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 08:43:14";="020000287";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000287;30AUG23;8:42:17
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1013;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";7;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";8;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";12;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";2;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1052;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1037;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";7;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";8;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";1018;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 10:33:25";="590797353";-27;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590797353;30AUG23;10:32:13
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";1678;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";12;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";2;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";10;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";27;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";7;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";553;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";1703;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";1680;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";14;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";2;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";9;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";1695;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 11:30:10";="590782421";6;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782421;30AUG23;11:28:50
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 12:12:16";="800000051";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000051;30AUG23;12:11:16
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 13:42:32";="800000135";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000135;30AUG23;13:41:48
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";493;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";2;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";1;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";158;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";494;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";492;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";2;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";492;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:11:51";="590782165";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782165;30AUG23;14:10:49
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";615;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";4;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";3;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";6;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";2;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";124;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";622;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";615;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";4;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";3;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";3;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";617;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:39:53";="620101360";-1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620101360;30AUG23;14:38:44
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";334;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";3;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";5;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";1;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";61;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";336;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";328;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";3;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";5;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";332;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 14:56:23";="590781662";-1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781662;30AUG23;14:55:22
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";206;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";1;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";119;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";205;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";204;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";205;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:05:12";="590781621";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781621;30AUG23;15:03:46
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";309;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";1;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";8;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";317;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";314;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";2;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";316;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 15:19:53";="590052056";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590052056;30AUG23;15:19:03
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/30 16:35:17";="590781795";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781795;30AUG23;16:33:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 09:37:20";="620100677";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620100677;31AUG23;9:36:32
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1022;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";3;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";10;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";6;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";6;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";423;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1027;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1014;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";3;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";10;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1025;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:38:12";="590781415";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781415;31AUG23;10:37:00
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";550;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";5;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";2;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";1;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";11;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";3;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";157;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";560;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";554;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";5;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";2;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";1;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";556;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 10:39:20";="620103440";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620103440;31AUG23;10:37:57
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:13:55";="800000085";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000085;31AUG23;11:13:08
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";2776;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";36;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";21;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";15;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";70;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";1;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";51;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";651;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";2847;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";2804;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";32;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";18;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";11;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";2812;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 11:49:59";="590780193";-3;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590780193;31AUG23;11:45:29
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";296;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";2;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";2;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";2;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";125;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";296;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";293;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";3;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";296;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 12:25:58";="020004404";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020004404;31AUG23;12:24:34
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";282;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";1;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";2;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";1;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";176;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";296;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";293;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";1;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";2;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";281;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:26:15";="590781605";-14;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781605;31AUG23;14:25:07
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:29:32";="590781811";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781811;31AUG23;14:28:53
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";113;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";1;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";97;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";112;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";111;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";1;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";113;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:34:15";="800000093";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000093;31AUG23;14:33:22
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";1126;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";9;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";3;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";6;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";10;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";1;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";5;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";234;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";1136;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";1122;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";8;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";3;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";6;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";1127;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:53:30";="600100713";-1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600100713;31AUG23;14:51:48
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 14:59:57";="020000048";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000048;31AUG23;14:59:10
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";1825;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";19;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";9;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";37;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";3;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";23;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";370;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";1863;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";1842;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";19;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";10;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";2;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";1849;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 15:43:56";="590782215";5;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782215;31AUG23;15:42:07
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";1333;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";21;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";11;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";9;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";25;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";8;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";429;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";1363;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";1335;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";20;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";11;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";8;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";1340;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 16:59:31";="620100685";-3;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620100685;31AUG23;16:57:50
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";17;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/08/31 18:54:12";="800000069";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000069;31AUG23;18:53:23
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 08:07:05";="020000071";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000071;01SEP23;8:06:20
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";881;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";8;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";2;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";8;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";14;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";9;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";285;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";888;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";873;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";7;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";2;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";8;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";887;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 09:19:18";="600100721";6;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600100721;01SEP23;9:18:13
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";1098;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";11;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";6;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";7;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";18;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";2;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";2;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";141;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";1126;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";1110;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";10;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";7;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";6;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";1108;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:16:13";="620100057";-8;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620100057;01SEP23;12:14:44
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";1464;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";17;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";3;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";10;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";36;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";5;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";266;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";1490;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";1462;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";16;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";4;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";12;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";1483;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 12:22:53";="600101984";9;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X600101984;01SEP23;12:20:52
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";476;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";3;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";1;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";6;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";8;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";6;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";134;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";482;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";473;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";3;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";1;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";6;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";481;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 13:08:25";="800000028";2;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000028;01SEP23;13:07:27
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";847;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";8;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";6;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";14;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";6;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";315;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";858;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";846;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";8;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";6;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";4;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";853;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 14:03:19";="590783239";3;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590783239;01SEP23;14:02:13
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:13:25";="590785374";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590785374;01SEP23;16:12:38
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";928;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";8;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";1;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";11;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";14;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";4;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";234;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";937;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";918;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";8;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";1;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";11;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";934;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 16:56:23";="020000063";5;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X020000063;01SEP23;16:55:02
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/01 18:27:41";="590000188";0;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590000188;01SEP23;18:26:37
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";394;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";6;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";2;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";4;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";5;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";2;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";143;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";399;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";392;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";5;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";2;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";2;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";393;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/04 15:54:52";="620103432";-1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X620103432;04SEP23;15:53:55
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";638;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";3;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";1;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";3;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";360;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";642;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";636;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";2;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";4;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";638;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 09:24:18";="590782637";-2;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590782637;05SEP23;9:23:23
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";640;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";2;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";4;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";10;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";0;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";81;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";645;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";642;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";2;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";5;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";648;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 12:10:12";="590781803";1;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781803;05SEP23;12:09:07
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";1084;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";0;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";0;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";5;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";9;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";1;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";120;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";1071;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";1066;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";0;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";0;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";5;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";1093;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:41:27";="590780227";22;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590780227;05SEP23;17:40:33
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";1179;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";24;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";12;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";10;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";30;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";3;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";23;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";254;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";1246;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";1213;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";26;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";12;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";7;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";1188;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/05 17:45:40";="800000044";-32;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X800000044;05SEP23;17:44:11
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";834;Total_Z37;1;A_A_1 : Total accouchements (Z37);1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";8;Acc_MortNe;2;A_A_2 : Accouchements d'enfants mort-nés;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";2;IMG_ap22;3;A_A_3 : ___dont IMG >= 22SA.;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";3;acc_domicile;4;A_A_4 : Accouchements hors établissement de santé;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";11;acc_jumeaux;5;A_A_5 : Accouchements gémellaires;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";0;acc_autres;6;A_A_6 : Autres accouchements multiples;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";6;IMG_av22;7;A_A_7 : IMG <=22 SA.;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";331;IVG;8;A_A_8 : IVG;1: Accouchements;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";866;naissances;9;A_B_1 : Total naissances (vivant/mort-né);2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";855;naissances_vivantes;10;A_B_2 : Naissances vivantes dans l'hôpital;2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";8;mort_ne;11;A_B_3 : Naissances d'enfants mort-nés;2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";2;issu_IMG;12;A_B_4 : ___dont issus IMG >= 22SA.;2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";3;NN_horsHopital;13;A_B_5 : Naissances vivantes hors hôpital;2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";837;estimation_NN;14;A_B_6 : Estimation des naissances vivantes;2: Naissances;2023.7;X590781902;07SEP23;20:00:41
+"mco";"dgf";"2023";"7";"2023/09/07 20:01:39";="590781902";-21;delta_mere;15;A_B_7 : Delta mère-enfant;2: Naissances;2023.7;X590781902;07SEP23;20:00:41

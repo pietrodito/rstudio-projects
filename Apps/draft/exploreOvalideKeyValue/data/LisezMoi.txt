@@ -1,0 +1,75 @@
+Date de téléchargement : 2023/10/12 11:42:16
+---------------------------------------------------------------------
+Vous avez téléchargé une archive zip contenant les données (sous format CSV) des tableaux (ou sous-tableaux) Ovalide des établissements de votre région qui ont validé leurs résultats 
+mco dgf 2023 7 au moment de ce téléchargement.
+Les CSV présents dans ce zip vous permettent d'analyser les données issues des tableaux OVALIDE de manière globale.
+Chaque fichier dans cette archive porte un nom respectant le format suivant : [champ].[statut].[année].[période].[code du tableau ou du sous-tableau].csv.
+Pour votre information, voici la liste des établissements ayant validé leurs résultats au moment de votre téléchargement et inclus dans les fichiers. Attention tous les tableaux ne sont pas systématiquement générés pour tous les établissements. Ce qui fait que tous les fichiers ne contiennent pas tous les IPE.
+
+- 020000022
+- 020000048
+- 020000055
+- 020000063
+- 020000071
+- 020000253
+- 020000261
+- 020000287
+- 020004404
+- 020004495
+- 590000188
+- 590000600
+- 590001749
+- 590049565
+- 590052056
+- 590065223
+- 590780052
+- 590780193
+- 590780227
+- 590780284
+- 590781415
+- 590781605
+- 590781621
+- 590781662
+- 590781670
+- 590781795
+- 590781803
+- 590781811
+- 590781902
+- 590782165
+- 590782215
+- 590782421
+- 590782439
+- 590782637
+- 590782645
+- 590782652
+- 590783239
+- 590785374
+- 590797353
+- 600100168
+- 600100572
+- 600100648
+- 600100713
+- 600100721
+- 600101984
+- 620000026
+- 620003350
+- 620003376
+- 620025346
+- 620027839
+- 620100057
+- 620100651
+- 620100677
+- 620100685
+- 620101337
+- 620101360
+- 620103432
+- 620103440
+- 800000028
+- 800000036
+- 800000044
+- 800000051
+- 800000069
+- 800000077
+- 800000085
+- 800000093
+- 800000135

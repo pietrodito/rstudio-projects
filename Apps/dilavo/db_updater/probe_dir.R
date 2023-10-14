@@ -13,7 +13,6 @@ box::use(
   ],
     
   ./db_updater_utils[
-    is_midnight,
     pick_file_in_ovalide_data,
     treat_file,
   ]
@@ -22,15 +21,9 @@ box::use(
 db_name <- dir_2_probe |> toupper()
 db <- db_connect(db_name)
 
-file <- NULL
+file <- "init"
 
-while(TRUE) {
-  if(is.null(file)) {
-    Sys.sleep(.6)
-    if(is_midnight()) {
-      gc()
-    }
-  }
+while( ! is.null(file)) {
   file <- pick_file_in_ovalide_data(dir_path)
   if( ! is.null(file)) {
     treat_file(dir_2_probe, file, db)

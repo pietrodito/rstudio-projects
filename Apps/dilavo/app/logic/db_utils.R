@@ -16,7 +16,6 @@ box::use(
     ],
 )
 
-
 #' @export
 db_connect <- function(db_name) {
   
@@ -64,6 +63,11 @@ dispatch_uploaded_file <- function(filepath) {
     file.copy(filepath, dir_to_dispatch)
     file.remove(filepath)
     
+    db_name <- basename(dir_to_dispatch)
+    
+    probe_cmd <- paste("./probe_dir.R", db_name, "&")
+    log("> Updating database: ", probe_cmd)
+    system(probe_cmd)
   } else {
     log("> File deleted because filename is not correct: ", filename)
     file.remove(filepath)
