@@ -27,3 +27,7 @@ else
     createdb -h db PSY_OQN
     echo "8 dbs created!"
 fi
+
+
+echo "Setup will now exit"
+exit

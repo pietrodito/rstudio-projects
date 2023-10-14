@@ -1,7 +1,8 @@
 #!/bin/bash
 
-echo THIS IS UPDATER ENTRYPOINT
-touch /logs/entry
+echo "**** DB-UPDATER ENTRYPOINT *****"
+
+
 
 ./probe_dir.R mco_dgf &
 ./probe_dir.R mco_oqn &

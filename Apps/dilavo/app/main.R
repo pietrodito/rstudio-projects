@@ -1,3 +1,4 @@
+options(shiny.maxRequestSize = 100 * 1024^2)
 interactive_tests <-  Sys.getenv("RHINO_PROD") != "true"
 
 box::use(

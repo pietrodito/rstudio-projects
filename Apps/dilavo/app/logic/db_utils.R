@@ -20,8 +20,6 @@ box::use(
 #' @export
 db_connect <- function(db_name) {
   
-  log("> Trying to connect to database...")
-  
   tryCatch(
     {
       dbConnect(Postgres(),
@@ -38,10 +36,13 @@ db_connect <- function(db_name) {
     }
   ) -> db
   
-  log("> Connected to: ", format(db))
+  if (is.null(db)) {
+    log("> Failed to connect to  ", db_name)
+  } else {
+    log("> Connected to: ", format(db))
+  }
   db
 }
-
 
 #' @export
 dispatch_uploaded_file <- function(filepath) {
@@ -51,22 +52,27 @@ dispatch_uploaded_file <- function(filepath) {
   log("-----------------------------")
   log("> ", filename)
   if(filename_is_correct(filename)) {
-    log("File with correct filename: ", filename)
+    log("> File with correct filename: ", filename)
     
     info <- extract_info_from_filename(filename)
     
     dir_to_dispatch <- paste0("/ovalide_data/",
                               info$field, "_", info$status, "/")
     
-    log("The file will be moved to ", dir_to_dispatch)
+    log("> The file will be moved to ", dir_to_dispatch)
     
     file.copy(filepath, dir_to_dispatch)
     file.remove(filepath)
     
   } else {
-    log("File deleted because filename is not correct: ", filename)
+    log("> File deleted because filename is not correct: ", filename)
     file.remove(filepath)
   }
+}
+
+#' @export
+columns_from_db_table <- function(db, table) {
+  
 }
 
 filename_is_correct <- function(filepath) {
@@ -85,6 +91,7 @@ info_are_correct <- function(info) {
     as.integer(info$month) %in% 1:12
 }
 
+#' @export
 extract_info_from_filename <- function(filename) {
   infos <- strsplit(filename, "\\.") |> unlist()
   info <- list(
@@ -94,9 +101,7 @@ extract_info_from_filename <- function(filename) {
     month  = infos[4]
   )
   
-  info <- update_ssr_to_smr(info)
-  log(info, list = T)
-  info
+  update_ssr_to_smr(info)
 }
 
 update_ssr_to_smr <- function(info) {

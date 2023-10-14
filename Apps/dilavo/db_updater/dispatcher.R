@@ -11,8 +11,12 @@ box::use(
   ],
 )
 
+filepath <- NULL
+
 while(TRUE) {
-  Sys.sleep(.3)
+  if(is.null(filepath)) {
+    Sys.sleep(.3)
+  }
   filepath <- pick_file_in_ovalide_data("/ovalide_data/upload/")
   if(! is.null(filepath)) {
     dispatch_uploaded_file(filepath)

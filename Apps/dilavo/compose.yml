@@ -7,35 +7,6 @@ volumes:
 
 services:
 
-  dilavo:
-    container_name: shiny_app
-    build: .
-    restart: always
-    environment:
-      - DB_HOST=db
-      - DB_PORT=5432
-      - DB_NAME=postgres
-      - DB_USER=postgres
-      - DB_PASSWORD=postgres
-    volumes:
-      - ovalide_data:/ovalide_data
-    ports:
-      - "80:3838"
-    depends_on:
-      - db
-        
-  db_updater:
-    container_name: db_updater
-    build:
-      context: .
-      dockerfile: db_updater/Dockerfile
-    restart: always
-    volumes:
-      - ovalide_data:/ovalide_data
-    depends_on:
-      - db
-      - db_setup
-
   db:
     container_name: db
     image: postgres:alpine
@@ -53,6 +24,37 @@ services:
     depends_on:
       - db
 
+  dilavo:
+    container_name: shiny_app
+    build: .
+    restart: always
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    volumes:
+      - ovalide_data:/ovalide_data
+    ports:
+      - "80:3838"
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully
+        
+  db_updater:
+    container_name: db_updater
+    build:
+      context: .
+      dockerfile: db_updater/Dockerfile
+    restart: always
+    volumes:
+      - ovalide_data:/ovalide_data
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully
+
+
   pgadmin:
     container_name: pgadmin
     build: ./pgadmin
@@ -61,5 +63,5 @@ services:
       - "5050:80"
     user: 'root'
     depends_on:
-      - dilavo
-      - db_setup
+      db_setup:
+        condition: service_completed_successfully
