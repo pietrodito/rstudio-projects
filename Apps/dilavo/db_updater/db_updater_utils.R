@@ -124,15 +124,15 @@ treat_csv_file <- function(filepath, db) {
     name_repair = name_repair
   )
   
-  (
-    data
-    |> mutate(ipe = str_remove_all(ipe, '[=|"'),
-              ipe = as.numeric(ipe))
-  ) -> data
-  
   table_code <- extract_table_code(filepath)
   
   if(nrow(data) != 0) {
+    (
+      data
+      |> mutate(ipe = str_remove_all(ipe, '[=|"]'),
+                ipe = as.numeric(ipe))
+    ) -> data
+    
     log("> Trying to load data to db...")
     write_data_to_db(table_code, db, data, basename(filepath))
   } else {

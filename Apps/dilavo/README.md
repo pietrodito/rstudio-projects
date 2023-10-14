@@ -11,14 +11,14 @@ It also uses parallel processes scanning for OVALIDE files to update the databas
 See also the [compose.yml][5] file.
 
 
-## ISSUE
+## ISSUES
 
 - Doing ovalide_utils ovalide: raw -> db for key/values 
-- BUT CANNOT use rhino_pkg !!! Continue to test
+- CANNOT use rhino::pkg_install without reinstalling rstudio!!!
 
 ## TODO
 
-
+- db_updater: le dispatcher 
 
 - Gérer les cas où des colonnes apparaissent ou disparaissent
 - Si colonne en moins `dbAppendTable` gère completement
