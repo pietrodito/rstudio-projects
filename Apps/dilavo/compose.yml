@@ -55,13 +55,13 @@ services:
         condition: service_completed_successfully
 
 
-  pgadmin:
-    container_name: pgadmin
-    build: ./pgadmin
-    restart: always
-    ports:
-      - "5050:80"
-    user: 'root'
-    depends_on:
-      db_setup:
-        condition: service_completed_successfully
+          #  pgadmin:
+          #    container_name: pgadmin
+          #    build: ./pgadmin
+          #    restart: always
+          #    ports:
+          #      - "5050:80"
+          #    user: 'root'
+          #    depends_on:
+          #      db_setup:
+          #        condition: service_completed_successfully

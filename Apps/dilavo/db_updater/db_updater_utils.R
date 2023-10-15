@@ -1,5 +1,8 @@
 box::use(
+  
+  
   app/logic/db_utils[
+    db_connect,
     extract_info_from_filename,
   ],
   
@@ -25,9 +28,26 @@ box::use(
     mutate,
   ],
   
+  furrr[
+    furrr_options,
+    future_walk,
+  ],
+  
+  future[
+    plan,
+    multicore,
+  ],
   
   glue[
     glue,
+  ],
+  
+  progressr[
+    progressor,
+  ], 
+  
+  purrr[
+    walk,
   ],
   
   readr[
@@ -39,14 +59,37 @@ box::use(
     str_remove_all,
   ],
   
-  utils[
-    unzip,
-  ],
 )
 
 
+
 #' @export
-pick_file_in_ovalide_data <- function(dir_path) {
+treat_csv_files <- function(dir_2_probe) {
+  db_name <- dir_2_probe |> toupper()
+  log("---------------------------")
+  log("         ", db_name)
+  log("---------------------------")
+  
+  plan(multicore)
+  
+  filepaths <- list.files(paste0("/ovalide_data/", dir_2_probe),
+                          pattern = "\\.csv$",
+                          full.names = TRUE)
+  filenames <- basename(filepaths)
+  
+  p <- progressor(along = filepaths)
+  N <- length(filepaths)
+  
+  (
+    filepaths
+    |>  future_walk(treat_one_file, db_name, p
+                    #, .options = furrr_options(seed = NULL)
+                    )
+  )
+}
+
+#' @export
+pick_file_in_dir <- function(dir_path) {
   files <- list.files(dir_path)
   if(length(files) > 0) {
     paste0(dir_path, files[1])
@@ -55,46 +98,12 @@ pick_file_in_ovalide_data <- function(dir_path) {
   }
 }
 
-#' @export
-treat_file <- function(dir_2_probe, filepath, db) {
-   log("---------------------------")
-  log("         ", dir_2_probe |> toupper())
-  log("---------------------------")
+treat_one_file <- function(filepath, db_name, p, db) {
   
-  filename <- basename(filepath)
+  log("> Enterting treat_one_file()", filepath)
   
+  p(basename(filepath))
   
-  N <- nchar(filepath)
-  file_extension <- substr(filepath, N - 2, N)
-  
-  
-
-  if (is.null(db)) {
-    
-    log("> Unable to connect to database ", db_name)
-    
-  } else {
-    
-    log("> Treating ", file_extension |> toupper(), " file: ", filepath)
-    log("> file size: ", file.info(filepath)$size)
-    
-    
-    if (file_extension == "csv") {
-      treat_csv_file(filepath, db)
-    }
-    
-    if (file_extension == "zip") {
-      log("> Unziping file...")
-      unzip(filepath, exdir = paste0("/ovalide_data/", dir_2_probe))
-    }
-  }
-  
-  log("> Deleting ", filename)
-  file.remove(filepath)
-}
-
-
-treat_csv_file <- function(filepath, db) {
   log("> Reading data from file...")
   data <- read_csv2(
     filepath,
@@ -102,6 +111,7 @@ treat_csv_file <- function(filepath, db) {
     name_repair = name_repair
   )
   
+  log("> File read.")
   table_code <- extract_table_code(filepath)
   
   if(nrow(data) != 0) {
@@ -112,10 +122,13 @@ treat_csv_file <- function(filepath, db) {
     ) -> data
     
     log("> Trying to load data to db...")
+    db <- db_connect(db_name)
     write_data_to_db(table_code, db, data, basename(filepath))
+    
   } else {
     log("> Empty file...")
   }
+  file.remove(filepath)
 }
 
 write_data_to_db <- function(table_code, db, data, filename) {
@@ -135,15 +148,15 @@ write_data_to_db <- function(table_code, db, data, filename) {
 }
 
 table_exists_in_db <- function(table_code, db) {
- rs <- dbSendStatement(db, glue(
-   "SELECT EXISTS (
+  rs <- dbSendStatement(db, glue(
+    "SELECT EXISTS (
      SELECT 1
      FROM information_schema.tables
      WHERE table_name = '{table_code}'
    ) AS table_existence;" )
- )
- answer <- dbFetch(rs)
- answer[1, 1]
+  )
+  answer <- dbFetch(rs)
+  answer[1, 1]
 }
 
 update_values_in_table <- function(table_code, db, data, filename) {

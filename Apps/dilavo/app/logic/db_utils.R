@@ -14,6 +14,14 @@ box::use(
   DBI[
     dbConnect
     ],
+  
+  stringr[
+    str_remove,
+  ],
+  
+  utils[
+    unzip,
+  ],
 )
 
 #' @export
@@ -58,16 +66,42 @@ dispatch_uploaded_file <- function(filepath) {
     dir_to_dispatch <- paste0("/ovalide_data/",
                               info$field, "_", info$status, "/")
     
-    log("> The file will be moved to ", dir_to_dispatch)
+    N <- nchar(filepath)
+    file_extension <- substr(filepath, N - 2, N)
     
-    file.copy(filepath, dir_to_dispatch)
-    file.remove(filepath)
+    if (file_extension == "zip") {
+      log("> Unziping file...")
+      
+      zip_dir <- tempdir()
+      unzip(filepath, exdir = zip_dir)
+      
+      log("> File unziped...", zip_dir)
+      
+      
+      from <- paste0(zip_dir, "/")
+      file.copy(from = file.path(from, list.files(from)),
+                to   = dir_to_dispatch)
+      
+      log("> File rename from: ", from)
+      log("> File rename to: ",  dir_to_dispatch)
+      
+      
+      file.remove(filepath)
+      
+      
+    } else {
+      log("> The file will be moved to ", dir_to_dispatch)
+      
+      file.copy(filepath, dir_to_dispatch)
+      file.remove(filepath)
+    }
     
     db_name <- basename(dir_to_dispatch)
     
     probe_cmd <- paste("./probe_dir.R", db_name, "&")
     log("> Updating database: ", probe_cmd)
     system(probe_cmd)
+    
   } else {
     log("> File deleted because filename is not correct: ", filename)
     file.remove(filepath)

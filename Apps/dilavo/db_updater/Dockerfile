@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y libpq-dev && \
 RUN R -q -e 'install.packages(c( \
         "box",                   \
         "dplyr",                 \
+        "furrr",                 \
+        "future",                \
         "glue",                  \
+        "progressr",             \
         "readr",                 \
         "RPostgres",             \
         "stringr"                \
