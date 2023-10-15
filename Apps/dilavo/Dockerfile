@@ -18,6 +18,8 @@ RUN mkdir -p /ovalide_data           &&  \
                                          \
     mkdir -p /ovalide_data/upload/   &&  \
                                          \
+    mkdir -p /ovalide_data/tmp/      &&  \
+                                         \
     mkdir -p /ovalide_data/mco_dgf/  &&  \
     mkdir -p /ovalide_data/mco_oqn/  &&  \
                                          \

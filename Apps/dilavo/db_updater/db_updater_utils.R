@@ -58,10 +58,7 @@ box::use(
   stringr[
     str_remove_all,
   ],
-  
 )
-
-
 
 #' @export
 treat_csv_files <- function(dir_2_probe) {
@@ -83,8 +80,7 @@ treat_csv_files <- function(dir_2_probe) {
   (
     filepaths
     |>  future_walk(treat_one_file, db_name, p
-                    #, .options = furrr_options(seed = NULL)
-                    )
+                    , .options = furrr_options(seed = NULL))
   )
 }
 
@@ -100,7 +96,7 @@ pick_file_in_dir <- function(dir_path) {
 
 treat_one_file <- function(filepath, db_name, p, db) {
   
-  log("> Enterting treat_one_file()", filepath)
+  log("> ", filepath)
   
   p(basename(filepath))
   
@@ -162,7 +158,7 @@ table_exists_in_db <- function(table_code, db) {
 update_values_in_table <- function(table_code, db, data, filename) {
   info <- extract_info_from_filename(filename)
   dbSendStatement(db, glue(
-    "DELETE FROM {table_code}
+    "DELETE FROM public.{table_code}
        WHERE champ   = '{info$field}'
          AND statut  = '{info$status}'
          AND annee   = '{info$year}'
