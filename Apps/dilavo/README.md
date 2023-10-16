@@ -13,12 +13,9 @@ See also the [compose.yml][5] file.
 
 ## ISSUES
 
-- Doing ovalide_utils ovalide: raw -> db for key/values 
 - CANNOT use rhino::pkg_install without reinstalling rstudio!!!
 
 ## TODO
-
-- db_updater: le dispatcher 
 
 - Gérer les cas où des colonnes apparaissent ou disparaissent
 - Si colonne en moins `dbAppendTable` gère completement

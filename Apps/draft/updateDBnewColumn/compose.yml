@@ -1,0 +1,39 @@
+version: '3.8'
+name: update_db_new_col
+
+volumes:
+  udbc_db_data:
+
+services:
+
+  db:
+    container_name: udbc_db
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - udbc_db_data:/var/lib/postgresql/data
+
+  r:
+    container_name: udbc_r
+    build: ./app
+    restart: always
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    volumes:
+      - ./R:/R
+        
+  pgadmin:
+    container_name: ubbc_pgadmin
+    build: ./pgadmin
+    restart: always
+    ports:
+      - "5050:80"
+    user: 'root'
