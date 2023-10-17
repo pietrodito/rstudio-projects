@@ -19,7 +19,6 @@ box::use(
   DBI[
     dbAppendTable,
     dbWriteTable,
-    dbDisconnect,
     dbFetch,
     dbSendStatement,
   ],

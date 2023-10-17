@@ -32,7 +32,6 @@ box::use(
   ],
   
   stringr[
-    str_remove,
     str_replace,
   ],
   
@@ -41,6 +40,7 @@ box::use(
     zip,
   ],
 )
+
 
 #' @export
 db_connect <- function(db_name) {
@@ -69,6 +69,10 @@ db_connect <- function(db_name) {
   db
 }
 
+# This function relies on db_updater:
+# - db_updater is waiting for a zip file containing csv files
+# - each time a zip file is added to `/ovalide_data/upload`
+#   csv files are added to the database
 #' @export
 dispatch_uploaded_file <- function(filepath) {
   filename <- basename(filepath)
@@ -90,7 +94,6 @@ dispatch_uploaded_file <- function(filepath) {
     
 }
 
-
 treat_csv_file <- function(filepath) {
   created_filepath <- prepare_raw_key_value_4_db(filepath) 
   zip_file(created_filepath)
@@ -110,7 +113,6 @@ zip_file <- function(created_filepath) {
   
   file.remove(created_filepath)
 }
-
 
 prepare_raw_key_value_4_db <- function(filepath) {
   df <- read_csv2(filepath, name_repair = name_repair) 
@@ -146,7 +148,6 @@ prepare_raw_key_value_4_db <- function(filepath) {
   
   return(created_filepath)
 }
-
 
 treat_zip_file <- function(filepath) {
   filename <- basename(filepath)
@@ -185,7 +186,6 @@ treat_zip_file <- function(filepath) {
   
 }
 
-
 launch_probe_dir <- function(dir_to_dispatch) {
   
   db_name <- basename(dir_to_dispatch)
@@ -193,11 +193,6 @@ launch_probe_dir <- function(dir_to_dispatch) {
   probe_cmd <- paste("./probe_dir.R", db_name, "&")
   log("> Updating database: ", probe_cmd)
   system(probe_cmd)
-}
-
-#' @export
-columns_from_db_table <- function(db, table) {
-  
 }
 
 filename_is_correct <- function(filepath) {

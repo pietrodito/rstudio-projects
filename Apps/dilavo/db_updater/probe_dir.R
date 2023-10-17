@@ -10,10 +10,6 @@ dir_path <- paste0("ovalide_data/", dir_2_probe, "/")
 
 box::use(
   
-  app/logic/log_utils[
-    log,
-  ],
-  
   ./db_updater_utils[
     treat_csv_files,
   ]
