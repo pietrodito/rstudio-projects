@@ -17,17 +17,8 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
-- Gérer les cas où des colonnes apparaissent ou disparaissent
-- Si colonne en moins `dbAppendTable` gère completement
-- Si colonne en plus il faut ALTER TABLE
-
-- Régler les pbs de dépendances dans db_updater
-
-- Use the db_updater PoC to fill database with data
-  - PoC added to app
-  - Now I have to deal with real files
-  - Two major cases 1) scores 2) ovalide .csv
-  - Add everything to database in raw format
+- Make some test with Cypress
+=> means be able to launch db / db_updater on host
 
 
 ## Focus on important design decisions

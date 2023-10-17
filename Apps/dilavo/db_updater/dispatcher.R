@@ -13,6 +13,7 @@ box::use(
 
 filepath <- NULL
 
+
 while(TRUE) {
   if(is.null(filepath)) {
     Sys.sleep(.3)

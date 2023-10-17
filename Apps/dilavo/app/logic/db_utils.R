@@ -21,13 +21,18 @@ box::use(
     ],
   
   dplyr[
+    filter,
     mutate,
     pull,
     rename,
+    row_number,
   ],
   
   readr[
-    read_csv2,
+    cols,
+    guess_encoding,
+    locale,
+    read_delim,
     write_csv2,
   ],
   
@@ -40,6 +45,7 @@ box::use(
     zip,
   ],
 )
+
 
 
 #' @export
@@ -63,8 +69,6 @@ db_connect <- function(db_name) {
   
   if (is.null(db)) {
     log("> Failed to connect to  ", db_name)
-  } else {
-    log("> Connected to: ", format(db))
   }
   db
 }
@@ -115,8 +119,9 @@ zip_file <- function(created_filepath) {
 }
 
 prepare_raw_key_value_4_db <- function(filepath) {
-  df <- read_csv2(filepath, name_repair = name_repair) 
   
+  df <- guess_encoding_and_read_file(filepath)
+    
   (
     df
     |> rename(
@@ -166,6 +171,14 @@ treat_zip_file <- function(filepath) {
                             info$field, "_", info$status, "/")
   
   log("> Unziping file...")
+  
+  wait_for_no_more_csv_files_in <- function(dir_to_dispatch) {
+    while(length(list.files(dir_to_dispatch)) > 0) {
+      Sys.sleep(.3)
+    }
+  }
+  
+  wait_for_no_more_csv_files_in(dir_to_dispatch)
   
   zip_dir <- tempdir()
   unzip(filepath, exdir = zip_dir)
@@ -229,4 +242,30 @@ update_ssr_to_smr <- function(info) {
   info
 }
 
+#' @export
+guess_encoding_and_read_file <- function(filepath) {
+  if(file.size(filepath) > 0) {
+    (
+      filepath
+      |> guess_encoding()
+      |> filter(row_number() == 1)
+      |> pull(encoding)
+    ) -> encoding
+    
+    data <- read_delim(
+      filepath,
+      delim = ";",
+      locale = locale(encoding = encoding),
+      name_repair = name_repair,
+      col_types = cols()
+    )
+    
+  } else {
+    data <- read_delim(filepath,
+                       delim = ";",
+                       col_types = cols())
+  }
+  data[] <- lapply(data, as.character)
+  data
+}
 

@@ -24,8 +24,8 @@ services:
     depends_on:
       - db
 
-  dilavo:
-    container_name: shiny_app
+  app:
+    container_name: app
     build: .
     restart: always
     environment:
@@ -48,6 +48,8 @@ services:
       context: .
       dockerfile: db_updater/Dockerfile
     restart: always
+    environment:
+      - DEBUG=${DEBUG_UPDATER}
     volumes:
       - ovalide_data:/ovalide_data
     depends_on:

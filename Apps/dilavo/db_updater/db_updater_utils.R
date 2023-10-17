@@ -1,9 +1,9 @@
 box::use(
   
-  
   app/logic/db_utils[
     db_connect,
     extract_info_from_filename,
+    guess_encoding_and_read_file,
   ],
   
   app/logic/df_utils[
@@ -16,15 +16,22 @@ box::use(
 )
 
 box::use(
+  
   DBI[
     dbAppendTable,
-    dbWriteTable,
+    dbClearResult,
+    dbDisconnect,
     dbFetch,
+    dbListFields,
     dbSendStatement,
+    dbWriteTable,
   ],
   
   dplyr[
+    bind_rows,
+    left_join,
     mutate,
+    select,
   ],
   
   furrr[
@@ -46,16 +53,21 @@ box::use(
   ], 
   
   purrr[
+    map,
+    pmap_chr,
     walk,
   ],
   
   readr[
     locale,
-    read_csv2,
   ],
   
   stringr[
     str_remove_all,
+  ],
+  
+  tibble[
+    tribble,
   ],
 )
 
@@ -76,11 +88,16 @@ treat_csv_files <- function(dir_2_probe) {
   p <- progressor(along = filepaths)
   N <- length(filepaths)
   
+  which_walk <- future_walk
+  if (Sys.getenv("DEBUG") == "YES") {
+    which_walk <- walk
+  } 
+  
   (
     filepaths
-    |>  future_walk(treat_one_file, db_name, p
-                    , .options = furrr_options(seed = NULL))
+    |> which_walk(treat_one_file, db_name, p)
   )
+  invisible()
 }
 
 #' @export
@@ -95,31 +112,26 @@ pick_file_in_dir <- function(dir_path) {
 
 treat_one_file <- function(filepath, db_name, p, db) {
   
-  log("> ", filepath)
+  log("> Reading file ", filepath)
   
   p(basename(filepath))
   
-  log("> Reading data from file...")
-  data <- read_csv2(
-    filepath,
-    locale = locale(encoding = "WINDOWS-1252"),
-    name_repair = name_repair
-  )
   
-  log("> File read.")
+  data <- guess_encoding_and_read_file(filepath)
+  
   table_code <- extract_table_code(filepath)
   
   if(nrow(data) != 0) {
     (
       data
-      |> mutate(ipe = str_remove_all(ipe, '[=|"]'),
-                ipe = as.numeric(ipe))
+      |> mutate(ipe = str_remove_all(ipe, '[=|"]'))
     ) -> data
     
-    log("> Trying to load data to db...")
     db <- db_connect(db_name)
+    
     write_data_to_db(table_code, db, data, basename(filepath))
     
+    dbDisconnect(db)
   } else {
     log("> Empty file...")
   }
@@ -130,13 +142,12 @@ write_data_to_db <- function(table_code, db, data, filename) {
   if( ! table_exists_in_db(table_code, db)) {
     
     log("> Table ", table_code, " does NOT exists")
-    log("> Creating table ", table_code, " in ", format(db))
     dbWriteTable(db, table_code, data)
     
   } else {
     
     log("> Table ", table_code, " does exists")
-    log("> Inserting values...")
+    add_cols_if_necessary(table_code, db, data)
     update_values_in_table(table_code, db, data, filename)
     
   }
@@ -152,6 +163,70 @@ table_exists_in_db <- function(table_code, db) {
   )
   answer <- dbFetch(rs)
   answer[1, 1]
+}
+
+find_postgres_types <- function(new_cols, data) {
+  
+  types <- map(new_cols, function(col) {
+    tibble::tibble(
+      col = col,
+      R_type = class(data[[col]])
+    )
+  })
+  
+  types <- do.call(bind_rows, types)
+  
+  R_2_db_types <- tribble(
+    ~R_type    , ~postgres_type,
+    "numeric"  , "double precision",
+    "character", "text",
+    "Date"     , "date"
+  )
+  
+  (
+    types
+    |> left_join(R_2_db_types, by = "R_type")
+    |> select(col, postgres_type)
+  )
+}
+
+create_new_cols <- function(tablename, db, types) {
+  
+  log("> create_new_cols table: ", tablename)
+  log("> create_new_cols db: ", format(db))
+  log("> create_new_cols types: ", types)
+  
+  add_col <- function(col, postgres_type) {
+    statement <- paste0(
+      "ALTER TABLE ", tablename,
+      " ADD COLUMN ", col, " ", postgres_type, ";"
+    )
+  }
+  
+  statements <- pmap_chr(types, add_col)
+  
+  walk(statements, function(s) {
+    rs <- dbSendStatement(db, s)
+    dbClearResult(rs)
+  })
+}
+
+add_cols_if_necessary <- function(table_code, db, data) {
+  
+  old_cols <- dbListFields(db, table_code)
+  
+  new_cols <- setdiff(names(data), old_cols)
+  
+  if(length(new_cols) > 0) {
+    
+    log(" > new_cols in ", table_code, ": ", new_cols)
+
+    types <- find_postgres_types(new_cols, data)
+    
+    create_new_cols(table_code, db, types)
+    
+    log(" > cols created in ", table_code)
+  }
 }
 
 update_values_in_table <- function(table_code, db, data, filename) {

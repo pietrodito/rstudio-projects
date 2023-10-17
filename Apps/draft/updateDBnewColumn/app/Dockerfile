@@ -11,9 +11,5 @@ RUN apt-get update && apt-get install -y libpq-dev && \
         rm -rf /var/lib/apt/lists/*
 RUN R -q -e 'install.packages(c("RPostgres", "tidyverse"))'
 
-RUN mkdir -p /R/ && chown 999:999 /R/
-
-RUN useradd updater -u 999
-USER updater
 
 ENTRYPOINT [ "sleep", "3600" ]
