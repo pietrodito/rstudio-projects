@@ -24,7 +24,7 @@ server <- function(id) {
     output$out <- renderText({
       paste(
         system("echo $USER", intern = T),
-        system("id -u",      intern = T),
+        system("id -u"     , intern = T),
         sep = "\n"
       )
     })

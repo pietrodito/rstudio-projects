@@ -33,7 +33,7 @@ server <- function(id) {
      observe({
        req(input$upload)
        
-       filename <- paste0("/ovalide_data/upload/", input$upload$name)
+       filename <- paste0("ovalide_data/upload/", input$upload$name)
        
        file.copy(input$upload$datapath, filename)
        

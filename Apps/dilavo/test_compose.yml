@@ -7,7 +7,7 @@ volumes:
 services:
 
   db:
-    container_name: test_db
+    container_name: db
     image: postgres:alpine
     restart: always
     environment:
@@ -19,12 +19,12 @@ services:
 
   db_setup:
     build: db_setup
-    container_name: test_db_setup
+    container_name: db_setup
     depends_on:
       - db
 
   db_updater:
-    container_name: test_db_updater
+    container_name: db_updater
     build:
       context: .
       dockerfile: db_updater/Dockerfile
@@ -32,13 +32,13 @@ services:
     environment:
       - DEBUG=${DEBUG_UPDATER}
     volumes:
-      - ./tests/ovalide_data:/ovalide_data
+      - ./ovalide_data:/ovalide_data
     depends_on:
       db_setup:
         condition: service_completed_successfully
 
   pgadmin:
-    container_name: test_pgadmin
+    container_name: pgadmin
     build: ./pgadmin
     restart: always
     ports:
