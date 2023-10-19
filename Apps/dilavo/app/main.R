@@ -123,8 +123,8 @@ test_ui <-  function(ns) {
   
   
   list(
-    do.call(router_ui, router_ui_args),
-    wellPanel(menu)
+    wellPanel(menu),
+    do.call(router_ui, router_ui_args)
   )
 }
 
