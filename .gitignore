@@ -1,6 +1,10 @@
 .local/
 .cache/
 .sh_history
+.bash_history
+.Rhistory
 .vim
 .viminfo
 .npm/
+.config/Cypress/
+.pki/
