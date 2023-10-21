@@ -10,4 +10,3 @@ options(box.path = getwd())
 
 # added by consoleR
 if (interactive()) { source("~/.Rprofile") }
-
