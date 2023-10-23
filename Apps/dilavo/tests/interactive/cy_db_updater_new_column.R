@@ -5,6 +5,10 @@ box::use(
     dbRemoveTable,
   ],
   
+  purrr[
+    walk,
+  ],
+  
   shiny[
     actionButton,
     textOutput,
@@ -13,6 +17,10 @@ box::use(
     NS,
     observeEvent,
     renderText,
+  ],
+  
+  utils[
+    str,
   ],
 )
 
@@ -41,13 +49,27 @@ ui <- function(id) {
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
     
-    # db <- db_connect("PSY_OQN")
+    db <- db_connect("PSY_OQN")
       
     output$out <- renderText("Click buttons")
     
     observeEvent(input$reset, {
       tables <- dbListTables(db)
-      str(tables)
+      walk(tables, ~ dbRemoveTable(db, .x))
+    })
+    
+    observeEvent(input$cols, {
+      output$out <- renderText(dbListTables(db))
+    })
+    
+    observeEvent(input$up1, {
+      file.copy("tests/interactive/data/psy.oqn.2023.1.sample.zip",
+                "ovalide_data/upload")
+    })
+    
+    observeEvent(input$up2, {
+      file.copy("tests/interactive/data/psy.oqn.2023.7.sample.zip",
+                "ovalide_data/upload")
     })
   })
 }

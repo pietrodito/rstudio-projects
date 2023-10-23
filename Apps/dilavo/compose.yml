@@ -51,6 +51,7 @@ services:
     restart: always
     environment:
       - DEBUG=${DEBUG_UPDATER}
+      - RUN_IN_DOCKER=YES
     volumes:
       - ovalide_data:/ovalide_data
     depends_on:

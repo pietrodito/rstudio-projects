@@ -11,7 +11,7 @@ chmod -R 777 ./ovalide_data
 
 ## Down everybody
 docker compose down
-docker compose -f test_compose.yml down  && \
+docker compose -f test_compose.yml down
 
 
 if [ "$RUN_IN_RSTUDIO" == "NO" ]
@@ -27,8 +27,8 @@ else
 
   echo "*** App will RUN IN RSTUDIO ***"
 
-  docker network inspect test_network >/dev/null 2>&1 || \
-    docker network create test_network
+ # docker network inspect test_network >/dev/null 2>&1 || \
+ #   docker network create test_network
 
   docker compose -f test_compose.yml build && \
   docker compose -f test_compose.yml up  --detach

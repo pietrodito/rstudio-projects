@@ -51,13 +51,30 @@ box::use(
 #' @export
 db_connect <- function(db_name) {
   
+  host     <- NULL
+  port     <- NULL
+  user     <- NULL
+  password <- NULL
+  
+  if(Sys.getenv("RUN_IN_DOCKER") == "YES") {
+    host     <- Sys.getenv("DB_HOST"    )
+    port     <- Sys.getenv("DB_PORT"    )
+    user     <- Sys.getenv("DB_USER"    )
+    password <- Sys.getenv("DB_PASSWORD")
+  } else {
+    host     <- "localhost"
+    port     <- "5432"
+    user     <- "postgres"
+    password <- "postgres"
+  }
+  
   tryCatch(
     {
       dbConnect(Postgres(),
-                host     = Sys.getenv("DB_HOST"    ),
-                port     = Sys.getenv("DB_PORT"    ),
-                user     = Sys.getenv("DB_USER"    ),
-                password = Sys.getenv("DB_PASSWORD"),
+                host     = host    ,
+                port     = port    ,
+                user     = user    ,
+                password = password,
                 dbname  = db_name)
     },
     error = function(cond) {

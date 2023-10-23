@@ -14,6 +14,8 @@ services:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -31,6 +33,7 @@ services:
     restart: always
     environment:
       - DEBUG=${DEBUG_UPDATER}
+      - RUN_IN_DOCKER=YES
     volumes:
       - ./ovalide_data:/ovalide_data
     depends_on:
@@ -47,8 +50,3 @@ services:
     depends_on:
       db_setup:
         condition: service_completed_successfully
-
-networks:
-  network1:
-    name: test_network
-    external: true
