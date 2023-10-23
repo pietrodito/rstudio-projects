@@ -33,12 +33,12 @@ send_message <- function(...) {
 }
 
 tryCatch(
-  send_message("Veuillez patienter...")
-  write(
-    "Veuillez",
-    "/ovalide_data/messages/message.txt"
-  )
-  treat_csv_files(dir_2_probe),
+  {
+    send_message("Veuillez patienter...")
+    treat_csv_files(dir_2_probe)
+    
+  },
+  
   error = function(e) {
     message('ERROR when treating csv files')
     print(e)
@@ -50,4 +50,5 @@ tryCatch(
     send_message(
       "Les données ", dir_2_probe, " ont été mises à jour."
     )
+  }
 )

@@ -75,7 +75,8 @@ app_server <- function(input, output, session) {
    req(fileMessage)
    if( ! is.null(fileMessage())) {
      showNotification(fileMessage(), type = "error")
-     file.remove("messages/message.txt")
+     file.remove(
+       ovalide_data_path("messages/message.txt"))
    }
  })
 }
