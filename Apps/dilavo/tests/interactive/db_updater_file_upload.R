@@ -7,6 +7,7 @@ box::use(
     NS,
     observe,
     req,
+    showNotification,
   ],
 )
 
@@ -43,6 +44,8 @@ server <- function(id) {
        filename <-ovalide_data_path(
          paste0("upload/", input$upload$name))
        
+     showNotification("Veuillez patienter...",
+                      type = "message")
        
        file.copy(input$upload$datapath, filename)
        

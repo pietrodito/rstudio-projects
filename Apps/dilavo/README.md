@@ -13,15 +13,15 @@ See also the [compose.yml][5] file.
 
 ## ISSUES
 
-- New error when uploading file, must be permissions issues
-- Reproduce upload a zip file and nothing happens
-
 - CANNOT use rhino::pkg_install without reinstalling rstudio!!!
 
 ## TODO
 
-- Make some test with Cypress
-=> means be able to launch db / db_updater on host
+- Refactor notification to remove them from main.R
+
+- Finish first real test with Cypress:
+ => detect notification to wait for.
+ => see if id can help
 
 
 ## Focus on important design decisions

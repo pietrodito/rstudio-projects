@@ -51,8 +51,6 @@ app_ui <-  function(ns) {
   )
 }
 
-
-
 app_server <- function(input, output, session) {
   
   readFunc <- function(filePath) {
@@ -64,21 +62,21 @@ app_server <- function(input, output, session) {
     }
   }
   
-  fileMessage <- reactiveFileReader(
+  publicMessage <- reactiveFileReader(
     intervalMillis = 1000,
     session = NULL,
-    filePath = ovalide_data_path("messages/message.txt"),
+    filePath = ovalide_data_path("messages/public_message.txt"),
     readFunc = readFunc
   )
- 
+  
  observe({
-   req(fileMessage)
-   if( ! is.null(fileMessage())) {
-     showNotification(fileMessage(), type = "error")
-     file.remove(
-       ovalide_data_path("messages/message.txt"))
+   req(publicMessage)
+   if( ! is.null(publicMessage())) {
+     showNotification(publicMessage(),
+                      type = "message")
    }
  })
+ 
 }
 
 ## DO NOT MODIFY lines below

@@ -26,17 +26,16 @@ box::use(
 )
 
 send_message <- function(...) {
+  
     write(
       paste0(...),
-      "/ovalide_data/messages/message.txt"
-      )
+      "/ovalide_data/messages/public_message.txt"
+    )
 }
 
 tryCatch(
   {
-    send_message("Veuillez patienter...")
     treat_csv_files(dir_2_probe)
-    
   },
   
   error = function(e) {
@@ -48,7 +47,8 @@ tryCatch(
     ## remove all files
     unlink(paste0(dir_path, "*"))
     send_message(
-      "Les données ", dir_2_probe, " ont été mises à jour."
+      "Les données ", dir_2_probe,
+      " ont été mises à jour le ", Sys.time()
     )
   }
 )
