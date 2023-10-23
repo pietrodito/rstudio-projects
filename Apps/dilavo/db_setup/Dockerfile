@@ -6,7 +6,7 @@ WORKDIR /home/postgres
 
 COPY . .
 
-RUN chown -R postgres /home/postgres/ 
+RUN chown -R postgres /home/postgres/
 
 USER postgres
 

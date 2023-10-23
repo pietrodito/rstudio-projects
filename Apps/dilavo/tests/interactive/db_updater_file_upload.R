@@ -17,6 +17,10 @@ box::use(
     dispatch_uploaded_file,
   ],
   
+  app/logic/log_utils[
+    log,
+  ],
+  
 )
 
 #' @export
@@ -33,7 +37,15 @@ server <- function(id) {
      observe({
        req(input$upload)
        
-       filename <- paste0("ovalide_data/upload/", input$upload$name)
+       if(Sys.getenv("RUN_IN_DOCKER") == "YES") {
+         parent_dir <- "/"
+       } else {
+         parent_dir <- ""
+       }
+       
+       filename <- paste0(parent_dir,
+                          "ovalide_data/upload/", input$upload$name)
+       
        
        file.copy(input$upload$datapath, filename)
        

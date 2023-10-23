@@ -2,6 +2,12 @@ options(shiny.maxRequestSize = 100 * 1024^2)
 interactive_tests <-  Sys.getenv("RHINO_PROD") != "true"
 
 box::use(
+  app/logic/log_utils[
+    log,
+  ],
+)
+
+box::use(
   shiny[
     a,
     fluidPage,

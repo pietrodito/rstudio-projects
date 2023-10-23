@@ -246,5 +246,3 @@ extract_table_code <- function(filepath) {
   infos <- strsplit(filename, "\\.") |> unlist()
   infos[5]
 }
-
-

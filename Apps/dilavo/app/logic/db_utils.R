@@ -88,14 +88,21 @@ dispatch_uploaded_file <- function(filepath) {
   N <- nchar(filepath)
   file_extension <- substr(filepath, N - 2, N)
   
-  if (file_extension == "zip") {
-    treat_zip_file(filepath)
-  }
-  
-  if (file_extension == "csv") {
-    treat_csv_file(filepath)
-  }
-    
+  switch(file_extension,
+         zip = {
+           treat_zip_file(filepath)
+         },
+         
+         csv = {
+           treat_csv_file(filepath)
+         },
+         
+         ## default:
+         {
+           log("> File deleted because extension is not correct: ", filename)
+           file.remove(filepath)
+           return(NULL)
+         })
 }
 
 treat_csv_file <- function(filepath) {
@@ -194,7 +201,7 @@ treat_zip_file <- function(filepath) {
   log("> File rename to: ",  dir_to_dispatch)
   
   file.remove(filepath)
-  
+    
   launch_probe_dir(dir_to_dispatch)
   
 }
@@ -268,4 +275,3 @@ guess_encoding_and_read_file <- function(filepath) {
   data[] <- lapply(data, as.character)
   data
 }
-
