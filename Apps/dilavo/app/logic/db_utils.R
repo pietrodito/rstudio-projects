@@ -36,6 +36,10 @@ box::use(
     write_csv2,
   ],
   
+  stats[
+    runif,
+  ],
+  
   stringr[
     str_replace,
   ],
@@ -204,7 +208,7 @@ treat_zip_file <- function(filepath) {
   
   wait_for_no_more_csv_files_in(dir_to_dispatch)
   
-  zip_dir <- tempdir()
+  zip_dir <- paste0(tempdir(), runif(1))
   unzip(filepath, exdir = zip_dir)
   
   log("> File unziped...", zip_dir)
@@ -218,6 +222,7 @@ treat_zip_file <- function(filepath) {
   log("> File rename to: ",  dir_to_dispatch)
   
   file.remove(filepath)
+  system(paste0("rm -rf ", zip_dir))
     
   launch_probe_dir(dir_to_dispatch)
   

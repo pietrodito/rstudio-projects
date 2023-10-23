@@ -1,6 +1,7 @@
 box::use(
   
   DBI[
+    dbListFields,
     dbListTables,
     dbRemoveTable,
   ],
@@ -22,6 +23,7 @@ box::use(
   utils[
     str,
   ],
+  
 )
 
 box::use(
@@ -38,9 +40,10 @@ ui <- function(id) {
   ns <- NS(id)
   bootstrapPage(
     actionButton(ns("reset"), "Reset PSY_OQN db"),
-    actionButton(ns("cols"), "Display cols table ???"),
-    actionButton(ns("up1"), "Upload troncated Jan 2023"),
-    actionButton(ns("up2"), "Upload troncated Jul 2023"),
+    actionButton(ns("list"), "list  tables"),
+    actionButton(ns("cols"), "Display cols table t1q2chcr_3"),
+    actionButton(ns("up1"), "Upload sample from Jan 2023"),
+    actionButton(ns("up2"), "Upload sample from Jul 2023"),
     textOutput(ns("out"))
   )
 }
@@ -58,8 +61,12 @@ server <- function(id) {
       walk(tables, ~ dbRemoveTable(db, .x))
     })
     
-    observeEvent(input$cols, {
+    observeEvent(input$list, {
       output$out <- renderText(dbListTables(db))
+    })
+    
+    observeEvent(input$cols, {
+      output$out <- renderText(dbListFields(db, "t1q2chcr_3"))
     })
     
     observeEvent(input$up1, {

@@ -5,18 +5,28 @@ box::use(
   app/logic/log_utils[
     log,
   ],
+  
+  app/logic/ovalide_data_utils[
+    ovalide_data_path,
+  ],
 )
 
 box::use(
   shiny[
     a,
-    fluidPage,
+    actionButton,
     div,
+    fluidPage,
     h2,
     h3,
+    HTML,
     moduleServer,
     NS,
+    observe,
+    reactiveFileReader,
     renderUI,
+    req,
+    showNotification,
     tags,
     uiOutput,
     wellPanel
@@ -28,24 +38,46 @@ box::use(
     router_ui,
     router_server
   ],
+  
+  utils[
+    read.csv,
+  ],
 )
 
 app_ui <-  function(ns) { 
-  uiOutput(ns("message"))
+  fluidPage(
+    h2("Bienvenue dans DILAVO !"),
+    actionButton(ns("app_button"), "Un bouton !")
+  )
 }
+
+
 
 app_server <- function(input, output, session) {
   
-  output$message <- renderUI({
-    div(
-      style =
-        "display: flex; justify-content: center; align-items: center; height: 100vh;",
-      tags$h1(
-        tags$a("Check out Rhino docs!",
-               href = "https://appsilon.github.io/rhino/")
-      )
-    )
-  })
+  readFunc <- function(filePath) {
+    if(! file.exists(filePath)) {
+      return(NULL)
+    } else {
+      lines <- readLines(filePath)
+      paste0(lines, collapse = "\n")
+    }
+  }
+  
+  fileMessage <- reactiveFileReader(
+    intervalMillis = 1000,
+    session = NULL,
+    filePath = ovalide_data_path("messages/message.txt"),
+    readFunc = readFunc
+  )
+ 
+ observe({
+   req(fileMessage)
+   if( ! is.null(fileMessage())) {
+     showNotification(fileMessage(), type = "error")
+     file.remove("messages/message.txt")
+   }
+ })
 }
 
 ## DO NOT MODIFY lines below

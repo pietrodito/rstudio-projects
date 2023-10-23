@@ -1,8 +1,8 @@
-// tests/cypress/integration/db_updater_file_upload.spec.js
+// tests/cypress/integration/db_updater_new_column.spec.js
 
 const fs = require('fs');
 
-describe("File uploader", () => {
+describe("New column in table", () => {
 
   beforeEach(() => {
     cy.visit("#!/db_updater_file_upload")

@@ -25,7 +25,19 @@ box::use(
   ]
 )
 
+send_message <- function(...) {
+    write(
+      paste0(...),
+      "/ovalide_data/messages/message.txt"
+      )
+}
+
 tryCatch(
+  send_message("Veuillez patienter...")
+  write(
+    "Veuillez",
+    "/ovalide_data/messages/message.txt"
+  )
   treat_csv_files(dir_2_probe),
   error = function(e) {
     message('ERROR when treating csv files')
@@ -35,8 +47,7 @@ tryCatch(
   finally = {
     ## remove all files
     unlink(paste0(dir_path, "*"))
-  }
+    send_message(
+      "Les données ", dir_2_probe, " ont été mises à jour."
+    )
 )
-
-
-  

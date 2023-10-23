@@ -21,6 +21,9 @@ box::use(
     log,
   ],
   
+  app/logic/ovalide_data_utils[
+    ovalide_data_path
+  ],
 )
 
 #' @export
@@ -37,14 +40,8 @@ server <- function(id) {
      observe({
        req(input$upload)
        
-       if(Sys.getenv("RUN_IN_DOCKER") == "YES") {
-         parent_dir <- "/"
-       } else {
-         parent_dir <- ""
-       }
-       
-       filename <- paste0(parent_dir,
-                          "ovalide_data/upload/", input$upload$name)
+       filename <-ovalide_data_path(
+         paste0("upload/", input$upload$name))
        
        
        file.copy(input$upload$datapath, filename)
