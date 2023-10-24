@@ -45,6 +45,8 @@ server <- function(id) {
          paste0("upload/", input$upload$name))
        
      showNotification("Veuillez patienter...",
+                      duration = NULL,
+                      id = "only-one",
                       type = "message")
        
        file.copy(input$upload$datapath, filename)

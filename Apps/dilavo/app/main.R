@@ -1,50 +1,13 @@
 options(shiny.maxRequestSize = 100 * 1024^2)
 interactive_tests <-  Sys.getenv("RHINO_PROD") != "true"
 
-box::use(
-  app/logic/log_utils[
-    log,
-  ],
-  
-  app/logic/ovalide_data_utils[
-    ovalide_data_path,
-  ],
-)
-
-box::use(
-  shiny[
-    a,
-    actionButton,
-    div,
-    fluidPage,
-    h2,
-    h3,
-    HTML,
-    moduleServer,
-    NS,
-    observe,
-    reactiveFileReader,
-    renderUI,
-    req,
-    showNotification,
-    tags,
-    uiOutput,
-    wellPanel
-  ],
-  
-  shiny.router[
-    route,
-    route_link,
-    router_ui,
-    router_server
-  ],
-  
-  utils[
-    read.csv,
-  ],
-)
 
 app_ui <-  function(ns) { 
+  
+  box::use(
+    shiny[ actionButton, fluidPage, h2, ],
+  )
+  
   fluidPage(
     h2("Bienvenue dans DILAVO !"),
     actionButton(ns("app_button"), "Un bouton !")
@@ -52,6 +15,18 @@ app_ui <-  function(ns) {
 }
 
 app_server <- function(input, output, session) {
+  
+  notify_updater_messages() 
+}
+
+notify_updater_messages <- function() {
+  
+  box::use(
+    app/logic/ovalide_data_utils[ ovalide_data_path, ],
+    
+    shiny[ observe, reactiveFileReader, req, showNotification,
+    ],
+  ) 
   
   readFunc <- function(filePath) {
     if(! file.exists(filePath)) {
@@ -73,10 +48,10 @@ app_server <- function(input, output, session) {
    req(publicMessage)
    if( ! is.null(publicMessage())) {
      showNotification(publicMessage(),
+                      id = "only-one",
                       type = "message")
    }
  })
- 
 }
 
 ## DO NOT MODIFY lines below
@@ -87,6 +62,10 @@ app_server <- function(input, output, session) {
 ui <- function(id) {
   
   ## DO NOT MODIFY
+  
+  box::use(
+    shiny[ fluidPage, NS, ],
+  )
   
   ns <- NS(id)
   
@@ -114,6 +93,10 @@ server <- function(id) {
   
   ## DO NOT MODIFY
   
+  box::use(
+    shiny[ moduleServer, ],
+  )
+  
   moduleServer(id, function(input, output, session) {
     
     app_server(input, output, session)
@@ -125,10 +108,15 @@ server <- function(id) {
 }
 
 test_ui <-  function(ns) {
-  
   ## DO NOT MODIFY
   
-  box::use(purrr[map])
+  box::use(
+    purrr[ map, ],
+    
+    shiny[ a, tags, wellPanel, ],
+    
+    shiny.router[ route, route_link, router_ui],
+  )
   
   (
     interactive_test_module_names
@@ -169,6 +157,11 @@ test_server <- function(input, output, session) {
   
   ## DO NOT MODIFY
   
+  box::use(
+    purrr[ map, ],
+    shiny.router[ router_server,],
+  )
+  
   router_server()
   
   serve <- function(name) {
@@ -176,20 +169,17 @@ test_server <- function(input, output, session) {
   }
   (
     interactive_test_module_names
-    |> purrr::map(serve)
+    |> map(serve)
   )
 }
 
 setup_env_for_tests <- function(env) {
   
   box::use(
-    fs[
-      dir_ls,
-    ],
     
-    stringr[
-      str_remove,
-    ]
+    fs[ dir_ls, ],
+    
+    stringr[ str_remove, ]
   )
   
   box_use_with_character <- function(string, env) {
@@ -232,8 +222,6 @@ setup_env_for_tests <- function(env) {
     interactive_test_modules
     |> box_use_with_character(env = env)
   )
-  
-  
 }
 
 if (interactive_tests) {
