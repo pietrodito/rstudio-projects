@@ -17,8 +17,6 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
-- Refactor notification to remove them from main.R
-
 - Finish first real test with Cypress:
  => detect notification to wait for.
  => see if id can help

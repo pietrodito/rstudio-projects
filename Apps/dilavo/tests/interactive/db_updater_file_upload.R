@@ -37,6 +37,11 @@ ui <- function(id) {
 
 #' @export
 server <- function(id) {
+  
+  box::use(
+    app/view/ui_utils[ notify_please_wait, ],
+  )
+  
   moduleServer(id, function(input, output, session) {
      observe({
        req(input$upload)
@@ -44,10 +49,7 @@ server <- function(id) {
        filename <-ovalide_data_path(
          paste0("upload/", input$upload$name))
        
-     showNotification("Veuillez patienter...",
-                      duration = NULL,
-                      id = "only-one",
-                      type = "message")
+       notify_please_wait()
        
        file.copy(input$upload$datapath, filename)
        

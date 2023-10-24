@@ -50,6 +50,11 @@ ui <- function(id) {
 
 #' @export
 server <- function(id) {
+  
+  box::use(
+    app/logic/ovalide_data_utils[ ovalide_data_path, ],
+  )
+  
   moduleServer(id, function(input, output, session) {
     
     db <- db_connect("PSY_OQN")
@@ -71,12 +76,12 @@ server <- function(id) {
     
     observeEvent(input$up1, {
       file.copy("tests/interactive/data/psy.oqn.2023.1.sample.zip",
-                "ovalide_data/upload")
+                ovalide_data_path("upload"))
     })
     
     observeEvent(input$up2, {
       file.copy("tests/interactive/data/psy.oqn.2023.7.sample.zip",
-                "ovalide_data/upload")
+                ovalide_data_path("upload"))
     })
   })
 }
