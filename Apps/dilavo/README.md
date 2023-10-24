@@ -17,10 +17,6 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
-- Finish first real test with Cypress:
- => detect notification to wait for.
- => see if id can help
-
 
 ## Focus on important design decisions
 

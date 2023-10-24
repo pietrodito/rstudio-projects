@@ -1,6 +1,17 @@
 options(shiny.maxRequestSize = 100 * 1024^2)
 interactive_tests <-  Sys.getenv("RHINO_PROD") != "true"
 
+box::use(
+  app/logic/ovalide_data_utils[ ovalide_data_path, ],
+) 
+
+updater_message_file <- ovalide_data_path(
+  "messages/public_message.txt"
+)
+
+if (file.exists(updater_message_file)) {
+  file.remove(updater_message_file)
+}
 
 app_ui <-  function(ns) { 
   
@@ -40,7 +51,7 @@ notify_updater_messages <- function() {
   publicMessage <- reactiveFileReader(
     intervalMillis = 1000,
     session = NULL,
-    filePath = ovalide_data_path("messages/public_message.txt"),
+    filePath = updater_message_file,
     readFunc = readFunc
   )
   
