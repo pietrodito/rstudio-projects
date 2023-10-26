@@ -1047,6 +1047,14 @@
       ],
       "Hash": "d61238fd44fc63c8adf4565efe8eb682"
     },
+    "tabulatorr": {
+      "Package": "tabulatorr",
+      "Version": "0.0.0.9000",
+      "Source": "Local",
+      "RemoteType": "local",
+      "RemoteUrl": "~/my_packages/tabulatorr",
+      "Hash": "f3b7464d93260787a371736c71e3221d"
+    },
     "testthat": {
       "Package": "testthat",
       "Version": "3.1.10",

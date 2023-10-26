@@ -39,10 +39,10 @@ See [Dockerfile](./Dockerfile):
 
 PoC can be found in this [project][6].
 
-- The db_updater got one script `probe_dir.R`
-- The script accepts one arg eg. `mco_oqn`
-- The `entrypoint.sh` launches 8 script in background
-  - [mco, had, smr, psy]  x  [dgf, oqn]
+- The `entrypoint.sh` launches 1 script in background `dispatcher.R`
+- Each time a file is added the dispatcher launches a new script:
+   - `probe_dir.R` which accepts one arg eg. `mco_oqn`
+   - This script takes care of the uploading
 
 ### pgAdmin with no password at all
 
