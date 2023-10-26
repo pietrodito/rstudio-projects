@@ -17,6 +17,14 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
+### Updater must maintain a state file for each NATURE
+=> Last time updated / should modify this file when sending update message
+
+### Get score table from key/value table
+- BUild table from other tables
+=> A column could correspond to a line
+
+
 
 ## Focus on important design decisions
 

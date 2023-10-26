@@ -1,0 +1,10 @@
+dependencies:
+  - name: underscore
+    version: 1.13.6
+    src: htmlwidgets/underscore-1.13.6
+    script: underscore.js
+  - name: tabulator
+    version: 5.5.2
+    src: htmlwidgets/tabulator-5.5.2
+    script: tabulator.js
+    stylesheet: tabulator_site.css
