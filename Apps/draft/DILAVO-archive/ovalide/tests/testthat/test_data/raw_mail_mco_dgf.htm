@@ -1,0 +1,1137 @@
+<!-- messageToHospitals.jsp -->
+<!--[if lt IE 7 ]> <html lang="fr" class="ie ieold ie6 touch"> <![endif]-->
+<!--[if IE 7 ]>	<html lang="fr" class="ie ieold ie7 touch"> <![endif]-->
+<!--[if IE 8 ]>	<html lang="fr" class="ie ieold ie8 touch"> <![endif]-->
+<!--[if IE 9 ]>	<html lang="fr" class="ie ie9 touch"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="page-loading enhanced" lang="fr"><!--<![endif]--><head>
+	<!-- METADONNEES -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Plateforme e-PMSI développée par ATIH">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-title" content="Editorially">
+	<meta name="msapplication-TileColor" content="#333333">
+	<meta name="msapplication-TileImage" content="/assets/pinsite.png">
+	<meta name="application-name" content="Editorially">
+	<meta content="authenticity_token" name="csrf-param">
+	<meta content="VnNcHQp3uNcwlPret2wucpwq//GKVQQljT7ecz785V0=" name="csrf-token">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="pragma" content="no-cache">
+	
+	<!-- FEUILLE DE STYLE CSS -->
+	<link rel="shortcut icon" href="https://epmsi.atih.sante.fr/favicon.ico">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/reset.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/bootstrap-theme.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/dashboard.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/editor.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/nav-drawers.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/x-rayHTML.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/styles-custom.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/color-epmsi.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/print.css" media="print" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/jquery.dataTables.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/tree.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/css_002.css" rel="stylesheet" type="text/css">
+	<link href="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/css.css" rel="stylesheet" type="text/css">
+	
+	<!-- SCRIPT JS -->
+	<script type="text/javascript" async="" defer="defer" src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/piwik.js"></script><script type="text/javascript">
+		document.documentElement.className += " page-loading";
+	</script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/jquery.js" type="text/javascript"></script>
+<!--[if lt IE 9 ]><script src="/js/respond.js" type="text/javascript"></script><![endif]-->
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/tide.loader.js" type="text/javascript"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/bootstrap.min.js" type="text/javascript"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/menu.js"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/script-custom.js" type="text/javascript"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/jquery.dataTables.js" type="text/javascript"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/dataTables.buttons.min.js" type="text/javascript"></script>
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/buttons.html5.min.js" type="text/javascript"></script>
+	
+	
+	<title>e-PMSI - Envoi d'un message aux Etablissements</title>
+	
+	<!-- Piwik -->
+	
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['setDocumentTitle', "e-PMSI/Envoi d'un message aux Etablissements"]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  _paq.push(['setUserId', '528417']);
+	  (function() {
+	    var u="//piwik.atih.sante.fr/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', '24']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//piwik.atih.sante.fr/piwik.php?idsite=24" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+	
+	<!-- Script pour le Real User Monitor sur Monitis -->
+	<script src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/jsbenchmark.min.js" type="text/javascript" async="async"></script>
+	
+	
+</head>
+
+<body class=" can-haz-unreadness can-haz-edit-del-discuss can-haz-margin-discussions can-haz-tags can-haz-investor can-haz-spaces can-haz-bulk-export can-haz-delete-account main">
+
+
+		
+ 	
+ 
+	<!-- ====== HEADER ====== -->
+	<div class="navbar" role="navigation">
+		<div class="col-sm-4 col-md-3 col-lg-2">
+			<div class="zone-logo">
+				<div class="row">
+					<!-- LOGO -->
+					<div class="logo">
+						<a href="https://epmsi.atih.sante.fr/welcomeEpmsi.do" class="icomoon-liga">e-</a> <span>PMSI</span>
+					</div>
+										
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-sm-8 col-md-9 col-lg-10">
+			<div class="row">
+				<div class="login">
+				 
+				</div>
+				<!-- TEXTE ENTETE -->
+				<h1 class="header-title">
+					<span>Programme <br>
+					de médicalisation <br>
+					des systèmes <br>
+					d’information</span>
+				</h1>
+				
+				<!-- INFOS UTILISATEUR -->
+				<div class="bloc-compte">
+					
+						
+						<span class="user esp-dt-15">
+							<a href="https://epmsi.atih.sante.fr/userInfo.do?id=528417">
+								<i class="fa fa-user"></i>
+								Pierre&nbsp;BALAYÉ (528417)
+							</a>
+						</span>
+						<span class="logout">
+							<i class="fa fa-power-off"></i>
+							<a href="https://epmsi.atih.sante.fr/jsp/epass/admin/login/logout.jsp">Se déconnecter</a>
+						</span>
+						
+						<span class="select-profil">
+							<form action="/loginAac.do" name="laac" method="post">
+								<select name="assocId" onchange="laac.submit()">
+									
+									
+										<option value="295452" selected="selected">ARS Hauts-de-France</option>
+									
+								</select>
+								<input type="hidden" name="codeApplication" value="epmsi">
+							</form>
+						</span>
+					
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div> <!-- FIN NAVBAR -->	
+	
+	<!-- ====== NAVIGATION LATERALE ====== -->
+	
+	<!-- === MENU === -->
+	 <!-- Utilisateur logué -->
+	<div class="menu-zone col-md-3 col-lg-2">
+		<div class="welcome-text">
+			<a href="https://epmsi.atih.sante.fr/welcomeEpmsi.do"><i class="fa fa-home size-2 picto-accueil"></i></a>
+			<div class="texte-accueil">Bienvenue sur <br> la plateforme <strong>e-PMSI</strong></div>
+		</div>
+		<div>
+			<ul id="accordion" class="accordion">http://localhost:8080/welcomeEpmsi.do
+				
+						<li class="active">
+			<a href="https://epmsi.atih.sante.fr/jsp/epmsi/applis/applis.jsp">Applications<i class="fa fa-chevron-right"></i></a>
+			<ul class="sous-menu-1  active" style="display: block;">
+				<li><a href="https://epmsi.atih.sante.fr/jsp/epmsi/applis/applisMat2a.jsp">OVALIDE MCO HAD SSR/MA Psy</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Administration<i class="fa fa-chevron-right"></i></a>
+			<ul class="sous-menu-1 " style="display: none;">
+				<li><a href="javascript:void(window.open('https://plage.atih.sante.fr/'))">Plage</a></li>
+			</ul>
+		</li>
+		<li><a href="https://epmsi.atih.sante.fr/welcomeEpass.do">Portail e-PASS<i class="fa fa-chevron-right"></i></a></li>
+		<li>
+			<a href="#">Liens utiles<i class="fa fa-chevron-right"></i></a>
+			<ul class="sous-menu-1 " style="display: none;">
+				<li><a href="javascript:void(window.open('https://agora.atih.sante.fr/agora/'))">Support (Agora)</a></li>
+				<li><a href="javascript:void(window.open('http://transfert.atih.sante.fr/'))">Transfer</a></li>
+				<li><a href="javascript:void(window.open('https://plage.atih.sante.fr/'))">Plage</a></li>
+				<li><a href="javascript:void(window.open('http://www.scansante.fr/'))">ScanSanté</a></li>
+				<li><a href="https://epmsi.atih.sante.fr/jsp/epmsi/equipe.jsp">Equipe</a></li>
+			</ul>
+		</li>
+
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="col-md-9 col-lg-10  title-main">
+	
+		<!-- == Lien Rapporter un bug == -->
+		<div class="bug-link">
+			<a href="https://agora.atih.sante.fr/agora/ago_theme.do?idTheme=84" target="_blank">Signaler un bug</a> (en choisissant le bon thème)
+		</div>
+		
+		<!-- === MESSAGE D'ARRET URGENT === -->
+		
+
+		<!-- === MESSAGE GENERAL === -->
+
+		
+			<div class="row"> 
+				<p class="alert-message">
+					Les télétransmission et l'accès aux données sont interrompus ce 
+samedi toute la journée. Veuillez nous excuser pour la gêne occasionnée.
+				</p>
+			</div>
+		
+		
+		<!-- == TITRE DE PAGE == -->
+		<div class="title"><h1>Envoi d'un message aux Etablissements</h1></div>
+		<div class="ligne-header"></div>
+	</div>
+		
+		<!-- == FIL D'ARIANE == -->
+<!-- 		<div class="col-md-9 col-lg-10"> -->
+<!-- 			<ul class="breadcrumb"> -->
+
+<!-- 				<li><a href="#">Products</a></li> -->
+<!-- 				<li class="active">Accessories</li> -->
+<!-- 			</ul> -->
+<!-- 			<div class="ligne-header"></div> -->
+<!-- 		</div> -->
+		
+		
+	
+	 
+
+
+
+	<div class="col-md-9 col-lg-10">
+		<div class="content">
+
+	
+	<div class="row">
+		Votre message sera envoyé aux personnes suivantes :
+	</div>
+	
+	<br>
+
+
+	<div class="row">
+		<div class="col-lg-12 content-table">
+			<table class="tableau">
+				<tbody><tr>
+					<td>N°</td>
+					<td>E-mail</td>
+				</tr>
+				
+					<tr>
+						<td class="text-right-side">1</td>
+						<td>philippe.sarris@chimr.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">2</td>
+						<td>c.laurent@ch-armentieres.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">3</td>
+						<td>d.lemaire@ch-armentieres.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">4</td>
+						<td>dim@ch-somain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">5</td>
+						<td>m-cucchi@o-lambret.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">6</td>
+						<td>michel.fiani@ch-chateau-thierry.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">7</td>
+						<td>veronique.fontaine@fondation-hopale.org</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">8</td>
+						<td>dim@pg-s.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">9</td>
+						<td>responsable.dim@hinove.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">10</td>
+						<td>Agnes.RENARD@gh-artoisternois.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">11</td>
+						<td>anne.audenard@ch-fourmies.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">12</td>
+						<td>elisa.lafitte@ghsc.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">13</td>
+						<td>jessy.leroy@ch-henin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">14</td>
+						<td>lgrimonprez@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">15</td>
+						<td>seguin.olivier@outlook.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">16</td>
+						<td>lagorce-y@ch-valenciennes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">17</td>
+						<td>iserb@ch-denain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">18</td>
+						<td>direction@ch-chaumontenvexin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">19</td>
+						<td>yasmina.regnier@ch-dunkerque.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">20</td>
+						<td>c.bailly@ch-lafere.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">21</td>
+						<td>eboutard@hc-lesjockeys.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">22</td>
+						<td>i.verin@ch-wattrelos.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">23</td>
+						<td>carpentier@ch-hazebrouck.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">24</td>
+						<td>ntzomaa@ch-hirson.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">25</td>
+						<td>virginie.raset@ch-corbie.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">26</td>
+						<td>tskerlak@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">27</td>
+						<td>christian.vandenbussche@gh-artoisternois.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">28</td>
+						<td>f.favre@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">29</td>
+						<td>afernandes@ch-lens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">30</td>
+						<td>alexandre.georges@ch-dunkerque.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">31</td>
+						<td>e.tilloy@ch-calais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">32</td>
+						<td>etrehou@ch-denain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">33</td>
+						<td>scoevoet@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">34</td>
+						<td>sophie.debavelaere@ch-bailleul.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">35</td>
+						<td>Delaby.Laurent@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">36</td>
+						<td>a.parent@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">37</td>
+						<td>djennaoui-m@ch-valenciennes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">38</td>
+						<td>BMansuel@ch-hirson.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">39</td>
+						<td>jepodik@ahnac.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">40</td>
+						<td>natacha.dupuis@ch-arras.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">41</td>
+						<td>direction@ch-stomer.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">42</td>
+						<td>stephane.coquant@chibs.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">43</td>
+						<td>jc.charpentier@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">44</td>
+						<td>jmdevincre@ch-bethune.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">45</td>
+						<td>carrouge.emmanuelle@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">46</td>
+						<td>cvillamaux@ch-denain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">47</td>
+						<td>dib-k@ch-valenciennes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">48</td>
+						<td>kyndt-x@ch-valenciennes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">49</td>
+						<td>frederic.caylar@ch-fourmies.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">50</td>
+						<td>isabelle.planeix@ch-laon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">51</td>
+						<td>caroline.allonier@ghpso.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">52</td>
+						<td>perreard.clement@ch-abbeville.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">53</td>
+						<td>ataleb@ch-doullens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">54</td>
+						<td>didier.theis@chru-lille.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">55</td>
+						<td>c.hennion@ch-calais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">56</td>
+						<td>directioncham@ch-montreuil.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">57</td>
+						<td>montaigne.emmanuelle@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">58</td>
+						<td>j.charpentier@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">59</td>
+						<td>Medecin.dim@ch-avesnes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">60</td>
+						<td>alemonnier@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">61</td>
+						<td>aurelien.cordonnier@ch-chateau-thierry.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">62</td>
+						<td>p.sage@ch-ham.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">63</td>
+						<td>bocquet.daniel@chu-amiens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">64</td>
+						<td>hansske.arnaud@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">65</td>
+						<td>c.dehoux@hdfl.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">66</td>
+						<td>f.petit@ch-lequesnoy.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">67</td>
+						<td>dim@ch-ham.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">68</td>
+						<td>l.ledieu@ch-guise.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">69</td>
+						<td>s.zerkly@ch-beauvais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">70</td>
+						<td>j.hezelot@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">71</td>
+						<td>d.noulette@ch-somain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">72</td>
+						<td>abethune@ch-bethune.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">73</td>
+						<td>annie.serfaty@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">74</td>
+						<td>bpruvot@ch-bethune.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">75</td>
+						<td>bertrand.joly@ch-laon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">76</td>
+						<td>sylvie.morin@ch-soissons.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">77</td>
+						<td>s.erudel@ch-beauvais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">78</td>
+						<td>sec.direction@ch-cambrai.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">79</td>
+						<td>alain.dubois@ch-corbie.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">80</td>
+						<td>direction@ch-boulogne.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">81</td>
+						<td>philippe.paradis@ghtpsy-npdc.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">82</td>
+						<td>RHEVIHARINALA.nilsene@ch-sambre-avesnois.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">83</td>
+						<td>djenati.zahia@ch-sambre-avesnois.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">84</td>
+						<td>fdufossez@ch-bethune.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">85</td>
+						<td>direction@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">86</td>
+						<td>dominique.demolin@ch-stomer.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">87</td>
+						<td>franck.roussel@ch-douai.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">88</td>
+						<td>Emilie.DEMAN@fondationdiaconesses.org</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">89</td>
+						<td>prudhomme.aurore@chu-amiens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">90</td>
+						<td>Hansske.Arnaud@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">91</td>
+						<td>loic.casalini@ch-bailleul.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">92</td>
+						<td>stephanie.bartolo@ch-douai.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">93</td>
+						<td>vcoevoet@ch-lens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">94</td>
+						<td>f-craynest@o-lambret.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">95</td>
+						<td>finances@ch-clermont.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">96</td>
+						<td>claurent@ch-lens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">97</td>
+						<td>lbardoel@ch-lens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">98</td>
+						<td>cbachellez@ch-peronne.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">99</td>
+						<td>germain.marysa@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">100</td>
+						<td>annie.genevois@doctocare.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">101</td>
+						<td>sim@ch-lafere.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">102</td>
+						<td>pmsi@chibs.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">103</td>
+						<td>j.louisy@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">104</td>
+						<td>folydo@hopale.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">105</td>
+						<td>Sk.CAMARA@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">106</td>
+						<td>hubert.olivares@pg-s.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">107</td>
+						<td>jennifer.dagmey@ch-douai.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">108</td>
+						<td>eric.guyader@ch-clermont.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">109</td>
+						<td>a.parent@ch-lequesnoy.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">110</td>
+						<td>lemarcq.coralie@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">111</td>
+						<td>m.merlin2@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">112</td>
+						<td>valerie.damourette@ghsc.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">113</td>
+						<td>ataleb@ch-montreuil.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">114</td>
+						<td>walkiebe@fondation-hopale.org</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">115</td>
+						<td>nicolas.wemaux@ch-roubaix.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">116</td>
+						<td>sec-dg@ch-valenciennes.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">117</td>
+						<td>r.delplanque@ch-lequesnoy.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">118</td>
+						<td>j.sicot@ch-boulogne.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">119</td>
+						<td>lara.rezzouk@ch-soissons.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">120</td>
+						<td>s.paty@ch-cambrai.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">121</td>
+						<td>balcaen.thibaut@chu-amiens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">122</td>
+						<td>ddespinoy@chsa.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">123</td>
+						<td>herve.paul@ch-soissons.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">124</td>
+						<td>audrey.reix@chimr.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">125</td>
+						<td>eaernout@ghlh.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">126</td>
+						<td>yasmina.regnier@ch-stomer.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">127</td>
+						<td>i.couaillier@ch-compiegnenoyon.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">128</td>
+						<td>Lenort.Sylvie@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">129</td>
+						<td>hcn@wanadoo.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">130</td>
+						<td>m.dumoulin@ch-beauvais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">131</td>
+						<td>vaysse.benoit@chu-amiens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">132</td>
+						<td>vanberleere.marine@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">133</td>
+						<td>a.bertal@orange.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">134</td>
+						<td>s.charles@ch-guise.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">135</td>
+						<td>JeanPierre.CORBINAU@fondationdiaconesses.org</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">136</td>
+						<td>doriane.sonneville@ch-bailleul.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">137</td>
+						<td>r.dumont@ch-calais.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">138</td>
+						<td>iverin@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">139</td>
+						<td>delaby.laurent@ghicl.net</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">140</td>
+						<td>nicolas.depas@ch-roubaix.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">141</td>
+						<td>vdupont@ch-lens.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">142</td>
+						<td>vfontaine@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">143</td>
+						<td>emmanuel.dudognon@chu-lille.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">144</td>
+						<td>m.rotsaert@hdfl.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">145</td>
+						<td>madeleine.stangret@eleve.ehesp.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">146</td>
+						<td>amelie.bruandet@chru-lille.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">147</td>
+						<td>ph.heurte@wanadoo.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">148</td>
+						<td>aline.meresse@ch-guise.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">149</td>
+						<td>sabrina.stramandino@ch-peronne.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">150</td>
+						<td>vincent.pierre@ch-abbeville.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">151</td>
+						<td>phmiquel@ahnac.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">152</td>
+						<td>slemaire@ahnac.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">153</td>
+						<td>direction@ch-armentieres.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">154</td>
+						<td>gnansounou.magloire@ch-maubeuge.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">155</td>
+						<td>direction@ch-dunkerque.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">156</td>
+						<td>a.prudhomme@ch-stquentin.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">157</td>
+						<td>SLEMAIRE@ahnac.com</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">158</td>
+						<td>b.remmery@ch-somain.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">159</td>
+						<td>eaernout@ch-tourcoing.fr</td>
+					</tr>
+				
+					<tr>
+						<td class="text-right-side">160</td>
+						<td>peggy.bollengier@ch-stomer.fr</td>
+					</tr>
+				
+			</tbody></table>
+		</div>
+	</div>
+	
+	<br>
+
+	<form name="sendMessageToUsersFormInstance" method="post" action="/sendMessageToUsers.do">
+		<div class="row">
+			Objet de votre message :<br>
+			<input type="text" name="msgSubject" size="60">
+		</div>
+	
+		<br>
+		
+		<div class="row">						
+			Votre message :<br>
+			<textarea name="msgBody" cols="80" rows="15"></textarea><br>
+			<i>Une copie de ce message vous sera envoyée également</i>
+		</div>
+		
+		<br>
+		
+		
+		
+			<div class="row">
+				<input type="submit" value="Envoyer le message">
+			</div>
+				
+		
+			
+		<input type="hidden" name="emails" value="philippe.sarris@chimr.fr c.laurent@ch-armentieres.fr d.lemaire@ch-armentieres.fr dim@ch-somain.fr m-cucchi@o-lambret.fr michel.fiani@ch-chateau-thierry.fr veronique.fontaine@fondation-hopale.org dim@pg-s.com responsable.dim@hinove.fr Agnes.RENARD@gh-artoisternois.fr anne.audenard@ch-fourmies.fr elisa.lafitte@ghsc.fr jessy.leroy@ch-henin.fr lgrimonprez@ch-tourcoing.fr seguin.olivier@outlook.fr lagorce-y@ch-valenciennes.fr iserb@ch-denain.fr direction@ch-chaumontenvexin.fr yasmina.regnier@ch-dunkerque.fr c.bailly@ch-lafere.fr eboutard@hc-lesjockeys.fr i.verin@ch-wattrelos.com carpentier@ch-hazebrouck.fr ntzomaa@ch-hirson.fr virginie.raset@ch-corbie.fr tskerlak@ch-tourcoing.fr christian.vandenbussche@gh-artoisternois.fr f.favre@ch-compiegnenoyon.fr afernandes@ch-lens.fr alexandre.georges@ch-dunkerque.fr e.tilloy@ch-calais.fr etrehou@ch-denain.fr scoevoet@ch-tourcoing.fr sophie.debavelaere@ch-bailleul.fr Delaby.Laurent@ghicl.net a.parent@ch-stquentin.fr djennaoui-m@ch-valenciennes.fr BMansuel@ch-hirson.fr jepodik@ahnac.com natacha.dupuis@ch-arras.fr direction@ch-stomer.fr stephane.coquant@chibs.fr jc.charpentier@ch-compiegnenoyon.fr jmdevincre@ch-bethune.fr carrouge.emmanuelle@ghicl.net cvillamaux@ch-denain.fr dib-k@ch-valenciennes.fr kyndt-x@ch-valenciennes.fr frederic.caylar@ch-fourmies.fr isabelle.planeix@ch-laon.fr caroline.allonier@ghpso.fr perreard.clement@ch-abbeville.fr ataleb@ch-doullens.fr didier.theis@chru-lille.fr c.hennion@ch-calais.fr directioncham@ch-montreuil.fr montaigne.emmanuelle@ghicl.net j.charpentier@ch-stquentin.fr Medecin.dim@ch-avesnes.fr alemonnier@ch-tourcoing.fr aurelien.cordonnier@ch-chateau-thierry.fr p.sage@ch-ham.com bocquet.daniel@chu-amiens.fr hansske.arnaud@ghicl.net c.dehoux@hdfl.fr f.petit@ch-lequesnoy.fr dim@ch-ham.com l.ledieu@ch-guise.fr s.zerkly@ch-beauvais.fr j.hezelot@ch-compiegnenoyon.fr d.noulette@ch-somain.fr abethune@ch-bethune.fr annie.serfaty@ch-stquentin.fr bpruvot@ch-bethune.fr bertrand.joly@ch-laon.fr sylvie.morin@ch-soissons.fr s.erudel@ch-beauvais.fr sec.direction@ch-cambrai.fr alain.dubois@ch-corbie.fr direction@ch-boulogne.fr philippe.paradis@ghtpsy-npdc.fr RHEVIHARINALA.nilsene@ch-sambre-avesnois.fr djenati.zahia@ch-sambre-avesnois.fr fdufossez@ch-bethune.fr direction@ch-compiegnenoyon.fr dominique.demolin@ch-stomer.fr franck.roussel@ch-douai.fr Emilie.DEMAN@fondationdiaconesses.org prudhomme.aurore@chu-amiens.fr Hansske.Arnaud@ghicl.net loic.casalini@ch-bailleul.fr stephanie.bartolo@ch-douai.fr vcoevoet@ch-lens.fr f-craynest@o-lambret.fr finances@ch-clermont.fr claurent@ch-lens.fr lbardoel@ch-lens.fr cbachellez@ch-peronne.fr germain.marysa@ghicl.net annie.genevois@doctocare.com sim@ch-lafere.fr pmsi@chibs.fr j.louisy@ch-stquentin.fr folydo@hopale.com Sk.CAMARA@ch-compiegnenoyon.fr hubert.olivares@pg-s.com jennifer.dagmey@ch-douai.fr eric.guyader@ch-clermont.fr a.parent@ch-lequesnoy.fr lemarcq.coralie@ghicl.net m.merlin2@ch-stquentin.fr valerie.damourette@ghsc.fr ataleb@ch-montreuil.fr walkiebe@fondation-hopale.org nicolas.wemaux@ch-roubaix.fr sec-dg@ch-valenciennes.fr r.delplanque@ch-lequesnoy.fr j.sicot@ch-boulogne.fr lara.rezzouk@ch-soissons.fr s.paty@ch-cambrai.fr balcaen.thibaut@chu-amiens.fr ddespinoy@chsa.fr herve.paul@ch-soissons.fr audrey.reix@chimr.fr eaernout@ghlh.fr yasmina.regnier@ch-stomer.fr i.couaillier@ch-compiegnenoyon.fr Lenort.Sylvie@ghicl.net hcn@wanadoo.fr m.dumoulin@ch-beauvais.fr vaysse.benoit@chu-amiens.fr vanberleere.marine@ghicl.net a.bertal@orange.fr s.charles@ch-guise.fr JeanPierre.CORBINAU@fondationdiaconesses.org doriane.sonneville@ch-bailleul.fr r.dumont@ch-calais.fr iverin@ch-tourcoing.fr delaby.laurent@ghicl.net nicolas.depas@ch-roubaix.fr vdupont@ch-lens.fr vfontaine@ch-tourcoing.fr emmanuel.dudognon@chu-lille.fr m.rotsaert@hdfl.fr madeleine.stangret@eleve.ehesp.fr amelie.bruandet@chru-lille.fr ph.heurte@wanadoo.fr aline.meresse@ch-guise.fr sabrina.stramandino@ch-peronne.fr vincent.pierre@ch-abbeville.fr phmiquel@ahnac.com slemaire@ahnac.com direction@ch-armentieres.fr gnansounou.magloire@ch-maubeuge.fr direction@ch-dunkerque.fr a.prudhomme@ch-stquentin.fr SLEMAIRE@ahnac.com b.remmery@ch-somain.fr eaernout@ch-tourcoing.fr peggy.bollengier@ch-stomer.fr ">
+	</form>
+
+				
+			</div> <!-- FIN CONTENT -->
+		</div> <!-- FIN COL -->
+		<div class="row spacer-30"> </div>
+		<!-- ============ FOOTER =============== -->
+		<div class="footer">
+			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+				<div class="footer-gauche">
+					<a href="https://epmsi.atih.sante.fr/welcomeEpass.do">
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-lg-offset-1">
+							<!-- LOGO E-PASS -->
+							<div class="logo">
+								Portail <span class="icomoon-liga">e-</span>&nbsp;<span>PASS</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+				
+			<div class="col-xs-8 col-sm-8 col-md-9 col-lg-10">
+				<div class="footer-droit">
+					<div class="row ligne-footer"></div>
+					<div class="col-xs-10 col-sm-10 col-md-8 col-lg-9">
+						<p><strong>Agence technique de l'information sur l'hospitalisation</strong><br>
+							117 boulevard Marius Vivier Merle<br>
+							69329 Lyon Cedex 03
+						</p>
+						<p>
+							<span class="mention">Copyright © 2013 ATIH Tous droits réservés</span>
+							<span class="mention"> | </span>
+							<span class="mention"><a href="https://epmsi.atih.sante.fr/jsp/epass/cookies.jsp">Mentions légales</a></span>
+							<span class="mention"> | </span>
+							<span class="mention">Version : PROD_FRONT_FileServer_2023-08-17_17h29_master</span>
+						</p>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-4 col-lg-2 col-lg-offset-1 logo-atih">
+						<a href="http://www.atih.sante.fr/" target="_blank" title="atih"><img src="e-PMSI%20-%20Envoi%20d'un%20message%20aux%20Etablissements_files/Logo_ATIH.png" alt="Logo" title="Vers le site de l'ATIH"></a>
+					</div>
+				</div>	
+			</div>
+				
+		</div>		
+  
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster 
+ANNE 2014-12-09 : Sauf que certaines fonctions sont encore directement appelées dans le code, donc on remonte les scripts dans le header-->
+	     
+  
+		
+	
+
+
+</body></html>

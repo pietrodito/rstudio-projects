@@ -22,11 +22,15 @@ ui <- function(id) {
   )
 }
 
-server <- function(id) {
+server <- function(id, table_name = NULL) {
   
   box::use(
+    
+    app/logic/table_builder_utils
+    [ build_details, ],
+    
     shiny
-    [ moduleServer, ],
+    [ moduleServer, updateTextInput, ],
     
     tabulatorr
     [ renderTabulator, tabulator, ],
@@ -35,6 +39,11 @@ server <- function(id) {
   moduleServer(
     id,
     function(input, output, session) {
+      
+      if(! is.null(table_name)) {
+        updateTextInput(session, "table_name", value = table_name)
+      }
+      
       output$table <- renderTabulator(
         tabulator(
           data.frame(x = letters),
