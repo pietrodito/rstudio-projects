@@ -56,3 +56,13 @@ db_connect <- function(db_name) {
   db
 }
 
+
+## TODO get most recent year exploring the table key_value
+most_recent_year <- function(nature) {
+  2023
+}
+
+#' @export
+list_of_hospitals <- function(nature, year = most_recent_year(nature)) {
+  
+}
