@@ -1,59 +1,20 @@
 # app/logic/db_utils.R
 
 box::use(
-  ../../app/logic/log_utils[
-    log,
-  ],
-  
-  ../../app/logic/df_utils[
-    name_repair,
-  ],
-  
+  ./log_utils
+  [ log, ],
 )
-
-box::use(
-  RPostgres[
-    Postgres
-    ],
-  
-  DBI[
-    dbConnect
-    ],
-  
-  dplyr[
-    filter,
-    mutate,
-    pull,
-    rename,
-    row_number,
-  ],
-  
-  readr[
-    cols,
-    guess_encoding,
-    locale,
-    read_delim,
-    write_csv2,
-  ],
-  
-  stats[
-    runif,
-  ],
-  
-  stringr[
-    str_replace,
-  ],
-  
-  utils[
-    unzip,
-    zip,
-  ],
-)
-
-
 
 #' @export
 db_connect <- function(db_name) {
+  
+  box::use(
+    RPostgres
+    [ Postgres ],
+    
+    DBI
+    [ dbConnect ],
+  )
   
   host     <- NULL
   port     <- NULL
@@ -94,10 +55,6 @@ db_connect <- function(db_name) {
   db
 }
 
-# This function relies on db_updater:
-# - db_updater is waiting for a zip file containing csv files
-# - each time a zip file is added to `/ovalide_data/upload`
-#   csv files are added to the database
 #' @export
 dispatch_uploaded_file <- function(filepath) {
   filename <- basename(filepath)
@@ -133,6 +90,15 @@ treat_csv_file <- function(filepath) {
 }
 
 zip_file <- function(created_filepath) {
+  
+  box::use(
+    stringr
+    [ str_replace, ],
+    
+    utils
+    [ zip, ],
+  )
+  
   filename <- basename(created_filepath)
   zipname <- str_replace(filename, "\\.csv", ".zip")
   zipfile <- paste0("/ovalide_data/upload/", zipname)
@@ -147,6 +113,15 @@ zip_file <- function(created_filepath) {
 }
 
 prepare_raw_key_value_4_db <- function(filepath) {
+  
+  box::use(
+    dplyr
+    [ mutate, pull, rename, ],
+    
+    readr
+    [ write_csv2, ],
+  )
+  
   
   df <- guess_encoding_and_read_file(filepath)
     
@@ -183,6 +158,15 @@ prepare_raw_key_value_4_db <- function(filepath) {
 }
 
 treat_zip_file <- function(filepath) {
+  
+  box::use(
+    stats
+    [ runif, ],
+    
+    utils
+    [ unzip, ],
+  )
+  
   filename <- basename(filepath)
   
   if(filename_is_correct(filename)) {
@@ -273,6 +257,19 @@ update_ssr_to_smr <- function(info) {
 
 #' @export
 guess_encoding_and_read_file <- function(filepath) {
+  
+  box::use(
+    app/logic/df_utils
+    [ name_repair, ],
+    
+    dplyr
+    [ filter, pull, row_number, ],
+    
+    readr
+    [ cols, guess_encoding, locale, read_delim, ],
+    
+  )
+  
   if(file.size(filepath) > 0) {
     (
       filepath

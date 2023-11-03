@@ -1,4 +1,11 @@
 box::use(
+  app/logic/log_utils
+  [ log, ],
+)
+
+
+  
+box::use(
   
   app/logic/db_utils[
     db_connect,
@@ -10,9 +17,6 @@ box::use(
     name_repair
   ],
   
-  app/logic/log_utils[
-    log,
-  ],
 )
 
 box::use(

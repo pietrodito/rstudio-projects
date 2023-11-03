@@ -1,14 +1,11 @@
 #!/usr/bin/Rscript --vanilla
 
 box::use(
-
-  ./db_updater_utils[
-    pick_file_in_dir,
-  ],
-
-  app/logic/db_utils[
-    dispatch_uploaded_file,
-  ],
+  ./db_updater_utils
+  [ pick_file_in_dir, ],
+  
+  app/logic/db_utils
+  [ dispatch_uploaded_file, ],
 )
 
 filepath <- NULL
