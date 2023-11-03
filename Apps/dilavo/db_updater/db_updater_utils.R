@@ -125,20 +125,19 @@ table_exists_in_db <- function(table_code, db) {
   
   box::use(
     DBI
-    [ dbFetch, dbSendStatement, ],
+    [ dbGetQuery, ],
     
     glue
     [ glue, ],
   )
   
-  rs <- dbSendStatement(db, glue(
+  answer <- dbGetQuery(db, glue(
     "SELECT EXISTS (
      SELECT 1
      FROM information_schema.tables
      WHERE table_name = '{table_code}'
    ) AS table_existence;" )
   )
-  answer <- dbFetch(rs)
   answer[1, 1]
 }
 
@@ -182,7 +181,7 @@ create_new_cols <- function(tablename, db, types) {
   
   box::use(
     DBI
-    [ dbClearResult, dbSendStatement, ],
+    [ dbExecute, ],
     
     purrr
     [ pmap_chr, walk, ],
@@ -202,8 +201,7 @@ create_new_cols <- function(tablename, db, types) {
   statements <- pmap_chr(types, add_col)
   
   walk(statements, function(s) {
-    rs <- dbSendStatement(db, s)
-    dbClearResult(rs)
+    dbExecute(db, s)
   })
 }
 
@@ -234,14 +232,14 @@ update_values_in_table <- function(table_code, db, data, filename) {
   
   box::use(
     DBI
-    [ dbAppendTable, dbSendStatement, ],
+    [ dbAppendTable, dbExecute, ],
     
     glue
     [ glue, ],
   )
   
   info <- extract_info_from_filename(filename)
-  dbSendStatement(db, glue(
+  dbExecute(db, glue(
     "DELETE FROM public.{table_code}
        WHERE champ   = '{info$field}'
          AND statut  = '{info$status}'
@@ -288,7 +286,6 @@ dispatch_uploaded_file <- function(filepath) {
 treat_csv_file <- function(filepath) {
   created_filepath <- prepare_raw_key_value_4_db(filepath) 
   zip_file(created_filepath)
-  
 }
 
 zip_file <- function(created_filepath) {
