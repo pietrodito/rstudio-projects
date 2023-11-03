@@ -30,7 +30,6 @@ box::use(
   
   app/logic/db_utils[
     db_connect,
-    dispatch_uploaded_file,
   ],
   
 )

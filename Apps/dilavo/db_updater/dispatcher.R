@@ -2,10 +2,7 @@
 
 box::use(
   ./db_updater_utils
-  [ pick_file_in_dir, ],
-  
-  app/logic/db_utils
-  [ dispatch_uploaded_file, ],
+  [ dispatch_uploaded_file, pick_file_in_dir, ],
 )
 
 filepath <- NULL
