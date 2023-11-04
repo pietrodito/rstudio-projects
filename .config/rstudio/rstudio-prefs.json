@@ -55,6 +55,5 @@
     "show_diagnostics_other": true,
     "graphics_backend": "cairo",
     "graphics_antialiasing": "gray",
-    "background_diagnostics_delay_ms": 5000,
-    "indent_guides": "rainbowlines"
+    "background_diagnostics_delay_ms": 5000
 }

@@ -59,7 +59,17 @@ db_connect <- function(db_name) {
 
 ## TODO get most recent year exploring the table key_value
 most_recent_year <- function(nature) {
-  2023
+  
+  box::use(
+    app/logic/nature_utils
+    [ db_name, ],
+    
+    app/logic/db_utils
+    [ db_connect, ],
+  )
+  
+  db <- db_connect(nature |> db_name())
+  
 }
 
 #' @export

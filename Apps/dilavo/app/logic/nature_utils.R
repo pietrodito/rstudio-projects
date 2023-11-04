@@ -1,3 +1,5 @@
+# app/logic/nature_utils
+
 #' @export
 all_fields <- c("mco", "smr", "psy", "had")
 
@@ -10,6 +12,11 @@ nature <- function(field = "mco", status = "dgf") {
     field = champ,
     status = statut
   )
+}
+
+#' @export
+db_name <- function(nature) {
+  nature |> suffixe() |> toupper()
 }
 
 data_save_dir_root <- "ovalide_data"

@@ -284,6 +284,7 @@ dispatch_uploaded_file <- function(filepath) {
 }
 
 treat_csv_file <- function(filepath) {
+  log("> CSV file detected: ", filepath)
   created_filepath <- prepare_raw_key_value_4_db(filepath) 
   zip_file(created_filepath)
 }
@@ -323,15 +324,15 @@ prepare_raw_key_value_4_db <- function(filepath) {
   
   
   df <- guess_encoding_and_read_file(filepath)
-    
+  
   (
     df
     |> rename(
-      champ = Champ,
-      statut = Statut,
-      annee = Annee, 
-      periode = Period,
-      ipe = IPE
+      champ = champ,
+      statut = statut,
+      annee = annee, 
+      periode = period,
+      ipe = ipe
     )
     |> mutate(
       champ = tolower(champ),
@@ -407,8 +408,9 @@ treat_zip_file <- function(filepath) {
   file.remove(filepath)
   system(paste0("rm -rf ", zip_dir))
     
-  launch_probe_dir(dir_to_dispatch)
-  
+  if (Sys.getenv("DEBUG") == "NO") {
+    launch_probe_dir(dir_to_dispatch)
+  } 
 }
 
 launch_probe_dir <- function(dir_to_dispatch) {
@@ -432,7 +434,7 @@ filename_is_correct <- function(filepath) {
 info_are_correct <- function(info) {
     info$field %in% c("mco", "had", "psy", "smr") &&
     info$status %in% c("oqn", "dgf")              &&
-    as.integer(info$year) >= 2023                 &&
+    as.integer(info$year) >= 2011                 &&
     as.integer(info$month) %in% 1:12
 }
 
