@@ -23,7 +23,7 @@ The probe script:
 
 ### csv file 
 
-+ required name formt `+.+.+.+.table_code.*.csv'
++ required name formt `+.+.+.+.table_code.*.csv`
 + cols needed:  champ annee statut periode ipe
 
 ### dashboard file
