@@ -2,15 +2,14 @@
 ui <- function(id) {
   
   box::use(
-    app/view/table_builder,
     
     shiny
-    [ bootstrapPage, NS, ],
+    [ actionButton, bootstrapPage, NS, ],
   )
   
   ns <- NS(id)
   bootstrapPage(
-    table_builder$ui(ns("builder"))
+    actionButton(ns("click"), "Year")
   )
 }
 
@@ -18,14 +17,21 @@ ui <- function(id) {
 server <- function(id) {
   
   box::use(
+    app/logic/db_utils
+    [ list_of_hospitals, ],
     
-    app/view/table_builder,
+    app/logic/nature_utils 
+    [ nature, ],
     
     shiny
     [ moduleServer, observeEvent, ],
   )
   
   moduleServer(id, function(input, output, session) {
-    table_builder$server("builder", "TABLE")
+    
+    observeEvent(
+      input$click, {
+        list_of_hospitals(nature())
+      })
   })
 }

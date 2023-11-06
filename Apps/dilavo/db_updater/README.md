@@ -13,3 +13,24 @@ The probe script:
 + removes all files
 + writes message to `ovalide_data/messages/message.txt`
 
+# File format specifics
+
+## Three types of file
+
+### zip file containing all csv files
+
++ required name format `field.status.year.period.*.zip`
+
+### csv file 
+
++ required name formt `+.+.+.+.table_code.*.csv'
++ cols needed:  champ annee statut periode ipe
+
+### dashboard file
+
++ required name format `field.status.year.period.TDB.zip`
++ cols needed: ipe
+
+### key_value file
+
++ cols needed:  champ annee statut periode ipe

@@ -56,7 +56,6 @@ db_connect <- function(db_name) {
   db
 }
 
-
 ## TODO get most recent year exploring the table key_value
 most_recent_year <- function(nature) {
   
@@ -66,13 +65,32 @@ most_recent_year <- function(nature) {
     
     app/logic/db_utils
     [ db_connect, ],
+    
+    DBI
+    [ dbExistsTable, dbGetQuery, ],
   )
   
   db <- db_connect(nature |> db_name())
+  
+  if(dbExistsTable(db, "key_value")) {
+    
+    query <- "SELECT max(annee) AS year FROM key_value;"
+    
+    year <- dbGetQuery(db, query)
+    
+    year[1, 1]
+  } else {
+    NULL
+  }
   
 }
 
 #' @export
 list_of_hospitals <- function(nature, year = most_recent_year(nature)) {
   
+  if (! is.null(year)) {
+    
+  } else {
+    NULL
+  }
 }

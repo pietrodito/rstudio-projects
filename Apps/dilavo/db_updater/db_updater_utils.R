@@ -284,8 +284,24 @@ dispatch_uploaded_file <- function(filepath) {
 }
 
 treat_csv_file <- function(filepath) {
+  
+  box::use(
+    stringr
+    [ str_detect, ],
+  )
+  
   log("> CSV file detected: ", filepath)
-  created_filepath <- prepare_raw_key_value_4_db(filepath) 
+  
+  dashboard_file <- function(filepath) { str_detect(filepath, "TDB") }
+  
+  created_filepath <- NULL
+  
+  if(dashboard_file(filepath)) {
+    created_filepath <- prepare_raw_dashboard_4_db(filepath) 
+  } else {
+    created_filepath <- prepare_raw_key_value_4_db(filepath) 
+  }
+  
   zip_file(created_filepath)
 }
 
@@ -310,6 +326,49 @@ zip_file <- function(created_filepath) {
   
   
   file.remove(created_filepath)
+}
+
+prepare_raw_dashboard_4_db <- function(filepath) {
+  box::use(
+    dplyr
+    [ mutate, pull, rename, select, ],
+    
+    readr
+    [ write_csv2, ],
+    
+    stringr
+    [ str_remove_all, str_split, ],
+  )
+  
+  df <- guess_encoding_and_read_file(filepath)
+  
+  filename <- basename(filepath)
+  
+  details <- filename |> str_split("\\.") |> unlist()
+  
+  champ <- details[1]
+  statut <- details[2]
+  annee <- details[3]
+  periode <- details[4]
+  
+  (
+    df
+    |> mutate(ipe = str_remove_all(ipe, '[=|"]'),
+              champ = champ,
+              statut = statut,
+              annee = annee,
+              periode = periode)
+    |> select(- finess)
+  ) -> df
+  
+  created_filepath <- paste0(
+    "/ovalide_data/", champ, "_", statut, "/", filename)
+  
+  write_csv2(df, created_filepath)
+  
+  file.remove(filepath)
+  
+  return(created_filepath)
 }
 
 prepare_raw_key_value_4_db <- function(filepath) {
@@ -346,9 +405,11 @@ prepare_raw_key_value_4_db <- function(filepath) {
   periode <- pull(df[1, ], periode)
   ipe     <- pull(df[1, ], ipe    )
   
-  filename <- paste(champ, statut, annee, periode, "key_value", "csv", sep = ".")
+  filename <- paste(champ, statut, annee, periode,
+                    "key_value", "csv", sep = ".")
   
-  created_filepath <- paste0("/ovalide_data/", champ, "_", statut, "/", filename)
+  created_filepath <- paste0("/ovalide_data/",
+                             champ, "_", statut, "/", filename)
   
   write_csv2(df, created_filepath)
   
