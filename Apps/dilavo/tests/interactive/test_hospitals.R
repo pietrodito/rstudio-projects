@@ -4,13 +4,13 @@ ui <- function(id) {
   box::use(
     
     shiny
-    [ actionButton, bootstrapPage, NS, textOutput, ],
+    [ actionButton, bootstrapPage, NS, tableOutput, ],
   )
   
   ns <- NS(id)
   bootstrapPage(
     actionButton(ns("click"), "Year"),
-    textOutput(ns("out"))
+    tableOutput(ns("out"))
   )
 }
 

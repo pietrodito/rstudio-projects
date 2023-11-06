@@ -66,9 +66,13 @@ db_query <- function(nature, query, params = NULL) {
   box::use(
     app/logic/nature_utils
     [ db_name, ],
+    
+    DBI
+    [ dbGetQuery, ],
   )
   
   db <- db_connect(nature)
+  
   dbGetQuery(db, query, params = params)
 }
 
@@ -98,14 +102,24 @@ most_recent_year <- function(nature) {
 #' @export
 hospitals <- function(nature, year = most_recent_year(nature)) {
   
+  box::use(
+    dplyr
+    [ filter, select, tbl, ],
+    
+    glue
+    [ glue, ],
+  )
   
   if (! is.null(year)) {
     
-    query <- "SELECT [ipe], [raison sociale] FROM tdb WHERE annee = ?"
-    hospitals <- db_query(nature |> db_name(),
-                          query,
-                          params = year)
-    hospitals
+    tdb <- tbl(db_connect(nature), "tdb")
+    
+    (
+      tdb
+      |> select(ipe, `raison sociale`)
+      |> filter(annee == year)
+      |> unique()
+    )
   } else {
     NULL
   }
