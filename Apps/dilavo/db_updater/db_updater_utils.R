@@ -7,6 +7,9 @@ box::use(
 treat_csv_files <- function(dir_2_probe) {
   
   box::use(
+    app/logic/nature_utils
+    [ nature, ],
+    
     furrr
     [ future_walk, ],
     
@@ -18,12 +21,17 @@ treat_csv_files <- function(dir_2_probe) {
     
     purrr
     [ walk, ],
+    
+    stringr
+    [ str_split, ],
   )
   
+  DB_NAME <- dir_2_probe |> toupper()
+  splt_name <- str_split(dir_2_probe, "_") |> unlist()
+  nature <- nature(splt_name[1], splt_name[2])
   
-  db_name <- dir_2_probe |> toupper()
   log("---------------------------")
-  log("         ", db_name)
+  log("         ", DB_NAME)
   log("---------------------------")
   
   plan(multicore)
@@ -43,7 +51,7 @@ treat_csv_files <- function(dir_2_probe) {
   
   (
     filepaths
-    |> which_walk(treat_one_file, db_name, p)
+    |> which_walk(treat_one_file, nature, p)
   )
   invisible()
 }
@@ -58,7 +66,7 @@ pick_file_in_dir <- function(dir_path) {
   }
 }
 
-treat_one_file <- function(filepath, db_name, p, db) {
+treat_one_file <- function(filepath, nature, p, db) {
   
   box::use(
     app/logic/db_utils
@@ -89,7 +97,7 @@ treat_one_file <- function(filepath, db_name, p, db) {
       |> mutate(ipe = str_remove_all(ipe, '[=|"]'))
     ) -> data
     
-    db <- db_connect(db_name)
+    db <- db_connect(nature)
     
     write_data_to_db(table_code, db, data, basename(filepath))
     
@@ -337,12 +345,12 @@ prepare_raw_dashboard_4_db <- function(filepath) {
     [ write_csv2, ],
     
     stringr
-    [ str_remove_all, str_split, ],
+    [ str_remove_all, str_replace, str_split, ],
   )
   
   df <- guess_encoding_and_read_file(filepath)
   
-  filename <- basename(filepath)
+  filename <- basename(filepath) |> str_replace("TDB", "tdb")
   
   details <- filename |> str_split("\\.") |> unlist()
   

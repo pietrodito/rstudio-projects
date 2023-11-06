@@ -52,11 +52,13 @@ server <- function(id) {
   
   box::use(
     app/logic/ovalide_data_utils[ ovalide_data_path, ],
+    
+    app/logic/nature_utils[ nature, ],
   )
   
   moduleServer(id, function(input, output, session) {
     
-    db <- db_connect("PSY_OQN")
+    db <- db_connect(nature("psy", "oqn"))
       
     output$out <- renderText("Click buttons")
     

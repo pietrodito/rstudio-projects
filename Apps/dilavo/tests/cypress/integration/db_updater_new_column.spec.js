@@ -32,10 +32,20 @@ describe("Columns in table", () => {
       should('not.include.text', new_col)
   });
 
-  it("Test table second upload", () => {
+  it("Test table upload with new column", () => {
 
     cy.get(".shiny-notification-close").click()
     cy.get("#app-cy_db_updater_new_column-up2").click()
+    cy.get('.shiny-notification-close').click()
+    cy.get("#app-cy_db_updater_new_column-cols").click()
+    cy.get("#app-cy_db_updater_new_column-out").
+      should('contain', new_cols)
+  });
+  
+  it("Test table upload with missing column", () => {
+
+    cy.get(".shiny-notification-close").click()
+    cy.get("#app-cy_db_updater_new_column-up1").click()
     cy.get('.shiny-notification-close').click()
     cy.get("#app-cy_db_updater_new_column-cols").click()
     cy.get("#app-cy_db_updater_new_column-out").

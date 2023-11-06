@@ -6,9 +6,13 @@ box::use(
 )
 
 #' @export
-db_connect <- function(db_name) {
+db_connect <- function(nature) {
   
   box::use(
+    
+    ./nature_utils
+    [ db_name, ],
+    
     RPostgres
     [ Postgres ],
     
@@ -40,7 +44,7 @@ db_connect <- function(db_name) {
                 port     = port    ,
                 user     = user    ,
                 password = password,
-                dbname  = db_name)
+                dbname  = db_name(nature))
     },
     error = function(cond) {
       message("Unable to connect to db:")
@@ -50,46 +54,58 @@ db_connect <- function(db_name) {
   ) -> db
   
   if (is.null(db)) {
-    log("> Failed to connect to  ", db_name)
+    log("> Failed to connect to  ", db_name(nature))
   }
   
   db
+}
+
+#' @export
+db_query <- function(nature, query, params = NULL) {
+  
+  box::use(
+    app/logic/nature_utils
+    [ db_name, ],
+  )
+  
+  db <- db_connect(nature)
+  dbGetQuery(db, query, params = params)
 }
 
 ## TODO get most recent year exploring the table key_value
 most_recent_year <- function(nature) {
   
   box::use(
-    app/logic/nature_utils
-    [ db_name, ],
-    
-    app/logic/db_utils
-    [ db_connect, ],
     
     DBI
     [ dbExistsTable, dbGetQuery, ],
   )
   
-  db <- db_connect(nature |> db_name())
+  db <- db_connect(nature)
   
-  if(dbExistsTable(db, "key_value")) {
+  if(dbExistsTable(db, "tdb")) {
     
-    query <- "SELECT max(annee) AS year FROM key_value;"
+    query <- "SELECT max(annee) AS year FROM tdb;"
     
-    year <- dbGetQuery(db, query)
+    year <- db_query(nature, query)
     
     year[1, 1]
   } else {
     NULL
   }
-  
 }
 
 #' @export
-list_of_hospitals <- function(nature, year = most_recent_year(nature)) {
+hospitals <- function(nature, year = most_recent_year(nature)) {
+  
   
   if (! is.null(year)) {
     
+    query <- "SELECT [ipe], [raison sociale] FROM tdb WHERE annee = ?"
+    hospitals <- db_query(nature |> db_name(),
+                          query,
+                          params = year)
+    hospitals
   } else {
     NULL
   }

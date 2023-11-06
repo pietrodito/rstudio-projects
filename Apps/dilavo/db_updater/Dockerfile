@@ -27,6 +27,7 @@ COPY ./db_updater/*          /
 COPY ./app/logic/db_utils.R  /app/logic/
 COPY ./app/logic/df_utils.R  /app/logic/
 COPY ./app/logic/log_utils.R /app/logic/
+COPY ./app/logic/nature_utils.R /app/logic/
 
 RUN mkdir -p /ovalide_data && chown 999:999 /ovalide_data
 RUN mkdir -p /logs && chown 999:999 /logs
