@@ -93,7 +93,9 @@ server <- function(id, table_name = NULL) {
     [ build_details, ],
     
     shiny
-    [ moduleServer, observe, req, updateSelectInput, updateTextInput, ],
+    [ actionButton,  modalButton, modalDialog, moduleServer, observe,
+      observeEvent, reactiveVal, removeModal, req, showModal, tagList,
+      textInput, updateSelectInput, updateTextInput, ],
     
     tabulatorr
     [ renderTabulator, tabulator, ],
@@ -102,6 +104,8 @@ server <- function(id, table_name = NULL) {
   moduleServer(
     id,
     function(input, output, session) {
+      
+      ns <- session$ns
       
       if(! is.null(table_name)) {
         updateTextInput(session, "table_name", value = table_name)
@@ -114,9 +118,25 @@ server <- function(id, table_name = NULL) {
                           choices = hospitals(nature))
       })
       
-      ## TODO create a Modal where you can create a new table
-      ## choosing a name and if table is for all hospitals or one hospital
-      ## Or leave a checkbox in the UI for that (better)
+      observeEvent(input$new, {
+        showModal(
+          modalDialog(
+            textInput("new_name",
+                      "Nom de la nouvelle table"),
+            footer = tagList(
+              modalButton("Annuler"),
+              actionButton(session$ns("create"), "Créer")
+            )
+          )
+        )
+      })
+      
+      new_name <- reactiveVal(NULL)
+      
+      observeEvent(input$create, {
+        removeModal()
+        new_name(input$new_name)
+      })
       
       
       output$table <- renderTabulator(

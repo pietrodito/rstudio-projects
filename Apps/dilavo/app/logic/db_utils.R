@@ -95,7 +95,6 @@ db_query <- function(nature, query, params = NULL) {
   )
 }
 
-## TODO get most recent year exploring the table key_value
 most_recent_year <- function(nature) {
   
   box::use(
