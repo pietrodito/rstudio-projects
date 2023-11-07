@@ -1053,6 +1053,9 @@
       "Source": "Local",
       "RemoteType": "local",
       "RemoteUrl": "~/my_packages/tabulatorr",
+      "Requirements": [
+        "htmlwidgets"
+        ]
       "Hash": "f3b7464d93260787a371736c71e3221d"
     },
     "testthat": {
