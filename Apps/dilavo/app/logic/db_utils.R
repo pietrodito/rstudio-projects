@@ -1,9 +1,6 @@
 # app/logic/db_utils.R
 
-box::use(
-  ./log_utils
-  [ log, ],
-)
+box::use( ./log_utils [ log, ], )
 
 #' @export
 db_connect <- function(nature) {
@@ -103,8 +100,11 @@ most_recent_year <- function(nature) {
 hospitals <- function(nature, year = most_recent_year(nature)) {
   
   box::use(
+    DBI
+    [ dbDisconnect, ],
+    
     dplyr
-    [ filter, select, tbl, ],
+    [ collect, distinct, filter, select, tbl, ],
     
     glue
     [ glue, ],
@@ -112,14 +112,20 @@ hospitals <- function(nature, year = most_recent_year(nature)) {
   
   if (! is.null(year)) {
     
-    tdb <- tbl(db_connect(nature), "tdb")
+    db <- db_connect(nature)
+    tdb <- tbl(db, "tdb")
     
     (
       tdb
-      |> select(ipe, `raison sociale`)
       |> filter(annee == year)
-      |> unique()
-    )
+      |> select(ipe, `raison sociale`)
+      |> distinct()
+      |> collect()
+    ) -> result
+    
+    dbDisconnect(db)
+    
+    result
   } else {
     NULL
   }
