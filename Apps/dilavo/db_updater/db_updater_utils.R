@@ -70,7 +70,7 @@ treat_one_file <- function(filepath, nature, p, db) {
   
   box::use(
     app/logic/db_utils
-    [ db_connect, ],
+    [ db_instant_connect, ],
     
     DBI
     [ dbDisconnect, ],
@@ -97,18 +97,18 @@ treat_one_file <- function(filepath, nature, p, db) {
       |> mutate(ipe = str_remove_all(ipe, '[=|"]'))
     ) -> data
     
-    db <- db_connect(nature)
+    write_data_to_db(db_instant_connect(nature),
+                     table_code,
+                     data,
+                     basename(filepath))
     
-    write_data_to_db(table_code, db, data, basename(filepath))
-    
-    dbDisconnect(db)
   } else {
     log("> Empty file...")
   }
   file.remove(filepath)
 }
 
-write_data_to_db <- function(table_code, db, data, filename) {
+write_data_to_db <- function(db, table_code, data, filename) {
   
   box::use(
     DBI

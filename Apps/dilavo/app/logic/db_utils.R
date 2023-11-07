@@ -3,7 +3,7 @@
 box::use( ./log_utils [ log, ], )
 
 #' @export
-db_connect <- function(nature) {
+db_get_connection <- function(nature) {
   
   box::use(
     
@@ -14,7 +14,8 @@ db_connect <- function(nature) {
     [ Postgres ],
     
     DBI
-    [ dbConnect ],
+    [ dbConnect, dbDisconnect ],
+    
   )
   
   host     <- NULL
@@ -52,6 +53,26 @@ db_connect <- function(nature) {
   
   if (is.null(db)) {
     log("> Failed to connect to  ", db_name(nature))
+  } else 
+  
+  db
+}
+
+#' @export
+db_instant_connect <- function(nature) {
+  
+  box::use(
+    withr
+    [ defer_parent, ],
+    
+    DBI
+    [ dbDisconnect ],
+  )
+  
+  db <- db_get_connection(nature)
+  
+  if (! is.null(db)) {
+    defer_parent(dbDisconnect(db))
   }
   
   db
@@ -68,9 +89,10 @@ db_query <- function(nature, query, params = NULL) {
     [ dbGetQuery, ],
   )
   
-  db <- db_connect(nature)
-  
-  dbGetQuery(db, query, params = params)
+  dbGetQuery(db_instant_connect(nature),
+             query,
+             params = params
+  )
 }
 
 ## TODO get most recent year exploring the table key_value
@@ -82,9 +104,7 @@ most_recent_year <- function(nature) {
     [ dbExistsTable, dbGetQuery, ],
   )
   
-  db <- db_connect(nature)
-  
-  if(dbExistsTable(db, "tdb")) {
+  if(dbExistsTable(db_instant_connect(nature), "tdb")) {
     
     query <- "SELECT max(annee) AS year FROM tdb;"
     
@@ -100,11 +120,8 @@ most_recent_year <- function(nature) {
 hospitals <- function(nature, year = most_recent_year(nature)) {
   
   box::use(
-    DBI
-    [ dbDisconnect, ],
-    
     dplyr
-    [ collect, distinct, filter, select, tbl, ],
+    [ collect, distinct, filter, mutate, pull, select, tbl, ],
     
     glue
     [ glue, ],
@@ -112,8 +129,7 @@ hospitals <- function(nature, year = most_recent_year(nature)) {
   
   if (! is.null(year)) {
     
-    db <- db_connect(nature)
-    tdb <- tbl(db, "tdb")
+    tdb <- tbl(db_instant_connect(nature), "tdb")
     
     (
       tdb
@@ -121,11 +137,11 @@ hospitals <- function(nature, year = most_recent_year(nature)) {
       |> select(ipe, `raison sociale`)
       |> distinct()
       |> collect()
-    ) -> result
+      |> mutate(Étabissement = paste0( ipe, " - ", `raison sociale`))
+      |> pull(Étabissement)
+      |> sort()
+    ) 
     
-    dbDisconnect(db)
-    
-    result
   } else {
     NULL
   }

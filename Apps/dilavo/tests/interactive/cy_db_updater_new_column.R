@@ -29,7 +29,7 @@ box::use(
 box::use(
   
   app/logic/db_utils[
-    db_connect,
+    db_get_connection,
   ],
   
 )
@@ -58,7 +58,7 @@ server <- function(id) {
   
   moduleServer(id, function(input, output, session) {
     
-    db <- db_connect(nature("psy", "oqn"))
+    db <- db_get_connection(nature("psy", "oqn"))
       
     output$out <- renderText("Click buttons")
     
