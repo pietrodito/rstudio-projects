@@ -9,7 +9,7 @@ ui <- function(id) {
     
     shiny
     [ actionButton, column, fluidPage, fluidRow, NS,
-      selectInput, tagList, textInput, wellPanel, ], 
+      selectInput, tagList, textInput, uiOutput, wellPanel, ], 
     
     tabulatorr
     [ tabulatorOutput, ],
@@ -31,18 +31,19 @@ ui <- function(id) {
                         wellPanel(
                           fluidRow(
                             column(6, 
-                                   actionButton(ns("new"), "Nouvelle table",
+                                   actionButton(ns("new_cancel"),
+                                                "Nouvelle table",
                                                 width = "100%"),
                             ),
                             column(6, 
-                                   actionButton(ns("rename"), "Renommer",
+                                   actionButton(ns("editasdf"), "Éditer",
                                                 width = "100%"),
                             ),
                           )
                         ),
                  ),
                ),
-               selectInput(ns("table_name"), "Nom de la table", NULL),
+               uiOutput(ns("table_name")),
                selectInput(ns("hospital"), "Établissement", NULL),
              )),
       column(4, 
@@ -81,10 +82,12 @@ ui <- function(id) {
 
 server <- function(id, table_name = NULL) {
   
+  ## TODO decide where to save new created tables
+  
   box::use(
     
     app/logic/db_utils
-    [ hospitals, ],
+    [ hospitals, table_names, ],
     
     app/logic/nature_utils
     [ nature, ],
@@ -94,8 +97,11 @@ server <- function(id, table_name = NULL) {
     
     shiny
     [ actionButton,  modalButton, modalDialog, moduleServer, observe,
-      observeEvent, reactiveVal, removeModal, req, showModal, tagList,
-      textInput, updateSelectInput, updateTextInput, ],
+      observeEvent, reactiveValues, removeModal, req, showModal, tagList,
+      textInput, updateActionButton, updateSelectInput, updateTextInput, ],
+    
+    shinyjs
+    [ disable, enable, ],
     
     tabulatorr
     [ renderTabulator, tabulator, ],
@@ -107,37 +113,41 @@ server <- function(id, table_name = NULL) {
       
       ns <- session$ns
       
-      if(! is.null(table_name)) {
-        updateTextInput(session, "table_name", value = table_name)
-      }
+      r <- reactiveValues()
+      r$edit_mode <- FALSE
       
       observe({
-        req(input$field); req(input$status)
-        nature <- nature(input$field, input$status)
+        r$nature <- nature(input$field, input$status)
+        r$table_names <- table_names(r$nature)
+      })
+      
+      # observe({
+      #   updateSelectInput(session, "table_name",
+      #                     choices = build_tables(r$nature),
+      #                   value = table_name)
+      # })
+      
+      observe({
+        req(r$nature)
         updateSelectInput(session, "hospital",
-                          choices = hospitals(nature))
+                          choices = hospitals(r$nature))
       })
       
-      observeEvent(input$new, {
-        showModal(
-          modalDialog(
-            textInput("new_name",
-                      "Nom de la nouvelle table"),
-            footer = tagList(
-              modalButton("Annuler"),
-              actionButton(session$ns("create"), "Créer")
-            )
-          )
-        )
+      observeEvent(input$new_cancel, {
+        r$edit_mode <- ! r$edit_mode
+        if(r$edit_mode) {
+          updateActionButton(session, "new_cancel", "Annuler éditon")
+          disable("editasdf")
+        } else {
+          updateActionButton(session, "new_cancel", "Nouvelle table")
+        }
       })
-      
-      new_name <- reactiveVal(NULL)
       
       observeEvent(input$create, {
         removeModal()
-        new_name(input$new_name)
+        r$new_name <- input$new_name
+        r$edit_mode <- TRUE
       })
-      
       
       output$table <- renderTabulator(
         tabulator(

@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add postgresql15-client 
+RUN apk add --no-cache postgresql15-client bash
 
 WORKDIR /home/postgres
 

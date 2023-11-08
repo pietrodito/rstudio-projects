@@ -55,5 +55,13 @@
     "show_diagnostics_other": true,
     "graphics_backend": "cairo",
     "graphics_antialiasing": "gray",
-    "background_diagnostics_delay_ms": 5000
+    "background_diagnostics_delay_ms": 5000,
+    "cran_mirror": {
+        "name": "Global (CDN)",
+        "host": "RStudio",
+        "url": "https://cran.rstudio.com/",
+        "country": "us",
+        "ok": 1,
+        "secondary": ""
+    }
 }

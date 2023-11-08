@@ -21,7 +21,7 @@ then
   docker compose build         && \
   docker compose  up  --detach
 
-  docker compose logs --follow app db_updater
+  docker compose logs --follow app db_updater db_setup
 
 else
 
@@ -33,6 +33,6 @@ else
   docker compose -f test_compose.yml build && \
   docker compose -f test_compose.yml up  --detach
 
-  docker compose -f test_compose.yml logs --follow db_updater
+  docker compose -f test_compose.yml logs --follow db_updater db_setup
 fi
 

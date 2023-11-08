@@ -10,7 +10,7 @@ append = TRUE
   )
   
   setwd(project_path)
-  clipboard <- 'purrr::walk(fs::dir_ls("~/my_packages/"), ~ renv::install(.))'
+  clipboard <- 'purrr::walk(fs::dir_ls("~/my_packages/RStudio-tools"), ~ renv::install(.))'
   clipr::write_clip(clipboard)
   cli::cat_boxx(
     "Restart with CTRL+F10, then paste content of clipboard",

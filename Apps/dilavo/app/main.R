@@ -75,7 +75,9 @@ ui <- function(id) {
   ## DO NOT MODIFY
   
   box::use(
-    shiny[ fluidPage, NS, ],
+    shiny
+    [ fluidPage, NS, ],
+    
   )
   
   ns <- NS(id)
