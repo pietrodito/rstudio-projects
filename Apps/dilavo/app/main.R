@@ -78,6 +78,9 @@ ui <- function(id) {
     shiny
     [ fluidPage, NS, ],
     
+    shinyjs
+    [ useShinyjs, ],
+    
   )
   
   ns <- NS(id)
@@ -86,18 +89,17 @@ ui <- function(id) {
   
   adapt_ui_if_tests <- function() {
     
-    if (interactive_tests) {
-      fluidPage(
-        title = title,
+    fluidPage(
+      useShinyjs(), ## needed for modules using shinyjs
+      title = title,
+      if (interactive_tests) {
         test_ui(ns)
-      )
-    } else {
-      fluidPage(
-        title = title,
+      } else {
         app_ui(ns)
-      )
-    }
+      }
+    )
   }
+  
   adapt_ui_if_tests()
 }
 
