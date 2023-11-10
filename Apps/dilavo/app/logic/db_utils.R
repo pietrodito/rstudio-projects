@@ -147,7 +147,29 @@ hospitals <- function(nature, year = most_recent_year(nature)) {
 }
 
 #' @export
-table_names <- function(nature) {
+build_tables <- function(nature) {
+  
+  box::use(
+    dplyr
+    [ collect, distinct, filter, mutate, pull, select, tbl, ],
+    
+    glue
+    [ glue, ],
+  )
+  
+  build_tables <- tbl(db_instant_connect(nature), "build_tables")
+  
+  (
+    build_tables
+    |> select(name)
+    |> collect()
+    |> pull(name)
+    |> sort()
+  ) 
+}
+
+#' @export
+save_build_table <- function(nature, table_name) {
   
   box::use(
     dplyr

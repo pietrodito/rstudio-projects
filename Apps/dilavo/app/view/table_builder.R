@@ -47,7 +47,9 @@ ui <- function(id) {
                         ),
                  ),
                ),
-               uiOutput(ns("table_name")),
+               selectInput(ns("table_name"),
+                           "Table utilisateur",
+                           choices = NULL),
                selectInput(ns("hospital"), "Établissement", NULL),
              )),
       column(4, 
@@ -91,7 +93,7 @@ server <- function(id, table_name = NULL) {
   box::use(
     
     app/logic/db_utils
-    [ hospitals, table_names, ],
+    [ build_tables, hospitals, ],
     
     app/logic/nature_utils
     [ nature, ],
@@ -105,7 +107,7 @@ server <- function(id, table_name = NULL) {
       textInput, updateActionButton, updateSelectInput, updateTextInput, ],
     
     shinyjs
-    [ disable, enable, ],
+    [ info, disable, enable, hide, show, ],
     
     tabulatorr
     [ renderTabulator, tabulator, ],
@@ -122,14 +124,15 @@ server <- function(id, table_name = NULL) {
       
       observe({
         r$nature <- nature(input$field, input$status)
-        r$table_names <- table_names(r$nature)
+        r$build_tables <- build_tables(r$nature)
       })
       
-      # observe({
-      #   updateSelectInput(session, "table_name",
-      #                     choices = build_tables(r$nature),
-      #                   value = table_name)
-      # })
+      observe({
+        updateSelectInput(
+          session, "table_name",
+          choices = build_tables(r$nature),
+          selected = table_name)
+      })
       
       observe({
         req(r$nature)
@@ -141,10 +144,10 @@ server <- function(id, table_name = NULL) {
         r$edit_mode <- ! r$edit_mode
         if(r$edit_mode) {
           updateActionButton(session, "new_cancel", "Annuler éditon")
-          disable("edit")
+          hide("edit", anim = TRUE, animType = "fade")
         } else {
           updateActionButton(session, "new_cancel", "Nouvelle table")
-          enable("edit")
+          show("edit", anim = TRUE, animType = "fade")
         }
       })
       
