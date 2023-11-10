@@ -11,12 +11,16 @@ ui <- function(id) {
     [ actionButton, column, fluidPage, fluidRow, NS,
       selectInput, tagList, textInput, uiOutput, wellPanel, ], 
     
+    shinyjs
+    [ useShinyjs, ],
+    
     tabulatorr
     [ tabulatorOutput, ],
   )
   
   ns <- NS(id)
   fluidPage(
+    useShinyjs(),
     fluidRow(
       column(4, 
              wellPanel(
@@ -36,7 +40,7 @@ ui <- function(id) {
                                                 width = "100%"),
                             ),
                             column(6, 
-                                   actionButton(ns("editasdf"), "Éditer",
+                                   actionButton(ns("edit"), "Éditer",
                                                 width = "100%"),
                             ),
                           )
@@ -137,9 +141,10 @@ server <- function(id, table_name = NULL) {
         r$edit_mode <- ! r$edit_mode
         if(r$edit_mode) {
           updateActionButton(session, "new_cancel", "Annuler éditon")
-          disable("editasdf")
+          disable("edit")
         } else {
           updateActionButton(session, "new_cancel", "Nouvelle table")
+          enable("edit")
         }
       })
       

@@ -11,7 +11,7 @@ ui <- function(id) {
   fluidPage(
     useShinyjs(),
     tags$h1("Hide away!"),
-    actionButton("btn", "I'm trying...")
+    hidden(actionButton("btn", "I'm trying..."))
   )
 }
 

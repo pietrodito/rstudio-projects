@@ -77,10 +77,6 @@ ui <- function(id) {
   box::use(
     shiny
     [ fluidPage, NS, ],
-    
-    shinyjs
-    [ useShinyjs, ],
-    
   )
   
   ns <- NS(id)
@@ -90,7 +86,6 @@ ui <- function(id) {
   adapt_ui_if_tests <- function() {
     
     fluidPage(
-      useShinyjs(), ## needed for modules using shinyjs
       title = title,
       if (interactive_tests) {
         test_ui(ns)

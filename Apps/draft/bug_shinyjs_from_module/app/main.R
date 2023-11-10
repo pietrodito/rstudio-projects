@@ -4,8 +4,6 @@ box::use(
   shiny
   [ bootstrapPage, moduleServer, NS, ],
   
-  shinyjs
-  [ useShinyjs, ]
 )
 
 #' @export
