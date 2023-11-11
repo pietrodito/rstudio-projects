@@ -21,3 +21,4 @@ load_details <- function(table_name) {
 #' @export
 save_details <- function(details, table_name, nature) {
 }
+

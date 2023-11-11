@@ -69,12 +69,17 @@ notify_updater_messages <- function() {
 ## Add modules in the tests/interactive directory
 ## with just ui and server functions
 
+
 #' @export
 ui <- function(id) {
   
   ## DO NOT MODIFY
+
   
   box::use(
+    
+    bslib
+    [ bs_theme, ],
     shiny
     [ fluidPage, NS, ],
   )
@@ -83,9 +88,16 @@ ui <- function(id) {
   
   title <- "DILAVO"
   
+  custom_theme <- bs_theme(
+    version = 5,
+    secondary = "#aaaaff7f",
+  )
+  
+  
   adapt_ui_if_tests <- function() {
     
     fluidPage(
+      theme = custom_theme,
       title = title,
       if (interactive_tests) {
         test_ui(ns)

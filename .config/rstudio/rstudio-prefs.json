@@ -65,6 +65,6 @@
         "secondary": ""
     },
     "server_editor_font_enabled": true,
-    "server_editor_font": "MonaspaceKrypton-Regular",
+    "server_editor_font": "MonaspaceXenon-Regular",
     "text_rendering": "geometricPrecision"
 }

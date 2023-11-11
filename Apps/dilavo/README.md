@@ -21,7 +21,13 @@ See also the [compose.yml][5] file.
 
 #### Create a new line in build_tables when saving
 + Use `dbplyr::copy_inline()`
-+ Use `dbplyr::rows_insert(in_place = TRUE)`
++ Use `dbplyr::rows_upsert(in_place = TRUE)`
+
+#### Add columns
++ Select one or multiple columns from an existing table
+
+#### Add rows
++ Select one column and one value
 
 ### db_updater
 
@@ -30,9 +36,8 @@ See also the [compose.yml][5] file.
 
 
 #### Refactor 
-+ `dbplyr::sql_query_upsert()`
++ `dbplyr::rows_upsert()`
 + https://dbplyr.tidyverse.org/articles/backend-2.htmlupsert
-
 
 
 

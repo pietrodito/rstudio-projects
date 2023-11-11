@@ -47,9 +47,7 @@ ui <- function(id) {
                         ),
                  ),
                ),
-               selectInput(ns("table_name"),
-                           "Table utilisateur",
-                           choices = NULL),
+               uiOutput(ns("table_name")),
                selectInput(ns("hospital"), "Établissement", NULL),
              )),
       column(4, 
@@ -64,7 +62,7 @@ ui <- function(id) {
              )),
       column(4, 
              wellPanel(
-               actionButton(ns("create_col"), "Créer une colonne"),
+               actionButton(ns("create_col"), "Ajouter des colonnes"),
              )),
     ),
       fluidRow(
@@ -78,6 +76,11 @@ ui <- function(id) {
                  actionButton(ns("new_two"), "new two"),
                )
         )),
+    fluidRow(
+      wellPanel(textInput(ns("descrption"),
+                          "Description",
+                          placeholder = "Decrivez votre table..."))
+    ),
       fluidRow(
         wellPanel(
           tabulatorOutput(ns("table"))
@@ -101,10 +104,14 @@ server <- function(id, table_name = NULL) {
     app/logic/table_builder_utils
     [ build_details, ],
     
+    purrr
+    [ walk, ],
+    
     shiny
     [ actionButton,  modalButton, modalDialog, moduleServer, observe,
-      observeEvent, reactiveValues, removeModal, req, showModal, tagList,
-      textInput, updateActionButton, updateSelectInput, updateTextInput, ],
+      observeEvent, reactiveValues, renderUI, removeModal, req,
+      selectInput, showModal, tagList, textInput, updateActionButton,
+      updateSelectInput, updateTextInput, ],
     
     shinyjs
     [ info, disable, enable, hide, show, ],
@@ -121,6 +128,9 @@ server <- function(id, table_name = NULL) {
       
       r <- reactiveValues()
       r$edit_mode <- FALSE
+      r$table_name <- table_name
+      
+      rules <- reactiveValues()
       
       observe({
         r$nature <- nature(input$field, input$status)
@@ -128,6 +138,7 @@ server <- function(id, table_name = NULL) {
       })
       
       observe({
+        print(build_tables(r$nature))
         updateSelectInput(
           session, "table_name",
           choices = build_tables(r$nature),
@@ -140,15 +151,43 @@ server <- function(id, table_name = NULL) {
                           choices = hospitals(r$nature))
       })
       
-      observeEvent(input$new_cancel, {
-        r$edit_mode <- ! r$edit_mode
+      observe({
+        edit_ids <- c("create_col",
+                      "undo",
+                      "redo",
+                      "save")
+        non_edit_ids <- c("field",
+                          "status")
         if(r$edit_mode) {
           updateActionButton(session, "new_cancel", "Annuler éditon")
           hide("edit", anim = TRUE, animType = "fade")
+          walk(edit_ids    , enable )
+          walk(non_edit_ids, disable)
+          output$table_name <- renderUI({
+            textInput(ns("edit_name"), label = "Nom de table",
+                      value = r$table_name,
+                      placeholder = "Choissisez un nom pour la table")
+          })
+          
         } else {
           updateActionButton(session, "new_cancel", "Nouvelle table")
           show("edit", anim = TRUE, animType = "fade")
+          walk(edit_ids    , disable)
+          walk(non_edit_ids, enable )
+          output$table_name <- renderUI({
+            selectInput(
+              ns("selected_name"),
+              label = "Liste des tables",
+              choices = build_tables(r$nature)
+            )
+          })
         }
+      })
+      
+      observeEvent(input$new_cancel, {
+        ## clear all formating
+        r$table_name <- NULL
+        r$edit_mode <- ! r$edit_mode
       })
       
       observeEvent(input$create, {
