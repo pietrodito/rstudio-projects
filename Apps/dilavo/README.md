@@ -19,6 +19,60 @@ See also the [compose.yml][5] file.
 
 ### table_builder
 
+#### HOW TODO
+
+##### Thinking generalisation of the tool
+
+I will use:
++ time keys: annee / periode
++ stat unit keys: ipe
+
+##### Two major types of data source
+
++ Wide table format : 1 line / hospital - period
+
+|  period | ipe         | #RSA |  volume | n - 1 |
+|---------|-------------|------|---------|-------|
+| 3       | ch soissons | x    | y       | z     |
+| 3       | ch lens     | a    | b       | c     |
+| 3       | chu lille   | m    | n       | o     |
+
++ Long table format : 1 line / information
+
+|  period | ipe         | key    |  value |
+|---------|-------------|--------|--------|
+| 3       | ch soissons | #RSA   | x      |
+| 3       | ch soissons | volume | x      |
+| 3       | ch soissons | n - 1  | z      |
+
+##### Two major types of data view
+
+###### Score type table (1 line / hospital | long format)
+
++ add column:
+
+if ( source type == wide ) {
+  details <- (source_table_name, column_name)
+}
+if ( source type == long ) {
+  details <- (source_table_name, key_column_name, value_column_name)
+  ## Treat the case where key_column_name is not unique
+  ## Or allow multiple value_column_name
+}
+
+######  type table (1 line / hospital | long format)
+
++ add column:
+
+if ( source type == long ) {
+  details <- (source_table_name, list(column_name))
+}
+if ( source type == wide ) {
+  details <- (source_table_name, key_column_name, ask_user_value_col_name)
+}
+
+
+
 #### Create a new line in build_tables when saving
 + Use `dbplyr::copy_inline()`
 + Use `dbplyr::rows_upsert(in_place = TRUE)`
