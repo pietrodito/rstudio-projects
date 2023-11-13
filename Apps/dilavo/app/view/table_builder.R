@@ -1,15 +1,19 @@
 # app/view/table_builder
 
+box::use(
+  builder_details/description
+)
+
+
 ui <- function(id) {
   
   box::use(
-    
     ../logic/nature_utils
     [ all_fields, all_status, nature, ],
     
     shiny
     [ actionButton, column, fluidPage, fluidRow, NS,
-      selectInput, tagList, textInput, uiOutput, wellPanel, ], 
+      selectInput, tagList, textInput, textOutput, uiOutput, wellPanel, ], 
     
     shinyjs
     [ useShinyjs, ],
@@ -22,6 +26,7 @@ ui <- function(id) {
   fluidPage(
     useShinyjs(),
     fluidRow(
+      textOutput(ns("debug"), "DEBUG"),
       column(4, 
              wellPanel(
                fluidRow(
@@ -65,27 +70,27 @@ ui <- function(id) {
                actionButton(ns("create_col"), "Ajouter des colonnes"),
              )),
     ),
-      fluidRow(
-        column(4, 
-               wellPanel(
-                 actionButton(ns("new_one"), "new one"),
-               )
-        ),
-        column(4, 
-               wellPanel(
-                 actionButton(ns("new_two"), "new two"),
-               )
-        )),
     fluidRow(
-      wellPanel(textInput(ns("descrption"),
-                          "Description",
-                          placeholder = "Decrivez votre table..."))
-    ),
-      fluidRow(
-        wellPanel(
-          tabulatorOutput(ns("table"))
-        )
+      column(4, 
+             wellPanel(
+               actionButton(ns("new_one"), "new one"),
+             )
+      ),
+      column(4, 
+             wellPanel(
+               actionButton(ns("new_two"), "new two"),
+             )
+      )),
+    fluidRow(
+      wellPanel(
+        description$ui(ns("descrption")),
       )
+    ),
+    fluidRow(
+      wellPanel(
+        tabulatorOutput(ns("table"))
+      )
+    )
   )
 }
 
@@ -130,7 +135,11 @@ server <- function(id, table_name = NULL) {
       r$edit_mode <- FALSE
       r$table_name <- table_name
       
-      rules <- reactiveValues()
+      details <- reactiveValues()
+      
+      
+      details$description <- description$server("description", NULL)
+      output$debug <- details$description
       
       observe({
         r$nature <- nature(input$field, input$status)
