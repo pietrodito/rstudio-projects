@@ -1,7 +1,7 @@
 snippet b
 	build_package("${0}")
 snippet c
-	edit_file("tests/cypress/integration/${0}")
+	file.edit("tests/cypress/integration/${0}")
 snippet d
 	cd("~/${0}")
 snippet e
@@ -15,13 +15,13 @@ snippet n
 snippet p
 	proj_switch()
 snippet r
-	edit_file("R/${0}")
+	file.edit("R/${0}")
 snippet s
 	system("${0}")
 snippet t
-	edit_file("tests/interactive/${0}")
+	file.edit("tests/interactive/${0}")
 snippet v
-	edit_file("app/view/${0}")
+	file.edit("app/view/${0}")
 
 snippet it
 	## interactive tests
@@ -173,7 +173,7 @@ snippet rhinomod
 	ui <- function(id) {
 	  box::use(
 	    shiny
-	    [ fluidPage, NS, ],
+	    [ NS, tagList, ],
 	  )
 	  
 	  ns <- NS(id)
@@ -182,7 +182,7 @@ snippet rhinomod
 	  )
 	}
 	
-	server <- function(id, table_name = NULL) {
+	server <- function(id) {
 	  
 	  
 	  box::use(

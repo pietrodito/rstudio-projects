@@ -1,5 +1,9 @@
 # app/view/table_builder
 
+box::use(
+  builder_details/description
+)
+
 ui <- function(id) {
   
   box::use(
@@ -9,7 +13,8 @@ ui <- function(id) {
     
     shiny
     [ actionButton, column, fluidPage, fluidRow, NS,
-      selectInput, tagList, textInput, uiOutput, wellPanel, ], 
+      selectInput, tagList, textInput, textOutput,
+      uiOutput, wellPanel, ],
     
     shinyjs
     [ useShinyjs, ],
@@ -22,6 +27,7 @@ ui <- function(id) {
   fluidPage(
     useShinyjs(),
     fluidRow(
+      textOutput(ns("debug")),
       column(4, 
              wellPanel(
                fluidRow(
@@ -77,9 +83,7 @@ ui <- function(id) {
                )
         )),
     fluidRow(
-      wellPanel(textInput(ns("descrption"),
-                          "Description",
-                          placeholder = "Decrivez votre table..."))
+      wellPanel(description$ui(ns("description")))
     ),
       fluidRow(
         wellPanel(
@@ -109,7 +113,7 @@ server <- function(id, table_name = NULL) {
     
     shiny
     [ actionButton,  modalButton, modalDialog, moduleServer, observe,
-      observeEvent, reactiveValues, renderUI, removeModal, req,
+      observeEvent, reactiveValues, renderText, renderUI, removeModal, req,
       selectInput, showModal, tagList, textInput, updateActionButton,
       updateSelectInput, updateTextInput, ],
     
@@ -130,7 +134,10 @@ server <- function(id, table_name = NULL) {
       r$edit_mode <- FALSE
       r$table_name <- table_name
       
-      rules <- reactiveValues()
+      details <- reactiveValues()
+      
+      details$description <- description$server("description", "well")
+      output$debug <- renderText(details$description())
       
       observe({
         r$nature <- nature(input$field, input$status)
@@ -138,7 +145,6 @@ server <- function(id, table_name = NULL) {
       })
       
       observe({
-        print(build_tables(r$nature))
         updateSelectInput(
           session, "table_name",
           choices = build_tables(r$nature),
