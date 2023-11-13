@@ -167,3 +167,34 @@ snippet shinymod
 	  )
 	}
 
+snippet rhinomod
+	# app/view/${1}
+	
+	ui <- function(id) {
+	  box::use(
+	    shiny
+	    [ fluidPage, NS, ],
+	  )
+	  
+	  ns <- NS(id)
+	  tagList(
+	    ${0}
+	  )
+	}
+	
+	server <- function(id, table_name = NULL) {
+	  
+	  
+	  box::use(
+	    shiny
+	    [ moduleServer, ],
+	  )
+	  
+	  moduleServer(
+	    id,
+	    function(input, output, session) {
+	      ns <- session$ns
+	      
+	    }
+	  )
+	}

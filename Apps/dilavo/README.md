@@ -21,6 +21,17 @@ See also the [compose.yml][5] file.
 
 #### HOW TODO
 
+##### Generalisation
+
+One table build is made of details, we gonna save those details as a list.
+Each detail is a also a list.
+
+For each detail create a sub-module`
++ Create ui detailInput
++ Create server detailServer, the server takes a detail list at creation, and keeps returning the detail list at each update by the user.
+=> read `https://mastering-shiny.org/scaling-modules.html#inputs-and-outputs`
+
+
 ##### Thinking generalisation of the tool
 
 I will use:
@@ -68,10 +79,8 @@ if ( source type == long ) {
   details <- (source_table_name, list(column_name))
 }
 if ( source type == wide ) {
-  details <- (source_table_name, key_column_name, ask_user_value_col_name)
+  details <- (source_table_name, key_column_name, ASK_USER_VALUE_COL_NAME)
 }
-
-
 
 #### Create a new line in build_tables when saving
 + Use `dbplyr::copy_inline()`
