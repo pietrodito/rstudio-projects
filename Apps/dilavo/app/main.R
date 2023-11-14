@@ -16,11 +16,10 @@ if (file.exists(updater_message_file)) {
 app_ui <-  function(ns) { 
   
   box::use(
-    shiny[ actionButton, fluidPage, h2, tags, ],
+    shiny[ actionButton, fluidPage, h2,  ],
   )
   
   fluidPage(
-    tags$script("App.js_helpers()"),
     h2("Bienvenue dans DILAVO !"),
     actionButton(ns("app_button"), "Un bouton !")
   )
@@ -28,7 +27,10 @@ app_ui <-  function(ns) {
 
 app_server <- function(input, output, session) {
   
-  
+  box::use(
+    shiny
+    [ observeEvent, ],
+  )
   
   notify_updater_messages() 
 }

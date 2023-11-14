@@ -136,7 +136,8 @@ server <- function(id, table_name = NULL) {
       
       details <- reactiveValues()
       
-      details$description <- description$server("description", "well")
+      details$description <- description$server("description",
+                                                details$description)
       
       observe({
         r$nature <- nature(input$field, input$status)
