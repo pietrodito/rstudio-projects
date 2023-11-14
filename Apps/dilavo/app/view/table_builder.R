@@ -138,7 +138,6 @@ server <- function(id, table_name = NULL) {
       
       details$description <- description$server("description", "well")
       
-      
       observe({
         r$nature <- nature(input$field, input$status)
         r$build_tables <- build_tables(r$nature)
