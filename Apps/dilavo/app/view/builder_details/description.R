@@ -4,35 +4,49 @@ ui <- function(id) {
   
   box::use(
     shiny
-    [ tagList, NS, textInput, ],
+    [ actionButton, NS, tagList, tags, textOutput, ],
   )
   
   ns <- NS(id)
   tagList(
-    textInput(
-      inputId     = ns("description")     ,
-      label       = "Description"         ,
-      placeholder = "Decrivez cette table")
+    tags$h2("Description"),
+    textOutput(ns("description")),
+    actionButton(ns("edit"), "Modifier"),
   )
 }
 
 server <- function(id, description) {
   
-  
   box::use(
     shiny
-    [ moduleServer, observe, reactive, updateTextInput, ],
+    [ actionButton, modalDialog, modalButton, moduleServer, observe,
+      observeEvent, reactive, renderText, showModal, tagList, textInput, ],
   )
   
   moduleServer(
     id,
     function(input, output, session) {
       
-      ns <- session$ns
+     ns <- session$ns
       
-      updateTextInput(session, "description", description)
+     output$description <- renderText(description)
      
-      reactive(input$description)
+     observeEvent(input$edit, {
+       showModal(
+         modalDialog(
+           textInput(
+             inputId = "desciption",
+             label = "Description",
+             placeholder = "Décrivez la table"),
+           footer = tagList(
+             modalButton("Annuler"),
+             actionButton("ok", "OK")
+           )
+         )
+       )
+     })
+     
+     
     }
   )
 }
