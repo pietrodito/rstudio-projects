@@ -113,9 +113,9 @@ server <- function(id, table_name = NULL) {
     
     shiny
     [ actionButton,  modalButton, modalDialog, moduleServer, observe,
-      observeEvent, reactiveValues, renderText, renderUI, removeModal, req,
-      selectInput, showModal, tagList, textInput, updateActionButton,
-      updateSelectInput, updateTextInput, ],
+      observeEvent, reactive, reactiveValues, renderText, renderUI,
+      removeModal, req, selectInput, showModal, tagList, textInput,
+      updateActionButton, updateSelectInput, updateTextInput, ],
     
     shinyjs
     [ info, disable, enable, hide, show, ],
@@ -137,7 +137,8 @@ server <- function(id, table_name = NULL) {
       details <- reactiveValues()
       
       details$description <- description$server("description",
-                                                details$description)
+                                                details$description,
+                                                r$edit_mode)
       
       observe({
         r$nature <- nature(input$field, input$status)
@@ -191,16 +192,17 @@ server <- function(id, table_name = NULL) {
       })
       
       observeEvent(input$new_cancel, {
-        ## clear all formating
+        ## TODO clear all formating
+        
         r$table_name <- NULL
         r$edit_mode <- ! r$edit_mode
       })
       
-      observeEvent(input$create, {
-        removeModal()
-        r$new_name <- input$new_name
-        r$edit_mode <- TRUE
+      observeEvent(input$undo, {
+        output$debug <- renderText({"UNDO"})
       })
+      
+      
       
       output$table <- renderTabulator(
         tabulator(

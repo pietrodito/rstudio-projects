@@ -22,44 +22,62 @@ ui <- function(id) {
   )
 }
 
-server <- function(id, description) {
+server <- function(id, description, edit_mode) {
+  
   
   box::use(
     shiny
-    [ actionButton, modalDialog, modalButton, moduleServer, observe,
-      observeEvent, reactive, reactiveVal, removeModal, renderText, showModal,
-      tagList, textInput, ],
+    [ actionButton, is.reactive, isolate, modalDialog, modalButton,
+      moduleServer, observe, observeEvent, reactive, reactiveValues,
+      removeModal, renderText, showModal, tagList, textInput, ],
+    
+    shinyjs
+    [ disable, enable, ],
+    
   )
   
   moduleServer(
     id,
     function(input, output, session) {
       
-     ns <- session$ns
-     
-     return_value <- reactiveVal()
       
-     output$description <- renderText(description())
-     
-     observeEvent(input$edit, {
-       showModal(
-         modalDialog(
-           textInput(
-             inputId = ns("description"),
-             label = "Description",
-             placeholder = "Décrivez la table"),
-           footer = tagList(
-             modalButton("Annuler")
-           )
-         )
-       )
-     })
-     
-     observeEvent(input$enterKeyReleased, {
-       return_value(input$description)
-       removeModal()
-     })
-     
-     return_value
+      ns <- session$ns
+      
+      r <- reactiveValues()
+      r$return_value <- NULL
+      r$edit_mode <- isolate(edit_mode)
+      
+      output$description <- renderText(description())
+      
+      
+      observe({
+        browser()
+        if(r$edit_mode) {
+          enable("edit")
+        } else {
+          disable("edit")
+        }
+      })
+      
+      observeEvent(input$edit, {
+        showModal(
+          modalDialog(
+            textInput(
+              inputId = ns("description"),
+              label = "Description",
+              placeholder = "Décrivez la table"),
+            footer = tagList(
+              modalButton("Annuler")
+            )
+          )
+        )
+      })
+      
+      observeEvent(input$enterKeyReleased, {
+        r$return_value <- input$description
+        removeModal()
+      })
+      
+      reactive(r$return_value)
     })
 }
