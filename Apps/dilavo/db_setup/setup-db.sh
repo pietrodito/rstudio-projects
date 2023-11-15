@@ -31,7 +31,7 @@ else
       psql -h db -d "$i" -c \
       'CREATE TABLE IF NOT EXISTS build_tables (
          name TEXT UNIQUE NOT NULL, 
-         rules BYTEA NOT NULL ) '
+         details BYTEA NOT NULL ) '
     done
     echo "8 dbs created!"
 fi

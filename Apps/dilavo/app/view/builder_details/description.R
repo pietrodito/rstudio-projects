@@ -22,19 +22,22 @@ ui <- function(id) {
   )
 }
 
-server <- function(id, description, edit_mode) {
-  
+server <- function(id, details, edit_mode) {
   
   box::use(
     shiny
-    [ actionButton, is.reactive, isolate, modalDialog, modalButton,
-      moduleServer, observe, observeEvent, reactive, reactiveValues,
+    [ actionButton, is.reactive, is.reactivevalues, isolate, modalDialog,
+      modalButton, moduleServer, observe, observeEvent, reactive, reactiveVal,
       removeModal, renderText, showModal, tagList, textInput, ],
     
     shinyjs
     [ disable, enable, ],
     
   )
+  
+  stopifnot(is.reactive(edit_mode))
+  stopifnot(is.reactivevalues(details))
+  
   
   moduleServer(
     id,
@@ -43,16 +46,15 @@ server <- function(id, description, edit_mode) {
       
       ns <- session$ns
       
-      r <- reactiveValues()
-      r$return_value <- NULL
-      r$edit_mode <- isolate(edit_mode)
+      output$description <- renderText({
+        details$description
+      })
       
-      output$description <- renderText(description())
+      return_value <- reactiveVal()
       
       
       observe({
-        browser()
-        if(r$edit_mode) {
+        if(edit_mode()) {
           enable("edit")
         } else {
           disable("edit")
@@ -74,10 +76,11 @@ server <- function(id, description, edit_mode) {
       })
       
       observeEvent(input$enterKeyReleased, {
-        r$return_value <- input$description
+        # browser()
+        return_value(input$description)
         removeModal()
       })
       
-      reactive(r$return_value)
+      return_value
     })
 }

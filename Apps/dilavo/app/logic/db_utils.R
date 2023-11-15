@@ -169,15 +169,21 @@ build_tables <- function(nature) {
 }
 
 #' @export
-save_build_table <- function(nature, table_name, rules) {
+save_build_table <- function(nature, table_name, details) {
+  
   
   box::use(
+    dbplyr
+    [ copy_inline, ],
+    
     dplyr
-    [ copy_inline, rows_insert, tbl, ],
+    [ rows_insert, tbl, ],
     
     glue
     [ glue, ],
   )
+  
+  # browser()
   
   db <- db_instant_connect(nature)
   
@@ -185,7 +191,7 @@ save_build_table <- function(nature, table_name, rules) {
   
   new_row <- copy_inline(db, data.frame(
     name = table_name,
-    rules = rules
+    details = details
   ))
   
   rows_upsert(

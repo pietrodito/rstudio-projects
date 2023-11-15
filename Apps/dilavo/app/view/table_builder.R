@@ -113,7 +113,7 @@ server <- function(id, table_name = NULL) {
     
     shiny
     [ actionButton,  modalButton, modalDialog, moduleServer, observe,
-      observeEvent, reactive, reactiveValues, renderText, renderUI,
+      observeEvent, reactive, reactiveVal, reactiveValues, renderText, renderUI,
       removeModal, req, selectInput, showModal, tagList, textInput,
       updateActionButton, updateSelectInput, updateTextInput, ],
     
@@ -130,15 +130,18 @@ server <- function(id, table_name = NULL) {
       
       ns <- session$ns
       
+      
       r <- reactiveValues()
       r$edit_mode <- FALSE
       r$table_name <- table_name
       
       details <- reactiveValues()
       
-      details$description <- description$server("description",
-                                                details$description,
-                                                r$edit_mode)
+      observe({
+        details$description <- description$server("description",
+                                                  details,
+                                                  reactive(r$edit_mode))()
+      })
       
       observe({
         r$nature <- nature(input$field, input$status)
@@ -172,7 +175,7 @@ server <- function(id, table_name = NULL) {
           walk(non_edit_ids, disable)
           output$table_name <- renderUI({
             textInput(ns("edit_name"), label = "Nom de table",
-                      value = r$table_name,
+                      value = table_name,
                       placeholder = "Choissisez un nom pour la table")
           })
           
@@ -191,18 +194,32 @@ server <- function(id, table_name = NULL) {
         }
       })
       
+      
+      observeEvent(input$save, {
+        box::use(
+          ../logic/db_utils
+          [ save_build_table, ], 
+          
+          shiny
+          [ isolate, reactiveValuesToList, ],
+        )
+          
+          save_build_table(
+            isolate(r$nature),
+            isolate(input$edit_name),
+            isolate(reactiveValuesToList(details))
+          )
+      })
+      
       observeEvent(input$new_cancel, {
-        ## TODO clear all formating
-        
+        ## TODO clear all details
         r$table_name <- NULL
         r$edit_mode <- ! r$edit_mode
       })
-      
+
       observeEvent(input$undo, {
         output$debug <- renderText({"UNDO"})
       })
-      
-      
       
       output$table <- renderTabulator(
         tabulator(
