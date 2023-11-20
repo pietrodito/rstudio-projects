@@ -26,6 +26,6 @@ server <- function(id) {
   )
   
   moduleServer(id, function(input, output, session) {
-    table_builder$server("builder", "Un nom de table")
+    table_builder$server("builder")
   })
 }

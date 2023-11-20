@@ -7,7 +7,7 @@ db_get_connection <- function(nature) {
   
   box::use(
     
-    ./nature_utils
+    app/logic/nature_utils
     [ db_name, ],
     
     RPostgres
@@ -169,21 +169,21 @@ build_tables <- function(nature) {
 }
 
 #' @export
-save_build_table <- function(nature, table_name, details) {
-  
+save_build_table_details <- function(nature, table_name, details) {
   
   box::use(
     dbplyr
     [ copy_inline, ],
     
     dplyr
-    [ rows_insert, tbl, ],
+    [ rows_upsert, tbl, ],
     
     glue
     [ glue, ],
+    
+    jsonlite
+    [ serializeJSON, ],
   )
-  
-  # browser()
   
   db <- db_instant_connect(nature)
   
@@ -191,7 +191,7 @@ save_build_table <- function(nature, table_name, details) {
   
   new_row <- copy_inline(db, data.frame(
     name = table_name,
-    details = details
+    details = serializeJSON(details) |> as.character()
   ))
   
   rows_upsert(
@@ -200,4 +200,27 @@ save_build_table <- function(nature, table_name, details) {
     by = c("name"),
     in_place = TRUE
   ) 
+  
+}
+
+#' @export
+load_build_table_details <- function(nature, table_name) {
+  
+  box::use(
+    glue
+    [ glue, ],
+    
+    jsonlite
+    [ unserializeJSON, ],
+  )
+  
+  query_result <-
+    db_query(
+      nature,
+      glue(
+        "SELECT details FROM build_tables WHERE name = '{table_name}';",
+      )
+    )
+  
+  unserializeJSON(query_result[1, 1])
 }

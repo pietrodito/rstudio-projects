@@ -62,25 +62,26 @@ server <- function(id, details, edit_mode) {
       })
       
       observeEvent(input$edit, {
-        showModal(
-          modalDialog(
-            textInput(
-              inputId = ns("description"),
-              label = "Description",
-              placeholder = "Décrivez la table"),
-            footer = tagList(
-              modalButton("Annuler")
+        if(edit_mode()) {
+          showModal(
+            modalDialog(
+              textInput(
+                inputId = ns("description"),
+                label = "Description",
+                placeholder = "Décrivez la table"),
+              footer = tagList(
+                modalButton("Annuler")
+              )
             )
           )
-        )
+        }
       })
       
       observeEvent(input$enterKeyReleased, {
-        # browser()
-        return_value(input$description)
+        details$description <- input$description
         removeModal()
       })
       
-      return_value
+      details
     })
 }
