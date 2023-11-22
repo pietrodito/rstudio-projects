@@ -1,5 +1,6 @@
 {
     "consoleClear": "Ctrl+Space",
     "closeOtherSourceDocs": "Alt+W",
-    "activateConsole": "Ctrl+`"
+    "activateConsole": "Ctrl+`",
+    "activateFindInFiles": "Ctrl+0"
 }

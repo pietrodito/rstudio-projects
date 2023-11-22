@@ -142,7 +142,9 @@ server <- function(id) {
         req(r$nature)
         req(r$table_name)
         non_reactive_details <- load_build_table_details(r$nature, r$table_name)
-        walk(names(non_reactive_details), function(detail_name) {
+        all_names <- unique(c(names(details),
+                              names(non_reactive_details)))
+        walk(all_names, function(detail_name) {
           details[[detail_name]] <- non_reactive_details[[detail_name]]
         })
       })
@@ -151,18 +153,11 @@ server <- function(id) {
       
       update_ui_according_to_edit_mode(r, session, input, output)
       
-      output$debug <- renderText({details$description})
-      
       observe({
         r$invalidate_table_name_selectInput
         r$nature <- nature(input$field, input$status)
         r$build_tables <- build_tables(r$nature)
         
-      })
-      
-      observe({
-        r$invalidate_table_name_selectInput
-        r$build_tables <- build_tables(r$nature)
       })
       
       observe({
@@ -212,11 +207,13 @@ server <- function(id) {
       })
       
       observeEvent(input$new_cancel, {
+        
         r$edit_mode <- ! r$edit_mode
         r$new <- r$edit_mode
         if(r$edit_mode) {
-          r$invalidate_table_name_selectInput <- stats::runif(1)
           r$invalidate_details <- stats::runif(1)
+        } else {
+          r$invalidate_table_name_selectInput <- stats::runif(1)
         }
       })
       
@@ -316,14 +313,14 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
       walk(non_edit_ids, enable )
       output$table_name <- renderUI({
         selectInput(
-          session$ns("selected_name"),
+          session$ns("edit_name"),
           label = "Liste des tables",
           choices = r$build_tables,
           selected = r$table_name
         )
       })
       observe({
-        r$table_name <- input$selected_name
+        r$table_name <- input$edit_name
       })
     }
   })
