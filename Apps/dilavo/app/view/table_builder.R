@@ -133,21 +133,11 @@ server <- function(id) {
       r <- reactiveValues()
       r$edit_mode <- FALSE
       r$new <- FALSE
-      
       r$invalidate_details <- 0
       
       details <- reactiveValues()
       
-      observe({
-        req(r$nature)
-        req(r$table_name)
-        non_reactive_details <- load_build_table_details(r$nature, r$table_name)
-        all_names <- unique(c(names(details),
-                              names(non_reactive_details)))
-        walk(all_names, function(detail_name) {
-          details[[detail_name]] <- non_reactive_details[[detail_name]]
-        })
-      })
+      update_details_from_db_when_table_changes(r, details)
       
       update_details_description(details, r)
       
@@ -252,8 +242,29 @@ server <- function(id) {
   )
 }
 
-
-
+update_details_from_db_when_table_changes <- function(r, details) {
+  box::use(
+    
+    app/logic/db_utils
+    [ load_build_table_details, ],
+    
+    purrr
+    [ walk, ],
+    
+    shiny
+    [ observe, req, ],
+  )
+  observe({
+    req(r$nature)
+    req(r$table_name)
+    non_reactive_details <- load_build_table_details(r$nature, r$table_name)
+    all_names <- unique(c(names(details),
+                          names(non_reactive_details)))
+    walk(all_names, function(detail_name) {
+      details[[detail_name]] <- non_reactive_details[[detail_name]]
+    })
+  })
+}
 
 update_details_description <- function(details, r) {
   box::use(
@@ -267,7 +278,7 @@ update_details_description <- function(details, r) {
                                   reactive(r$edit_mode))
   })
 }
-      
+
 update_ui_according_to_edit_mode <- function(r, session, input, output) {
   
   box::use(
@@ -275,7 +286,8 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
     [ walk, ],
     
     shiny
-    [ observe, renderUI, selectInput, textInput, updateActionButton, updateTextInput, ],
+    [ observe, renderUI, selectInput, textInput, updateActionButton,
+      updateTextInput, ],
     
     shinyjs
     [ disable, enable, hide, show, ],
