@@ -6,7 +6,7 @@ box::use(
 #' @export
 build_details <- function(
     table_name         = NULL,
-    description        = "" ) {
+    description        = NULL ) {
   
   details(
     table_name         = table_name,

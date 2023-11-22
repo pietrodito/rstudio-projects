@@ -51,6 +51,7 @@ server <- function(id, details, edit_mode) {
       })
       
       return_value <- reactiveVal()
+      modal_is_on <- reactiveVal(FALSE)
       
       
       observe({
@@ -63,11 +64,13 @@ server <- function(id, details, edit_mode) {
       
       observeEvent(input$edit, {
         if(edit_mode()) {
+          modal_is_on(TRUE)
           showModal(
             modalDialog(
               textInput(
                 inputId = ns("description"),
                 label = "Description",
+                value = details$description,
                 placeholder = "Décrivez la table"),
               footer = tagList(
                 modalButton("Annuler")
@@ -78,8 +81,11 @@ server <- function(id, details, edit_mode) {
       })
       
       observeEvent(input$enterKeyReleased, {
-        details$description <- input$description
-        removeModal()
+        if(modal_is_on()) {
+          details$description <- input$description
+          modal_is_on(FALSE)
+          removeModal()
+        }
       })
       
       details

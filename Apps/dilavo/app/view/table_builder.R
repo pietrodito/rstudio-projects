@@ -8,7 +8,7 @@ ui <- function(id) {
   
   box::use(
     
-    ../logic/nature_utils
+    app/logic/nature_utils
     [ all_fields, all_status, nature, ],
     
     shiny
@@ -62,8 +62,10 @@ ui <- function(id) {
                fluidRow(
                  column(3, actionButton(ns("undo"), "⟲ Undo", width = "100%")), 
                  column(3, actionButton(ns("redo"), "⟳ Redo", width = "100%")), 
-                 column(6, actionButton(ns("save"),
+                 column(4, actionButton(ns("save"),
                                         "💾 Sauvegarder", width = "100%") ), 
+                 column(2, actionButton(ns("del"),
+                                        "🗑 Suppr.", width = "100%") ), 
                ),
              )),
       column(4, 
@@ -130,8 +132,20 @@ server <- function(id) {
       
       r <- reactiveValues()
       r$edit_mode <- FALSE
+      r$new <- FALSE
+      
+      r$invalidate_details <- 0
       
       details <- reactiveValues()
+      
+      observe({
+        req(r$nature)
+        req(r$table_name)
+        non_reactive_details <- load_build_table_details(r$nature, r$table_name)
+        walk(names(non_reactive_details), function(detail_name) {
+          details[[detail_name]] <- non_reactive_details[[detail_name]]
+        })
+      })
       
       update_details_description(details, r)
       
@@ -140,27 +154,14 @@ server <- function(id) {
       output$debug <- renderText({details$description})
       
       observe({
-        r$table_name <- input$selected_name
-        req(r$nature, r$table_name)
-        
-        ## TODO
-        ## Wrong pattern
-        ## I have to update each field of details
-        ## see how I did it in old DILAVO
-        ## I used reactivePoll
-        details_non_reactive <- load_build_table_details(r$nature, r$table_name)
-        details <- reactive(details_non_reactive)
-        ## Wrong pattern
-        
-      })
-      
-      observe({
+        r$invalidate_table_name_selectInput
         r$nature <- nature(input$field, input$status)
         r$build_tables <- build_tables(r$nature)
+        
       })
       
       observe({
-        r$invaildate_table_name_selectInput
+        r$invalidate_table_name_selectInput
         r$build_tables <- build_tables(r$nature)
       })
       
@@ -172,7 +173,7 @@ server <- function(id) {
       
       observeEvent(input$save, {
         box::use(
-          ../logic/db_utils
+          app/logic/db_utils
           [ save_build_table_details, ], 
           
           shiny
@@ -186,12 +187,46 @@ server <- function(id) {
             isolate(reactiveValuesToList(details))
           )
         }
-        r$invaildate_table_name_selectInput <- stats::runif(1)
+      })
+      
+      
+      observeEvent(input$del, {
+        box::use(
+          ../logic/db_utils
+          [ del_build_table_details, ], 
+          
+          shiny
+          [ isolate, ],
+        )
+        
+        del_build_table_details(
+          isolate(r$nature),
+          isolate(input$edit_name)
+        )
+        r$invalidate_table_name_selectInput <- stats::runif(1)
+        r$edit_mode <- FALSE
+      })
+      
+      observeEvent(input$edit, {
+        r$edit_mode <- TRUE
       })
       
       observeEvent(input$new_cancel, {
-        ## TODO clear all details
         r$edit_mode <- ! r$edit_mode
+        r$new <- r$edit_mode
+        if(r$edit_mode) {
+          r$invalidate_table_name_selectInput <- stats::runif(1)
+          r$invalidate_details <- stats::runif(1)
+        }
+      })
+      
+      observe({
+        req(r$invalidate_details)
+        if(r$invalidate_details != 0) {
+          walk(names(details), function(detail_name) {
+            details[[detail_name]] <- NULL
+          })
+        }
       })
       
 
@@ -200,6 +235,14 @@ server <- function(id) {
           output$debug <- renderText({"UNDO"})
         }
       })
+      
+      observe({
+        if(r$edit_mode && ! r$new) {
+          req(input$edit_name)
+          disable("edit_name")
+        }
+      })
+      
       
       output$table <- renderTabulator(
         tabulator(
@@ -212,12 +255,20 @@ server <- function(id) {
   )
 }
 
+
+
+
 update_details_description <- function(details, r) {
-  box::use( shiny[ reactive, ],)
+  box::use(
+    shiny
+    [ observe, reactive,  req],
+  )
   
-  details <- description$server("description",
-                                details,
-                                reactive(r$edit_mode))
+  observe({
+    details <- description$server("description",
+                                  details,
+                                  reactive(r$edit_mode))
+  })
 }
       
 update_ui_according_to_edit_mode <- function(r, session, input, output) {
@@ -227,7 +278,7 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
     [ walk, ],
     
     shiny
-    [ observe, renderUI, selectInput, textInput, updateActionButton, ],
+    [ observe, renderUI, selectInput, textInput, updateActionButton, updateTextInput, ],
     
     shinyjs
     [ disable, enable, hide, show, ],
@@ -237,7 +288,8 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
     edit_ids <- c("create_col",
                   "undo",
                   "redo",
-                  "save")
+                  "save",
+                  "del")
     non_edit_ids <- c("field",
                       "status")
     if(r$edit_mode) {
@@ -245,11 +297,18 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
       hide("edit", anim = TRUE, animType = "fade")
       walk(edit_ids    , enable )
       walk(non_edit_ids, disable)
+      
       output$table_name <- renderUI({
         textInput(session$ns("edit_name"), label = "Nom de table",
-                  value = input$selected_name,
+                  value = if(r$new) NULL else input$selected_name,
                   placeholder = "Choissisez un nom pour la table")
       })
+      
+      observe({
+        r$table_name <- input$edit_name
+      })
+      
+      
     } else {
       updateActionButton(session, "new_cancel", "Nouvelle table")
       show("edit", anim = TRUE, animType = "fade")
@@ -259,8 +318,12 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
         selectInput(
           session$ns("selected_name"),
           label = "Liste des tables",
-          choices = r$build_tables
+          choices = r$build_tables,
+          selected = r$table_name
         )
+      })
+      observe({
+        r$table_name <- input$selected_name
       })
     }
   })

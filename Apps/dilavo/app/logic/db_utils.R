@@ -95,6 +95,23 @@ db_query <- function(nature, query, params = NULL) {
   )
 }
 
+#' @export
+db_execute <- function(nature, query, params = NULL) {
+  
+  box::use(
+    app/logic/nature_utils
+    [ db_name, ],
+    
+    DBI
+    [ dbExecute, ],
+  )
+  
+  dbExecute(db_instant_connect(nature),
+             query,
+             params = params
+  )
+}
+
 most_recent_year <- function(nature) {
   
   box::use(
@@ -222,5 +239,26 @@ load_build_table_details <- function(nature, table_name) {
       )
     )
   
-  unserializeJSON(query_result[1, 1])
+  if(nrow(query_result) == 1) {
+    unserializeJSON(query_result[1, 1])
+  } else {
+    NULL
+  }
+}
+
+
+#' @export
+del_build_table_details <- function(nature, table_name) {
+  
+  box::use(
+    DBI
+    [ dbRemoveTable, ],
+    
+    glue
+    [ glue, ],
+  )
+  
+  query <- glue("DELETE FROM build_tables WHERE name = '{table_name}' ")
+  
+  db_execute(nature, query)
 }

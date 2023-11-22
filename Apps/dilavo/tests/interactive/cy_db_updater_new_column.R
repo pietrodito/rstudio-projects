@@ -64,6 +64,7 @@ server <- function(id) {
     
     observeEvent(input$reset, {
       tables <- dbListTables(db)
+      tables <- base::setdiff(tables, "build_tables")
       walk(tables, ~ dbRemoveTable(db, .x))
     })
     
