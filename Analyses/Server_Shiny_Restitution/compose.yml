@@ -1,0 +1,13 @@
+version: '3.8'
+name: restitution
+
+services:
+
+
+  app:
+    container_name: restitution
+    build: .
+    restart: always
+    ports:
+      - "3838:3838"
+        
