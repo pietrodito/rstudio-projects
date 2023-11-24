@@ -29,3 +29,9 @@ zoom_france <- function() {
 zoom_hdf <- function() {
   ggplot2::coord_sf(xlim = c(1.4, 4.2), ylim = c(48.9, 51.05))
 }
+
+
+#' @export
+zoom_npc <- function() {
+  ggplot2::coord_sf(xlim = c(1.4, 4.2), ylim = c(49.8, 51.05))
+}

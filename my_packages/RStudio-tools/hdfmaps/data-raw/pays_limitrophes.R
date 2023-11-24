@@ -5,7 +5,7 @@ pays_limitrophes <- dplyr::filter(world,
                                   geounit == "Germany"        |
                                   geounit == "Luxembourg"     |
                                   geounit == "Spain"          |
-                                  geounit == "Italy"          |
+                                    geounit == "Italy"          |
                                   geounit == "United Kingdom" |
                                   geounit == "Austria" |
                                   geounit == "Netherlands")
