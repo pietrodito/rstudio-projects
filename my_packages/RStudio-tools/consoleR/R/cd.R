@@ -1,7 +1,7 @@
 #' @export
 cd <- function(path = "~", verbose = TRUE, explore = TRUE) {
 
-  stopifnot(fs::dir_exists(path))
+  stopifnot(fs::dir_exists(path) || fs::link_exists(path))
 
   switch_to_project <- FALSE
   if (is_project_path(path)) {
