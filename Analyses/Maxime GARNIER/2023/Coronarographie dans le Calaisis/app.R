@@ -20,22 +20,22 @@ ALL_YEARS <- 2018:2022
 
 ui <- fluidPage(
   fluidRow(
-      column(2,  wellPanel(
-        fluidRow(
-            checkboxGroupInput(
-              inputId = paste0("year"),
-              label   = paste0("Années"),
-              choices = ALL_YEARS,
-              selected = 2022
-            ) 
-        ),
-        fluidRow(actionButton("last_year", "📅 ⟵"),
-                 actionButton("next_year", "📅 ⟶"))
-),
+    column(2,  wellPanel(
+      fluidRow(
+        checkboxGroupInput(
+          inputId = paste0("year"),
+          label   = paste0("Années"),
+          choices = ALL_YEARS,
+          selected = 2022
+        ) 
       ),
-      column(6,  plotOutput("map", height = "1000px", width = "1000px")),
-      column(3, tableOutput("table"))
-    )
+      fluidRow(actionButton("last_year", "📅 ⟵"),
+               actionButton("next_year", "📅 ⟶"))
+    ),
+    ),
+    column(6,  plotOutput("map", height = "1000px", width = "1000px")),
+    column(3, tableOutput("table"))
+  )
 )
 
 server <- function(input, output, session) {
@@ -51,7 +51,7 @@ server <- function(input, output, session) {
       session,
       "year",
       selected = ((input$year |> as.integer() - 2018) - 1) %% 5 + 2018
-      )
+    )
   })
   
   observeEvent(input$next_year, {
@@ -59,7 +59,7 @@ server <- function(input, output, session) {
       session,
       "year",
       selected = ((input$year |> as.integer() - 2018) + 1) %% 5 + 2018
-      )
+    )
   })
   
   observe({
@@ -79,11 +79,14 @@ server <- function(input, output, session) {
       |> filter(nofinesset %in% out()$Finess)
       |> select(1, 2, 5, 6)
       |> left_join(out() |> select(-rs), by = c("nofinesset" = "Finess"))
+      |> filter(X >= 1.55 & X <= 3.2)
+      |> filter(Y >= 50.5 & Y <= 51.5)
     )
+    browser()
   })
   
   output$table <- renderTable({
-    out() |> select(rs, `Nbr. d'actes`)
+    out() |> select(rs, `Nbr. d'actes`, Finess)
   })
   
   output$map <- renderPlot({
@@ -92,10 +95,11 @@ server <- function(input, output, session) {
       +  carte_4236()
       +  geom_sf(data = pays_limitrophes, fill = "#EEEEEE", alpha = 1, lty = 1)
       +  geom_sf(data = calaisis, fill = "#00AA00", alpha = .1, lty = 1)
-      +  geom_sf(data = coro(), aes(size = `Nbr. d'actes`), col = "#ff0000")
-      +  geom_text_repel(data = coro(), aes(x = X, y = Y, label = rs), size = 1.8)
+      +  geom_sf(data = coro(), aes(size = `Nbr. d'actes`), color = "#000000", alpha = 0.3)
+      +  geom_sf(data = coro(), aes(size = `Nbr. d'actes` / 3 * 2), color = "orange", alpha = 0.3)
+      +  geom_text_repel(data = coro(), aes(x = X, y = Y, label = rs), size = 4.8)
       +  scale_size_continuous(range = c(1, 30), limits = c(1, max_nb_actes))
-      +  zoom_hdf()
+      +  ggplot2::coord_sf(xlim = c(1.55, 3.2), ylim = c(50.5, 51.05))
       +  theme_alice()
     )
   })
@@ -104,7 +108,3 @@ server <- function(input, output, session) {
 shinyApp(ui, server, options = list(
   launch.browser = TRUE
 ))
-
-
-
-

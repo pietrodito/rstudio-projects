@@ -35,3 +35,8 @@ zoom_hdf <- function() {
 zoom_npc <- function() {
   ggplot2::coord_sf(xlim = c(1.4, 4.2), ylim = c(49.8, 51.05))
 }
+
+#' @export
+zoom_calaisis <- function() {
+  ggplot2::coord_sf(xlim = c(1.4, 4.2), ylim = c(49.8, 51.05))
+}
