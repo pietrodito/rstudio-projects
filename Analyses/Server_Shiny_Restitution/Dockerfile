@@ -1,8 +1,25 @@
 FROM rocker/shiny-verse:latest
 
-ARG coro_calaisis="./Maxime GARNIER/2023/Coronarographie dans le Calaisis/"
+RUN apt-get update && apt-get install -y \
+      libudunits2-dev \
+      libproj-dev \
+      libgdal-dev \
+   && rm -rf /var/lib/apt/lists/*
+
+ARG coro_calaisis="Coronarographie dans le Calaisis/"
+ARG hdfmaps="utils/hdfmaps/"
+ 
+RUN mkdir -p /hdfmaps
+ 
+COPY  ${hdfmaps} /hdfmaps
+
+RUN R -q -e 'devtools::install_github("slowkow/ggrepel");        \
+             devtools::install_github("thomasp85/ggforce");      \
+             devtools::install_github("ropensci/rnaturalearth"); \
+             devtools::install_github("r-spatial/sf");           \
+             devtools::install_github("rstudio/DT");             \
+             devtools::install_github("rstudio/bslib");          \
+             devtools::install_github("daattali/shinyjs");       \
+             devtools::install("hdfmaps")'
 
 COPY  ${coro_calaisis} /srv/shiny-server/
-COPY ./hdfmaps /
-
-RUN R -q -e 'devtools::install("/hdfmaps")'
