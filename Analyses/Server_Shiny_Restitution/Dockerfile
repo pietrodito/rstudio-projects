@@ -22,4 +22,10 @@ RUN R -q -e 'devtools::install_github("slowkow/ggrepel");        \
              devtools::install_github("daattali/shinyjs");       \
              devtools::install("hdfmaps")'
 
-COPY  ${coro_calaisis} /srv/shiny-server/
+RUN rm -rf /srv/shiny-server/*
+
+COPY  ${coro_calaisis} /srv/shiny-server/${coro_calaisis}
+ARG lamorlaye="Activite autour SSR Lamorlaye/"  
+COPY ${lamorlaye} /srv/shiny-server/${lamorlaye}
+
+RUN chmod 777 "/srv/shiny-server/${lamorlaye}" && chmod 777 "/srv/shiny-server/${coro_calaisis}"

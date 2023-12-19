@@ -17,17 +17,10 @@ Y_MIN <- 50.5
 Y_MAX <- 51.05
 ## -------------------
 
-(df <- read_excel("data/20231124_Actes_Coronarographies_Calaisis_Hors PIE.xlsx",
-                 col_types = c("guess", "guess", "text", "guess",
-                               "guess", "guess", "guess")))
 
-(
-  df
-  |> group_by(Finess)
-  |> summarise(N = sum(`Nb d'actes`))
-  |> pull(N)
-  |> max()
-) -> max_nb_actes
+(df <- read_excel("data/Coronarographie_Calaisis_Hors_PIE_seuil_20231412.xlsx",
+                 col_types = c("guess", "guess", "text", "guess",
+                               "guess", "guess", "guess", "guess")))
 
 
 ui <- fluidPage(
@@ -39,40 +32,48 @@ ui <- fluidPage(
     column(1, tags$img(src='./logo_ars.svg', align = "right", width = "100px"))
   )),
   wellPanel(
-  fluidRow(
-    column(2,  wellPanel(
-      fluidRow(
-        checkboxGroupInput(
-          inputId = paste0("year"),
-          label   = paste0("Année"),
-          choices = ALL_YEARS,
-          selected = SELECTED_YEAR
-        ) 
+    fluidRow(
+      column(2, wellPanel(radioButtons("seuil", "Type actes",
+                                       choices = c("Soumis à seuil",
+                                                   "Non soumis",
+                                                   "Tous types"),
+                                       selected = "Soumis à seuil"))
       ),
-      fluidRow(actionButton("last_year", "📅 ⟵ Année précédente"),
-               actionButton("next_year", "📅 ⟶ Année suivante"),
-               actionButton("all_years", "Toutes les années"),
-               actionButton("one_year", "Année 2023"),
-               actionButton("advanced_config", "Sélection manuelle") )
-    ),
-    ),
-    column(9,  plotOutput("map", height = "500px")),
-  )),
+      column(2,  wellPanel(
+        fluidRow(
+          checkboxGroupInput(
+            inputId = paste0("year"),
+            label   = paste0("Année"), choices = ALL_YEARS,
+            selected = SELECTED_YEAR
+          ) 
+        ),
+        fluidRow(actionButton("last_year", "📅 ⟵ Année précédente"),
+                 actionButton("next_year", "📅 ⟶ Année suivante"),
+                 actionButton("all_years", "Toutes les années"),
+                 actionButton("one_year", "Année 2023"),
+                 actionButton("advanced_config", "Sélection manuelle") )
+      ),
+      ),
+      column(8,  plotOutput("map", height = "500px")),
+    )),
   wellPanel(
     fluidRow(
       column(4, DTOutput("table")),
       column(8, plotOutput("hospit_trend")),
     )
-  )
+  ),
+  textOutput("debug")
 )
-
 server <- function(input, output, session) {
+  
+  selected_rs <- reactiveVal(c())
   
   disable("year")
   
   coro <- reactiveVal(NULL)
   coro_without_outside <- reactiveVal(NULL) ## needed to hide ggrepel outside
   out <- reactiveVal()
+  pre_out <- reactiveVal()
   
   years <- reactiveVal()
   
@@ -93,10 +94,24 @@ server <- function(input, output, session) {
        NB_YEARS + ALL_YEARS[1]
     )
   })
-  
+
   observe({
+    req(input$seuil)
+    
+    if(input$seuil == "Soumis à seuil") {
+      pre_out(df |> filter(Seuil == "non soumis à seuil"))
+    }
+    
+    if(input$seuil == "Non soumis") {
+      pre_out(df |> filter(Seuil == "soumis à seuil"))
+    }
+    
+   if(input$seuil == "Tous types"){
+     pre_out(df)
+   }
+    
     out(
-      df
+      pre_out()
       |> filter(Année %in% input$year)
       |> select(3, 5)
       |> group_by(Finess)
@@ -106,6 +121,7 @@ server <- function(input, output, session) {
       |> left_join(finess |> as.data.frame() |> select("nofinesset", "rs"),
                    by = c("Finess" = "nofinesset"))
     ) 
+    
     coro(
       finess
       |> filter(nofinesset %in% out()$Finess)
@@ -122,11 +138,41 @@ server <- function(input, output, session) {
     )
   })
   
+  max_nb_actes <- reactiveVal()
+  max_nb_actes_pour_une_annee <- reactiveVal()
+  
+  observe({
+    max_nb_actes(
+      out()
+      |> pull(`Nbr. d'actes`)
+      |> max()
+    )
+    
+    max_nb_actes_pour_une_annee(
+      pre_out()
+      |> group_by(Finess, Année)
+      |> summarise(N = sum(`Nb d'actes`))
+      |> pull(N)
+      |> max()
+    )
+  })
+  
+  selected_finess <- NULL
+  
+  
   output$table <- renderDT(
-    out() |> select(rs, `Nbr. d'actes`, Finess),
+    {
+      browser()
+      out() |> select(rs, `Nbr. d'actes`, Finess)
+    },
     options = list(dom = 't', pageLength = 10000, ordering = FALSE),
-    selection = "multiple",
-    caption = "Source : ATIH - Pour 2023: cumul M9."
+    selection = list(mode = "multiple",
+                     selected = ( out()
+                                  |> pull(Finess)
+                                  |> (\(x) which(x %in% selected_finess))()
+                     ),
+                     caption = "Source : ATIH - Pour 2023: cumul M9."
+    )
   )
   
   Aesthetics <- reactive({
@@ -154,16 +200,17 @@ server <- function(input, output, session) {
       + geom_sf(data = coro(), aes(size = `Nbr. d'actes`), color = "#000000", alpha = 0.3)
       + geom_sf(data = coro(), aes(size = `Nbr. d'actes` / 3 * 2), color = aesth$color, alpha = aesth$alpha)
       + geom_text_repel(data = coro_without_outside(), aes(x = X, y = Y, label = rs), size = 3.3, min.segment.length = 0, position = position_nudge_repel(c(x = .14, y = .14)), seed = 0)
-      + scale_size_continuous(range = c(1, 30), limits = c(1, max_nb_actes))
+      + scale_size_continuous(range = c(1, 30), limits = c(1, max_nb_actes()))
       + theme_alice()
       + coord_sf(xlim = c(X_MIN, X_MAX), ylim = c(Y_MIN, Y_MAX))
     )
   })
   
   output$hospit_trend <- renderPlot({
-    selected_finess <- out()[input$table_rows_selected, "Finess"] |> pull()
+    browser()
+    selected_finess <<- out()[input$table_rows_selected, "Finess"] |> pull()
     (
-      df
+      pre_out()
       |> filter(Finess %in% selected_finess)
       |> group_by(Rs, Année)
       |> summarize(`Nb d'actes` = sum(`Nb d'actes`))
@@ -171,7 +218,7 @@ server <- function(input, output, session) {
       |> mutate(`Nb d'actes` = ifelse(Année == 2023, (4/3 * `Nb d'actes`), `Nb d'actes`))
       |> ggplot(aes(Année, `Nb d'actes`, col = Rs))
       +  geom_line()
-      +  ylim(0, 200)
+      +  ylim(0, max_nb_actes_pour_une_annee())
       +  ggtitle("Selectionnez des ES dans la table de gauche. Evolution des ES sur la période (2023 extrapolée)")
       + theme(plot.title = element_text(size = 20))
     )
@@ -182,8 +229,7 @@ server <- function(input, output, session) {
     updateCheckboxGroupInput(
       session,
       "year",
-      selected = 2023
-    )
+      selected = 2023 )
   })
   
   observeEvent(input$advanced_config, {
@@ -198,7 +244,7 @@ server <- function(input, output, session) {
     )
     
   })
-}
+  }
 
 shinyApp(ui, server, options = list(
   launch.browser = TRUE
