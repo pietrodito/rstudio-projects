@@ -157,19 +157,18 @@ server <- function(input, output, session) {
     )
   })
   
-  selected_finess <- NULL
+  selected_finess <- reactiveVal(NULL)
   
   
   output$table <- renderDT(
     {
-      browser()
       out() |> select(rs, `Nbr. d'actes`, Finess)
     },
     options = list(dom = 't', pageLength = 10000, ordering = FALSE),
     selection = list(mode = "multiple",
                      selected = ( out()
                                   |> pull(Finess)
-                                  |> (\(x) which(x %in% selected_finess))()
+                                  |> (\(x) which(x %in% selected_finess()))()
                      ),
                      caption = "Source : ATIH - Pour 2023: cumul M9."
     )
@@ -206,12 +205,14 @@ server <- function(input, output, session) {
     )
   })
   
+  observeEvent(input$table_rows_selected,
+    selected_finess(out()[input$table_rows_selected, "Finess"] |> pull())
+               )
+  
   output$hospit_trend <- renderPlot({
-    browser()
-    selected_finess <<- out()[input$table_rows_selected, "Finess"] |> pull()
     (
       pre_out()
-      |> filter(Finess %in% selected_finess)
+      |> filter(Finess %in% selected_finess())
       |> group_by(Rs, Année)
       |> summarize(`Nb d'actes` = sum(`Nb d'actes`))
       |> mutate(Année = as.integer(Année))

@@ -7,7 +7,7 @@ db_get_connection <- function(nature) {
   
   box::use(
     
-    app/logic/nature_utils
+    ./nature_utils
     [ db_name, ],
     
     RPostgres
@@ -76,6 +76,7 @@ db_instant_connect <- function(nature) {
   }
   
   db
+
 }
 
 #' @export

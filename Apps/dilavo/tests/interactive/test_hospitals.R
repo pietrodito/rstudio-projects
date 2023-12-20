@@ -34,7 +34,7 @@ server <- function(id) {
       input$click, {
         output$out <- renderTable({
           hospitals(nature())
-          })
+        })
       })
   })
 }

@@ -67,7 +67,7 @@ pick_file_in_dir <- function(dir_path) {
 }
 
 treat_one_file <- function(filepath, nature, p, db) {
-  
+
   box::use(
     app/logic/db_utils
     [ db_instant_connect, ],
@@ -541,7 +541,7 @@ guess_encoding_and_read_file <- function(filepath) {
   if(file.size(filepath) > 0) {
     (
       filepath
-      |> guess_encoding()
+      |> guess_encoding(threshold = 0)
       |> filter(row_number() == 1)
       |> pull(encoding)
     ) -> encoding
