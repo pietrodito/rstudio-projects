@@ -1,5 +1,4 @@
 .onAttach <- function(...) {
- library(tidyverse)
  library(readr)
  library(readxl)
  library(sf)

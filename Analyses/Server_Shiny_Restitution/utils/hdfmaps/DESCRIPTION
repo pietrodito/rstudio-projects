@@ -12,7 +12,12 @@ Imports:
     ggrepel,
     ggforce,
     magrittr,
+    purrr,
+    readr,
+    readxl,
+    ggrepel,
     rnaturalearth,
+    scales,
     sf
 RoxygenNote: 7.2.3
 Depends: 
