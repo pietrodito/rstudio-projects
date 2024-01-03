@@ -28,9 +28,8 @@ box::use(
 
 box::use(
   
-  app/logic/db_utils[
-    db_get_connection,
-  ],
+  app/logic/db_utils
+  [ db_get_connection, db_reset, ],
   
 )
 
@@ -63,9 +62,7 @@ server <- function(id) {
     output$out <- renderText("Click buttons")
     
     observeEvent(input$reset, {
-      tables <- dbListTables(db)
-      tables <- base::setdiff(tables, "build_tables")
-      walk(tables, ~ dbRemoveTable(db, .x))
+      db_reset(nature("psy", "oqn"))
     })
     
     observeEvent(input$list, {

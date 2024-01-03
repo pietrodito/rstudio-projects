@@ -263,3 +263,29 @@ del_build_table_details <- function(nature, table_name) {
   
   db_execute(nature, query)
 }
+
+#' @export
+db_reset <- function(nature) {
+  
+  box::use(
+    DBI
+    [ dbListTables, dbRemoveTable, ],
+    
+    purrr
+    [ walk, ],
+  )
+  
+  tables <- dbListTables(db_instant_connect(nature))
+  tables <- base::setdiff(tables, "build_tables")
+  walk(tables, ~ dbRemoveTable(db_instant_connect(nature), .x))
+}
+
+#' @export
+db_reset_all <- function() {
+ box::use(
+   app/logic/nature_utils
+   [ all_natures, ],
+ ) 
+  
+ lapply(all_natures, db_reset)
+}

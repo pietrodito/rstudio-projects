@@ -14,6 +14,21 @@ nature <- function(field = "mco", status = "dgf") {
   )
 }
 
+box::use(
+  purrr
+  [ flatten, map, ]
+)
+
+helper_all_natures <- NULL
+for(field in all_fields) {
+  for(status in all_status) {
+    helper_all_natures <- c(helper_all_natures, list(nature(field, status)))
+  }
+}
+
+#' @export
+all_natures <- helper_all_natures
+
 #' @export
 db_name <- function(nature) {
   nature |> suffixe() |> toupper()

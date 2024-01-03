@@ -5,13 +5,7 @@ box::use(
   app/logic/ovalide_data_utils[ ovalide_data_path, ],
 ) 
 
-updater_message_file <- ovalide_data_path(
-  "messages/public_message.txt"
-)
-
-if (file.exists(updater_message_file)) {
-  file.remove(updater_message_file)
-}
+updater_message_file <- ovalide_data_path( "messages/public_message.txt" )
 
 app_ui <-  function(ns) { 
   
@@ -26,17 +20,8 @@ app_ui <-  function(ns) {
 }
 
 app_server <- function(input, output, session) {
-  
-  box::use(
-    shiny
-    [ observeEvent, showNotification, ],
-  )
-  
-  
-  showNotification("Bienvenue !",
-                   id = "only-one",
-                   type = "message")
-  
+  say_hello()
+  remove_public_message_file_if_exists()
   notify_updater_messages() 
 }
 
@@ -73,6 +58,22 @@ notify_updater_messages <- function() {
                       type = "message")
    }
  })
+}
+
+say_hello <- function() {
+  box::use(
+    shiny
+    [ showNotification, ],
+  )
+  showNotification("Bienvenue !",
+                   id = "only-one",
+                   type = "message")
+}
+
+remove_public_message_file_if_exists <- function() {
+  if (file.exists(updater_message_file)) {
+    file.remove(updater_message_file)
+  }
 }
 
 ## DO NOT MODIFY lines below
@@ -259,3 +260,5 @@ setup_env_for_tests <- function(env) {
 if (interactive_tests) {
   setup_env_for_tests(environment())
 }  
+
+
