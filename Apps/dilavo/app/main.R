@@ -29,8 +29,13 @@ app_server <- function(input, output, session) {
   
   box::use(
     shiny
-    [ observeEvent, ],
+    [ observeEvent, showNotification, ],
   )
+  
+  
+  showNotification("Bienvenue !",
+                   id = "only-one",
+                   type = "message")
   
   notify_updater_messages() 
 }
