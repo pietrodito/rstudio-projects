@@ -1,5 +1,6 @@
+library(tidyr)
+library(dplyr)
 library(hdfmaps)
-library(readxl)
 library(shiny)
 library(purrr)
 library(DT)
@@ -18,9 +19,10 @@ Y_MAX <- 51.05
 ## -------------------
 
 
-(df <- read_excel("data/Coronarographie_Calaisis_Hors_PIE_seuil_20231412.xlsx",
-                 col_types = c("guess", "guess", "text", "guess",
-                               "guess", "guess", "guess", "guess")))
+(df <- readxl::read_excel(
+  "data/Coronarographie_Calaisis_Hors_PIE_seuil_20231412.xlsx",
+  col_types = c("guess", "guess", "text", "guess",
+                "guess", "guess", "guess", "guess")))
 
 
 ui <- fluidPage(

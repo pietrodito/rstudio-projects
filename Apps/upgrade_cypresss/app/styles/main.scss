@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: #15354a;
+  padding: 1em;
+
+  .container-fluid {
+    border-radius: 0.5em;
+    max-width: 1200px;
+    background-color: white;
+
+    .row {
+      padding: 1em;
+    }
+  }
+}
