@@ -164,7 +164,7 @@ server <- function(id) {
           shiny
           [ isolate, reactiveValuesToList, ],
         )
-          
+        
         if(r$edit_mode) {
           save_build_table_details(
             isolate(r$nature),
@@ -309,7 +309,7 @@ update_ui_according_to_edit_mode <- function(r, session, input, output) {
       
       output$table_name <- renderUI({
         textInput(session$ns("edit_name"), label = "Nom de table",
-                  value = if(r$new) NULL else input$selected_name,
+                  value = if(r$new) NULL else input$edit_name,
                   placeholder = "Choissisez un nom pour la table")
       })
       
