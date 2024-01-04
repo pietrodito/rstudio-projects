@@ -26,10 +26,12 @@ send_message <- function(...) {
     )
 }
 
+type_of_treated_files <- NULL
+
 tryCatch(
   {
     box::use( ./db_updater_utils[ treat_csv_files, ] )
-    treat_csv_files(dir_2_probe)
+    type_of_treated_files <- treat_csv_files(dir_2_probe)
   },
   
   error = function(e) {
@@ -40,6 +42,25 @@ tryCatch(
   finally = {
     ## remove all files
     unlink(paste0(dir_path, "*"))
+    ## TODO écrire info update dans UPDATE_LOG table LOGS
+    
+    box::use( app/logic/db_utils[ db_update_logs, ],)
+    
+    sliced <- stringr::str_split(dir_2_probe, "_", simplify = T)
+    
+    field <- sliced[1]
+    status <- sliced[2]
+    
+    if(type_of_treated_files$csv) {
+      db_update_logs(field, status, "maj_csv", Sys.time())
+    }
+    if(type_of_treated_files$k_v) {
+      db_update_logs(field, status, "maj_cle_val", Sys.time())
+    }
+    if(type_of_treated_files$tdb) {
+      db_update_logs(field, status, "maj_tdb", Sys.time())
+    }
+    
     send_message(
       "Les données ", dir_2_probe,
       " ont été mises à jour le ", Sys.time()

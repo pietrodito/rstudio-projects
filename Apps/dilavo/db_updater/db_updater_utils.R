@@ -23,7 +23,7 @@ treat_csv_files <- function(dir_2_probe) {
     [ walk, ],
     
     stringr
-    [ str_split, ],
+    [ str_detect, str_split, ],
   )
   
   DB_NAME <- dir_2_probe |> toupper()
@@ -53,7 +53,16 @@ treat_csv_files <- function(dir_2_probe) {
     filepaths
     |> which_walk(treat_one_file, nature, p)
   )
-  invisible()
+  
+  tdb_files <- str_detect(filenames, "tdb")
+  k_v_files <- str_detect(filenames, "key_value")
+  csv_files <- ! tdb_files & ! k_v_files
+  
+  list(
+    csv = any(csv_files),
+    k_v = any(k_v_files),
+    tdb = any(tdb_files)
+  )
 }
 
 #' @export

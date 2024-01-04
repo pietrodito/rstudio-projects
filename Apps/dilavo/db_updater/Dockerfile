@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y libpq-dev && \
         rm -rf /var/lib/apt/lists/*
 RUN R -q -e 'install.packages(c( \
         "box",                   \
+        "dbplyr",                \
         "dplyr",                 \
         "furrr",                 \
         "future",                \

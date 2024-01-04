@@ -9,8 +9,7 @@ ui <- function(id) {
   
   ns <- NS(id)
   bootstrapPage(
-    actionButton(ns("click"), "blah"),
-    tableOutput(ns("out"))
+    actionButton(ns("click"), "CONSOLE")
   )
 }
 
@@ -32,9 +31,7 @@ server <- function(id) {
     
     observeEvent(
       input$click, {
-        output$out <- renderTable({
-          hospitals(nature())
+        browser()
         })
-      })
   })
 }

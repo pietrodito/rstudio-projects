@@ -2,20 +2,13 @@
 
 box::use( ./log_utils [ log, ], )
 
-#' @export
-db_get_connection <- function(nature) {
-  
+db_get_connection_by_name <- function(db_name) {
   box::use(
-    
-    ./nature_utils
-    [ db_name, ],
-    
     RPostgres
     [ Postgres ],
     
     DBI
     [ dbConnect, dbDisconnect ],
-    
   )
   
   host     <- NULL
@@ -34,7 +27,6 @@ db_get_connection <- function(nature) {
     user     <- "postgres"
     password <- "postgres"
   }
-  
   tryCatch(
     {
       dbConnect(Postgres(),
@@ -42,7 +34,7 @@ db_get_connection <- function(nature) {
                 port     = port    ,
                 user     = user    ,
                 password = password,
-                dbname  = db_name(nature))
+                dbname  = db_name)
     },
     error = function(cond) {
       message("Unable to connect to db:")
@@ -54,8 +46,74 @@ db_get_connection <- function(nature) {
   if (is.null(db)) {
     log("> Failed to connect to  ", db_name(nature))
   } else 
+    db
+}
+
+#' @export
+db_get_connection <- function(nature) {
   
-  db
+  box::use(
+    ./nature_utils
+    [ db_name, ],
+  )
+  
+  db_get_connection_by_name(db_name(nature))
+}
+
+#' @export
+db_update_logs <- function(field, status, type, timestamp) {
+  
+  box::use(
+    
+    DBI
+    [ dbWriteTable, ],
+    
+    dplyr
+    [ collect, rename, rows_upsert, tbl, ],
+    
+    tibble
+    [ tibble, ],
+  )
+  
+  (
+    tibble(champ = field, statut = status, col = timestamp)
+    |> rename( !! type := col)
+  ) -> new_line
+  
+ db <- db_get_connection_by_name("UPD_LOG") 
+ 
+ 
+ (
+   tbl(db, "logs")
+   |> collect()
+   |> rows_upsert(new_line, by = c("champ", "statut"))
+ ) -> new_logs
+   
+ dbWriteTable(db, "logs", new_logs, overwrite = TRUE)
+ dbDisconnect(db)
+}
+
+
+#' @export
+db_update_logs_table <- function() {
+  
+  box::use(
+    DBI
+    [ dbDisconnect ],
+    
+    dplyr
+    [ collect, tbl, ],
+    
+    withr
+    [ defer, ],
+  )
+  
+  db <- db_get_connection_by_name("UPD_LOG") 
+  if (! is.null(db)) {
+    defer(dbDisconnect(db))
+  }
+  
+  tbl(db, "logs") |> collect()
 }
 
 #' @export
@@ -116,7 +174,6 @@ db_execute <- function(nature, query, params = NULL) {
 most_recent_year <- function(nature) {
   
   box::use(
-    
     DBI
     [ dbExistsTable, dbGetQuery, ],
   )

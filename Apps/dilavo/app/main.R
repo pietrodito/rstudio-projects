@@ -10,19 +10,40 @@ updater_message_file <- ovalide_data_path( "messages/public_message.txt" )
 app_ui <-  function(ns) { 
   
   box::use(
-    shiny[ actionButton, fluidPage, h2,  ],
+    tabulatorr
+    [ tabulatorOutput, ],
+    
+    shiny
+    [ actionButton, fluidPage, h2,  ],
   )
   
   fluidPage(
     h2("Bienvenue dans DILAVO !"),
-    actionButton(ns("app_button"), "Un bouton !")
+    tabulatorOutput(ns("update_logs_table"))
   )
 }
 
 app_server <- function(input, output, session) {
+  
+  box::use(
+    app/logic/db_utils
+    [ db_update_logs_table, ],
+    
+    tabulatorr
+    [ renderTabulator, tabulator, ],
+  )
+  
   say_hello()
   remove_public_message_file_if_exists()
   notify_updater_messages() 
+  
+  output$update_logs_table <- renderTabulator(
+    tabulator(
+      db_update_logs_table(),
+      autoColumns = TRUE,
+      layout = "fitColumns"
+    )
+  )
 }
 
 notify_updater_messages <- function() {

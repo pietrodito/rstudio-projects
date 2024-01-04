@@ -36,6 +36,23 @@ else
     echo "8 dbs created!"
 fi
 
+if [ "$( psql -h db -XtAc \
+     "SELECT 1 FROM pg_database WHERE datname='UPD_LOG'" )" = '1' ]
+then
+    echo "Database UPD_LOG already exist"
+else
+    echo "Creating UPD_LOG db... "
+      createdb -h db UPD_LOG 
+      psql -h db -d UPD_LOG -c \
+      'CREATE TABLE IF NOT EXISTS logs (
+         champ TEXT NOT NULL, 
+         statut TEXT NOT NULL,
+         MAJ_csv TIMESTAMP,
+         MAJ_tdb TIMESTAMP,
+         MAJ_cle_val TIMESTAMP
+         ) '
+fi
+
 
 echo "Setup will now exit"
 exit
