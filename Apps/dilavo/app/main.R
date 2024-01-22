@@ -18,13 +18,20 @@ app_ui <-  function(ns) {
   )
   
   fluidPage(
-    h2("Bienvenue dans DILAVO !"),
-    tabulatorOutput(ns("update_logs_table"))
+    h2("DILAVO"),
+    tabulatorOutput(ns("update_logs_table"), height = 1000)
   )
 }
 
 app_server <- function(input, output, session) {
   
+  say_hello()
+  remove_public_message_file_if_exists()
+  notify_updater_messages(output)
+  render_update_logs_table(output)
+}
+
+render_update_logs_table <- function(output) {
   box::use(
     app/logic/db_utils
     [ db_update_logs_table, ],
@@ -32,10 +39,6 @@ app_server <- function(input, output, session) {
     tabulatorr
     [ renderTabulator, tabulator, ],
   )
-  
-  say_hello()
-  remove_public_message_file_if_exists()
-  notify_updater_messages() 
   
   output$update_logs_table <- renderTabulator(
     tabulator(
@@ -46,7 +49,8 @@ app_server <- function(input, output, session) {
   )
 }
 
-notify_updater_messages <- function() {
+
+notify_updater_messages <- function(output) {
   
   box::use(
     app/logic/ovalide_data_utils[ ovalide_data_path, ],
@@ -77,6 +81,7 @@ notify_updater_messages <- function() {
      showNotification(publicMessage(),
                       id = "only-one",
                       type = "message")
+    render_update_logs_table(output) 
    }
  })
 }

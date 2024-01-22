@@ -102,7 +102,13 @@ db_update_logs_table <- function() {
     [ dbDisconnect ],
     
     dplyr
-    [ collect, tbl, ],
+    [ arrange, collect, mutate_at, rename_all, tbl, vars, ],
+    
+    lubridate
+    [ day, hour, minute, month, second, year, ymd_hms, ],
+    
+    stringr
+    [ str_sub, ],
     
     withr
     [ defer, ],
@@ -113,7 +119,30 @@ db_update_logs_table <- function() {
     defer(dbDisconnect(db))
   }
   
-  tbl(db, "logs") |> collect()
+  readable_date <- function(x) {
+    d <- ymd_hms(x)
+    ifelse(is.na(x),
+           "", 
+           paste0(
+             "Le ", day(d), "/", month(d), "/", year(d),
+             " à ", hour(d), "h", minute(d)
+           )
+    )
+  }
+  
+  # 2024-01-05T07:57:31Z
+  
+  (
+    
+    tbl(db, "logs") 
+    |> collect()
+    |> arrange(champ, statut)
+    |> rename_all(function(x) {
+      c("Champ", "Statut",
+        "MàJ fichiers CSV", "MàJ tableau de bord", "MàJ Clé / Valeur")
+    })
+    |> mutate_at(vars(starts_with("MàJ")), readable_date)
+  )
 }
 
 #' @export
