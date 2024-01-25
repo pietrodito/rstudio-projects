@@ -8,3 +8,4 @@
 .npm/
 .config/Cypress/
 .pki/
+.Rproj.user

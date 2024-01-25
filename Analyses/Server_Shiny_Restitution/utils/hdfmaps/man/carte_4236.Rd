@@ -4,7 +4,7 @@
 \alias{carte_4236}
 \title{Title}
 \usage{
-carte_4236()
+carte_4236(fill = land_color, alpha = 2, lty = 1, col = "black")
 }
 \description{
 Title
