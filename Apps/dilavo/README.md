@@ -17,6 +17,10 @@ See also the [compose.yml][5] file.
 
 ## TODO
 
+### Add colors to tabulator
+
+
+
 ### table_builder
 
 #### HOW TODO
