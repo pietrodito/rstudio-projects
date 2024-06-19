@@ -25,6 +25,7 @@ server <- function(id) {
     
     shiny
     [ moduleServer, observeEvent, renderTable, ],
+    
   )
   
   moduleServer(id, function(input, output, session) {
@@ -32,6 +33,6 @@ server <- function(id) {
     observeEvent(
       input$click, {
         browser()
-        })
+      })
   })
 }

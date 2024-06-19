@@ -66,7 +66,7 @@ db_update_logs <- function(field, status, type, timestamp) {
   box::use(
     
     DBI
-    [ dbWriteTable, ],
+    [ dbDisconnect, dbWriteTable, ],
     
     dplyr
     [ collect, rename, rows_upsert, tbl, ],
@@ -92,7 +92,6 @@ db_update_logs <- function(field, status, type, timestamp) {
  dbWriteTable(db, "logs", new_logs, overwrite = TRUE)
  dbDisconnect(db)
 }
-
 
 #' @export
 db_update_logs_table <- function() {
@@ -200,6 +199,7 @@ db_execute <- function(nature, query, params = NULL) {
   )
 }
 
+#' @export
 most_recent_year <- function(nature) {
   
   box::use(
@@ -332,7 +332,6 @@ load_build_table_details <- function(nature, table_name) {
     NULL
   }
 }
-
 
 #' @export
 del_build_table_details <- function(nature, table_name) {

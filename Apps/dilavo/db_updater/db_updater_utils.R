@@ -436,7 +436,7 @@ prepare_raw_key_value_4_db <- function(filepath) {
 }
 
 treat_zip_file <- function(filepath) {
-  
+
   box::use(
     stats
     [ runif, ],
