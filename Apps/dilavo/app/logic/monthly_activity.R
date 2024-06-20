@@ -7,7 +7,7 @@ stays_by_month <- function(nature, finess, previous_year = 1) {
     
     dplyr
     [ across, arrange, collect, everything,  filter,
-      lead, mutate, select, tbl, where, ],
+      lead, matches, mutate, select, tbl, where, ],
     
     tidyr
     [ pivot_wider, replace_na, ],
@@ -32,6 +32,7 @@ stays_by_month <- function(nature, finess, previous_year = 1) {
     |> filter(`_name_` == "nbrsa")
     |> select(-col1, -`_name_`)
     |> pivot_wider(names_from = moisor, values_from = N)
+    |> select(-matches("NA"))
     |> mutate(
       Total = as.integer(rowSums(across(where(is.numeric)), na.rm = T)))
     |> mutate(across(where(is.numeric), ~ replace_na(.x, 0)))
@@ -74,16 +75,46 @@ graph_this_and_last_years <- function(nature, finess) {
   
   box::use(
     dplyr
-    [ bind_rows, ],
+    [ bind_rows, mutate, ],
+    
+    ggplot2
+    [ aes, annotate, expand_limits, geom_point, geom_smooth, ggplot, ],
   )
   
   last_year <- stays_last_year_at_this_point(nature, finess)
   this_year <- stays_this_year(nature, finess)
   
-  browser()
+  
+  evolution <- function(last_year, this_year) {
+    last_month_total <- function(year) {
+      year[nrow(year), "Total"]
+    }
+    
+    (
+      (last_month_total(this_year) - last_month_total(last_year))
+      /
+        last_month_total(this_year)
+    ) -> result
+    
+    prefixe <- ifelse(result$Total >= 0, "+", "")
+    paste0(prefixe, scales::percent_format(accuracy = .1)(result$Total))
+    
+  }
+  
   
   (
     bind_rows(last_year, this_year)
+    |> mutate(periode = as.integer(periode))
+    |> ggplot(aes(periode, Total, color = annee))
+    +  geom_point()
+    +  geom_smooth(method = "lm")
+    +  expand_limits(y = 0)
+    +  annotate("text",
+                x = - Inf,
+                y = - Inf,
+                label = evolution(last_year, this_year),
+                vjust = -6,
+                hjust = -6.5,
+                size = 10)
   )
-  
 }

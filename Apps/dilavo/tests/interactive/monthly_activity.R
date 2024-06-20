@@ -10,15 +10,17 @@ ui <- function(id) {
     [ nature, ],
     
     shiny
-    [ bootstrapPage, h1, NS, plotOutput, selectInput, tableOutput, ],
+    [ bootstrapPage, h1, NS, plotOutput, selectInput,
+      selectizeInput, tableOutput, ],
   )
   
   ns <- NS(id)
   bootstrapPage(
     h1("Activité mensuelle des établissements"),
-    selectInput(ns("hospital"),
-                "Établissement :",
-                hospitals(nature())
+    selectInput(
+      ns("hospital"),
+      "Établissement :",
+      hospitals(nature())
     ),
     plotOutput(ns("plot")),
     tableOutput(ns("previous_year")),
@@ -54,14 +56,11 @@ server <- function(id) {
   
   moduleServer(id, function(input, output, session) {
     
-    output$debug <- renderTable({
+    output$plot <- renderPlot({
+
       finess <- input$hospital |> str_sub(1, 9)
       graph_this_and_last_years(nature("mco", "dgf"), finess)
     })
-
-    # output$plot <- renderPlot({
-    #   
-    # })
     
     output$previous_year <- renderTable({
       finess <- input$hospital |> str_sub(1, 9)
@@ -75,3 +74,4 @@ server <- function(id) {
   })
   
 }
+
