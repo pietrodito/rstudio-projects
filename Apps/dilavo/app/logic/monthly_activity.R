@@ -39,7 +39,6 @@ stays_by_month <- function(nature, finess, previous_year = 1) {
   )
 }
 
-
 #' @export
 stays_last_year <- function(nature, finess) {
   stays_by_month(nature, finess, previous_year = 1)
@@ -68,7 +67,6 @@ stays_last_year_at_this_point <- function(nature, finess) {
     )
   )
 }
-
 
 #' @export
 graph_this_and_last_years <- function(nature, finess) {
@@ -118,3 +116,60 @@ graph_this_and_last_years <- function(nature, finess) {
                 size = 10)
   )
 }
+
+#' @export
+ghm_etab_periode <- function(nature, finess, annee_, periode_) {
+  
+  box::use(
+    app/logic/db_utils
+    [ db_instant_connect, most_recent_year, ],
+    
+    dplyr
+    [ collect, filter, group_by, mutate, select, summarise, tbl, ],
+  )
+  
+  (
+    tbl(db_instant_connect(nature), "t1d2cmr_1")
+    |> filter(ipe == finess)
+    |> mutate(cmd     = substr(racine, 1, 2),
+              cas     = substr(racine, 3, 3),
+              effh    = as.integer(effh),
+              annee   = as.integer(annee),
+              periode = as.integer(periode))
+    |> filter(annee == annee_, periode == periode_)
+    |> select(ipe, cmd, cas, effh) 
+    |> collect()
+    |> group_by(ipe, cmd, cas)
+    |> summarise(N = sum(effh))
+  )
+  
+}
+
+#' @export
+available_cmd_cas_finess <- function(finess) {
+  
+  box::use(
+    app/logic/db_utils
+    [ db_instant_connect, most_recent_year, ],
+    
+    app/logic/nature_utils 
+    [ nature, ],
+    
+    dplyr
+    [ collect, distinct, filter, group_by, mutate, select, summarise, tbl, ],
+    
+    purrr
+    [ map, ],
+  )
+  
+  (
+    tbl(db_instant_connect(nature("mco", "dgf")), "t1d2cmr_1")
+    |> filter(ipe == finess)
+    |> mutate(cmd     = substr(racine, 1, 2),
+              cas     = substr(racine, 3, 3))
+    |> select(cmd, cas)
+    |> distinct()
+    |> collect()
+  )
+}
+

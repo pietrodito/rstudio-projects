@@ -14,6 +14,11 @@ See also the [compose.yml][5] file.
 ## ISSUES
 
 - CANNOT use rhino::pkg_install without reinstalling rstudio!!!
+- workaround:
+```
+options(repos="http://cran.rstudio.com/")
+Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "http://cran.rstudio.com")
+```
 
 ## TODO
 
