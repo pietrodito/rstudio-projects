@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^tabulatorrSelectRows\.Rproj$
+^\.Rproj\.user$

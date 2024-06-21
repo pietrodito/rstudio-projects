@@ -220,6 +220,32 @@ most_recent_year <- function(nature) {
 }
 
 #' @export
+most_recent_period <- function(nature) {
+  
+  box::use(
+    DBI
+    [ dbExistsTable, dbGetQuery, ],
+    
+    glue
+    [ glue, ],
+  )
+  
+  if(dbExistsTable(db_instant_connect(nature), "tdb")) {
+    
+    query <- glue("SELECT max(periode) AS period FROM tdb
+                   WHERE annee = '{most_recent_year(nature)}';")
+    
+    year <- db_query(nature, query)
+    
+    year[1, 1]
+  } else {
+    NULL
+  }
+}
+
+
+
+#' @export
 hospitals <- function(nature, year = most_recent_year(nature)) {
   
   box::use(

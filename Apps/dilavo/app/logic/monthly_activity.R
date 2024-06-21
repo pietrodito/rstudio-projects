@@ -69,33 +69,57 @@ stays_last_year_at_this_point <- function(nature, finess) {
 }
 
 #' @export
-graph_this_and_last_years <- function(nature, finess) {
+graph_this_and_last_years <- function(nature, finess,
+                                      selected_cmd, selected_cas) {
   
   box::use(
+    app/logic/db_utils
+    [  most_recent_year, most_recent_period, ],
+    
+    app/logic/nature_utils
+    [ nature, ],
+    
     dplyr
-    [ bind_rows, mutate, ],
+    [ bind_rows, filter, group_by, mutate, pull, summarise, ],
     
     ggplot2
     [ aes, annotate, expand_limits, geom_point, geom_smooth, ggplot, ],
   )
   
-  last_year <- stays_last_year_at_this_point(nature, finess)
-  this_year <- stays_this_year(nature, finess)
+  last_year <- ghm_etab_year_period(finess,
+                                    as.character(as.integer(
+                                      most_recent_year(nature())) - 1), 
+                                    most_recent_period(nature()))
+  this_year <- ghm_etab_year_period(finess,
+                                    most_recent_year(nature()),
+                                    most_recent_period(nature()))
   
   
   evolution <- function(last_year, this_year) {
     last_month_total <- function(year) {
-      year[nrow(year), "Total"]
+      
+      the_period <- most_recent_period(nature()) |> as.integer()
+      
+      (
+        year
+        |> filter(periode == the_period)
+        |> filter(cmd %in% selected_cmd)
+        |> filter(cas %in% selected_cas)
+        |> group_by(annee, periode)
+        |> summarise(N = sum(N))
+        |> pull(N)
+      )
     }
+    
     
     (
       (last_month_total(this_year) - last_month_total(last_year))
       /
-        last_month_total(this_year)
+        last_month_total(last_year)
     ) -> result
     
-    prefixe <- ifelse(result$Total >= 0, "+", "")
-    paste0(prefixe, scales::percent_format(accuracy = .1)(result$Total))
+    prefixe <- ifelse(result >= 0, "+", "")
+    paste0(prefixe, scales::percent_format(accuracy = .1)(result))
     
   }
   
@@ -103,7 +127,12 @@ graph_this_and_last_years <- function(nature, finess) {
   (
     bind_rows(last_year, this_year)
     |> mutate(periode = as.integer(periode))
-    |> ggplot(aes(periode, Total, color = annee))
+    |> filter(cmd %in% selected_cmd)
+    |> filter(cas %in% selected_cas)
+    |> mutate(annee = as.character(annee))
+    |> group_by(annee, periode)
+    |> summarise(N = sum(N))
+    |> ggplot(aes(periode, N, color = annee))
     +  geom_point()
     +  geom_smooth(method = "lm")
     +  expand_limits(y = 0)
@@ -117,32 +146,57 @@ graph_this_and_last_years <- function(nature, finess) {
   )
 }
 
-#' @export
-ghm_etab_periode <- function(nature, finess, annee_, periode_) {
-  
+ghm_etab_year_period <- function(finess, year, period) {
   box::use(
     app/logic/db_utils
-    [ db_instant_connect, most_recent_year, ],
+    [ db_instant_connect, ],
+    
+    app/logic/nature_utils
+    [ nature, ],
     
     dplyr
     [ collect, filter, group_by, mutate, select, summarise, tbl, ],
   )
   
   (
-    tbl(db_instant_connect(nature), "t1d2cmr_1")
+    tbl(db_instant_connect(nature()), "t1d2cmr_1")
     |> filter(ipe == finess)
     |> mutate(cmd     = substr(racine, 1, 2),
               cas     = substr(racine, 3, 3),
               effh    = as.integer(effh),
               annee   = as.integer(annee),
               periode = as.integer(periode))
-    |> filter(annee == annee_, periode == periode_)
-    |> select(ipe, cmd, cas, effh) 
+    |> filter(annee == year, periode <= period)
+    |> select(annee, periode, cmd, cas, effh) 
     |> collect()
-    |> group_by(ipe, cmd, cas)
+    |> group_by(annee, periode, cmd, cas)
     |> summarise(N = sum(effh))
   )
+}
+
+#' @export
+ghm_etab_period <- function(finess) {
+  box::use(
+    app/logic/db_utils
+    [  most_recent_year, most_recent_period, ],
+    
+    app/logic/nature_utils
+    [  nature,  ],
+    
+    dplyr
+    [ bind_rows, ],
+  )
   
+  bind_rows(
+    ghm_etab_year_period(finess,
+                         as.character(as.integer(
+                           most_recent_year(nature())) - 1),
+                         most_recent_period(nature()))
+    ,
+    ghm_etab_year_period(finess,
+                         most_recent_year(nature()),
+                         most_recent_period(nature()))
+  )
 }
 
 #' @export
@@ -170,6 +224,6 @@ available_cmd_cas_finess <- function(finess) {
     |> select(cmd, cas)
     |> distinct()
     |> collect()
+    |> map(unique)
   )
 }
-
