@@ -348,7 +348,7 @@ load_build_table_details <- function(nature, table_name) {
     db_query(
       nature,
       glue(
-        "SELECT details FROM build_tables WHERE name = '{table_name}';",
+        "SELECT details FROM build_tables WHERE name = '{table_name}';"
       )
     )
   
