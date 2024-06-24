@@ -26,6 +26,8 @@ HTMLWidgets.widget({
         var table = new Tabulator("#" + el.id, tab_options);
 
         addCellClickEvent(el, table);
+        
+        addRowSelectionChangedEvent(el, table);
 
         function extractColumnsNames(columns) {
           return _.map(columns, col => { return col.getField() });
@@ -151,6 +153,24 @@ function attachPropertyToColumns(columnProperty, columnValue, x) {
     }
   }
   rec_helper(x.options.columns);
+}
+
+function constructRowSelectionChangerEventForR(data, rows) {
+  return {
+    data: data,
+    rows: rows,
+  };
+}
+
+function addRowSelectionChangedEvent(el, table) {
+  
+  table.on("rowSelectionChanged", function(data, rows){
+    Shiny.setInputValue(
+      el.id + "_row_selection_changed",
+      constructRowSelectionChangerEventForR(data, rows),
+      { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
+  });
+
 }
 
 function constructClickEventForR(cell) {
