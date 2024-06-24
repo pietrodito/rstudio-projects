@@ -2,16 +2,10 @@ library(shiny)
 library(tabulatorr)
 
 ui <- fluidPage(
-  textOutput("debug"),
   tabulatorOutput("x")
 )
 
 server <- function(input, output, session) {
-  
-  output$debug <- renderText({
-    debug()
-  })
-  
   output$x <- renderTabulator(
     tabulator(
       mtcars,

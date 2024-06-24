@@ -4,7 +4,7 @@ dependencies:
     src: htmlwidgets/underscore-1.13.6
     script: underscore.js
   - name: tabulator
-    version: 6.2.1
-    src: htmlwidgets/tabulator-6.2.1
+    version: 5.5.2
+    src: htmlwidgets/tabulator-5.5.2
     script: tabulator.js
     stylesheet: tabulator_site.css

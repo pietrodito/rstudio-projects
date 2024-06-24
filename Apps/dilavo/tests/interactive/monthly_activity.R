@@ -57,7 +57,7 @@ ui <- function(id) {
     ),
     tableOutput(ns("previous_year")),
     tableOutput(ns("current_year")),
-    plotOutput(ns("debug")),
+    textOutput(ns("debug")),
 
   )
 }
@@ -81,7 +81,7 @@ server <- function(id) {
     [ filter, group_by, mutate, pull, select, summarise, ],
 
     tabulatorr
-    [ renderTabulator, tabulator, ],
+    [ debug, renderTabulator, tabulator, ],
     
     DT
     [ renderDT, JS, ],
@@ -163,7 +163,8 @@ server <- function(id) {
       # options = dt_options
     )
 
-    output$debug <- renderPlot({
+    output$debug <- renderText({
+      debug()
     })
 
     observeEvent(input$update_graph, {
