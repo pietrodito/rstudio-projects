@@ -26,24 +26,24 @@ HTMLWidgets.widget({
         var table = new Tabulator("#" + el.id, tab_options);
 
         addCellClickEvent(el, table);
-//        
-//        addRowSelectionChangedEvent(el, table);
-//
-//        function extractColumnsNames(columns) {
-//          return _.map(columns, col => { return col.getField() });
-//        }
-//
-//        function addColumnMovedEvent() {
-//          table.on("columnMoved", function (column, columns) {
-//            Shiny.setInputValue(
-//              el.id + "_column_moved",
-//              extractColumnsNames(columns),
-//              { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
-//            );
-//          });
-//        }
-//
-//        addColumnMovedEvent();
+
+        addRowSelectionChangedEvent(el, table);
+        //
+        //        function extractColumnsNames(columns) {
+        //          return _.map(columns, col => { return col.getField() });
+        //        }
+        //
+        //        function addColumnMovedEvent() {
+        //          table.on("columnMoved", function (column, columns) {
+        //            Shiny.setInputValue(
+        //              el.id + "_column_moved",
+        //              extractColumnsNames(columns),
+        //              { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
+        //            );
+        //          });
+        //        }
+        //
+        //        addColumnMovedEvent();
 
       },
 
@@ -73,8 +73,6 @@ function attachAutoColumnsCallbackActions(x, autoDefinitionsCallbackActions) {
 function setupHeaderMenu(el, x, autoDefinitionsCallbackActions) {
 
   let headerMenu = createHeaderMenu(el, x);
-
-  debugger;
 
   if (headerMenu.length > 0) {
     if (autoColumns(x)) {
@@ -155,22 +153,29 @@ function attachPropertyToColumns(columnProperty, columnValue, x) {
   rec_helper(x.options.columns);
 }
 
-function constructRowSelectionChangerEventForR(data, rows) {
-  return {
+function constructRowSelectionChangerEventForR(data, rows, selected, deselected) {
+  _x = {
     data: data,
     rows: rows,
+    selected: selected,
+    deselected: deselected,
+  }
+  return {
+    length: data.length,
   };
 }
 
 function addRowSelectionChangedEvent(el, table) {
-  
-  table.on("rowSelectionChanged", function(data, rows){
+
+  table.on("rowSelectionChanged", function (data, rows, selected, deselected) {
+    _x = table.getSelectedData();
     Shiny.setInputValue(
       el.id + "_row_selection_changed",
-      constructRowSelectionChangerEventForR(data, rows),
-      { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
+      //    constructRowSelectionChangerEventForR(data, rows, selected, deselected),
+      table.getSelectedData(),
+    { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
       )
-  });
+});
 
 }
 
@@ -183,7 +188,7 @@ function constructClickEventForR(cell) {
 }
 
 function addCellClickEvent(el, table) {
-  table.on("cellClick", function (e, cell_details) {
+  table.on("cellClick", function (click_event, cell_details) {
     Shiny.setInputValue(
       el.id + "_cell_clicked",
       constructClickEventForR(cell_details),
@@ -191,3 +196,4 @@ function addCellClickEvent(el, table) {
     );
   });
 }
+

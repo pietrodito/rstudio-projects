@@ -197,6 +197,30 @@ reactive_value <- function() {
            options = list(launch.browser = T))
 }; run(reactive_value)
 
+row_selection_changed <- function() {
+  ui <- fluidPage(
+    tabulatorOutput("table", height = NULL)
+  )
+
+  server <- function(input, output, session) {
+
+    output$table <- renderTabulator({
+      tabulator(mtcars,
+                layout = "fitColumns",
+                selectableRows = TRUE,
+                autoColumns = TRUE)
+    })
+    
+    observeEvent(input$table_row_selection_changed, {
+      req(input$table_row_selection_changed)
+      str(input$table_row_selection_changed)
+    })
+  }
+
+  shinyApp(ui, server,
+           options = list(launch.browser = T))
+}; run(row_selection_changed)
+
 detect_column_move <- function() {
   ui <- fluidPage(
     tabulatorOutput("table", height = NULL)

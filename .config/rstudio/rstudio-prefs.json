@@ -51,7 +51,6 @@
     "jobs_tab_visibility": "shown",
     "default_project_location": "~/tmp",
     "pdf_previewer": "none",
-    "show_line_numbers": false,
     "show_diagnostics_other": true,
     "graphics_backend": "cairo",
     "graphics_antialiasing": "gray",
@@ -67,5 +66,6 @@
     "server_editor_font_enabled": true,
     "server_editor_font": "MonaspaceXenon-Regular",
     "text_rendering": "geometricPrecision",
-    "default_encoding": "UTF-8"
+    "default_encoding": "UTF-8",
+    "relative_line_numbers": true
 }
