@@ -48,6 +48,7 @@ shiny_example    <- function() {
   shinyApp(ui, server,
            options = list(launch.browser = T))
 }; run(shiny_example)
+
 module_example   <- function() {
 
   tabUI <- function(id) {

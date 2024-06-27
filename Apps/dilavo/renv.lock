@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.2",
+    "Version": "4.3.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -1404,11 +1404,11 @@
       "RemoteRepo": "rstudio-projects",
       "RemoteSubdir": "my_packages/tabulatorr",
       "RemoteRef": "main",
-      "RemoteSha": "ada61a0ad4465a9d24d8e400111fc691cb85049f",
+      "RemoteSha": "2c6328046e2f230101eee95c35e2b99a2fe7f748",
       "Requirements": [
         "htmlwidgets"
       ],
-      "Hash": "8321b53fdf16034d0e4ccd94c059a4e0"
+      "Hash": "8341f286c5149f7c087f7dd4b3e9dc4c"
     },
     "testthat": {
       "Package": "testthat",

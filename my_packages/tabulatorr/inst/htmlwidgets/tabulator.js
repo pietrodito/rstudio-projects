@@ -26,24 +26,24 @@ HTMLWidgets.widget({
         var table = new Tabulator("#" + el.id, tab_options);
 
         addCellClickEvent(el, table);
-        
-        addRowSelectionChangedEvent(el, table);
-
-        function extractColumnsNames(columns) {
-          return _.map(columns, col => { return col.getField() });
-        }
-
-        function addColumnMovedEvent() {
-          table.on("columnMoved", function (column, columns) {
-            Shiny.setInputValue(
-              el.id + "_column_moved",
-              extractColumnsNames(columns),
-              { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
-            );
-          });
-        }
-
-        addColumnMovedEvent();
+//        
+//        addRowSelectionChangedEvent(el, table);
+//
+//        function extractColumnsNames(columns) {
+//          return _.map(columns, col => { return col.getField() });
+//        }
+//
+//        function addColumnMovedEvent() {
+//          table.on("columnMoved", function (column, columns) {
+//            Shiny.setInputValue(
+//              el.id + "_column_moved",
+//              extractColumnsNames(columns),
+//              { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
+//            );
+//          });
+//        }
+//
+//        addColumnMovedEvent();
 
       },
 
@@ -169,6 +169,7 @@ function addRowSelectionChangedEvent(el, table) {
       el.id + "_row_selection_changed",
       constructRowSelectionChangerEventForR(data, rows),
       { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
+      )
   });
 
 }

@@ -1,8 +1,4 @@
 dependencies:
-  - name: underscore
-    version: 1.13.6
-    src: htmlwidgets/underscore-1.13.6
-    script: underscore.js
   - name: tabulator
     version: 6.2.1
     src: htmlwidgets/tabulator-6.2.1

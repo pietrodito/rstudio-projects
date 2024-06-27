@@ -23,3 +23,7 @@ if (interactive()) { source("~/.Rprofile") }
 # added by consoleR
 if (interactive()) { source("~/.Rprofile") }
 
+
+# added by consoleR
+if (interactive()) { source("~/.Rprofile") }
+
