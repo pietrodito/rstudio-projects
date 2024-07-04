@@ -1,4 +1,8 @@
 var _x;
+var _y = [
+  { id: 1, name: "Dean" },
+  { id: 2, name: "Ben" }
+];
 
 HTMLWidgets.widget({
 
@@ -153,29 +157,23 @@ function attachPropertyToColumns(columnProperty, columnValue, x) {
   rec_helper(x.options.columns);
 }
 
-function constructRowSelectionChangerEventForR(data, rows, selected, deselected) {
-  _x = {
-    data: data,
-    rows: rows,
-    selected: selected,
-    deselected: deselected,
-  }
-  return {
-    length: data.length,
-  };
-}
-
 function addRowSelectionChangedEvent(el, table) {
 
   table.on("rowSelectionChanged", function (data, rows, selected, deselected) {
-    _x = table.getSelectedData();
+    
     Shiny.setInputValue(
-      el.id + "_row_selection_changed",
-      //    constructRowSelectionChangerEventForR(data, rows, selected, deselected),
-      table.getSelectedData(),
-    { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
-      )
-});
+      el.id + "_row_selection_changed_data:rowSelection.class",
+      data,
+      { priority: 'event' }
+    );
+
+    
+    Shiny.setInputValue(
+      el.id + "_row_selection_changed_row_numbers",
+      rows.map(function(row) { return row._row.position }),
+      { priority: 'event' }
+    );
+  });
 
 }
 

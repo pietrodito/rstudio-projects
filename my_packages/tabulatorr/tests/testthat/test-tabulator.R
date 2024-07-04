@@ -1,5 +1,4 @@
 {
-  load_all()
   library(shiny)
   enrich_minimal_server             <- function(input) {
 
@@ -28,6 +27,7 @@
   }
   run <- function(fun) if(sys.nframe() == 1) do.call(fun, list())
   options(viewer = NULL)
+  load_all()
 }
 
 
@@ -211,9 +211,14 @@ row_selection_changed <- function() {
                 autoColumns = TRUE)
     })
     
-    observeEvent(input$table_row_selection_changed, {
-      req(input$table_row_selection_changed)
-      str(input$table_row_selection_changed)
+    observeEvent(input$table_row_selection_changed_data, {
+      req(input$table_row_selection_changed_data)
+      str(input$table_row_selection_changed_data)
+    })
+    
+    observeEvent(input$table_row_selection_changed_row_numbers, {
+      req(input$table_row_selection_changed_row_numbers)
+      str(input$table_row_selection_changed_row_numbers)
     })
   }
 
