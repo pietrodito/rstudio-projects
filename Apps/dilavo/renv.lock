@@ -1399,16 +1399,16 @@
       "Version": "0.0.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
       "RemoteUsername": "pietrodito",
       "RemoteRepo": "rstudio-projects",
       "RemoteSubdir": "my_packages/tabulatorr",
       "RemoteRef": "main",
-      "RemoteSha": "2c6328046e2f230101eee95c35e2b99a2fe7f748",
+      "RemoteSha": "8b1d1dde3d4dcde6d43656f77774fe31c4674d45",
+      "RemoteHost": "api.github.com",
       "Requirements": [
         "htmlwidgets"
       ],
-      "Hash": "8341f286c5149f7c087f7dd4b3e9dc4c"
+      "Hash": "a406a4f4556d64c76dc4528026c35924"
     },
     "testthat": {
       "Package": "testthat",

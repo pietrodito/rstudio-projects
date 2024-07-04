@@ -1,7 +1,8 @@
-FROM rocker/shiny:latest
+FROM rocker/shiny:4.3
 
 RUN apt-get update && apt-get install -y \
-    libpq5 \
+    libpq5 libpq-dev libssl-dev          \
+    libxml2-dev                          \
     && rm -rf /var/lib/apt/lists/*
 
 RUN R -q -e 'install.packages("renv")'
