@@ -166,7 +166,13 @@ ghm_etab_year_period <- function(finess, year, period) {
     [ collect, filter, group_by, mutate, select, summarise, tbl, ],
   )
   
-  if (db_table_exists(nature(), "t1d2cmr_1")) {
+  (
+       db_table_exists(nature(), "t1d2cmr_1")
+    && !is.null(year)
+    && !is.null(period)
+  ) -> possible
+  
+  if (possible) {
     (
       tbl(db_instant_connect(nature()), "t1d2cmr_1")
       |> filter(ipe == finess)
@@ -176,7 +182,7 @@ ghm_etab_year_period <- function(finess, year, period) {
                 annee   = as.integer(annee),
                 periode = as.integer(periode))
       |> filter(annee == year, periode <= period)
-      |> select(annee, periode, cmd, cas, effh) 
+      |> select(annee, periode, cmd, cas, effh)
       |> collect()
       |> group_by(annee, periode, cmd, cas)
       |> summarise(N = sum(effh))
@@ -190,10 +196,10 @@ ghm_etab_year_period <- function(finess, year, period) {
 ghm_etab_period <- function(finess) {
   box::use(
     app/logic/db_utils
-    [  most_recent_year, most_recent_period, ],
+    [ most_recent_year, most_recent_period, ],
     
     app/logic/nature_utils
-    [  nature,  ],
+    [ nature, ],
     
     dplyr
     [ bind_rows, ],

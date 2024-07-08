@@ -199,7 +199,6 @@ db_execute <- function(nature, query, params = NULL) {
   )
 }
 
-
 #' @export
 db_table_exists <- function(nature, table) {
   
