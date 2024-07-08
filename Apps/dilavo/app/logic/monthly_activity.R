@@ -3,7 +3,7 @@ stays_by_month <- function(nature, finess, previous_year = 1) {
   
   box::use(
     app/logic/db_utils
-    [ db_instant_connect, most_recent_year, ],
+    [ db_instant_connect, db_table_exists, most_recent_year, ],
     
     dplyr
     [ across, arrange, collect, everything,  filter,
@@ -15,28 +15,32 @@ stays_by_month <- function(nature, finess, previous_year = 1) {
   
   year <- as.integer(most_recent_year(nature)) - previous_year
   
-  (
-    tbl(db_instant_connect(nature), "t1d2rtp_2")
-    |> collect()
-    |> filter(ipe == finess,
-              annee == year,
-              `_name_`  %in% c("nbrsa", "cmd90")
+  if (db_table_exists(nature, "t1d2rtp_2")) {
+    (
+      tbl(db_instant_connect(nature), "t1d2rtp_2")
+      |> collect()
+      |> filter(ipe == finess,
+                annee == year,
+                `_name_`  %in% c("nbrsa", "cmd90")
+      )
+      |> select(annee, periode, moisor, `_name_`, col1)
+      |> mutate(
+        across(
+          all_of(c("periode", "moisor", "col1")), as.integer))
+      |> arrange(periode, moisor, desc(`_name_`))
+      |> mutate(periode = as.character(periode))
+      |> mutate(N = col1 - lead(col1))
+      |> filter(`_name_` == "nbrsa")
+      |> select(-col1, -`_name_`)
+      |> pivot_wider(names_from = moisor, values_from = N)
+      |> select(-matches("NA"))
+      |> mutate(
+        Total = as.integer(rowSums(across(where(is.numeric)), na.rm = T)))
+      |> mutate(across(where(is.numeric), ~ replace_na(.x, 0)))
     )
-    |> select(annee, periode, moisor, `_name_`, col1)
-    |> mutate(
-      across(
-        all_of(c("periode", "moisor", "col1")), as.integer))
-    |> arrange(periode, moisor, desc(`_name_`))
-    |> mutate(periode = as.character(periode))
-    |> mutate(N = col1 - lead(col1))
-    |> filter(`_name_` == "nbrsa")
-    |> select(-col1, -`_name_`)
-    |> pivot_wider(names_from = moisor, values_from = N)
-    |> select(-matches("NA"))
-    |> mutate(
-      Total = as.integer(rowSums(across(where(is.numeric)), na.rm = T)))
-    |> mutate(across(where(is.numeric), ~ replace_na(.x, 0)))
-  )
+  } else {
+    NULL
+  }
 }
 
 #' @export
@@ -59,13 +63,17 @@ stays_last_year_at_this_point <- function(nature, finess) {
   
   last_year <- stays_last_year(nature, finess)
   this_year <- stays_this_year(nature, finess)
-  dims <- dim(this_year)
-  (
-    last_year[1:(dims[1]), 1:(dims[2] - 1)]
-    |> mutate(
-      Total = as.integer(rowSums(across(where(is.numeric)), na.rm = T))
+  if(! is.null(this_year)) {
+    dims <- dim(this_year)
+    (
+      last_year[1:(dims[1]), 1:(dims[2] - 1)]
+      |> mutate(
+        Total = as.integer(rowSums(across(where(is.numeric)), na.rm = T))
+      )
     )
-  )
+  } else {
+    NULL
+  }
 }
 
 #' @export
@@ -149,7 +157,7 @@ graph_this_and_last_years <- function(nature, finess,
 ghm_etab_year_period <- function(finess, year, period) {
   box::use(
     app/logic/db_utils
-    [ db_instant_connect, ],
+    [ db_instant_connect, db_table_exists, ],
     
     app/logic/nature_utils
     [ nature, ],
@@ -158,20 +166,24 @@ ghm_etab_year_period <- function(finess, year, period) {
     [ collect, filter, group_by, mutate, select, summarise, tbl, ],
   )
   
-  (
-    tbl(db_instant_connect(nature()), "t1d2cmr_1")
-    |> filter(ipe == finess)
-    |> mutate(cmd     = substr(racine, 1, 2),
-              cas     = substr(racine, 3, 3),
-              effh    = as.integer(effh),
-              annee   = as.integer(annee),
-              periode = as.integer(periode))
-    |> filter(annee == year, periode <= period)
-    |> select(annee, periode, cmd, cas, effh) 
-    |> collect()
-    |> group_by(annee, periode, cmd, cas)
-    |> summarise(N = sum(effh))
-  )
+  if (db_table_exists(nature(), "t1d2cmr_1")) {
+    (
+      tbl(db_instant_connect(nature()), "t1d2cmr_1")
+      |> filter(ipe == finess)
+      |> mutate(cmd     = substr(racine, 1, 2),
+                cas     = substr(racine, 3, 3),
+                effh    = as.integer(effh),
+                annee   = as.integer(annee),
+                periode = as.integer(periode))
+      |> filter(annee == year, periode <= period)
+      |> select(annee, periode, cmd, cas, effh) 
+      |> collect()
+      |> group_by(annee, periode, cmd, cas)
+      |> summarise(N = sum(effh))
+    )
+  } else {
+    NULL
+  }
 }
 
 #' @export

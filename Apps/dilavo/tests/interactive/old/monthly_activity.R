@@ -111,11 +111,13 @@ server <- function(id) {
 
     observe({
       finess(input$hospital |> str_sub(1, 9))
-      ghms(ghm_etab_period(finess()))
-      cas_list(data.frame(CAS = sort(unique(ghms()$cas))))
-      cmd_list(data.frame(CMD = sort(unique(ghms()$cmd))))
-      selected_cas((cas_list() |> pull())[input$cas_rows_selected])
-      selected_cmd((cmd_list() |> pull())[input$cmd_rows_selected])
+      if(finess() != "") {
+        ghms(ghm_etab_period(finess()))
+        cas_list(data.frame(CAS = sort(unique(ghms()$cas))))
+        cmd_list(data.frame(CMD = sort(unique(ghms()$cmd))))
+        selected_cas((cas_list() |> pull())[input$cas_rows_selected])
+        selected_cmd((cmd_list() |> pull())[input$cmd_rows_selected])
+      }
     })
     
   # output$update_logs_table <- renderTabulator(

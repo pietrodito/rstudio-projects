@@ -38,9 +38,7 @@ data_save_dir_root <- "ovalide_data"
 
 #' @export
 suffixe <- function(nature) {
-  box::use(  stringr [ str_c, ], )
-  
-  str_c(nature$field, "_", nature$status)
+  paste0(nature$field, "_", nature$status)
 }
 
 #' @export
