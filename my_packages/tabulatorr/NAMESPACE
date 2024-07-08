@@ -2,6 +2,8 @@
 
 export(debug)
 export(renderTabulator)
+export(selectorServer)
+export(selectorUI)
 export(tabulator)
 export(tabulatorOutput)
 import(htmlwidgets)

@@ -32,6 +32,20 @@ HTMLWidgets.widget({
         addCellClickEvent(el, table);
 
         addRowSelectionChangedEvent(el, table);
+        
+        Shiny.addCustomMessageHandler(
+          type = 'select-all', function(message) {
+            table.selectRow();
+          }
+        );
+        
+        Shiny.addCustomMessageHandler(
+          type = 'deselect-all', function(message) {
+            table.deselectRow();
+          }
+        );
+        
+        
         //
         //        function extractColumnsNames(columns) {
         //          return _.map(columns, col => { return col.getField() });
@@ -158,6 +172,9 @@ function attachPropertyToColumns(columnProperty, columnValue, x) {
 }
 
 function addRowSelectionChangedEvent(el, table) {
+  
+ // TODO add internal state <=> current selection
+ // TODO send current selection when message OK is sent
 
   table.on("rowSelectionChanged", function (data, rows, selected, deselected) {
     

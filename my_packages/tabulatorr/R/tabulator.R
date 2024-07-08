@@ -8,6 +8,7 @@ tabulator <- function(data, ...,
                       .width                = NULL,
                       .height               = NULL,
                       elementId             = NULL) {
+  
   x <- list(
     data = data,
     options = list(...),
