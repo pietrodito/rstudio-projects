@@ -27,7 +27,7 @@
   }
   run <- function(fun) if(sys.nframe() == 1) do.call(fun, list())
   options(viewer = NULL)
-  load_all()
+  library(tabulatorr)
 }
 
 

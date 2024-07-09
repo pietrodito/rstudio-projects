@@ -1,8 +1,12 @@
 var _x;
-var _y = [
-  { id: 1, name: "Dean" },
-  { id: 2, name: "Ben" }
-];
+var _y;
+
+var _current_row_selection_data;
+var _current_row_selection_rows;
+
+function shorten_long_module_id(id) {
+  return id.replace("-not_matchable_id_we_need_to_remove", "");
+}
 
 HTMLWidgets.widget({
 
@@ -32,20 +36,9 @@ HTMLWidgets.widget({
         addCellClickEvent(el, table);
 
         addRowSelectionChangedEvent(el, table);
-        
-        Shiny.addCustomMessageHandler(
-          type = 'select-all', function(message) {
-            table.selectRow();
-          }
-        );
-        
-        Shiny.addCustomMessageHandler(
-          type = 'deselect-all', function(message) {
-            table.deselectRow();
-          }
-        );
-        
-        
+
+        addSelectorEvents(el, table);
+
         //
         //        function extractColumnsNames(columns) {
         //          return _.map(columns, col => { return col.getField() });
@@ -70,6 +63,44 @@ HTMLWidgets.widget({
     };
   }
 });
+
+function addSelectorEvents(el, table) {
+
+  Shiny.addCustomMessageHandler(
+    type = 'select-all', function (message) {
+      table.selectRow();
+    }
+  );
+
+  Shiny.addCustomMessageHandler(
+    type = 'deselect-all', function (message) {
+      table.deselectRow();
+    }
+  );
+
+  Shiny.addCustomMessageHandler(
+    type = 'selection-ok', function (message) {
+
+
+      Shiny.setInputValue(
+        shorten_long_module_id(el.id) +
+        "_row_selection_confirmed_data:rowSelection.class",
+        _current_row_selection_data,
+        { priority: 'event' }
+      );
+
+      Shiny.setInputValue(
+        shorten_long_module_id(el.id) +
+        "_row_selection_confirmed_row_numbers",
+        _current_row_selection_rows,
+        { priority: 'event' }
+      );
+    }
+  );
+
+}
+
+
 
 
 function attachAutoColumnsCallbackActions(x, autoDefinitionsCallbackActions) {
@@ -172,22 +203,27 @@ function attachPropertyToColumns(columnProperty, columnValue, x) {
 }
 
 function addRowSelectionChangedEvent(el, table) {
-  
- // TODO add internal state <=> current selection
- // TODO send current selection when message OK is sent
+
+  // TODO add internal state <=> current selection
+  // TODO send current selection when message OK is sent
 
   table.on("rowSelectionChanged", function (data, rows, selected, deselected) {
-    
+
+    _current_row_selection_data = data;
+    _current_row_selection_rows = rows.map(x => x._row.position);
+
     Shiny.setInputValue(
-      el.id + "_row_selection_changed_data:rowSelection.class",
+      shorten_long_module_id(el.id) +
+      "_row_selection_changed_data:rowSelection.class",
       data,
       { priority: 'event' }
     );
 
-    
+
     Shiny.setInputValue(
-      el.id + "_row_selection_changed_row_numbers",
-      rows.map(function(row) { return row._row.position }),
+      shorten_long_module_id(el.id) +
+      "_row_selection_changed_row_numbers",
+      _current_row_selection_rows,
       { priority: 'event' }
     );
   });
@@ -205,7 +241,8 @@ function constructClickEventForR(cell) {
 function addCellClickEvent(el, table) {
   table.on("cellClick", function (click_event, cell_details) {
     Shiny.setInputValue(
-      el.id + "_cell_clicked",
+      shorten_long_module_id(el.id) +
+      "_cell_clicked",
       constructClickEventForR(cell_details),
       { priority: 'event' } // Needed to trigger event even if value (click_event_to_R) does not change!
     );

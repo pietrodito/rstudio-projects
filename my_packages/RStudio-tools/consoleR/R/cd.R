@@ -10,7 +10,7 @@ cd <- function(path = "~", verbose = TRUE, explore = TRUE) {
 
   setwd(path)
 
-  if (verbose) print(ls_(hidden = FALSE))
+  if (verbose) ls_(hidden = FALSE)
   
   if ( ! explore && switch_to_project) {
     usethis::proj_set(".")

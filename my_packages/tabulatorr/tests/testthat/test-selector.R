@@ -3,7 +3,8 @@ library(shiny)
 
 ui <- fluidPage(
   
-  selectorUI("asdf")
+  selectorUI("asdf"),
+  actionButton("debug", "DEBUG")
   
 )
 
@@ -14,6 +15,11 @@ server <- function(input, output, session) {
                  autoColumns = TRUE,
                  minHeight = "400px"
                  )
+  
+  observeEvent(input$asdf_row_selection_confirmed_data, {
+     str(input$asdf_row_selection_changed_data)
+     str(input$asdf_row_selection_changed_row_numbers)
+   })
   
 }
 

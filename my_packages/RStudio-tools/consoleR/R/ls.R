@@ -18,11 +18,12 @@ ls_ <- function(path = ".", hidden = TRUE) {
 
   print_box(dirname)
 
-  (
+  pinf(
     path
     |> fs::dir_info(all = hidden)
     |> dplyr::mutate(hidden = stringr::str_starts(path, "\\."))
     |> dplyr::arrange(hidden, type, path)
     |> dplyr::select(path)
   )
+  invisible(0)
 }

@@ -32,7 +32,9 @@ tabulator <- function(data, ...,
 
 #' @name tabulator-shiny
 #' @export
-tabulatorOutput <- function(outputId, width = "100%", height = "100px") {
+tabulatorOutput <- function(outputId, 
+                            width = "100%", height = "100px") {
+  
   htmlwidgets::shinyWidgetOutput(outputId, "tabulator",
                                  width, height, package = "tabulatorr")
 }
@@ -43,5 +45,7 @@ renderTabulator <- function(expr, env = parent.frame(), quoted = FALSE) {
   if (!quoted) {
     expr <- substitute(expr)
   }
+  
   htmlwidgets::shinyRenderWidget(expr, tabulatorOutput, env, quoted = TRUE)
+  
 }
