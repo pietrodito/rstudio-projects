@@ -240,6 +240,24 @@
       ],
       "Hash": "ce8187a260e8e3abc2294284badc3b76"
     },
+    "box.linters": {
+      "Package": "box.linters",
+      "Version": "0.9.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "fs",
+        "glue",
+        "lintr",
+        "rlang",
+        "stringr",
+        "xml2",
+        "xmlparsedata"
+      ],
+      "Hash": "6178eaa9c568b6d6286a6c888bbb8eb6"
+    },
     "brio": {
       "Package": "brio",
       "Version": "1.1.3",
@@ -1159,17 +1177,18 @@
     },
     "rhino": {
       "Package": "rhino",
-      "Version": "1.5.0.9000",
+      "Version": "1.8.0.9001",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "rhino",
       "RemoteUsername": "Appsilon",
+      "RemoteRepo": "rhino",
       "RemoteRef": "HEAD",
-      "RemoteSha": "b032a3c22e64a01e51afc761dba1668e61e120d6",
+      "RemoteSha": "7022658f9760523cb964c1d3a3ccaf1f0a6e9a88",
+      "RemoteHost": "api.github.com",
       "Requirements": [
         "R",
         "box",
+        "box.linters",
         "cli",
         "config",
         "fs",
@@ -1187,7 +1206,7 @@
         "withr",
         "yaml"
       ],
-      "Hash": "e06fe13ec92b5f22174b1ed8abc68e6e"
+      "Hash": "72f3915de1ee7c00aca64aff427f723f"
     },
     "rlang": {
       "Package": "rlang",
@@ -1403,12 +1422,12 @@
       "RemoteRepo": "rstudio-projects",
       "RemoteSubdir": "my_packages/tabulatorr",
       "RemoteRef": "main",
-      "RemoteSha": "8b1d1dde3d4dcde6d43656f77774fe31c4674d45",
+      "RemoteSha": "9858ca75bf4c4ded010b21d98936d34f73fd5a85",
       "RemoteHost": "api.github.com",
       "Requirements": [
         "htmlwidgets"
       ],
-      "Hash": "a406a4f4556d64c76dc4528026c35924"
+      "Hash": "f3275e267db7fcd8425381ef5931b7a0"
     },
     "testthat": {
       "Package": "testthat",

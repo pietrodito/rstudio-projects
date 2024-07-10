@@ -10,7 +10,7 @@ ui <- function(id) {
     [ nature, ],
 
     tabulatorr
-    [ tabulatorOutput, ],
+    [ selectorUI, ],
     
     shiny
     [ actionButton, column, fluidPage, fluidRow, h1, NS, plotOutput,
@@ -42,17 +42,17 @@ ui <- function(id) {
 
     fluidRow(
       column(3,
-             tabulatorOutput(ns("cas")),
+             selectorUI(ns("cas")),
              ),
       column(6,
-             plotOutput(ns("plot")),
+             selectorUI(ns("plot")),
       ),
       column(3,
-             tabulatorOutput(ns("cmd")),
+             selectorUI(ns("cmd")),
              ),
     ),
-    tabulatorOutput(ns("previous_year")),
-    tabulatorOutput(ns("current_year")),
+    selectorUI(ns("previous_year")),
+    selectorUI(ns("current_year")),
     # textOutput(ns("debug")),
 
   )
@@ -78,7 +78,7 @@ server <- function(id) {
 
     tabulatorr
     [
-      # debug,
+      selectorServer,
       renderTabulator, tabulator, ],
     
     DT
@@ -115,14 +115,14 @@ server <- function(id) {
        selected_cmd((cmd_list() |> pull())[input$cmd_rows_selected])
      }
    })
-    
-   output$cmd <- renderTabulator(
-     tabulator(cmd_list(),
-               autoColumns = TRUE,
-               layout = "fitColumns",
-               selectableRows = TRUE,
-               minHeight = "400px" 
-     )
+   
+   selectorServer(
+     "cmd",
+     cmd_list(),
+     autoColumns = TRUE,
+     layout = "fitColumns",
+     selectableRows = TRUE,
+     minHeight = "400px" 
    )
    
   #  output$cas <- renderTabulator(tabulator(cas_list()))
