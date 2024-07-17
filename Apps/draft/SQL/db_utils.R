@@ -1,5 +1,4 @@
-# app/logic/db_utils.R
-spi
+# db_utils.R
 
 box::use( ./log_utils [ log, ], )
 
