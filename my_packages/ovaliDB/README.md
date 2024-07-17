@@ -21,5 +21,5 @@ Soit 8 bases de données :
 
 ## Performances
 
-Nous allons utiliser le package (`pool`)[http://rstudio.github.io/pool/articles/why-pool.html] qui permet de ne pas se soucier du nombre de connexions `
+Nous allons utiliser le package [`pool`](http://rstudio.github.io/pool/articles/why-pool.html) qui permet de ne pas se soucier du nombre de connexions `
 
