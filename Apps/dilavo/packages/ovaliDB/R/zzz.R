@@ -7,7 +7,7 @@
   
   box::use(
    ../../app/logic/nature_utils
-    [ all_natures, suffixe,],
+    [ all_natures, db_name, suffixe,],
     
     purrr
     [ walk, ],
@@ -17,7 +17,7 @@
     
     the[[suffixe(nature)]] <- pool::dbPool(
       drv = RPostgres::Postgres(),
-      dbname = suffixe(nature) |> toupper(),
+      dbname = db_name(nature),
       host = host,
       port = port,
       user = user,
@@ -26,6 +26,7 @@
     
   }
   
-  walk(all_natures, setup_connection)
+  update_logs_trick <- list(list(field = "upd", status = "log"))
   
+  walk(c(all_natures, update_logs_trick), setup_connection)
 }

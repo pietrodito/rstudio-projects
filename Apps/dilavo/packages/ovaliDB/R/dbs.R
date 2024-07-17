@@ -29,7 +29,25 @@ oqn_dgf <- function() { the$oqn_dgf }
 oqn_oqn <- function() { the$oqn_oqn }
 
 
-#' @export
-db <- function(field, status) {
 
+#' @export
+db_update_logs <- function() {
+  box::use( dplyr [ tbl, ], )
+  the$upd_log |> tbl("logs")
+}
+
+
+
+#' @export
+db <- function(nature) {
+  
+  box::use(
+    ../../app/logic/nature_utils
+    [ suffixe,],
+    
+    purrr
+    [ exec, ],
+  )
+  
+  get(suffixe(nature)) |> exec()
 }
