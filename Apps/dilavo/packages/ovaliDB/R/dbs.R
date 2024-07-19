@@ -32,8 +32,7 @@ smr_oqn <- function() { the$smr_oqn }
 
 #' @export
 db_update_logs <- function() {
-  box::use( dplyr [ tbl, ], )
-  the$upd_log |> tbl("logs")
+  the$upd_log |> dplyr::tbl("logs")
 }
 
 
@@ -41,13 +40,5 @@ db_update_logs <- function() {
 #' @export
 db <- function(nature) {
   
-  box::use(
-    ../../app/logic/nature_utils
-    [ suffixe,],
-    
-    purrr
-    [ exec, ],
-  )
-  
-  get(suffixe(nature)) |> exec()
+  get(suffixe(nature))()
 }

@@ -1,118 +1,92 @@
 #' @export
 db_query <- function(nature, query, params = NULL) {
   
-  box::use(
-    ../../app/logic/nature_utils
-    [ db_name, ],
-    
-    DBI
-    [ dbGetQuery, ],
-  )
-  
-  dbGetQuery(db(nature),
-             query,
-             params = params
+  tryCatch(
+    DBI::dbGetQuery(db(nature),
+                    query,
+                    params = params),
+    error = function(cond) {
+      message(glue(
+          "Query failure in DB {db_name(nature)}:
+           {query}"))
+    }
   )
 }
 
 #' @export
 db_execute <- function(nature, query, params = NULL) {
   
-  box::use(
-    app/logic/nature_utils
-    [ db_name, ],
-    
-    DBI
-    [ dbExecute, ],
+  tryCatch(
+    DBI::dbGetQuery(db(nature),
+                    query,
+                    params = params),
+    error = function(cond) {
+      message(glue(
+        "Query failure in DB {db_name(nature)}:
+           {query}"))
+    }
   )
   
-  dbExecute(db(nature),
-            query,
-            params = params
-  )
 }
 
-#' @export
-db_table_exists <- function(nature, table) {
-  
-  box::use(
-    DBI
-    [ dbExistsTable, ],
-  )
-  
-  dbExistsTable(db(nature), table)
-}
 
  #' @export
  most_recent_year <- function(nature) {
    
-   if(db_table_exists(nature, "tdb")) {
-     
-     query <- "SELECT max(annee) AS year FROM tdb;"
-     
-     year <- db_query(nature, query)
-     
-     year[1, 1]
-   } else {
-     NULL
-   }
+   query <- "SELECT max(annee) AS year FROM tdb;"
+   
+   year <- NULL
+   year <- db_query(nature, query)
+   
+   if(is.null(year)) {return(NULL)}
+   year[1, 1]
  }
  
-#  #' @export
-#  most_recent_period <- function(nature) {
-#    
-#    box::use(
-#      DBI
-#      [ dbExistsTable, dbGetQuery, ],
-#      
-#      glue
-#      [ glue, ],
-#    )
-#    
-#    if(dbExistsTable(db_instant_connect(nature), "tdb")) {
-#      
-#      query <- glue("SELECT max(periode) AS period FROM tdb
-#                      WHERE annee = '{most_recent_year(nature)}';")
-#      
-#      year <- db_query(nature, query)
-#      
-#      year[1, 1]
-#    } else {
-#      NULL
-#    }
-#  }
-#  
-#  #' @export
-#  hospitals <- function(nature, year = most_recent_year(nature)) {
-#    
-#    box::use(
-#      dplyr
-#      [ collect, distinct, filter, mutate, pull, select, tbl, ],
-#      
-#      glue
-#      [ glue, ],
-#    )
-#    
-#    if (! is.null(year)) {
-#      
-#      tdb <- tbl(db_instant_connect(nature), "tdb")
-#      
-#      (
-#        tdb
-#        |> filter(annee == year)
-#        |> select(ipe, `raison sociale`)
-#        |> distinct()
-#        |> collect()
-#        |> mutate(Étabissement = paste0( ipe, " - ", `raison sociale`))
-#        |> pull(Étabissement)
-#        |> sort()
-#      ) 
-#      
-#    } else {
-#      NULL
-#    }
-#  }
-#  
+ 
+ #' @export
+ most_recent_period <- function(nature) {
+   
+   query <- glue("SELECT max(periode) AS period FROM tdb
+                    WHERE annee = '{most_recent_year(nature)}';")
+   
+   period <- NULL
+   period <- db_query(nature, query)
+   
+   if(is.null(period)) {return(NULL)}
+   period[1, 1]
+   
+ }
+ 
+#' @export
+finess_rs <- function(nature, year = most_recent_year(nature)) {
+  
+  if (is.null(year)) { return(NULL) }
+  
+   query <- glue(
+     '
+     SELECT hospital FROM(
+       SELECT DISTINCT ipe || \' - \' || "raison sociale" AS hospital
+       ,                ipe
+       FROM tdb
+       WHERE annee = \'{year}\'
+       ORDER BY ipe
+     )
+     ;'
+   )
+   db_query(nature, query)
+  
+}
+
+#' @export 
+extract_finess <- function(finess_rs) {
+  substr(finess_rs, 1, 9)
+}
+
+#' @export 
+extract_rs <- function(finess_rs) {
+  stringr::str_sub(finess_rs, 13)
+}
+
 #  #' @export
 #  build_tables <- function(nature) {
 #    
