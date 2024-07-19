@@ -67,12 +67,11 @@ treat_csv_files <- function(dir_2_probe) {
 
 #' @export
 pick_file_in_dir <- function(dir_path) {
+
   files <- list.files(dir_path)
-  if(length(files) > 0) {
-    paste0(dir_path, files[1])
-  } else {
-    NULL
-  }
+  if(length(files) == 0) return(NULL) 
+
+  paste0(dir_path, files[1])
 }
 
 treat_one_file <- function(filepath, nature, p, db) {
@@ -377,6 +376,8 @@ prepare_raw_dashboard_4_db <- function(filepath) {
               periode = periode)
     |> select(- finess)
   ) -> df
+
+  if (champ == "ssr") champ <- "smr"
   
   created_filepath <- paste0(
     "/ovalide_data/", champ, "_", statut, "/", filename)
@@ -421,6 +422,8 @@ prepare_raw_key_value_4_db <- function(filepath) {
   annee   <- pull(df[1, ], annee  )
   periode <- pull(df[1, ], periode)
   ipe     <- pull(df[1, ], ipe    )
+
+  if(champ == "ssr") champ <- "smr"
   
   filename <- paste(champ, statut, annee, periode,
                     "key_value", "csv", sep = ".")

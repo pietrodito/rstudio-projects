@@ -23,10 +23,10 @@ psy_oqn <- function() { the$psy_oqn }
 
 
 #' @export
-oqn_dgf <- function() { the$oqn_dgf }
+smr_dgf <- function() { the$smr_dgf }
 
 #' @export
-oqn_oqn <- function() { the$oqn_oqn }
+smr_oqn <- function() { the$smr_oqn }
 
 
 
