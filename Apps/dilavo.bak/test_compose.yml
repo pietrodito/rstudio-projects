@@ -1,0 +1,51 @@
+name: test_dilavo
+
+volumes:
+  db_data:
+
+services:
+
+  db:
+    container_name: db
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  db_setup:
+    build: db_setup
+    container_name: db_setup
+    depends_on:
+      - db
+
+  db_updater:
+    container_name: db_updater
+    build:
+      context: .
+      dockerfile: db_updater/Dockerfile
+    restart: always
+    environment:
+      - DEBUG=${DEBUG_UPDATER}
+      - RUN_IN_DOCKER=YES
+    volumes:
+      - ./ovalide_data:/ovalide_data
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully
+
+  pgadmin:
+    container_name: pgadmin
+    build: ./pgadmin
+    restart: always
+    ports:
+      - "5050:80"
+    user: 'root'
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully

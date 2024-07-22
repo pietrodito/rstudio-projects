@@ -1,0 +1,11 @@
+renv/
+tests/*
+!tests/interactive
+README.md
+README.Rmd
+*.Rproj
+.Rprofile
+.github
+.lintr
+pgadmin_config/
+
