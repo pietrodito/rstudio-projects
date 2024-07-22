@@ -17,4 +17,5 @@ Imports:
     glue,
     gt,
     pool,
+    purrr,
     RPostgres
