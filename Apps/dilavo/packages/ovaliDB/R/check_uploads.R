@@ -1,13 +1,7 @@
 #' @export
-check_upload <- function(nature, verbose = TRUE) {
+check_uploads <- function(nature, verbose = TRUE) {
   
   box::use(
-    
-    ../../app/logic/nature_utils
-    [ db_name, ],
-    
-    cli
-    [ cli_alert_success, cli_h1, cli_h2, ],
     
     dplyr
     [ across, arrange, collect, distinct, everything,
@@ -114,26 +108,17 @@ check_upload <- function(nature, verbose = TRUE) {
 
 
 #' @export
-check_all_upload <- function(verbose = TRUE) {
+check_all_uploads <- function(verbose = TRUE) {
   box::use(
+    dplyr [ bind_rows, contains, ],
     
-    ../../app/logic/nature_utils
-    [ all_natures, ],
+    glue [ glue, ], 
     
-    dplyr
-    [ bind_rows, ],
+    gt [ cols_label_with, gt, tab_header, tab_spanner, ], 
     
-    glue
-    [ glue, ], 
+    purrr [ map, ],
     
-    gt
-    [ gt, ], 
-    
-    purrr
-    [ map, ],
-    
-    tibble
-    [ tibble, ],
+    tibble [ tibble, ],
   )
   
   
@@ -146,23 +131,31 @@ check_all_upload <- function(verbose = TRUE) {
     
     tibble(
       DB = result$db,
-      `Début CSV` = glue("M{result$csv$start_period} {result$csv$start_year}"),
-      `Fin CSV`   = glue("M{result$csv$end_period} {result$csv$end_year}"),
-      `Manquants (csv)` = missing_csv,
-      `Début KV`  = glue("M{result$kv$start_period} {result$kv$start_year}"),
-      `Fin KV`    = glue("M{result$kv$end_period} {result$kv$end_year}"),
-      `Manquants (kv)` = missing_kv,
       `Début TDB` = glue("M{result$tdb$start_period} {result$tdb$start_year}"),
       `Fin TDB`   = glue("M{result$tdb$end_period} {result$tdb$end_year}"),
-      `Manquants (tdb)` = missing_tdb,
+      `Manquants TDB` = missing_tdb,
+      `Début CSV` = glue("M{result$csv$start_period} {result$csv$start_year}"),
+      `Fin CSV`   = glue("M{result$csv$end_period} {result$csv$end_year}"),
+      `Manquants CSV` = missing_csv,
+      `Début KV`  = glue("M{result$kv$start_period} {result$kv$start_year}"),
+      `Fin KV`    = glue("M{result$kv$end_period} {result$kv$end_year}"),
+      `Manquants KV` = missing_kv,
     )
   }
   
+  remove_last_word <- function(text) { gsub("\\s+\\w*$", "", text) }
+  
   (
     all_natures
-    |> map(~ check_upload(.x , verbose))
+    |> map(~ check_uploads(.x , verbose))
     |> map(helper_result_line)
     |> (\(x) do.call(bind_rows, x))()
-  ) |> gt()
+    |> gt()
+    |> tab_header(title = "Bilan des téléversements")
+    |> tab_spanner(label = "Ovalide CSV", columns = contains("CSV"))
+    |> tab_spanner(label = "Clé - Valeur", columns = contains("KV"))
+    |> tab_spanner(label = "Tableau de bord", columns = contains("TDB"))
+    |> cols_label_with(columns = everything(), fn = remove_last_word)
+  ) 
   
 }

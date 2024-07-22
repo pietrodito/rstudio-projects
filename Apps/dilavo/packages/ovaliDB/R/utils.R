@@ -6,7 +6,7 @@ db_query <- function(nature, query, params = NULL) {
                     query,
                     params = params),
     error = function(cond) {
-      message(glue(
+      message(glue::glue(
           "Query failure in DB {db_name(nature)}:
            {query}"))
     }
@@ -21,7 +21,7 @@ db_execute <- function(nature, query, params = NULL) {
                     query,
                     params = params),
     error = function(cond) {
-      message(glue(
+      message(glue::glue(
         "Query failure in DB {db_name(nature)}:
            {query}"))
     }
@@ -46,7 +46,7 @@ db_execute <- function(nature, query, params = NULL) {
  #' @export
  most_recent_period <- function(nature) {
    
-   query <- glue("SELECT max(periode) AS period FROM tdb
+   query <- glue::glue("SELECT max(periode) AS period FROM tdb
                     WHERE annee = '{most_recent_year(nature)}';")
    
    period <- NULL
@@ -62,7 +62,7 @@ finess_rs <- function(nature, year = most_recent_year(nature)) {
   
   if (is.null(year)) { return(NULL) }
   
-   query <- glue(
+   query <- glue::glue(
      '
      SELECT hospital FROM(
        SELECT DISTINCT ipe || \' - \' || "raison sociale" AS hospital

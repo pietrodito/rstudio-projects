@@ -8,6 +8,9 @@
   library(tidyverse)
 }
 
+
+microbenchmark(hospitals(nature()), finess_rs(nature()))
+
 draft <-  pool::dbPool(
   drv = RPostgres::Postgres(),
   dbname = 'draft',

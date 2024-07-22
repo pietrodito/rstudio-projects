@@ -10,7 +10,6 @@ It also uses parallel processes scanning for OVALIDE files to update the databas
 
 See also the [compose.yml][5] file.
 
-
 ## ISSUES
 
 - CANNOT use rhino::pkg_install without reinstalling rstudio!!!
@@ -23,8 +22,6 @@ Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "http://cran.rstudio.com")
 ## TODO
 
 ### Add colors to tabulator
-
-
 
 ### table_builder
 
