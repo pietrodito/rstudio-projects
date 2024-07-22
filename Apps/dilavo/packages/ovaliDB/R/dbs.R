@@ -32,7 +32,41 @@ smr_oqn <- function() { the$smr_oqn }
 
 #' @export
 db_update_logs <- function() {
-  the$upd_log |> dplyr::tbl("logs")
+  
+  box::use(
+    
+    dplyr
+    [ arrange, collect, mutate_at, rename_all, tbl, vars, ],
+    
+    lubridate
+    [ day, hour, minute, month, year, ymd_hms, ],
+    
+  )
+  
+  readable_date <- function(x) {
+    d <- ymd_hms(x)
+    ifelse(is.na(x),
+           "", 
+           paste0(
+             "Le ", day(d), "/", month(d), "/", year(d),
+             " à ", hour(d), "h", minute(d)
+           )
+    )
+  }
+  
+  # 2024-01-05T07:57:31Z
+  
+  (
+    the$upd_log
+    |> tbl("logs")
+    |> collect()
+    |> arrange(champ, statut)
+    |> rename_all(function(x) {
+      c("Champ", "Statut",
+        "MàJ fichiers CSV", "MàJ tableau de bord", "MàJ Clé / Valeur")
+    })
+    |> mutate_at(vars(starts_with("MàJ")), readable_date)
+  )
 }
 
 

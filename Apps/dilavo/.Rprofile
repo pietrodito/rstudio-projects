@@ -8,13 +8,8 @@ if (file.exists("renv")) {
 # Allow absolute module imports (relative to the app root).
 options(box.path = getwd())
 
-# added by consoleR
-if (interactive()) { source("~/.Rprofile") }
+# local packages
+Sys.setenv(RENV_PATHS_CELLAR = "./packages")
 
 # added by consoleR
 if (interactive()) { source("~/.Rprofile") }
-
-
-# added by consoleR
-if (interactive()) { source("~/.Rprofile") }
-

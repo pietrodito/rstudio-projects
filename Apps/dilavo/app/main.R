@@ -6,7 +6,6 @@ box::use(
   app/logic/ovalide_data_utils[ ovalide_data_path, ],
 ) 
 
-
 updater_message_file <- ovalide_data_path( "messages/public_message.txt" )
 
 app_ui <-  function(ns) { 
@@ -35,8 +34,8 @@ app_server <- function(input, output, session) {
 
 render_update_logs_table <- function(output) {
   box::use(
-    app/logic/db_utils
-    [ db_update_logs_table, ],
+    ovaliDB
+    [ db_update_logs, ],
     
     tabulatorr
     [ renderTabulator, tabulator, ],
@@ -44,7 +43,7 @@ render_update_logs_table <- function(output) {
   
   output$update_logs_table <- renderTabulator(
     tabulator(
-      db_update_logs_table(),
+      db_update_logs(),
       autoColumns = TRUE,
       layout = "fitColumns"
     )

@@ -13,5 +13,6 @@ if (interactive()) {
             )
   )
   
+  
   rm(packages_at_startup)
 }

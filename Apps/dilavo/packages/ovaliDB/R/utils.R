@@ -42,7 +42,6 @@ db_execute <- function(nature, query, params = NULL) {
    year[1, 1]
  }
  
- 
  #' @export
  most_recent_period <- function(nature) {
    
