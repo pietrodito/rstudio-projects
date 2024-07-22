@@ -6,8 +6,6 @@
   password <- Sys.getenv("DB_PASSWORD", "postgres")
   
   box::use(
-   ../../app/logic/nature_utils
-    [ all_natures, db_name, suffixe,],
     
     purrr
     [ walk, ],
