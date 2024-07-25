@@ -1,13 +1,13 @@
 # app/logic/log_utils.R
 
 #' @export
-log <- function(..., list = F) {
+log <- function(..., unique_arg_is_list = F) {
   
   args <- list(...)
   
   logpath <- "/logs/log.txt"
   
-  if(list) {
+  if(unique_arg_is_list) {
     values <- args[[1]] |> unlist()
     names <- names(values)
     mapply(

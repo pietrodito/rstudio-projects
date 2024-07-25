@@ -12,4 +12,5 @@ USER postgres
 
 ENV PGPASSFILE=/home/postgres/.pgpass
 
-CMD /home/postgres/setup-db.sh
+ENTRYPOINT ["/home/postgres/setup-db.sh"]
+

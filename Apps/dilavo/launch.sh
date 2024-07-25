@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Read setup variables
+## Source setup variables
 . .env
 
 ## Git forgets permissions
@@ -22,7 +22,7 @@ then
   docker compose  up  --detach
 
   # docker compose logs --follow app db_updater db_setup
-  docker compose logs --follow db_setup
+  docker compose logs --follow db_setup db_updater
 
 else
 

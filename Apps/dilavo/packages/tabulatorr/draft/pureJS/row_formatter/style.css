@@ -1,0 +1,21 @@
+/*Style row formatter contents*/
+#example-table .tabulator-row table{
+    vertical-align: middle;
+    border-collapse:collapse;
+}
+
+#example-table .tabulator-row table img{
+    border:2px solid #ccc;
+}
+
+#example-table .tabulator-row table tr td{
+     border:none;
+}
+
+#example-table .tabulator-row table tr td:first-of-type{
+    width:60px;
+}
+
+#example-table .tabulator-row table tr td div{
+    padding:5px;
+}
