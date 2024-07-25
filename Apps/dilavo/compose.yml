@@ -1,0 +1,34 @@
+name: dilavo
+
+volumes:
+  db_data:
+
+services:
+
+  db:
+    container_name: db
+    image: postgres:alpine@sha256:36ed71227ae36305d26382657c0b96cbaf298427b3f1eaeb10d77a6dea3eec41
+    restart: always
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  db_setup:
+    build: db_setup
+    container_name: db_setup
+    depends_on:
+      - db
+
+  pgadmin:
+    container_name: pgadmin
+    build: ./pgadmin
+    restart: always
+    ports:
+      - "5050:80"
+    user: 'root'
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully
