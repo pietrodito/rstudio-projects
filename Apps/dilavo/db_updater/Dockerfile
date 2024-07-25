@@ -1,14 +1,21 @@
 FROM r-base:4.3.1
 
 
+ENV TESTTHAT true
+ENV DONTKNOWY true
 ENV DB_HOST db
 ENV DB_PORT 5432
 ENV DB_USER postgres
 ENV DB_PASSWORD postgres
 ENV DB_NAME postgres
 
-RUN apt-get update && apt-get install -y libpq-dev && \
-        rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+                               libpq-dev \
+                    libcurl4-openssl-dev \
+                    libxml2-dev          \
+                    libv8-dev         && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN R -q -e 'install.packages(c( \
         "box",                   \
         "dbplyr",                \
@@ -16,15 +23,25 @@ RUN R -q -e 'install.packages(c( \
         "furrr",                 \
         "future",                \
         "glue",                  \
+        "gt",                    \
+        "pool",                  \
         "progressr",             \
         "readr",                 \
         "RPostgres",             \
         "stringr"                \
         ))'
 
-RUN mkdir -p /app/logic/ && chown 999:999 /app/logic/
+RUN mkdir -p /binary/packages/
+COPY ./packages/*.tar.gz /binary/packages/
+
+RUN R -q -e 'install.packages("/binary/packages/ovaliDB_0.0.0.9000.tar.gz")'
 
 COPY ./db_updater/*          /
+
+RUN chmod 777 log
+
+RUN mkdir -p /app/logic/ && chown 999:999 /app/logic/
+
 COPY ./app/logic/db_utils.R  /app/logic/
 COPY ./app/logic/df_utils.R  /app/logic/
 COPY ./app/logic/log_utils.R /app/logic/

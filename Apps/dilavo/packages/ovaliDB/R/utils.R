@@ -1,3 +1,55 @@
+db_get_connection_by_name <- function(db_name) {
+  box::use(
+    RPostgres
+    [ Postgres ],
+    
+    DBI
+    [ dbConnect, dbDisconnect ],
+  )
+  
+  host     <- NULL
+  port     <- NULL
+  user     <- NULL
+  password <- NULL
+  
+  if(Sys.getenv("RUN_IN_DOCKER") == "YES") {
+    host     <- Sys.getenv("DB_HOST"    )
+    port     <- Sys.getenv("DB_PORT"    )
+    user     <- Sys.getenv("DB_USER"    )
+    password <- Sys.getenv("DB_PASSWORD")
+  } else {
+    host     <- "localhost"
+    port     <- "5432"
+    user     <- "postgres"
+    password <- "postgres"
+  }
+  tryCatch(
+    {
+      dbConnect(Postgres(),
+                host     = host    ,
+                port     = port    ,
+                user     = user    ,
+                password = password,
+                dbname  = db_name)
+    },
+    error = function(cond) {
+      message("Unable to connect to db:")
+      message(cond |> conditionMessage())
+      NULL
+    }
+  ) -> db
+  
+  if (is.null(db)) {
+    log("> Failed to connect to  ", db_name(nature))
+  } else 
+    db
+}
+
+#' @export
+db_get_connection <- function(nature) {
+  db_get_connection_by_name(db_name(nature))
+}
+
 #' @export
 db_query <- function(nature, query, params = NULL) {
   
@@ -11,6 +63,26 @@ db_query <- function(nature, query, params = NULL) {
            {query}"))
     }
   )
+}
+
+#' @export
+db_instant_connect <- function(nature) {
+  
+  box::use(
+    withr
+    [ defer_parent, ],
+    
+    DBI
+    [ dbDisconnect ],
+  )
+  
+  db <- db_get_connection(nature)
+  
+  if (! is.null(db)) {
+    defer_parent(dbDisconnect(db))
+  }
+  
+  db
 }
 
 #' @export
@@ -84,6 +156,36 @@ extract_finess <- function(finess_rs) {
 #' @export 
 extract_rs <- function(finess_rs) {
   stringr::str_sub(finess_rs, 13)
+}
+
+#' @export
+db_update_logs <- function(field, status, type, timestamp) {
+  
+  box::use(
+    
+    DBI
+    [ dbDisconnect, dbWriteTable, ],
+    
+    dplyr
+    [ collect, rename, rows_upsert, tbl, ],
+    
+    tibble
+    [ tibble, ],
+  )
+  
+  (
+    tibble(champ = field, statut = status, col = timestamp)
+    |> rename( !! type := col)
+  ) -> new_line
+  
+  (
+    upd_log()
+    |> tbl("logs")
+    |> collect()
+    |> rows_upsert(new_line, by = c("champ", "statut"))
+  ) -> new_logs
+  
+  dbWriteTable(upd_log(), "logs", new_logs, overwrite = TRUE)
 }
 
 #  #' @export

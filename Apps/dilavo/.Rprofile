@@ -13,3 +13,7 @@ Sys.setenv(RENV_PATHS_CELLAR = "./packages")
 
 # added by consoleR
 if (interactive()) { source("~/.Rprofile") }
+
+# added by consoleR
+if (interactive()) { source("~/.Rprofile") }
+

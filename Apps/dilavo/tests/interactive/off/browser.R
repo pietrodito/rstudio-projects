@@ -2,9 +2,8 @@
 ui <- function(id) {
   
   box::use(
-    
     shiny
-    [ actionButton, bootstrapPage, NS, tableOutput, ],
+    [ actionButton, bootstrapPage, NS, ],
   )
   
   ns <- NS(id)
@@ -17,14 +16,9 @@ ui <- function(id) {
 server <- function(id) {
   
   box::use(
-    app/logic/db_utils
-    [ hospitals, ],
-    
-    app/logic/nature_utils 
-    [ nature, ],
     
     shiny
-    [ moduleServer, observeEvent, renderTable, ],
+    [ moduleServer, observeEvent, ],
     
   )
   

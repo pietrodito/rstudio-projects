@@ -2,7 +2,6 @@
 
 options(future.rng.onMisuse = "ignore")
 
-
 args <- commandArgs(trailingOnly=TRUE) 
 
 if (length(args) == 0) {
@@ -44,7 +43,7 @@ tryCatch(
     unlink(paste0(dir_path, "*"))
     ## TODO écrire info update dans UPDATE_LOG table LOGS
     
-    box::use( app/logic/db_utils[ db_update_logs, ],)
+    box::use( ovaliDB [ db_update_logs, ],)
     
     sliced <- stringr::str_split(dir_2_probe, "_", simplify = T)
     

@@ -29,6 +29,8 @@ smr_dgf <- function() { the$smr_dgf }
 smr_oqn <- function() { the$smr_oqn }
 
 
+#' @export
+upd_log <- function() { the$upd_log }
 
 #' @export
 db_update_logs <- function() {

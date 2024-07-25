@@ -6,22 +6,23 @@
   password <- Sys.getenv("DB_PASSWORD", "postgres")
   
   box::use(
-    
     purrr
-    [ walk, ],
-  )
+    [ walk, ], 
+  ) 
   
   setup_connection <- function(nature) {
     
-    the[[suffixe(nature)]] <- pool::dbPool(
-      drv = RPostgres::Postgres(),
-      dbname = db_name(nature),
-      host = host,
-      port = port,
-      user = user,
-      password = password
+    tryCatch(
+      the[[suffixe(nature)]] <- pool::dbPool(
+        drv = RPostgres::Postgres(),
+        dbname = db_name(nature),
+        host = host,
+        port = port,
+        user = user,
+        password = password
+      )
+      , error = function(cond) { print(cond) } 
     )
-    
   }
   
   update_logs_trick <- list(list(field = "upd", status = "log"))

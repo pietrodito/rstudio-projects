@@ -1,16 +1,16 @@
 #' @export
 check_uploads <- function(nature, verbose = TRUE) {
   
-  box::use(
-    
-    dplyr
-    [ across, arrange, collect, distinct, everything,
-      filter, lag, lead, mutate, pull, select, tbl, ],
-    
-    glue
-    [ glue, ],
-    
-  )
+box::use(
+  
+  dplyr
+  [ across, arrange, collect, distinct, everything,
+    filter, lag, lead, mutate, pull, select, tbl, ],
+  
+  glue
+  [ glue, ],
+  
+)
   
   helper_extract_years_and_periods <- function(table) {
     (
@@ -46,7 +46,7 @@ check_uploads <- function(nature, verbose = TRUE) {
     
     if (nrow(result) == 0) {
       if(verbose) {
-        cli_alert_success(
+        cli::cli_alert_success(
           glue(
             "Aucun mois manquant entre M{start_period} {start_year} et M{end_period} {end_year}")
         )

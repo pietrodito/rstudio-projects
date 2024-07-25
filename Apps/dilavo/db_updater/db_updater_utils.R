@@ -1,30 +1,29 @@
 box::use(
   app/logic/log_utils
   [ log, ],
-)
   
+  
+  furrr
+  [ future_walk, ],
+  
+  future
+  [ plan, multicore, ],
+  
+  ovaliDB
+  [ nature, ],
+  
+  progressr
+  [ progressor, ], 
+  
+  purrr
+  [ walk, ],
+  
+  stringr
+  [ str_detect, str_split, ],
+)
+
 #' @export
 treat_csv_files <- function(dir_2_probe) {
-  
-  box::use(
-    app/logic/nature_utils
-    [ nature, ],
-    
-    furrr
-    [ future_walk, ],
-    
-    future
-    [ plan, multicore, ],
-    
-    progressr
-    [ progressor, ], 
-    
-    purrr
-    [ walk, ],
-    
-    stringr
-    [ str_detect, str_split, ],
-  )
   
   DB_NAME <- dir_2_probe |> toupper()
   splt_name <- str_split(dir_2_probe, "_") |> unlist()
@@ -48,6 +47,9 @@ treat_csv_files <- function(dir_2_probe) {
   if (Sys.getenv("DEBUG") == "YES") {
     which_walk <- walk
   } 
+
+  ## HACK TODO : force parallelism
+  which_walk <- future_walk
   
   (
     filepaths
@@ -74,10 +76,10 @@ pick_file_in_dir <- function(dir_path) {
   paste0(dir_path, files[1])
 }
 
-treat_one_file <- function(filepath, nature, p, db) {
+treat_one_file <- function(filepath, nature, p) {
 
   box::use(
-    app/logic/db_utils
+    ovaliDB
     [ db_instant_connect, ],
     
     DBI
@@ -86,6 +88,9 @@ treat_one_file <- function(filepath, nature, p, db) {
     dplyr
     [ mutate, ],
     
+    pool
+    [ localCheckout, ],
+    
     stringr
     [ str_remove_all, ],
   )
@@ -93,7 +98,6 @@ treat_one_file <- function(filepath, nature, p, db) {
   log("> Reading file ", filepath)
   
   p(basename(filepath))
-  
   
   data <- guess_encoding_and_read_file(filepath)
   
@@ -109,7 +113,6 @@ treat_one_file <- function(filepath, nature, p, db) {
                      table_code,
                      data,
                      basename(filepath))
-    
   } else {
     log("> Empty file...")
   }
@@ -120,10 +123,10 @@ write_data_to_db <- function(db, table_code, data, filename) {
   
   box::use(
     DBI
-    [ dbWriteTable, ],
+    [ dbWriteTable, dbExistsTable, ],
   )
   
-  if( ! table_exists_in_db(table_code, db)) {
+  if( ! dbExistsTable(db, table_code )) {
     
     log("> Table ", table_code, " does NOT exists")
     dbWriteTable(db, table_code, data)
@@ -141,13 +144,13 @@ table_exists_in_db <- function(table_code, db) {
   
   box::use(
     DBI
-    [ dbGetQuery, ],
+    [ dbExistsTable, ],
     
     glue
     [ glue, ],
   )
   
-  answer <- dbGetQuery(db, glue(
+  answer <- dbExistsTable(db, glue(
     "SELECT EXISTS (
      SELECT 1
      FROM information_schema.tables
@@ -471,6 +474,7 @@ treat_zip_file <- function(filepath) {
     }
   }
   
+  ## TODO if probe_dir.R fails the dispatcher is stuck here
   wait_for_no_more_csv_files_in(dir_to_dispatch)
   
   zip_dir <- paste0(tempdir(), runif(1))
@@ -498,7 +502,7 @@ launch_probe_dir <- function(dir_to_dispatch) {
   
   db_name <- basename(dir_to_dispatch)
   
-  probe_cmd <- paste("./probe_dir.R", db_name, "&")
+  probe_cmd <- paste("./probe_dir.R", db_name, " > /logs/probe &")
   log("> Updating database: ", probe_cmd)
   system(probe_cmd)
 }
