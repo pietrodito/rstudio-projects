@@ -1,8 +1,8 @@
 name: dilavo
 
 volumes:
-  db_data:
   ovalide_data:
+  db_data:
 
 services:
 
@@ -22,6 +22,26 @@ services:
     container_name: db_setup
     depends_on:
       - db
+
+  app:
+    container_name: app
+    build: .
+    restart: always
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - RUN_IN_DOCKER=YES
+    volumes:
+      - ovalide_data:/ovalide_data
+    ports:
+      - "80:3838"
+    depends_on:
+      db_setup:
+        condition: service_completed_successfully
+        
 
   db_updater:
     container_name: db_updater

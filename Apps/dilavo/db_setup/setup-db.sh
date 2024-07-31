@@ -28,12 +28,13 @@ else
     for i in "${natures[@]}"
     do
       createdb -h db "$i"
-      psql -h db -d "$i" -c \
+      psql -qh db -d "$i" -c \
       'CREATE TABLE IF NOT EXISTS build_tables (
          name TEXT UNIQUE NOT NULL, 
          details TEXT NOT NULL ) '
+      psql -qh db -d "$i" -c "set timezone to 'EUROPE/PARIS'"
     done
-    echo "8 dbs created!"
+    echo "8 dbs created with EUROPE/PARIS timezone!"
 fi
 
 if [ "$( psql -h db -XtAc \
@@ -43,7 +44,7 @@ then
 else
     echo "Creating UPD_LOG db... "
       createdb -h db UPD_LOG 
-      psql -h db -d UPD_LOG -c \
+      psql -qh db -d UPD_LOG -c \
       'CREATE TABLE IF NOT EXISTS logs (
          champ TEXT NOT NULL, 
          statut TEXT NOT NULL,

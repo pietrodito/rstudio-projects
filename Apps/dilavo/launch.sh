@@ -21,8 +21,8 @@ then
   docker compose build         && \
   docker compose  up  --detach
 
-  # docker compose logs --follow app db_updater db_setup
-  docker compose logs --follow db_setup db_updater
+  #docker compose logs --follow app db_updater db_setup
+  docker compose logs --follow db_updater db_setup
 
 else
 

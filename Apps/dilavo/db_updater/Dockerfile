@@ -18,6 +18,7 @@ RUN R -q -e 'install.packages(c( \
         "future",                \
         "glue",                  \
         "gt",                    \
+        "logger",                \
         "pool",                  \
         "progressr",             \
         "readr",                 \
@@ -28,23 +29,46 @@ RUN R -q -e 'install.packages(c( \
 RUN mkdir -p /binary/packages/
 COPY ./packages/*.tar.gz /binary/packages/
 
-RUN R -q -e 'install.packages("/binary/packages/ovaliDB_0.0.0.9000.tar.gz")'
+RUN R -q -e 'install.packages("/binary/packages/ovaliDB_0.0.0.9000.tar.gz")' \ 
+  && \
+    R -q -e 'install.packages("/binary/packages/mylog_0.0.0.9000.tar.gz")' \
+  && \
+    rm /binary/packages/*.gz
 
-COPY ./db_updater/*          /
+COPY ./db_updater/* /
 
-RUN chmod 777 log
+## for apt to be noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBCONF_NONINTERACTIVE_SEEN=true
+
+RUN chmod 777 log                                                      \
+  &&                                                                   \
+    mkdir -p /ovalide_data                                             \
+  &&                                                                   \
+    chown 999:999 /ovalide_data                                        \
+  &&                                                                   \
+    mkdir -p /logs && chown 999:999 /logs                              \
+  &&                                                                   \
+    useradd updater -u 999                                             \
+  &&                                                                   \
+    echo "tzdata tzdata/Areas select Europe" > /tmp/preseed.cfg        \
+  &&                                                                   \
+    echo "tzdata tzdata/Zones/Europe select Paris" >> /tmp/preseed.cfg \
+  &&                                                                   \        
+    debconf-set-selections /tmp/preseed.cfg                            \
+  &&                                                                   \
+    rm -f /etc/timezone /etc/localtime                                 \
+  &&                                                                   \
+    dpkg-reconfigure tzdata
 
 # RUN mkdir -p /app/logic/ && chown 999:999 /app/logic/
-
 # COPY ./app/logic/db_utils.R  /app/logic/
 # COPY ./app/logic/df_utils.R  /app/logic/
 # COPY ./app/logic/log_utils.R /app/logic/
 # COPY ./app/logic/nature_utils.R /app/logic/
 
-RUN mkdir -p /ovalide_data && chown 999:999 /ovalide_data
-RUN mkdir -p /logs && chown 999:999 /logs
+## Change timezone to PARIS EUROPE
 
-RUN useradd updater -u 999
 USER updater
 
 ENV TESTTHAT=true

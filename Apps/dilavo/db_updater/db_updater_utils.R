@@ -1,6 +1,10 @@
 box::use(
-  app/logic/log_utils
-  [ log, ],
+  
+  mylog
+  [ init_log_format, ],
+  
+  logger
+  [ ... ],
   
   furrr
   [ future_walk, ],
@@ -21,6 +25,8 @@ box::use(
   [ str_detect, str_split, ],
 )
 
+init_log_format()
+
 #' @export
 treat_csv_files <- function(dir_2_probe) {
   
@@ -28,9 +34,7 @@ treat_csv_files <- function(dir_2_probe) {
   splt_name <- str_split(dir_2_probe, "_") |> unlist()
   nature <- nature(splt_name[1], splt_name[2])
   
-  log("---------------------------")
-  log("         ", DB_NAME)
-  log("---------------------------")
+  log_debug("##### {DB_NAME} #####")
   
   plan(multicore)
   
@@ -43,12 +47,13 @@ treat_csv_files <- function(dir_2_probe) {
   N <- length(filepaths)
   
   which_walk <- future_walk
-  if (Sys.getenv("DEBUG") == "YES") {
+  if (Sys.getenv("DEBUG") != "NO") {
     which_walk <- walk
   } 
-
-  ## HACK TODO : force parallelism
-  which_walk <- future_walk
+  
+  if(! identical(filepaths, unique(filepaths))) {
+    log_error("DUPLICATES: ", filepaths |> paste(collapse = " "))
+  }
   
   (
     filepaths
@@ -75,11 +80,52 @@ pick_file_in_dir <- function(dir_path) {
   paste0(dir_path, files[1])
 }
 
+check_if_data_properly_added <- function(db,
+                                         table_code,
+                                         data,
+                                         info,
+                                         filepath) {
+  box::use(
+    DBI
+    [ dbGetQuery, ],
+    
+    dplyr
+    [ all_of, arrange, as_tibble, pick, select, ],
+    
+    glue
+    [ glue, ],
+  )
+  
+  from_db <- dbGetQuery(db, glue(
+    "SELECT * FROM public.{table_code}
+       WHERE champ   = '{info$field}'
+         AND statut  = '{info$status}'
+         AND annee   = '{info$year}'
+         AND periode = '{info$month}'")) |> as_tibble()
+  
+  useless_cols <- c("champ", "statut", "annee", "periode")
+  
+  data <- select(data, -all_of(useless_cols))
+  from_db <- select(from_db, -all_of(useless_cols))
+  
+  cols <- names(data)
+  from_db <- select(from_db, all_of(cols))
+ 
+  
+  data <- arrange(data, pick(all_of(cols)))
+  from_db <- arrange(from_db, pick(all_of(cols)))
+  
+  if(! identical(data, from_db)) {
+    log_warn("DATA NOT PROPERLY INSERTED: {filepath}")
+    browser()
+  }
+}
+
 treat_one_file <- function(filepath, nature, p) {
 
   box::use(
     ovaliDB
-    [ db_instant_connect, ],
+    [ db, db_instant_connect, ],
     
     DBI
     [ dbDisconnect, ],
@@ -94,13 +140,14 @@ treat_one_file <- function(filepath, nature, p) {
     [ str_remove_all, ],
   )
   
-  log("> Reading file ", filepath)
+  log_trace("READING FILE: ", basename(filepath))
   
   p(basename(filepath))
   
-  data <- guess_encoding_and_read_file(filepath)
-  
+  db <- db_instant_connect(nature)
   table_code <- extract_table_code(filepath)
+  data <- guess_encoding_and_read_file(filepath)
+  info <- extract_info_from_filename(filepath)
   
   if(nrow(data) != 0) {
     (
@@ -108,35 +155,49 @@ treat_one_file <- function(filepath, nature, p) {
       |> mutate(ipe = str_remove_all(ipe, '[=|"]'))
     ) -> data
     
-    write_data_to_db(db_instant_connect(nature),
-                     table_code,
-                     data,
-                     basename(filepath))
+    tryCatch(
+      write_data_to_db(db,
+                       table_code,
+                       data,
+                       info),
+      error = function(cond) {
+        log_error("WRITING DATA: ", basename(filepath))
+        log_error(cond)
+      }
+    )
+    
+    check_if_data_properly_added(db,
+                                 table_code,
+                                 data,
+                                 info,
+                                 filepath)
   } else {
-    log("> Empty file...")
+    log_debug("Empty file...")
   }
-  file.remove(filepath)
+  
+    if(! file.remove(filepath)) {
+     log_error("treat_one_file NOT EXISTS: ", basename(filepath))
+    }
 }
 
-write_data_to_db <- function(db, table_code, data, filename) {
+write_data_to_db <- function(db, table_code, data, info) {
   
   box::use(
     DBI
-    [ dbWriteTable, dbExistsTable, ],
+    [ dbCreateTable, dbExistsTable, ],
   )
   
-  if( ! dbExistsTable(db, table_code )) {
+  if( ! dbExistsTable(db, table_code)) {
     
-    log("> Table ", table_code, " does NOT exists")
-    dbWriteTable(db, table_code, data)
+    log_debug("write_data_to_db NOT EXISTS: ", table_code)
+    dbCreateTable(db, table_code, data)
     
   } else {
-    
-    log("> Table ", table_code, " does exists")
+    log_debug("ALLREADY EXISTS: ", table_code)
     add_cols_if_necessary(table_code, db, data)
-    update_values_in_table(table_code, db, data, filename)
-    
   }
+  
+  update_values_in_table(table_code, db, data, info)
 }
 
 table_exists_in_db <- function(table_code, db) {
@@ -205,9 +266,9 @@ create_new_cols <- function(tablename, db, types) {
     [ pmap_chr, walk, ],
   )
   
-  log("> create_new_cols table: ", tablename)
-  log("> create_new_cols db: ", format(db))
-  log("> create_new_cols types: ", types)
+  log_debug("> create_new_cols table: ", tablename)
+  log_debug("> create_new_cols db: ", format(db))
+  log_debug("> create_new_cols types: ", types)
   
   add_col <- function(col, postgres_type) {
     statement <- paste0(
@@ -236,17 +297,17 @@ add_cols_if_necessary <- function(table_code, db, data) {
   
   if(length(new_cols) > 0) {
     
-    log(" > new_cols in ", table_code, ": ", new_cols)
+    log_debug(" > new_cols in ", table_code, ": ", new_cols)
 
     types <- find_postgres_types(new_cols, data)
     
     create_new_cols(table_code, db, types)
     
-    log(" > cols created in ", table_code)
+    log_debug(" > cols created in ", table_code)
   }
 }
 
-update_values_in_table <- function(table_code, db, data, filename) {
+update_values_in_table <- function(table_code, db, data, info) {
   
   box::use(
     DBI
@@ -256,7 +317,8 @@ update_values_in_table <- function(table_code, db, data, filename) {
     [ glue, ],
   )
   
-  info <- extract_info_from_filename(filename)
+  browser()
+  
   dbExecute(db, glue(
     "DELETE FROM public.{table_code}
        WHERE champ   = '{info$field}'
@@ -264,6 +326,7 @@ update_values_in_table <- function(table_code, db, data, filename) {
          AND annee   = '{info$year}'
          AND periode = '{info$month}'"
   ))
+  
   dbAppendTable(db, table_code, data)
 }
 
@@ -277,10 +340,7 @@ extract_table_code <- function(filepath) {
 dispatch_uploaded_file <- function(filepath) {
   
   filename <- basename(filepath)
-  log("-----------------------------")
-  log("      NEW FILE UPLOADED      ")
-  log("-----------------------------")
-  log("> ", filename)
+  log_info("NEW FILE FOUND: {filename} ")
   
   N <- nchar(filepath)
   file_extension <- substr(filepath, N - 2, N)
@@ -296,8 +356,12 @@ dispatch_uploaded_file <- function(filepath) {
          
          ## default:
          {
-           log("> File deleted because extension is not correct: ", filename)
-           file.remove(filepath)
+           log_debug("> File deleted because extension is not correct: ", filename)
+           
+           if(! file.remove(filepath)) {
+             log_error("dispatch_uploaded_file NOT EXISTS: ", basename(filepath))
+           }
+           
            return(NULL)
          })
 }
@@ -309,7 +373,6 @@ dispatch_csv_file <- function(filepath) {
     [ str_detect, ],
   )
   
-  log("> CSV file detected: ", filepath)
   
   dashboard_file <- function(filepath) { str_detect(filepath, "TDB") }
   
@@ -321,7 +384,8 @@ dispatch_csv_file <- function(filepath) {
     created_filepath <- prepare_raw_key_value_4_db(filepath) 
   }
   
-  zip_file(created_filepath)
+  zipname <- zip_file(created_filepath)
+  log_debug("ZIPPED INTO: {zipname}")
 }
 
 zip_file <- function(created_filepath) {
@@ -338,13 +402,16 @@ zip_file <- function(created_filepath) {
   zipname <- str_replace(filename, "\\.csv", ".zip")
   zipfile <- paste0("/ovalide_data/upload/", zipname)
   
-  
   zip(zipfile = zipfile,
       files = created_filepath,
-      extras = "-j")
+      extras = "-j",
+      flags = "-q")
   
+    if(! file.remove(created_filepath)) {
+      log_error("zip_file NOT EXISTS: ", basename(created_filepath))
+    }
   
-  file.remove(created_filepath)
+  zipname
 }
 
 prepare_raw_dashboard_4_db <- function(filepath) {
@@ -387,7 +454,9 @@ prepare_raw_dashboard_4_db <- function(filepath) {
   
   write_csv2(df, created_filepath)
   
-  file.remove(filepath)
+    if(! file.remove(filepath)) {
+      log_error("prepare_raw_dashboard_4_db NOT EXISTS: ", basename(filepath))
+    }
   
   return(created_filepath)
 }
@@ -416,6 +485,7 @@ prepare_raw_key_value_4_db <- function(filepath) {
     )
     |> mutate(
       champ = tolower(champ),
+      champ = ifesle(champ == "ssr", "smr", champ),
       statut = ifelse(statut == "PUBLIC", "dgf", "oqn")
     )
   ) -> df
@@ -426,8 +496,6 @@ prepare_raw_key_value_4_db <- function(filepath) {
   periode <- pull(df[1, ], periode)
   ipe     <- pull(df[1, ], ipe    )
 
-  if(champ == "ssr") champ <- "smr"
-  
   filename <- paste(champ, statut, annee, periode,
                     "key_value", "csv", sep = ".")
   
@@ -436,7 +504,9 @@ prepare_raw_key_value_4_db <- function(filepath) {
   
   write_csv2(df, created_filepath)
   
-  file.remove(filepath)
+    if(! file.remove(filepath)) {
+      log_error("prepare_raw_key_value_4_db OT EXISTS: ", basename(filepath))
+    }
   
   return(created_filepath)
 }
@@ -454,10 +524,14 @@ dispatch_zip_file <- function(filepath) {
   filename <- basename(filepath)
   
   if(filename_is_correct(filename)) {
-    log("> File with correct filename: ", filename)
+    log_debug("CORRECT FILENAME: ", filename)
   } else {
-    log("> File deleted because filename is not correct: ", filename)
-    file.remove(filepath)
+    log_warn("> File deleted, name is not correct: ", filename)
+    
+    if(! file.remove(filepath)) {
+      log_error("dispatch_zip_file NOT EXISTS: ", basename(filepath))
+    }
+    
     return(NULL)
   }
   
@@ -465,8 +539,6 @@ dispatch_zip_file <- function(filepath) {
   
   dir_to_dispatch <- paste0("/ovalide_data/",
                             info$field, "_", info$status, "/")
-  
-  log("> Unziping file...")
   
   wait_for_no_more_csv_files_in <- function(dir_to_dispatch) {
     while(length(list.files(dir_to_dispatch)) > 0) {
@@ -480,17 +552,17 @@ dispatch_zip_file <- function(filepath) {
   zip_dir <- paste0(tempdir(), runif(1))
   unzip(filepath, exdir = zip_dir)
   
-  log("> File unziped...", zip_dir)
-  
   
   from <- paste0(zip_dir, "/")
   file.copy(from = file.path(from, list.files(from)),
             to   = dir_to_dispatch)
   
-  log("> File rename from: ", from)
-  log("> File rename to: ",  dir_to_dispatch)
+  log_debug("UNZIPPED TO ",  dir_to_dispatch |> basename() |> toupper())
   
-  file.remove(filepath)
+    if(! file.remove(filepath)) {
+      log_error("dispatch_zip_file NOT EXISTS: ", basename(filepath))
+    }
+  
   system(paste0("rm -rf ", zip_dir))
     
   if (Sys.getenv("DEBUG") == "NO") {
@@ -503,7 +575,7 @@ launch_probe_dir <- function(dir_to_dispatch) {
   db_name <- basename(dir_to_dispatch)
   
   probe_cmd <- paste("./probe_dir.R", db_name, " > /logs/probe &")
-  log("> Updating database: ", probe_cmd)
+  log_debug("> Updating database: ", probe_cmd)
   system(probe_cmd)
 }
 
@@ -524,14 +596,13 @@ info_are_correct <- function(info) {
 }
 
 extract_info_from_filename <- function(filename) {
-  infos <- strsplit(filename, "\\.") |> unlist()
+  infos <- strsplit(basename(filename), "\\.") |> unlist()
   info <- list(
     field  = infos[1],
     status = infos[2],
     year   = infos[3],
     month  = infos[4]
   )
-  
   update_ssr_to_smr(info)
 }
 
@@ -543,8 +614,6 @@ update_ssr_to_smr <- function(info) {
 guess_encoding_and_read_file <- function(filepath) {
   
   box::use(
-    app/logic/df_utils
-    [ name_repair, ],
     
     dplyr
     [ filter, pull, row_number, ],
@@ -577,4 +646,14 @@ guess_encoding_and_read_file <- function(filepath) {
   }
   data[] <- lapply(data, as.character)
   data
+}
+
+name_repair <- function(nm) {
+  
+  (empty <- nm == "")
+  (fill_empty <- paste0("empty_", seq_len(sum(empty))))
+  (nm[empty] <- fill_empty)
+  
+  nm <- tolower(nm)
+  make.unique(nm, sep = "_")
 }

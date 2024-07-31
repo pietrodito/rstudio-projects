@@ -1,5 +1,7 @@
 #!/usr/bin/Rscript --vanilla
 
+mylog::init_log_format()
+
 options(future.rng.onMisuse = "ignore")
 
 args <- commandArgs(trailingOnly=TRUE) 
@@ -27,6 +29,10 @@ send_message <- function(...) {
 
 type_of_treated_files <- NULL
 
+while(file.exists(paste0(dir_path, "probe.lock"))) {sleep(.3)}
+
+file.create(paste0(dir_path, "probe.lock"))
+
 tryCatch(
   {
     box::use( ./db_updater_utils[ treat_csv_files, ] )
@@ -34,8 +40,8 @@ tryCatch(
   },
   
   error = function(e) {
-    message('ERROR when treating csv files')
-    print(e)
+    logger::log_error('ERROR when treating csv files')
+    logger::log_error(paste(e))
   },
   
   finally = {
