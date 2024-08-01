@@ -317,7 +317,6 @@ update_values_in_table <- function(table_code, db, data, info) {
     [ glue, ],
   )
   
-  browser()
   
   dbExecute(db, glue(
     "DELETE FROM public.{table_code}
@@ -437,6 +436,8 @@ prepare_raw_dashboard_4_db <- function(filepath) {
   annee <- details[3]
   periode <- details[4]
   
+  if(champ == "ssr") champ <- "smr"
+  
   (
     df
     |> mutate(ipe = str_remove_all(ipe, '[=|"]'),
@@ -485,7 +486,6 @@ prepare_raw_key_value_4_db <- function(filepath) {
     )
     |> mutate(
       champ = tolower(champ),
-      champ = ifesle(champ == "ssr", "smr", champ),
       statut = ifelse(statut == "PUBLIC", "dgf", "oqn")
     )
   ) -> df
@@ -616,7 +616,7 @@ guess_encoding_and_read_file <- function(filepath) {
   box::use(
     
     dplyr
-    [ filter, pull, row_number, ],
+    [ filter, mutate, pull, row_number, ],
     
     readr
     [ cols, guess_encoding, locale, read_delim, ],
@@ -645,6 +645,12 @@ guess_encoding_and_read_file <- function(filepath) {
                        col_types = cols())
   }
   data[] <- lapply(data, as.character)
+  
+  
+  if(! is.null(data$champ |> suppressWarnings())) {
+    data <- mutate(data, champ = ifelse(champ == "SSR", "SMR", champ))
+    data <- mutate(data, champ = ifelse(champ == "ssr", "smr", champ))
+  }
   data
 }
 
