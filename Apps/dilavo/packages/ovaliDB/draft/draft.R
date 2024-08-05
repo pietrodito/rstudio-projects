@@ -1,12 +1,36 @@
-{
-  library(ovaliDB)
-  library(RPostgres)
-  library(DBI)
-  library(tidyverse)
-  library(microbenchmark)
-  library(glue)
-  library(tidyverse)
+library(tidyverse)
+library(microbenchmark)
+
+library(RPostgres)
+library(DBI)
+library(glue)
+library(tidyverse)
+
+.rs.restartR()
+load_all()
+  
+foo <- function() {
+  DBI::dbGetQuery(db(nature()), "
+    SELECT annee, max(periode) AS period FROM tdb
+    GROUP BY annee;
+                  ")
 }
+
+foo()
+
+(
+  db(nature())
+  |> tbl("tdb")
+  |> select(annee, periode)
+  |> arrange(annee, periode)
+  |> distinct()
+)
+
+
+
+microbenchmark(foo(), most_recent_year(nature()))
+
+microbenchmark(most_recent_period(nature()), foo(), boo())
 
 
 microbenchmark(hospitals(nature()), finess_rs(nature()))
