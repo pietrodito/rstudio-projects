@@ -176,7 +176,7 @@ treat_one_file <- function(filepath, nature, p) {
   }
   
     if(! file.remove(filepath)) {
-     log_error("treat_one_file NOT EXISTS: ", basename(filepath))
+     log_error("NOT EXISTS: ", basename(filepath))
     }
 }
 
@@ -189,7 +189,7 @@ write_data_to_db <- function(db, table_code, data, info) {
   
   if( ! dbExistsTable(db, table_code)) {
     
-    log_debug("write_data_to_db NOT EXISTS: ", table_code)
+    log_debug("NOT EXISTS: ", table_code)
     dbCreateTable(db, table_code, data)
     
   } else {
@@ -307,6 +307,18 @@ add_cols_if_necessary <- function(table_code, db, data) {
   }
 }
 
+check_if_col_types_have_to_change <- function(db, table_code, data, info) {
+  
+  from_db <- dbGetQuery(db, glue(
+    "SELECT * FROM public.{table_code}
+       WHERE champ   = 'IMPOSSIBLE TO FIND'
+         ")) |> as_tibble()
+  
+  
+  
+  
+}
+
 update_values_in_table <- function(table_code, db, data, info) {
   
   box::use(
@@ -317,6 +329,7 @@ update_values_in_table <- function(table_code, db, data, info) {
     [ glue, ],
   )
   
+  check_if_col_types_have_to_change(db, table_code, data, info)
   
   dbExecute(db, glue(
     "DELETE FROM public.{table_code}
@@ -325,6 +338,7 @@ update_values_in_table <- function(table_code, db, data, info) {
          AND annee   = '{info$year}'
          AND periode = '{info$month}'"
   ))
+  
   
   dbAppendTable(db, table_code, data)
 }
@@ -505,7 +519,7 @@ prepare_raw_key_value_4_db <- function(filepath) {
   write_csv2(df, created_filepath)
   
     if(! file.remove(filepath)) {
-      log_error("prepare_raw_key_value_4_db OT EXISTS: ", basename(filepath))
+      log_error("prepare_raw_key_value_4_db NOT EXISTS: ", basename(filepath))
     }
   
   return(created_filepath)
@@ -644,7 +658,10 @@ guess_encoding_and_read_file <- function(filepath) {
                        delim = ";",
                        col_types = cols())
   }
-  data[] <- lapply(data, as.character)
+  
+  ## We dont want CHAR every where in DB => issues with months
+  ## Is it a real good idea?
+  # data[] <- lapply(data, as.character)
   
   
   if(! is.null(data$champ |> suppressWarnings())) {
