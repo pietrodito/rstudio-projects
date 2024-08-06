@@ -847,7 +847,7 @@
 <rect x='515.57' y='197.38' width='77.00' height='39.08' style='stroke-width: 0.75; fill: #DA5BD6;' />
 <text x='554.07' y='212.55' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='24.01px' lengthAdjust='spacingAndGlyphs'> The</text>
 <text x='554.07' y='225.67' text-anchor='middle' style='font-size: 12.00px; font-weight: 0;fill: #FFFFFF; font-family: "Nimbus Sans";' textLength='51.35px' lengthAdjust='spacingAndGlyphs'> Shallows</text>
-<rect x='515.57' y='319.30' width='77.' height='39.08' style='stroke-width: 0.75; fill: #40A4B9;' />
+<rect x='515.57' y='319.30' width='77.00' height='39.08' style='stroke-width: 0.75; fill: #40A4B9;' />
 <text x='554.07' y='334.46' text-anchor='middle' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='44.67px' lengthAdjust='spacingAndGlyphs'> Harvest</text>
 <text x='554.07' y='347.59' text-anchor='middle' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='34.01px' lengthAdjust='spacingAndGlyphs'> Dawn</text>
 <rect x='438.57' y='402.72' width='77.00' height='25.96' style='stroke-width: 0.75; fill: #77BFCF;' />
@@ -867,8 +867,6 @@
 <text transform='translate(318.18,327.09) rotate(-390)' text-anchor='middle' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>Day</text>
 <text transform='translate(426.13,270.37) rotate(-8)' text-anchor='middle' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='28.01px' lengthAdjust='spacingAndGlyphs'>Night</text>
 <text transform='translate(426.13,286.40) rotate(-8)' text-anchor='middle' style='font-size: 12.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='21.33px' lengthAdjust='spacingAndGlyphs'>Day</text>
-</g>
-</svg>
-74.40' y='490.84' text-anchor='middle' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='227.11px' lengthAdjust='spacingAndGlyphs'>Caves of Qud day segments</text>
+<text x='374.40' y='490.84' text-anchor='middle' style='font-size: 18.00px; font-weight: 0; font-family: "Nimbus Sans";' textLength='227.11px' lengthAdjust='spacingAndGlyphs'>Caves of Qud day segments</text>
 </g>
 </svg>
