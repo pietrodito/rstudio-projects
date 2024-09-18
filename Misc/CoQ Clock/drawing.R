@@ -1,4 +1,9 @@
+library(showtext)
+font_add_google('Source Code Pro')
+
+
 svglite::svglite("coq_clock.svg")
+showtext_begin()
 
 init_plot <- function() {
   plot(
@@ -155,6 +160,9 @@ text(-0.5, -0.23, "Night", srt = 210 + 180)
 text(-0.45, -0.34, "Day", srt = 210 + 180)
 text(0.4, 0.105, "Night", srt = 7.5 )
 text(0.4, -0.02, "Day", srt = 7.5 )
-text(0, -1.6, "Caves of Qud day segments", cex = 1.5)
+text(0, -0.6, "Caves of Qud day segments", cex = 1.5)
+text(0, -1.6, "Caves of Qud day segments", cex = 1.5,
+     family = "Source Code Pro")
 
+showtext_end()
 dev.off()
