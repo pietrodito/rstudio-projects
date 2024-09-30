@@ -85,6 +85,7 @@ check_if_data_properly_added <- function(db,
                                          data,
                                          info,
                                          filepath) {
+  
   box::use(
     DBI
     [ dbGetQuery, ],
@@ -117,7 +118,6 @@ check_if_data_properly_added <- function(db,
   
   if(! identical(data, from_db)) {
     log_warn("DATA NOT PROPERLY INSERTED: {filepath}")
-    browser()
   }
 }
 
@@ -148,6 +148,9 @@ treat_one_file <- function(filepath, nature, p) {
   table_code <- extract_table_code(filepath)
   data <- guess_encoding_and_read_file(filepath)
   info <- extract_info_from_filename(filepath)
+  
+  ## TODO data should be handled by reference
+  ## needed when you want to change column type
   
   if(nrow(data) != 0) {
     (
@@ -307,16 +310,52 @@ add_cols_if_necessary <- function(table_code, db, data) {
   }
 }
 
-check_if_col_types_have_to_change <- function(db, table_code, data, info) {
+change_col_types_if_necessary <- function(db, table_code, data, info) {
+  
+  box::use(
+    DBI
+    [ dbExecute, dbGetQuery, ],
+    
+    dplyr
+    [ across, all_of, as_tibble, mutate, pull, rename, ],
+    
+    glue
+    [ glue, ],
+    
+    janitor
+    [ compare_df_cols, ],
+    
+    purrr
+    [ walk, ],
+  )
+  
+  if(table_code == "t1q11cgrcg_1") {
+    browser()
+  }
   
   from_db <- dbGetQuery(db, glue(
     "SELECT * FROM public.{table_code}
        WHERE champ   = 'IMPOSSIBLE TO FIND'
          ")) |> as_tibble()
   
+  (
+    compare_df_cols(data, from_db, return = "mismatch")
+    |> rename(data_type = data, from_db_type = from_db)
+    |> pull(column_name)
+  ) -> col_mismatches
   
+  data <- mutate(data,
+                 across(all_of(col_mismatches),
+                        as.character))
   
+  change_col_type_in_db <- function(column) {
+    dbExecute(db, glue(
+      "ALTER TABLE public.{table_code} ALTER {column} TYPE TEXT"))
+  }
   
+  walk(col_mismatches, change_col_type_in_db)
+  
+  data
 }
 
 update_values_in_table <- function(table_code, db, data, info) {
@@ -329,7 +368,7 @@ update_values_in_table <- function(table_code, db, data, info) {
     [ glue, ],
   )
   
-  check_if_col_types_have_to_change(db, table_code, data, info)
+  data <- change_col_types_if_necessary(db, table_code, data, info)
   
   dbExecute(db, glue(
     "DELETE FROM public.{table_code}

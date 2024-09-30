@@ -1,0 +1,3 @@
+DATA NOT PROPERLY INSERTED: /ovalide_data/had_dgf/had.dgf.2022.12.t1q11cgrcg_1.csv
+DATA NOT PROPERLY INSERTED: /ovalide_data/had_dgf/had.dgf.2022.12.t1q1rdg_1.csv
+

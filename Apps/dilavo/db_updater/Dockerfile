@@ -18,6 +18,7 @@ RUN R -q -e 'install.packages(c( \
         "future",                \
         "glue",                  \
         "gt",                    \
+        "janitor",               \
         "logger",                \
         "pool",                  \
         "progressr",             \

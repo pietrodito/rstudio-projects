@@ -29,7 +29,7 @@ send_message <- function(...) {
 
 type_of_treated_files <- NULL
 
-while(file.exists(paste0(dir_path, "probe.lock"))) {sleep(.3)}
+while(file.exists(paste0(dir_path, "probe.lock"))) {Sys.sleep(.3)}
 
 file.create(paste0(dir_path, "probe.lock"))
 
