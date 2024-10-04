@@ -1,3 +1,8 @@
-DATA NOT PROPERLY INSERTED: /ovalide_data/had_dgf/had.dgf.2022.12.t1q11cgrcg_1.csv
-DATA NOT PROPERLY INSERTED: /ovalide_data/had_dgf/had.dgf.2022.12.t1q1rdg_1.csv
-
+db_updater  | TRACE [10-04 11:29:11.372] 123544/...furrr_fn | READING FILE: mco.oqn.2023.10.t1d2dadnp_1.csv                                                                                                          
+db_updater  | DEBUG [10-04 11:29:11.646] 123544/setup_db_if_new_table_or_cols | ALLREADY EXISTS: t1d2dadnp_1                                                                                                         
+db_updater  | ERROR [10-04 11:29:11.845] 123515/value[[3L]] | ERROR when treating csv files                                                                                                                          
+db_updater  | ERROR [10-04 11:29:11.922] 123515/value[[3L]] | Error:                                                                                                                                                 
+db_updater  | ℹ In index: 1.                                                                                                                                                                                         
+db_updater  | Caused by error in `options()`:                                                                                                                                                                        
+db_updater  | ! invalid 'digits' parameter, allowed 1...22                                                                                                                                                           
+db_updater  | Error in if (type_of_treated_files$csv) { : argument

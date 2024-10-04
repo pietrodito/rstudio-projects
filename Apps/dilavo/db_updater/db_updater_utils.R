@@ -47,7 +47,7 @@ treat_csv_files <- function(dir_2_probe) {
   N <- length(filepaths)
   
   which_walk <- future_walk
-  if (Sys.getenv("DEBUG") != "NO") {
+  if (Sys.getenv("DEBUG") %in% c("PROBE", "ALL")) {
     which_walk <- walk
   } 
   
@@ -122,7 +122,7 @@ check_if_data_properly_added <- function(db,
 }
 
 treat_one_file <- function(filepath, nature, p) {
-
+  
   box::use(
     ovaliDB
     [ db, db_instant_connect, ],
@@ -149,8 +149,6 @@ treat_one_file <- function(filepath, nature, p) {
   data <- guess_encoding_and_read_file(filepath)
   info <- extract_info_from_filename(filepath)
   
-  ## TODO data should be handled by reference
-  ## needed when you want to change column type
   
   if(nrow(data) != 0) {
     (
@@ -158,11 +156,79 @@ treat_one_file <- function(filepath, nature, p) {
       |> mutate(ipe = str_remove_all(ipe, '[=|"]'))
     ) -> data
     
+    setup_db_if_new_table_or_cols <- function(db, table_code, data) {
+      box::use(
+        DBI
+        [ dbCreateTable, dbExistsTable, ],
+      )
+      
+      browser()
+      
+      if(dbExistsTable(db, table_code)) {
+        log_debug("ALLREADY EXISTS: ", table_code)
+        add_cols_if_necessary(table_code, db, data)
+      } else {
+        log_debug("NOT EXISTS: ", table_code)
+        dbCreateTable(db, table_code, data)
+      }
+      
+    } 
+    setup_db_if_new_table_or_cols(db, table_code, data)
+    
+    data_after_matching_types_with_db <- function(db,
+                                                  table_code,
+                                                  data,
+                                                  info) {
+      
+      box::use(
+        DBI
+        [ dbExecute, dbGetQuery, ],
+        
+        dplyr
+        [ across, all_of, as_tibble, mutate, pull, rename, ],
+        
+        glue
+        [ glue, ],
+        
+        janitor
+        [ compare_df_cols, ],
+        
+        purrr
+        [ walk, ],
+      )
+      
+      from_db <- dbGetQuery(db, glue(
+        "SELECT * FROM public.{table_code}
+       WHERE champ   = 'IMPOSSIBLE TO FIND'
+         ")) |> as_tibble()
+      
+      (
+        compare_df_cols(data, from_db, return = "mismatch")
+        |> rename(data_type = data, from_db_type = from_db)
+        |> pull(column_name)
+      ) -> col_mismatches
+      
+      data <- mutate(data,
+                     across(all_of(col_mismatches),
+                            as.character))
+      
+      change_col_type_in_db <- function(column) {
+        dbExecute(db, glue(
+          "ALTER TABLE public.{table_code} ALTER {column} TYPE TEXT"))
+      }
+      
+      walk(col_mismatches, change_col_type_in_db)
+      
+      data
+    }
+    data <- data_after_matching_types_with_db(db, table_code, data, info)
+    
+    ## needed when you want to change column type
+    
+    
     tryCatch(
-      write_data_to_db(db,
-                       table_code,
-                       data,
-                       info),
+      update_values_in_table(table_code, db, data, info),
+      
       error = function(cond) {
         log_error("WRITING DATA: ", basename(filepath))
         log_error(cond)
@@ -183,26 +249,7 @@ treat_one_file <- function(filepath, nature, p) {
     }
 }
 
-write_data_to_db <- function(db, table_code, data, info) {
   
-  box::use(
-    DBI
-    [ dbCreateTable, dbExistsTable, ],
-  )
-  
-  if( ! dbExistsTable(db, table_code)) {
-    
-    log_debug("NOT EXISTS: ", table_code)
-    dbCreateTable(db, table_code, data)
-    
-  } else {
-    log_debug("ALLREADY EXISTS: ", table_code)
-    add_cols_if_necessary(table_code, db, data)
-  }
-  
-  update_values_in_table(table_code, db, data, info)
-}
-
 table_exists_in_db <- function(table_code, db) {
   
   box::use(
@@ -247,6 +294,7 @@ find_postgres_types <- function(new_cols, data) {
   
   R_2_db_types <- tribble(
     ~R_type    , ~postgres_type,
+    # "logical"  , "text",
     "numeric"  , "double precision",
     "character", "text",
     "Date"     , "date"
@@ -271,7 +319,8 @@ create_new_cols <- function(tablename, db, types) {
   
   log_debug("> create_new_cols table: ", tablename)
   log_debug("> create_new_cols db: ", format(db))
-  log_debug("> create_new_cols types: ", types)
+  log_debug("> create_new_cols cols: ", types$col |> paste0(collapse = " "))
+  log_debug("> create_new_cols types: ", types$postgres_type |> paste0(collapse = " "))
   
   add_col <- function(col, postgres_type) {
     statement <- paste0(
@@ -300,7 +349,7 @@ add_cols_if_necessary <- function(table_code, db, data) {
   
   if(length(new_cols) > 0) {
     
-    log_debug(" > new_cols in ", table_code, ": ", new_cols)
+    log_debug(" > new_cols in ", table_code, ": ", new_cols |> paste0(collapse = " "))
 
     types <- find_postgres_types(new_cols, data)
     
@@ -312,50 +361,6 @@ add_cols_if_necessary <- function(table_code, db, data) {
 
 change_col_types_if_necessary <- function(db, table_code, data, info) {
   
-  box::use(
-    DBI
-    [ dbExecute, dbGetQuery, ],
-    
-    dplyr
-    [ across, all_of, as_tibble, mutate, pull, rename, ],
-    
-    glue
-    [ glue, ],
-    
-    janitor
-    [ compare_df_cols, ],
-    
-    purrr
-    [ walk, ],
-  )
-  
-  if(table_code == "t1q11cgrcg_1") {
-    browser()
-  }
-  
-  from_db <- dbGetQuery(db, glue(
-    "SELECT * FROM public.{table_code}
-       WHERE champ   = 'IMPOSSIBLE TO FIND'
-         ")) |> as_tibble()
-  
-  (
-    compare_df_cols(data, from_db, return = "mismatch")
-    |> rename(data_type = data, from_db_type = from_db)
-    |> pull(column_name)
-  ) -> col_mismatches
-  
-  data <- mutate(data,
-                 across(all_of(col_mismatches),
-                        as.character))
-  
-  change_col_type_in_db <- function(column) {
-    dbExecute(db, glue(
-      "ALTER TABLE public.{table_code} ALTER {column} TYPE TEXT"))
-  }
-  
-  walk(col_mismatches, change_col_type_in_db)
-  
-  data
 }
 
 update_values_in_table <- function(table_code, db, data, info) {
@@ -367,8 +372,6 @@ update_values_in_table <- function(table_code, db, data, info) {
     glue
     [ glue, ],
   )
-  
-  data <- change_col_types_if_necessary(db, table_code, data, info)
   
   dbExecute(db, glue(
     "DELETE FROM public.{table_code}
@@ -618,7 +621,7 @@ dispatch_zip_file <- function(filepath) {
   
   system(paste0("rm -rf ", zip_dir))
     
-  if (Sys.getenv("DEBUG") == "NO") {
+  if (Sys.getenv("DEBUG") %in% c("NO", "LOG")) {
     launch_probe_dir(dir_to_dispatch)
   } 
 }
