@@ -1,14 +1,16 @@
 library(tidyverse)
 library(glue)
 
+dir.create("~/tmp/")
 setwd("~/tmp/")
+
+zipfile <- "mco.oqn.2024.1.ovalide-tables-as-csv.zip"
+upload_dir <- "~/Apps/dilavo/ovalide_data/upload/"
 
 (files <- list.files(pattern = "*.csv"))
 first_half_files <- NULL
 second_half_files <- NULL
 
-zipfile <- "mco.oqn.2023.10.ovalide-tables-as-csv.zip"
-upload_dir <- "~/Apps/dilavo/ovalide_data/upload/"
 
 divide_files_in_two_groups <- function(files) {
   nb_files <- length(files)
@@ -41,4 +43,3 @@ test_files(second_half_files)
 
 divide_files_in_two_groups(first_half_files)
 divide_files_in_two_groups(second_half_files)
-

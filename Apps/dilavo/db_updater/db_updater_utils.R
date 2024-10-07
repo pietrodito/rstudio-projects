@@ -162,7 +162,7 @@ treat_one_file <- function(filepath, nature, p) {
         [ dbCreateTable, dbExistsTable, ],
       )
       
-      browser()
+     # browser()
       
       if(dbExistsTable(db, table_code)) {
         log_debug("ALLREADY EXISTS: ", table_code)
@@ -294,7 +294,7 @@ find_postgres_types <- function(new_cols, data) {
   
   R_2_db_types <- tribble(
     ~R_type    , ~postgres_type,
-    # "logical"  , "text",
+    "logical"  , "text",
     "numeric"  , "double precision",
     "character", "text",
     "Date"     , "date"
