@@ -99,10 +99,8 @@ check_if_data_properly_added <- function(db,
   
   from_db <- dbGetQuery(db, glue(
     "SELECT * FROM public.{table_code}
-       WHERE champ   = '{info$field}'
-         AND statut  = '{info$status}'
-         AND annee   = '{info$year}'
-         AND periode = '{info$month}'")) |> as_tibble()
+       WHERE annee   = {info$year}
+         AND periode = {info$month}")) |> as_tibble()
   
   useless_cols <- c("champ", "statut", "annee", "periode")
   
@@ -115,6 +113,7 @@ check_if_data_properly_added <- function(db,
   
   data <- arrange(data, pick(all_of(cols)))
   from_db <- arrange(from_db, pick(all_of(cols)))
+  
   
   if(! identical(data, from_db)) {
     log_warn("DATA NOT PROPERLY INSERTED: {filepath}")
@@ -161,8 +160,6 @@ treat_one_file <- function(filepath, nature, p) {
         DBI
         [ dbCreateTable, dbExistsTable, ],
       )
-      
-     # browser()
       
       if(dbExistsTable(db, table_code)) {
         log_debug("ALLREADY EXISTS: ", table_code)

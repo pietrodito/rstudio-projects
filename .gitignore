@@ -9,3 +9,4 @@
 .config/Cypress/
 .pki/
 .Rproj.user
+.virtualenvs/

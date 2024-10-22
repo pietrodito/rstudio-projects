@@ -67,5 +67,7 @@
     "server_editor_font": "MonaspaceXenon-Regular",
     "text_rendering": "geometricPrecision",
     "default_encoding": "UTF-8",
-    "relative_line_numbers": true
+    "relative_line_numbers": true,
+    "show_invisibles": true,
+    "indent_guides": "rainbowlines"
 }

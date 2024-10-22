@@ -1,9 +1,8 @@
-TRACE [10-04 16:18:22.413] 1252220/...furrr_fn | READING FILE: mco.oqn.2024.1.t1d2covid_5a.csv                                                
-DEBUG [10-04 16:18:22.473] 1252220/setup_db_if_new_table_or_cols | ALLREADY EXISTS: t1d2covid_5a                                              
-ERROR [10-04 16:18:22.610] 1252019/value[[3L]] | ERROR when treating csv files                                                                
-ERROR [10-04 16:18:22.634] 1252019/value[[3L]] | Error:                                                                                       
-ℹ In index: 5.                                                                                                                                
-Caused by error in `map()`:                                                                                                                   
-ℹ In index: 1.                                                                                                                                
-Caused by error:                                                                                                                              
-! Failed to fetch row : ERROR:  type "na" does not exist at character 44   
+
+❯ deit db_updater cat logs/log.txt G WAR
+WARN [10-16 15:42:32.977] 42726/check_if_data_properly_added | DATA NOT PROPERLY INSERTED: /ovalide_data/smr_dgf/smr.dgf.2024.5.key_value.csv
+WARN [10-16 15:42:35.156] 42791/check_if_data_properly_added | DATA NOT PROPERLY INSERTED: /ovalide_data/smr_dgf/smr.dgf.2024.6.key_value.csv
+
+This is not a bug !
+
+Those files contain data about other months!

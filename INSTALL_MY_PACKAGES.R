@@ -19,3 +19,5 @@ follow_symlinks <- function(paths) {
   |> follow_symlinks()
   |> purrr::walk(~ devtools::install(.))
 )
+
+reticulate::py_install("pandas")
