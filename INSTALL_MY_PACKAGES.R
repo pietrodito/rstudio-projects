@@ -1,4 +1,4 @@
-setwd("~")
+setwd("/home/rstudio/")
 
 follow_symlinks <- function(paths) {
   
@@ -17,7 +17,6 @@ follow_symlinks <- function(paths) {
   "./my_packages/RStudio-tools"
   |> fs::dir_ls()
   |> follow_symlinks()
-  |> purrr::walk(~ devtools::install(.))
+  |> purrr::walk(~ devtools::install(., quick = TRUE, upgrade = "always"))
 )
 
-reticulate::py_install("pandas")
